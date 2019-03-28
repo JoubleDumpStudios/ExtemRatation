@@ -72,6 +72,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (hit.collider.gameObject.tag == "Soil")
                     {
                         Debug.Log("Plant something");
+                        ObjectPooler.instance.spawnFromPool("Plant", hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
                     }
                 }
             }

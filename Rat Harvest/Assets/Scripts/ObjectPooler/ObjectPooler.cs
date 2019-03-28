@@ -13,6 +13,7 @@ public class ObjectPooler : MonoBehaviour
         public string Tag { get { return this.tag; } set { this.tag = value; } }
         public GameObject objectToPool;
         public int amountToPool;
+        public bool shouldExpand;
     }
 
 
@@ -83,24 +84,6 @@ public class ObjectPooler : MonoBehaviour
 
         if (pooledObj != null)
             pooledObj.OnObjectSpawn();
-    }
-
-    // Method to spawn a gameObject from one of the pools
-    public GameObject spawnNgetFromPool(string tag, Vector3 position, Quaternion rotation)
-    {
-        // We search the pool and give life to one of the objects
-        GameObject obj = getItemFromPool(tag);
-        obj.transform.position = position;
-        obj.transform.rotation = rotation;
-        obj.SetActive(true);
-
-        // We call an specific method of an interface to make sure the start method of the reused objects works 
-        IPooledObject pooledObj = obj.GetComponent<IPooledObject>();
-
-        if (pooledObj != null)
-            pooledObj.OnObjectSpawn();
-
-        return obj;
     }
 
     // Method to spawn an specific object of the queue
