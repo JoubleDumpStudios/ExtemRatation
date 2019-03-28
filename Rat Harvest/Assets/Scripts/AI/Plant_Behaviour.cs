@@ -15,31 +15,21 @@ public class Plant_Behaviour : MonoBehaviour
     // A variable to know the current state of the plant
     private int currentState = 0;
 
+    // Public list to set the different models of the plant
     [SerializeField]
     private List<GameObject> plantModels;
 
-    // Avariable to keep the model active at that time
+    // A list to keep the model active at a specific time
     private List<GameObject> currentModels = new List<GameObject>();
 
     // Variable to have the count of the time passed
     private float time;
 
-    // Reference to the pooler
-    ObjectPooler objectPooler;
-
     private void Start()
-    {
-        objectPooler = ObjectPooler.instance;
-
-        for (int i = 0; i < plantModels.Count; i++)
-        {
-            currentModels.Add(Instantiate(plantModels[i], transform.position, transform.rotation));
-            currentModels[i].SetActive(false);
-        }
+    {      
+        InitializeModels();
 
         currentModels[currentState].SetActive(true);
-
-        //currentModel = objectPooler.spawnNgetFromPool("PlantModel" + currentState.ToString(), transform.position, transform.rotation);
     }
 
     // Update is called once per frame
@@ -57,11 +47,13 @@ public class Plant_Behaviour : MonoBehaviour
             Grow();
     }
 
-    // Method that changes the size of the plant
+    // Method with the growth logic of the plant
     private void Grow()
     {
         time = 0f;
+
         currentModels[currentState].SetActive(false);
+
         currentState++;
 
         ChangeModel();
@@ -72,8 +64,16 @@ public class Plant_Behaviour : MonoBehaviour
     private void ChangeModel()
     {
         currentModels[currentState].SetActive(true);
-        //objectPooler.killGameObject(currentModel);
-        //currentModel = objectPooler.spawnNgetFromPool("PlantModel" + currentState.ToString(), transform.position, transform.rotation);
+    }
+
+    // A method to instantiate the models for the plant
+    private void InitializeModels()
+    {
+        for (int i = 0; i < plantModels.Count; i++)
+        {
+            currentModels.Add(Instantiate(plantModels[i], transform.position, transform.rotation));
+            currentModels[i].SetActive(false);
+        }
     }
 
 }
