@@ -5,19 +5,16 @@ using UnityEngine;
 public class Plant_Behaviour : MonoBehaviour
 {
     // Variable to set the time that must pass for the plant to grow
-    [SerializeField]
-    private float growingTime = 5f;
-
+    [SerializeField] private float growingTime = 5f;
+ 
     // A variable to set the number of states the plant has
-    [SerializeField]
-    private int numOfStates = 3;
+    [SerializeField] private int numOfStates = 3;
 
     // A variable to know the current state of the plant
     private int currentState = 0;
 
     // Public list to set the different models of the plant
-    [SerializeField]
-    private List<GameObject> plantModels;
+    [SerializeField] private List<GameObject> plantModels;
 
     // A list to keep the model active at a specific time
     private List<GameObject> currentModels = new List<GameObject>();

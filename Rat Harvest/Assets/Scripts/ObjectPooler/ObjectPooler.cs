@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour
 {
-
+ 
     // A class to create pools of different objects
     [System.Serializable]
     public class objectPoolItem

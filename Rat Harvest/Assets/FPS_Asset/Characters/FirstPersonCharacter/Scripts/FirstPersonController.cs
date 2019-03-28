@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+        
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -61,6 +62,25 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+            RaycastHit hit;
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.collider.gameObject.tag == "Soil")
+                    {
+                        Debug.Log("Plant something");
+                    }
+                }
+            }
+
+            if (Physics.Raycast(ray, out hit))
+                print("I'm looking at " + hit.transform.name);
+            else
+                print("I'm looking at nothing!");
+
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
