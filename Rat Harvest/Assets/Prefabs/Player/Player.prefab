@@ -61,6 +61,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1559840316}
+  - {fileID: 1177307605}
   m_Father: {fileID: 976249677}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -411,6 +412,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &1177307604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1177307605}
+  m_Layer: 0
+  m_Name: GunPositionA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1177307605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177307604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.38, y: -0.30999994, z: 0.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496092029}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &298014698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762df9dcec3d8d0499cd7351a5899d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsCount: 30
+  character: {fileID: 496092028}
+  weaponRange: 5
+  bulletsCount: 20
   bulletSpeed: 1000
   spreadAngele: 0.3
   bulletPrefab: {fileID: 3042657296125258824, guid: b8cbde9793de8024dac5d64c99435fff,
@@ -431,6 +464,12 @@ MonoBehaviour:
   Barrel: {fileID: 492651680}
   raycasted: 1
   holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
+  gunPositionA: {fileID: 1177307605}
+  smoothLevel: 5
+  recoilingTime: 0.2
+  recoilAmount: 0.3
+  recoilAngle: 10
+  originalTransform: {fileID: 1177307605}
 --- !u!1001 &1560239294
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShotGunBehaviour : MonoBehaviour
 {
 
+    public GameObject character;
+
     [SerializeField]
     [Range(0.0f, 10.0f)]
     private int weaponRange;
@@ -32,9 +34,27 @@ public class ShotGunBehaviour : MonoBehaviour
     RaycastHit hit;
     Ray ray;
 
-    Vector3 newPosition;
+    [SerializeField]
+    private Transform gunPositionA;
+    
+
 
     public float smoothLevel = 5;
+
+    [SerializeField]
+    private float recoilingTime = 0.2f;
+    [SerializeField]
+    private float recoilAmount = 0.2f;
+
+    [SerializeField]
+    private float recoilAngle = 20f;
+
+    private float currentRecoilPosition;
+    private float currentRecoilAngle;
+    private float currentRecoilPositionSpeed;
+    private float currentRecoilAngleSpeed;
+
+    public Transform originalTransform;
 
     private void Awake()
     {
@@ -49,7 +69,6 @@ public class ShotGunBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -58,12 +77,20 @@ public class ShotGunBehaviour : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             fire();
-            //newPosition = new Vector3(transform.localPosition.x - 5.0f, transform.localPosition.y, transform.localPosition.z);
+            currentRecoilPosition -= recoilAmount;
+            currentRecoilAngle = -recoilAngle;
         }
 
-        //transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * smoothLevel);
+        currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);
+
+        currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, recoilingTime);
+        transform.position = originalTransform.position - transform.right * currentRecoilPosition;
+
+        transform.localRotation = Quaternion.Euler(0.0f,90.0f, currentRecoilAngle);
+
 
     }
+
 
     void fire()
     {
@@ -83,11 +110,11 @@ public class ShotGunBehaviour : MonoBehaviour
                 Vector3 raycastOrigin = Barrel.position;
                 Vector3 rayDirection = new Vector3(Barrel.transform.forward.x + Random.Range(-spreadAngele, spreadAngele),
                     Barrel.transform.forward.y + Random.Range(-spreadAngele, spreadAngele),
-                    Barrel.transform.forward.z + +Random.Range(-spreadAngele, spreadAngele));
+                    Barrel.transform.forward.z + Random.Range(-spreadAngele, spreadAngele));
                 ray = new Ray(raycastOrigin, rayDirection);
 
                 Debug.DrawRay(raycastOrigin, rayDirection, Color.red, weaponRange);
-
+                
                 if(Physics.Raycast(ray, out hit, weaponRange))
                 {
                     //call the functions on the object that is colliding with the raycast.
