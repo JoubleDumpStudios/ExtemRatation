@@ -56,9 +56,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
         }
 
-
+        public void cameraRecoil(float ang)
+        {
+            m_MouseLook.cameraRecoil(ang);
+        }
         // Update is called once per frame
         private void Update()
         {

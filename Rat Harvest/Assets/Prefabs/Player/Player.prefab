@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762df9dcec3d8d0499cd7351a5899d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 496092028}
+  player: {fileID: 976249672}
   weaponRange: 5
   bulletsCount: 20
   bulletSpeed: 1000
@@ -470,6 +470,7 @@ MonoBehaviour:
   recoilAmount: 0.3
   recoilAngle: 10
   originalTransform: {fileID: 1177307605}
+  angleForCameraRecoil: 0
 --- !u!1001 &1560239294
 PrefabInstance:
   m_ObjectHideFlags: 0

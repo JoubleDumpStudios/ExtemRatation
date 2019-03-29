@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ShotGunBehaviour : MonoBehaviour
 {
 
-    public GameObject character;
-
+    FirstPersonController fpc;
+    public GameObject player;
     [SerializeField]
     [Range(0.0f, 10.0f)]
     private int weaponRange;
@@ -56,6 +57,9 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public Transform originalTransform;
 
+    [SerializeField]
+    private float angleForCameraRecoil = 15;
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -69,6 +73,7 @@ public class ShotGunBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        fpc = player.GetComponent<FirstPersonController>();
     }
 
     // Update is called once per frame
@@ -79,6 +84,7 @@ public class ShotGunBehaviour : MonoBehaviour
             fire();
             currentRecoilPosition -= recoilAmount;
             currentRecoilAngle = -recoilAngle;
+            fpc.cameraRecoil(angleForCameraRecoil);
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);
