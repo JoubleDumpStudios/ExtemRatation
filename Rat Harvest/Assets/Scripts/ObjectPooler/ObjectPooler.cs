@@ -52,8 +52,10 @@ public class ObjectPooler : MonoBehaviour
     }
 
     // Method to get an item from one of the pools
-    GameObject getItemFromPool(string tag)
+    private GameObject getItemFromPool(string tag)
     {
+        GameObject objectToSpawn = null;
+
         // To prevent unexpected errors
         if (!poolDictionary.ContainsKey(tag))
         {
@@ -61,11 +63,35 @@ public class ObjectPooler : MonoBehaviour
             return null;
         }
 
+        for (int i = 0; i < poolDictionary[tag].Count; i++)
+        {
+            if (!poolDictionary[tag].Peek().activeInHierarchy)
+            {
+                objectToSpawn = poolDictionary[tag].Dequeue();
+                poolDictionary[tag].Enqueue(objectToSpawn);
+                return objectToSpawn;
+            }
+        }
+
+        foreach (objectPoolItem item in itemsToPool)
+        {
+            if (item.Tag == tag)
+            {
+                if (item.shouldExpand)
+                {
+                    objectToSpawn = Instantiate(item.objectToPool);
+                    objectToSpawn.SetActive(false);
+                    poolDictionary[tag].Enqueue(objectToSpawn);
+                    return objectToSpawn;
+                }
+            }
+        }
+        
         // We search the pool and select the first element
-        GameObject objectToSpawn = poolDictionary[tag].Dequeue();
+        //GameObject objectToSpawn = poolDictionary[tag].Dequeue();
 
         // We add the element selected to the back to reuse it later
-        poolDictionary[tag].Enqueue(objectToSpawn);
+        //poolDictionary[tag].Enqueue(objectToSpawn);
 
         return objectToSpawn;
     }
@@ -75,6 +101,10 @@ public class ObjectPooler : MonoBehaviour
     {
         // We search the pool and give life to one of the objects
         GameObject obj = getItemFromPool(tag);
+
+        if (obj == null)
+            Debug.LogError("There's no item to pool or they are all in use!");
+
         obj.transform.position = position;
         obj.transform.rotation = rotation;
         obj.SetActive(true);

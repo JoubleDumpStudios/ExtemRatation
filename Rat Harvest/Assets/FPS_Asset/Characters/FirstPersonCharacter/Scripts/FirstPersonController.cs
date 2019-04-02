@@ -69,7 +69,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             RaycastHit hit;
 
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 if (Physics.Raycast(ray, out hit))
                 {
@@ -106,6 +106,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+            // TESTING PURPOSES
+            if (Input.GetKeyDown(KeyCode.P))
+                ObjectPooler.instance.spawnFromPool("Cube", transform.position, transform.rotation);
         }
 
 
