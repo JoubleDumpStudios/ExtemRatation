@@ -39,7 +39,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
     RaycastHit hit;
     Ray ray;
-    
+
+
 
     [SerializeField]
     private float recoilingTime = 0.2f;
@@ -59,6 +60,16 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float angleForCameraRecoil = 15;
 
+    [SerializeField]
+    private Transform aimPositionTransform;
+
+    Transform notAimingPosition;
+
+
+    [SerializeField]
+    private float aimingSpeed;
+
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -67,12 +78,17 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             bullets.Add(Quaternion.Euler(Vector3.zero));
         }
+
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
         fpc = player.GetComponent<FirstPersonController>();
+
+        notAimingPosition = originalTransform;
+
     }
 
     // Update is called once per frame
@@ -87,11 +103,22 @@ public class ShotGunBehaviour : MonoBehaviour
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);
-
         currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, recoilingTime);
-        transform.position = originalTransform.position - transform.right * currentRecoilPosition;
 
-        transform.localRotation = Quaternion.Euler(0.0f,90.0f, currentRecoilAngle);
+        if (Input.GetButton("Fire2"))
+        {
+            transform.position = Vector3.Lerp(transform.position, aimPositionTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
+
+            //transform.position = originalTransform.position - transform.right * currentRecoilPosition;
+
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, originalTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
+        }
+
+        transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
+
 
 
     }
