@@ -43,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
         // Use this for initialization
         private void Start()
         {
@@ -69,7 +70,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             RaycastHit hit;
 
-            if (Input.GetKeyDown(KeyCode.E))
+
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 if (Physics.Raycast(ray, out hit))
                 {
@@ -106,10 +108,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
-
-            // TESTING PURPOSES
-            if (Input.GetKeyDown(KeyCode.P))
-                ObjectPooler.instance.spawnFromPool("Cube", transform.position, transform.rotation);
         }
 
 
@@ -284,5 +282,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
     }
 }
