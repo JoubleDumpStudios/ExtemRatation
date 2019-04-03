@@ -18,6 +18,13 @@ public class Plant_Behaviour : MonoBehaviour
 
     // A list to keep the model active at a specific time
     private List<GameObject> currentModels = new List<GameObject>();
+    
+    // A list to keep th epoints per state the plant gives
+    [SerializeField] private List<int> pointsPerState;
+
+    // Cpoints of the current state
+    private int currentPoints = 0;
+    public int CurrentPoints { get { return this.currentPoints; } }
 
     // Variable to have the count of the time passed
     private float time;
@@ -27,6 +34,9 @@ public class Plant_Behaviour : MonoBehaviour
         InitializeModels();
 
         currentModels[currentState].SetActive(true);
+        currentPoints = pointsPerState[currentState];
+
+        Debug.Log("I'll give you " + currentPoints + " points");
     }
 
     // Update is called once per frame
@@ -53,14 +63,22 @@ public class Plant_Behaviour : MonoBehaviour
 
         currentState++;
 
-        ChangeModel();
+        updateModel();
+        updatePoints();
+
+        Debug.Log("I'll give you " + currentPoints + " points");
         
     }
 
     // Method to change the model of the plant
-    private void ChangeModel()
+    private void updateModel()
     {
         currentModels[currentState].SetActive(true);
+    }
+
+    private void updatePoints()
+    {
+        currentPoints = pointsPerState[currentState];
     }
 
     // A method to instantiate the models for the plant
