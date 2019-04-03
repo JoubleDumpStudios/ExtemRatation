@@ -9,7 +9,7 @@ public class ShotGunBehaviour : MonoBehaviour
     FirstPersonController fpc;
     public GameObject player;
     [SerializeField]
-    [Range(0.0f, 10.0f)]
+    [Range(0.0f, 20.0f)]
     private int weaponRange;
 
     [SerializeField]
@@ -31,16 +31,15 @@ public class ShotGunBehaviour : MonoBehaviour
 
     [SerializeField]
     private GameObject holes;
+    [SerializeField]
+    private GameObject ratHoles;
+
+    [SerializeField]
+    private float damage;
 
     RaycastHit hit;
     Ray ray;
-
-    [SerializeField]
-    private Transform gunPositionA;
     
-
-
-    public float smoothLevel = 5;
 
     [SerializeField]
     private float recoilingTime = 0.2f;
@@ -124,12 +123,24 @@ public class ShotGunBehaviour : MonoBehaviour
                 if(Physics.Raycast(ray, out hit, weaponRange))
                 {
                     //call the functions on the object that is colliding with the raycast.
-                    Instantiate(holes, hit.point, holes.transform.rotation);
+
+
+                    if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>() != null)
+                    {
+                        ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>());
+                        Instantiate(ratHoles, hit.point, holes.transform.rotation); 
+                    }
+                    else {
+                        Instantiate(holes, hit.point, holes.transform.rotation);
+                    }
+
                 }
             }
         }
+    }
 
-
-
+    void ratHit(Rat_Health_Logic healthLogic)
+    {
+        healthLogic.hit(damage);
     }
 }
