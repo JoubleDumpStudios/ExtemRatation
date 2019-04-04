@@ -85,6 +85,7 @@ public class Plant_Behaviour : MonoBehaviour
         {
             currentModels.Add(Instantiate(plantModels[i], transform.position, transform.rotation));
             currentModels[i].GetComponent<Plant>().Points = pointsPerState[i];
+            currentModels[i].GetComponent<Plant>().Root_Plant = this.gameObject;
             currentModels[i].SetActive(false);
         }
     }

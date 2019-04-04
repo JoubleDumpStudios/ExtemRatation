@@ -87,7 +87,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     {
                         int p = hit.collider.gameObject.GetComponent<Plant>().Points;
                         Debug.Log(p);
-                        ObjectPooler.instance.killGameObject(hit.collider.gameObject);
+                        ObjectPooler.instance.killGameObject(hit.collider.gameObject.GetComponent<Plant>().Root_Plant);
                     }
                 }
 
