@@ -16,8 +16,16 @@ public class ShotGunBehaviour : MonoBehaviour
     private int bulletsCount;
     [SerializeField]
     private float bulletSpeed;
+
     [SerializeField]
-    private float spreadAngele;
+    public float NotAimingSpreadAngle;
+    [SerializeField]
+    public float AimingSpreadAngle;
+
+
+    public float spreadAngle;
+
+     
 
     [SerializeField]
     private GameObject bulletPrefab;
@@ -90,6 +98,7 @@ public class ShotGunBehaviour : MonoBehaviour
         fpc = player.GetComponent<FirstPersonController>();
 
         notAimingPosition = originalTransform;
+        spreadAngle = NotAimingSpreadAngle;
 
     }
 
@@ -117,11 +126,13 @@ public class ShotGunBehaviour : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, aimPositionTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
 
             //transform.position = originalTransform.position - transform.right * currentRecoilPosition;
+            spreadAngle = AimingSpreadAngle;
 
         }
         else
         {
             transform.position = Vector3.Lerp(transform.position, originalTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
+            spreadAngle = NotAimingSpreadAngle;
         }
 
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
@@ -140,16 +151,16 @@ public class ShotGunBehaviour : MonoBehaviour
             { // instantiate bullets depending on the shoting angle selection
                 bullets[i] = Random.rotation;
                 GameObject bullet = Instantiate(bulletPrefab, Barrel.position, Barrel.rotation);
-                bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bullets[i], spreadAngele);
+                bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bullets[i], spreadAngle);
                 bullet.GetComponent<Rigidbody>().AddForce(-bullet.transform.right * bulletSpeed);
             }
             else
             {
                 //uses raycast, when collides with something it spawns a object that could be a bullet hole
                 Vector3 raycastOrigin = Barrel.position;
-                Vector3 rayDirection = new Vector3(Barrel.transform.forward.x + Random.Range(-spreadAngele, spreadAngele),
-                    Barrel.transform.forward.y + Random.Range(-spreadAngele, spreadAngele),
-                    Barrel.transform.forward.z + Random.Range(-spreadAngele, spreadAngele));
+                Vector3 rayDirection = new Vector3(Barrel.transform.forward.x + Random.Range(-spreadAngle, spreadAngle),
+                    Barrel.transform.forward.y + Random.Range(-spreadAngle, spreadAngle),
+                    Barrel.transform.forward.z + Random.Range(-spreadAngle, spreadAngle));
                 ray = new Ray(raycastOrigin, rayDirection);
 
                 Debug.DrawRay(raycastOrigin, rayDirection, Color.red, weaponRange);

@@ -662,10 +662,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 976249672}
-  weaponRange: 10
+  weaponRange: 20
   bulletsCount: 20
   bulletSpeed: 1000
-  spreadAngele: 0.3
+  NotAimingSpreadAngle: 0.3
+  AimingSpreadAngle: 0.1
+  spreadAngle: 0
   bulletPrefab: {fileID: 3042657296125258824, guid: b8cbde9793de8024dac5d64c99435fff,
     type: 3}
   Barrel: {fileID: 492651680}
