@@ -59,20 +59,17 @@ public class Plant_Behaviour : MonoBehaviour
     {
         time = 0f;
 
-        currentModels[currentState].SetActive(false);
-
-        currentState++;
-
         updateModel();
         updatePoints();
 
-        Debug.Log("I'll give you " + currentPoints + " points");
-        
+        //Debug.Log("I'll give you " + currentPoints + " points");     
     }
 
     // Method to change the model of the plant
     private void updateModel()
     {
+        currentModels[currentState].SetActive(false);
+        currentState++;
         currentModels[currentState].SetActive(true);
     }
 
@@ -87,6 +84,7 @@ public class Plant_Behaviour : MonoBehaviour
         for (int i = 0; i < plantModels.Count; i++)
         {
             currentModels.Add(Instantiate(plantModels[i], transform.position, transform.rotation));
+            currentModels[i].GetComponent<Plant>().Points = pointsPerState[i];
             currentModels[i].SetActive(false);
         }
     }
