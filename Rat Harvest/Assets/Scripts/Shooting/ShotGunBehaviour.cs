@@ -69,6 +69,8 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float aimingSpeed;
 
+    private bool shooting = false;
+
 
     private void Awake()
     {
@@ -94,9 +96,14 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+
+        if (Input.GetAxis("Fire1") <= 0)
+            shooting = false;
+
+        if (Input.GetButtonDown("Fire1") || (Input.GetAxis("Fire1")>0 && !shooting))
         {
             fire();
+            shooting = true;
             currentRecoilPosition -= recoilAmount;
             currentRecoilAngle = -recoilAngle;
             fpc.cameraRecoil(angleForCameraRecoil);
@@ -105,7 +112,7 @@ public class ShotGunBehaviour : MonoBehaviour
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);
         currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, recoilingTime);
 
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButton("Fire2") || Input.GetAxis("Fire2") > 0)
         {
             transform.position = Vector3.Lerp(transform.position, aimPositionTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
 

@@ -467,7 +467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523674487}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.31, z: 0.23000002}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0.23000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 496092029}
@@ -502,7 +502,7 @@ MonoBehaviour:
   recoilAmount: 0.3
   recoilAngle: 10
   originalTransform: {fileID: 1177307605}
-  angleForCameraRecoil: 0
+  angleForCameraRecoil: 10
   aimPositionTransform: {fileID: 1523674488}
   aimingSpeed: 15
 --- !u!1001 &1560239294
