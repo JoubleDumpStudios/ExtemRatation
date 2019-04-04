@@ -71,9 +71,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             RaycastHit hit;
 
 
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Physics.Raycast(ray, out hit))
             {
-                if (Physics.Raycast(ray, out hit))
+                if (Input.GetKeyDown(KeyCode.P))
                 {
                     if (hit.collider.gameObject.tag == "Soil")
                     {
@@ -81,6 +81,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         ObjectPooler.instance.spawnFromPool("Plant", hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
                     }
                 }
+                else if (Input.GetKeyDown(KeyCode.H))
+                {
+                    if (hit.collider.gameObject.tag == "Plant")
+                    {
+                        int p = hit.collider.gameObject.GetComponent<Plant>().Points;
+                        Debug.Log(p);
+                        ObjectPooler.instance.killGameObject(hit.collider.gameObject);
+                    }
+                }
+
             }
 
             if (Physics.Raycast(ray, out hit))

@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 4807115856107346419}
   m_Layer: 0
   m_Name: PlantModel2
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4807115856107346423
 Transform:
   m_ObjectHideFlags: 0
