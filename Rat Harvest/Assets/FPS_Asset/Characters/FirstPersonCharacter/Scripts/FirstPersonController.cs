@@ -43,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        Plant_Behaviour plant_b;
 
         // Use this for initialization
         private void Start()
@@ -77,26 +78,32 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     if (hit.collider.gameObject.tag == "Soil")
                     {
-                        Debug.Log("Plant something");
                         ObjectPooler.instance.spawnFromPool("Plant", hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
                     }
+                        
+                    
                 }
                 else if (Input.GetKeyDown(KeyCode.H))
                 {
                     if (hit.collider.gameObject.tag == "Plant")
                     {
-                        int p = hit.collider.gameObject.GetComponent<Plant>().Points;
-                        Debug.Log(p);
-                        ObjectPooler.instance.killGameObject(hit.collider.gameObject.GetComponent<Plant>().Root_Plant);
+                        int p = hit.collider.gameObject.transform.parent.GetComponent<Plant_Behaviour>().CurrentPoints;
+                        Debug.Log("You get " + p + " points");
+
+                        GameObject go = hit.collider.gameObject.transform.parent.gameObject;
+                        go.GetComponent<Plant_Behaviour>().resetPlant();
+                        ObjectPooler.instance.killGameObject(go);
                     }
                 }
 
             }
 
-            if (Physics.Raycast(ray, out hit))
-                print("I'm looking at " + hit.transform.name);
-            else
-                print("I'm looking at nothing!");
+            // TESTING PURPOSES
+            //if (Physics.Raycast(ray, out hit))
+            //    print("I'm looking at " + hit.transform.name);
+            //else
+            //    print("I'm looking at nothing!");
+            // TESTING PURPOSES
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed

@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20adae4091777e949b97c4e229b32e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growingTime: 5
+  growingTime: 3
   numOfStates: 4
   plantModels:
   - {fileID: 752775452142006626, guid: 170ae19e2e3d57743bad5998363740b0, type: 3}

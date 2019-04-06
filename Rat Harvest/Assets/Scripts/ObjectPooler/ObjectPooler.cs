@@ -116,6 +116,27 @@ public class ObjectPooler : MonoBehaviour
             pooledObj.OnObjectSpawn();
     }
 
+
+    // Method to spawn a gameObject from one of the pools and return a reference for that gameObject
+    public void spawnFromPool(string tag, Vector3 position, Quaternion rotation, out GameObject spawnedObject)
+    {
+        // We search the pool and give life to one of the objects
+        spawnedObject = getItemFromPool(tag);
+
+        if (spawnedObject == null)
+            Debug.LogError("There's no item to pool or they are all in use!");
+
+        spawnedObject.transform.position = position;
+        spawnedObject.transform.rotation = rotation;
+        spawnedObject.SetActive(true);
+
+        // We call an specific method of an interface to make sure the start method of the reused objects works 
+        IPooledObject pooledObj = spawnedObject.GetComponent<IPooledObject>();
+
+        if (pooledObj != null)
+            pooledObj.OnObjectSpawn();
+    }
+
     // Method to spawn an specific object of the queue
     public void spawnSpecificFromPool(GameObject go, Vector3 position, Quaternion rotation)
     {
@@ -133,7 +154,8 @@ public class ObjectPooler : MonoBehaviour
     // Method to disable a gameObject form one of the pools
     public void killGameObject(GameObject obj)
     {
-        obj.SetActive(false);
+        if(obj != null)
+            obj.SetActive(false);
     }
 
     // Checks if there's a pool with an specific tag

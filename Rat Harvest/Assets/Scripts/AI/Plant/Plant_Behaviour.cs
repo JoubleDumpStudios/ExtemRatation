@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plant_Behaviour : MonoBehaviour
+public class Plant_Behaviour : MonoBehaviour, IPooledObject
 {
     // Variable to set the time that must pass for the plant to grow
     [SerializeField] private float growingTime = 5f;
@@ -15,28 +15,29 @@ public class Plant_Behaviour : MonoBehaviour
 
     // Public list to set the different models of the plant
     [SerializeField] private List<GameObject> plantModels;
+    public List<GameObject> PlantModels { get { return plantModels; } }
 
-    // A list to keep the model active at a specific time
-    private List<GameObject> currentModels = new List<GameObject>();
+    // Current plant
+    private GameObject currentPlant;
+    public GameObject CurrentPlant { set { this.currentPlant = value; } }
     
     // A list to keep th epoints per state the plant gives
     [SerializeField] private List<int> pointsPerState;
 
-    // Cpoints of the current state
+    // Points of the current state
     private int currentPoints = 0;
     public int CurrentPoints { get { return this.currentPoints; } }
 
     // Variable to have the count of the time passed
     private float time;
 
-    private void Start()
-    {      
-        InitializeModels();
+    // A variable to store the pool
+    ObjectPooler objectPooler = ObjectPooler.instance;
 
-        currentModels[currentState].SetActive(true);
-        currentPoints = pointsPerState[currentState];
-
-        Debug.Log("I'll give you " + currentPoints + " points");
+    // Method inherited form the IpooledObject interface
+    public void OnObjectSpawn()
+    {
+        initializePlant();
     }
 
     // Update is called once per frame
@@ -61,33 +62,43 @@ public class Plant_Behaviour : MonoBehaviour
 
         updateModel();
         updatePoints();
-
-        //Debug.Log("I'll give you " + currentPoints + " points");     
+  
     }
 
     // Method to change the model of the plant
     private void updateModel()
     {
-        currentModels[currentState].SetActive(false);
+        currentPlant.transform.parent = null;
+
+        objectPooler.killGameObject(currentPlant);
         currentState++;
-        currentModels[currentState].SetActive(true);
+        objectPooler.spawnFromPool(plantModels[currentState].name, transform.position, transform.rotation, out currentPlant);
+
+        currentPlant.transform.parent = this.gameObject.transform;
     }
 
+    // Method to update the points of the current model
     private void updatePoints()
     {
         currentPoints = pointsPerState[currentState];
     }
 
-    // A method to instantiate the models for the plant
-    private void InitializeModels()
+    // Method to initialize the plant behaviour
+    private void initializePlant()
     {
-        for (int i = 0; i < plantModels.Count; i++)
-        {
-            currentModels.Add(Instantiate(plantModels[i], transform.position, transform.rotation));
-            currentModels[i].GetComponent<Plant>().Points = pointsPerState[i];
-            currentModels[i].GetComponent<Plant>().Root_Plant = this.gameObject;
-            currentModels[i].SetActive(false);
-        }
+        objectPooler.spawnFromPool(plantModels[currentState].name, transform.position, transform.rotation, out currentPlant);
+        currentPlant.transform.parent = this.gameObject.transform;
+        currentPoints = pointsPerState[currentState];
+    }
+
+    // Method to reset all the variables when the player harvests
+    public void resetPlant()
+    {
+        time = 0f;
+        currentState = 0;
+        currentPoints = 0;
+        objectPooler.killGameObject(currentPlant);
+        currentPlant.transform.parent = null;
     }
 
 }

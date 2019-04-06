@@ -43,4 +43,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e78ef2cbfc4a9498e025abd184e044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsToPool: []
+  itemsToPool:
+  - objectToPool: {fileID: 3049736864826002973, guid: ee8dd8b47f2d8eb4fae3f01286f01d03,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 0
+  - objectToPool: {fileID: 752775452142006626, guid: 170ae19e2e3d57743bad5998363740b0,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 0
+  - objectToPool: {fileID: 4807115856107346429, guid: bbc2a46a54dd01441811fc854e2d70bd,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 0
+  - objectToPool: {fileID: 607255248345174925, guid: 401103c423805a04d870592c47885433,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 0
+  - objectToPool: {fileID: 946452843077944268, guid: ee189165daf4c1a4b9d8172aaa176f5a,
+      type: 3}
+    amountToPool: 3
+    shouldExpand: 0
