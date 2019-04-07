@@ -63,16 +63,19 @@ public class ObjectPooler : MonoBehaviour
             return null;
         }
 
+        // We search in the queue if there's some inactive element
         for (int i = 0; i < poolDictionary[tag].Count; i++)
         {
-            if (!poolDictionary[tag].Peek().activeInHierarchy)
-            {
-                objectToSpawn = poolDictionary[tag].Dequeue();
-                poolDictionary[tag].Enqueue(objectToSpawn);
+            objectToSpawn = poolDictionary[tag].Dequeue();
+            poolDictionary[tag].Enqueue(objectToSpawn);
+
+            if (!objectToSpawn.activeInHierarchy)
                 return objectToSpawn;
-            }
+            else
+                objectToSpawn = null;
         }
 
+        // If all the elements are inactive we create another one if the ShouldExpand attribute is true
         foreach (objectPoolItem item in itemsToPool)
         {
             if (item.Tag == tag)
