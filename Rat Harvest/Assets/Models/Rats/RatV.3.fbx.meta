@@ -1,72 +1,19 @@
 fileFormatVersion: 2
-guid: e641f639e23bd9f4fa9796473983e774
+guid: 5b5dadf3960808249b91c5b3366a6fa6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: wood
-    2100002: wall
-    2100004: sidewall
-    2100006: floor
-    2100008: roof1
-    2100010: roof_frame
-    2100012: lambert1
-    2100014: frame
-    2100016: window
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: barn
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: floor
-    second: {fileID: 2100000, guid: 6b7515736fd8941ee883dcf5383e0b89, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: frame
-    second: {fileID: 2100000, guid: c54e9944feb5f6a41bbc8f7c393c9bb4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 9e3e6c0385bbe0648a233fa63fce27d6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: roof1
-    second: {fileID: 2100000, guid: d07c8ea354649004c964da186432a769, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: roof_frame
-    second: {fileID: 2100000, guid: 00c681893243b4871be51c75cb6b7579, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: sidewall
-    second: {fileID: 2100000, guid: a5fb0838b9146421d831a2e28feab260, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wall
-    second: {fileID: 2100000, guid: 7765cd2aae1a64bf3a2230748d76f278, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: window
-    second: {fileID: 2100000, guid: 2248c1c8d19d94ee89afea2d7c66aa5d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wood
-    second: {fileID: 2100000, guid: 4966a74380ed0448aba5c420fd466d45, type: 2}
+    4300000: RatTest
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
