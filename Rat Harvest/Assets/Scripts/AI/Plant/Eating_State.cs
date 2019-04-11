@@ -1,0 +1,41 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Eating_State : MonoBehaviour
+{
+    bool ratEatingMe = false;
+    float time = 0;
+
+    Rat_Movement_Logic rat;
+
+    [SerializeField]
+    private float eatingTime = 3;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (ratEatingMe )
+        {
+            time += Time.deltaTime;
+            if (time >= eatingTime)
+            {
+                rat.chooseNewTarget();
+                time = 0;
+            }
+               
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)//when the nav mesh agent arrives to this destination it takes the RatMovementLogic, it is necessary to call the methos to find another target for the nav mesh agent
+    {
+        rat = other.gameObject.GetComponent<Rat_Movement_Logic>();
+        ratEatingMe = true;
+    }
+
+}

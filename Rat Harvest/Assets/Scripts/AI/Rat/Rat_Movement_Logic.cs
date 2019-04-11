@@ -8,59 +8,56 @@ public class Rat_Movement_Logic : MonoBehaviour
 {
 
     [SerializeField]
-    Transform _destination;
-
-    
-
-    public List<GameObject> destinations;
+    private List<GameObject> destinations;// must contain all the possible destinations we want for the movable objects
 
     NavMeshAgent _navMeshAgent;
 
-    public bool lookForNewTarget = false;
+    bool lookForNewTarget = false;
 
-    
+    int targetIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        _navMeshAgent = this.GetComponent<NavMeshAgent>();
-        
-        setDestination(destinations[calculateNearestObjectIndex()]);
+        _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
+        setDestination(destinations[calculateNearestObjectIndex()]);//calls the method that allows to find the first destination to go
     }
 
     private void setDestination(GameObject obstacle)
     {
-        //Vector3 targetVector = _destination.transform.position;
-        _navMeshAgent.SetDestination(obstacle.transform.position);
+        _navMeshAgent.SetDestination(obstacle.transform.position);//use the navMesh options to set a destination for the Nav Mesh Agent
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lookForNewTarget)
-        {
-            setDestination(destinations[calculateNearestObjectIndex()]);
-            lookForNewTarget = false;
-        }
+
     }
 
-    int calculateNearestObjectIndex()
+    int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
     {
-        int indicator = 0;
         float distance = 0;
         float nearestDistance = 2000;
 
         for (int i = 0; i<destinations.Count; i++)
         {
-            if (destinations[i] != null) {
                 distance = Vector3.Distance(this.transform.position, destinations[i].transform.position);
 
                 if (nearestDistance > distance)
                 {
                     nearestDistance = distance;
-                    indicator = i;
+                    targetIndex = i;
                 }
-            }
         }
-        return indicator;
+        return targetIndex;
+    }
+
+
+    public void chooseNewTarget()//allow us to call the methods to choose a new target, it is going to be called from the plat that it is been eating once is eated
+    {
+        destinations.RemoveAt(targetIndex);//delte the previous destination
+
+        if (destinations.Count > 0)
+            setDestination(destinations[calculateNearestObjectIndex()]);
     }
 }
