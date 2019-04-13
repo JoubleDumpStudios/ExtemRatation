@@ -6,7 +6,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 {
     // Variable to set the time that must pass for the plant to grow
     [SerializeField] private float growingTime = 5f;
- 
+
     // A variable to set the number of states the plant has
     [SerializeField] private int numOfStates = 3;
 
@@ -20,7 +20,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // Current plant
     private GameObject currentPlant;
     public GameObject CurrentPlant { set { this.currentPlant = value; } }
-    
+
     // A list to keep th epoints per state the plant gives
     [SerializeField] private List<int> pointsPerState;
 
@@ -33,6 +33,10 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 
     // A variable to store the pool
     ObjectPooler objectPooler = ObjectPooler.instance;
+
+    // A variable to control when the soil can be planted and when not
+    private GameObject soil;
+    public GameObject Soil { get{ return this.soil; } set { this.soil = value; } }
 
     // Method inherited form the IpooledObject interface
     public void OnObjectSpawn()

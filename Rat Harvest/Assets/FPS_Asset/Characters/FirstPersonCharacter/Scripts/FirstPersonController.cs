@@ -43,7 +43,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
-        Plant_Behaviour plant_b;
+        // A variable to pass the data of the soil between objects
+        private GameObject plantBehaviour;
+
+        // A variable to access the soil script and be able to change its state to forbidden the player planting crops
+        private Soil soilScript;
+
+        // Variable to acces the plantBehaviour script to pass the data of the soil
+        private Plant_Behaviour plantBehaviourScript;
 
         // Use this for initialization
         private void Start()
@@ -76,24 +83,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 if (Input.GetKeyDown(KeyCode.P))
                 {
-                    if (hit.collider.gameObject.tag == "Soil")
-                    {
-                        ObjectPooler.instance.spawnFromPool("Plant", hit.collider.gameObject.transform.position, hit.collider.gameObject.transform.rotation);
-                    }
-                        
-                    
+                    if (hit.collider.gameObject.tag == "Soil")        
+                            Plant(hit.collider.gameObject);                                       
                 }
                 else if (Input.GetKeyDown(KeyCode.H))
                 {
                     if (hit.collider.gameObject.tag == "Plant")
-                    {
-                        int p = hit.collider.gameObject.transform.parent.GetComponent<Plant_Behaviour>().CurrentPoints;
-                        Debug.Log("You get " + p + " points");
-
-                        GameObject go = hit.collider.gameObject.transform.parent.gameObject;
-                        go.GetComponent<Plant_Behaviour>().resetPlant();
-                        ObjectPooler.instance.killGameObject(go);
-                    }
+                        Harvest(hit.collider.gameObject);                
                 }
 
             }
@@ -303,6 +299,48 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        // A method to plant a new crop in a gameobject
+        private void Plant(GameObject go)
+        {
+            soilScript = go.GetComponent<Soil>();
+
+            if (soilScript != null)            
+                if (!soilScript.HasCrop)            
+                    spawnPlant(go);
+                       
+        }
+
+        // A method that spawns a plant
+        private void spawnPlant(GameObject go)
+        {
+            ObjectPooler.instance.spawnFromPool("Plant", go.transform.position,
+                        go.transform.rotation, out plantBehaviour);
+
+            plantBehaviour.GetComponent<Plant_Behaviour>().Soil = go;
+            soilScript.HasCrop = true;
+        }
+
+        // Method to harvest a crop
+        private void Harvest(GameObject go)
+        {
+            GameObject rootPlant = go.transform.parent.gameObject;
+            plantBehaviourScript = rootPlant.GetComponent<Plant_Behaviour>();
+
+            int p = plantBehaviourScript.CurrentPoints;
+            Debug.Log("You get " + p + " points");
+
+            resetSoilStatus(rootPlant);
+        }
+
+        // Method to reset all the statistics of the soil when it is harvested
+        private void resetSoilStatus(GameObject rootPlant)
+        {
+            plantBehaviourScript.resetPlant();
+            plantBehaviourScript.Soil.GetComponent<Soil>().HasCrop = false;
+
+            ObjectPooler.instance.killGameObject(rootPlant);
         }
 
     }
