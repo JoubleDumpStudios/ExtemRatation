@@ -43,6 +43,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        // Camera ray's Length
+        [SerializeField] private float Cam_Ray_Length = 3;
+
         // A variable to access the PlayerManager
         private PlayerManager playerManager;
 
@@ -83,8 +86,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, Cam_Ray_Length))
             {
+                Debug.DrawLine(ray.origin, hit.point);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (hit.collider.gameObject.tag == "Soil")
