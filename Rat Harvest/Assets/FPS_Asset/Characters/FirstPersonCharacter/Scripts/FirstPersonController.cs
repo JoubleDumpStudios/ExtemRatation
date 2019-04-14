@@ -78,20 +78,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
             RaycastHit hit;
 
-
             if (Physics.Raycast(ray, out hit))
             {
-                if (Input.GetKeyDown(KeyCode.P))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (hit.collider.gameObject.tag == "Soil")        
-                            Plant(hit.collider.gameObject);                                       
-                }
-                else if (Input.GetKeyDown(KeyCode.H))
-                {
-                    if (hit.collider.gameObject.tag == "Plant")
-                        Harvest(hit.collider.gameObject);                
-                }
-
+                    if (hit.collider.gameObject.tag == "Soil")
+                        Plant(hit.collider.gameObject);
+                    else if (hit.collider.gameObject.tag == "Plant")
+                        Harvest(hit.collider.gameObject);
+                }             
             }
 
             // TESTING PURPOSES
@@ -100,6 +95,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //else
             //    print("I'm looking at nothing!");
             // TESTING PURPOSES
+
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
