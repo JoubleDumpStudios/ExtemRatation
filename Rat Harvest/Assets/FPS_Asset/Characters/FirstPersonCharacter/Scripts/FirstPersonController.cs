@@ -43,6 +43,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        // A variable to access the PlayerManager
+        private PlayerManager playerManager;
+
         // A variable to pass the data of the soil between objects
         private GameObject plantBehaviour;
 
@@ -65,6 +68,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
+            playerManager = GetComponent<PlayerManager>();
 
         }
 
@@ -324,8 +329,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GameObject rootPlant = go.transform.parent.gameObject;
             plantBehaviourScript = rootPlant.GetComponent<Plant_Behaviour>();
 
-            int p = plantBehaviourScript.CurrentPoints;
-            Debug.Log("You get " + p + " points");
+            int points = plantBehaviourScript.CurrentPoints;
+            playerManager.PlayerScore += points;
+            Debug.Log("You get " + points + " points");
 
             resetSoilStatus(rootPlant);
         }

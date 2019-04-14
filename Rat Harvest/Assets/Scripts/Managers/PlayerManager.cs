@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Player's life
+    [SerializeField] private int playerHealth = 100;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Player's score
+    private int playerScore = 0;
+    public int PlayerScore { get { return this.playerScore; } set { this.playerScore = value; } }
 }
