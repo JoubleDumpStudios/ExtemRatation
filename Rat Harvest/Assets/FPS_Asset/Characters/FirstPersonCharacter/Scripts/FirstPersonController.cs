@@ -56,7 +56,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private GameObject plantBehaviour;
 
         // A variable to access the soil script and be able to change its state to forbidden the player planting crops
-        private PlantPoint soilScript;
+        private PlantPoint PlantPointScript;
 
         // Variable to acces the plantBehaviour script to pass the data of the soil
         private Plant_Behaviour plantBehaviourScript;
@@ -304,10 +304,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // A method to plant a new crop in a gameobject
         private void Plant(GameObject go)
         {
-            soilScript = go.GetComponent<PlantPoint>();
+            PlantPointScript = go.GetComponent<PlantPoint>();
 
-            if (soilScript != null)            
-                if (!soilScript.HasCrop)            
+            if (PlantPointScript != null)            
+                if (!PlantPointScript.HasCrop)            
                     spawnPlant(go);
                        
         }
@@ -319,7 +319,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         go.transform.rotation, out plantBehaviour);
 
             plantBehaviour.GetComponent<Plant_Behaviour>().Soil = go;
-            soilScript.HasCrop = true;
+            PlantPointScript.HasCrop = true;
         }
 
         // Method to harvest a crop
