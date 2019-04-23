@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Eating_State : MonoBehaviour
 {
-    bool ratEatingMe = false;
+    public bool ratEatingMe = false;
     float time = 0;
 
     Rat_Movement_Logic rat;
@@ -25,6 +25,8 @@ public class Eating_State : MonoBehaviour
             time += Time.deltaTime;
             if (time >= eatingTime)
             {
+                ratEatingMe = false;
+                rat.eatPlant(this.gameObject);
                 rat.chooseNewTarget();
                 time = 0;
             }

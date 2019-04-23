@@ -37,7 +37,7 @@ public class Rat_Movement_Logic : MonoBehaviour
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
     {
         float distance = 0;
-        float nearestDistance = 2000;
+        float nearestDistance = 200000;
 
         for (int i = 0; i<destinations.Count; i++)
         {
@@ -55,9 +55,12 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     public void chooseNewTarget()//allow us to call the methods to choose a new target, it is going to be called from the plat that it is been eating once is eated
     {
-        destinations.RemoveAt(targetIndex);//delte the previous destination
-
         if (destinations.Count > 0)
             setDestination(destinations[calculateNearestObjectIndex()]);
+    }
+
+    public void eatPlant(GameObject plant)//eats the plant asociated with this destination
+    {
+        destinations.Remove(plant);
     }
 }
