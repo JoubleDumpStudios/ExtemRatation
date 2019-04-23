@@ -383,7 +383,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.4
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -590,6 +590,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  Cam_Ray_Length: 1.5
+  Harvest_Raycast_SpawnPoint: {fileID: 492651680}
 --- !u!114 &6586784884396762487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d90af48baec7442a96d36e4945384f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 100
 --- !u!1 &1177307604
 GameObject:
   m_ObjectHideFlags: 0

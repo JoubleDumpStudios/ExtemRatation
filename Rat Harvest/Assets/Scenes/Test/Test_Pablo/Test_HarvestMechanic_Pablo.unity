@@ -167,18 +167,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 976249675, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
-      propertyPath: Cam_Ray_Length
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 976249675, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
-      propertyPath: raycast_Position
-      value: 
-      objectReference: {fileID: 1716276756}
-    - target: {fileID: 976249673, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
-      propertyPath: m_Pitch
-      value: 0.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
 --- !u!1001 &325845242
@@ -505,12 +493,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e31718cdae22341817ad4d9f1393e5, type: 3}
---- !u!4 &1716276756 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 492651680, guid: 6f0fc64c38c1d184798eb659213508d1,
-    type: 3}
-  m_PrefabInstance: {fileID: 316095041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5932534033944317622
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -41,6 +41,9 @@ public class ObjectPooler : MonoBehaviour
             // We add the objects to the pools
             for (int i = 0; i < item.amountToPool; i++)
             {
+                item.Tag = item.objectToPool.name;
+
+                // We instantiate the gameObject
                 GameObject go = Instantiate(item.objectToPool);
                 go.SetActive(false);
                 objectPool.Enqueue(go);
@@ -48,7 +51,7 @@ public class ObjectPooler : MonoBehaviour
 
             // We add the pool to the dictionary
             poolDictionary.Add(item.Tag, objectPool);
-        }
+        }      
     }
 
     // Method to get an item from one of the pools
@@ -172,11 +175,5 @@ public class ObjectPooler : MonoBehaviour
             b = false;
 
         return b;
-    }
-
-    private void OnValidate()
-    {
-        for (int i = 0; i < itemsToPool.Count; i++)
-            itemsToPool[i].Tag = itemsToPool[i].objectToPool.name;
     }
 }
