@@ -94,7 +94,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Debug.DrawLine(ray.origin, hit.point);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (hit.collider.gameObject.tag == "Soil")
+                    if (hit.collider.gameObject.tag == "PlantPoint")
                         Plant(hit.collider.gameObject);
                     else if (hit.collider.gameObject.tag == "Plant")
                         Harvest(hit.collider.gameObject);

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4308800871383831139}
+  - component: {fileID: 6398292741370924989}
   m_Layer: 0
   m_Name: Soil_1x1
   m_TagString: Untagged
@@ -31,6 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6398292741370924989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90381928136385626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8a71dc4006bc944b3ee75d4a38d9e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantPoints:
+  - {fileID: 691871407671936243}
 --- !u!1001 &6615397683581056919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,11 +113,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: eatingPlantPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: eatingPlantPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 293086186629046230}
+    - target: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: eatingPlantPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 4780287464116099295}
+    - target: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: eatingPlantPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 5652601440235350157}
+    - target: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: eatingPlantPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 994785238714898132}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5d4249d385985499ab94d4865edcd6, type: 3}
+--- !u!1 &691871407671936243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5932534033912394596, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615397683581056919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &691871407671936247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5932534033912394592, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615397683581056919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &293086186629046230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6908483834221914177, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615397683581056919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4780287464116099295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1844333155401527112, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615397683581056919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5652601440235350157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1566283086153162522, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 6615397683581056919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &994785238714898132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197149641552503107, guid: 5a5d4249d385985499ab94d4865edcd6,
     type: 3}
   m_PrefabInstance: {fileID: 6615397683581056919}
   m_PrefabAsset: {fileID: 0}

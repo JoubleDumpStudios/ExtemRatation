@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8527914189677812657}
+  - component: {fileID: 5981716682425085240}
   m_Layer: 0
   m_Name: Soil_1x2
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5981716682425085240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146068945139041910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8a71dc4006bc944b3ee75d4a38d9e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantPoints:
+  - {fileID: 3790656706096244864}
+  - {fileID: 8641962262600219991}
 --- !u!1001 &2718752100889562675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,6 +117,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5d4249d385985499ab94d4865edcd6, type: 3}
+--- !u!1 &8641962262600219991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5932534033912394596, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2718752100889562675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8641962262600219987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5932534033912394592, guid: 5a5d4249d385985499ab94d4865edcd6,
@@ -176,6 +198,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5d4249d385985499ab94d4865edcd6, type: 3}
+--- !u!1 &3790656706096244864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5932534033912394596, guid: 5a5d4249d385985499ab94d4865edcd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7408287750678567908}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3790656706096244868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5932534033912394592, guid: 5a5d4249d385985499ab94d4865edcd6,

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 518236397579574382}
   m_Layer: 0
   m_Name: PlantPoint
-  m_TagString: Soil
+  m_TagString: PlantPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eatingPlantPoints: []
 --- !u!1001 &1718049314789746084
 PrefabInstance:
   m_ObjectHideFlags: 0
