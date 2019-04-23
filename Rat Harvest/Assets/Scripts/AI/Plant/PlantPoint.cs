@@ -10,4 +10,5 @@ public class PlantPoint : MonoBehaviour
 
     // A list to store the eating plant stand points around a plant
     [SerializeField] private List<GameObject> eatingPlantPoints;
+    public List<GameObject> EatingPlantPoints { get { return this.eatingPlantPoints; } }
 }

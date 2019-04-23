@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3106649658889243158}
   - component: {fileID: 3106649658889243146}
   m_Layer: 0
-  m_Name: Rat
+  m_Name: Rat_Health_Testing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

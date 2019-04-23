@@ -7,8 +7,7 @@ using UnityEngine.AI;
 public class Rat_Movement_Logic : MonoBehaviour
 {
 
-    [SerializeField]
-    private List<GameObject> destinations;// must contain all the possible destinations we want for the movable objects
+    private List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
     NavMeshAgent _navMeshAgent;
 
@@ -62,5 +61,11 @@ public class Rat_Movement_Logic : MonoBehaviour
     public void eatPlant(GameObject plant)//eats the plant asociated with this destination
     {
         destinations.Remove(plant);
+    }
+
+    public void setDestinations(List<GameObject> plantStandPoints)
+    {
+        for(int i = 0; i < plantStandPoints.Count; i++)
+            destinations.Add(plantStandPoints[i]);
     }
 }
