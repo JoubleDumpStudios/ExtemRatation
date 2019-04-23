@@ -46,6 +46,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Camera ray's Length
         [SerializeField] private float Cam_Ray_Length = 3;
 
+        // Position where we are going to throw the raycast
+        [SerializeField] private Transform Harvest_Raycast_SpawnPoint;
+
         // A variable to access the PlayerManager
         private PlayerManager playerManager;
 
@@ -83,7 +86,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
-            Ray ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+            Ray ray = new Ray(Harvest_Raycast_SpawnPoint.position, Harvest_Raycast_SpawnPoint.forward);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, Cam_Ray_Length))
@@ -97,14 +100,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         Harvest(hit.collider.gameObject);
                 }             
             }
-
-            // TESTING PURPOSES
-            //if (Physics.Raycast(ray, out hit))
-            //    print("I'm looking at " + hit.transform.name);
-            //else
-            //    print("I'm looking at nothing!");
-            // TESTING PURPOSES
-
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
