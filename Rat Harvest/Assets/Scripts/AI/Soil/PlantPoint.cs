@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Soil : MonoBehaviour
+public class PlantPoint : MonoBehaviour
 {
     // A variable to know if the soil has a crop or not
     private bool hasCrop = false;
