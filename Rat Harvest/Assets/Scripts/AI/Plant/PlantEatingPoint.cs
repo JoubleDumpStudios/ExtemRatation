@@ -11,6 +11,10 @@ public class PlantEatingPoint : MonoBehaviour
 
     [SerializeField]
     private float eatingTime = 3;
+
+    public bool hasRat = false;
+    public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +24,18 @@ public class PlantEatingPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ratEatingMe )
-        {
-            time += Time.deltaTime;
-            if (time >= eatingTime)
-            {
-                ratEatingMe = false;
-                rat.eatPlant(this.gameObject);
-                rat.chooseNewTarget();
-                time = 0;
-            }
+        //if (ratEatingMe )
+        //{
+        //    time += Time.deltaTime;
+        //    if (time >= eatingTime)
+        //    {
+        //        ratEatingMe = false;
+        //        rat.eatPlant(this.gameObject);
+        //        rat.chooseNewTarget();
+        //        time = 0;
+        //    }
                
-        }
+        //}
     }
 
     private void OnTriggerEnter(Collider other)//when the nav mesh agent arrives to this destination it takes the RatMovementLogic, it is necessary to call the methos to find another target for the nav mesh agent

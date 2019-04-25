@@ -19,18 +19,12 @@ public class Rat_Movement_Logic : MonoBehaviour
     void Start()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
-        setDestination(destinations[calculateNearestObjectIndex()]);//calls the method that allows to find the first destination to go
+        setDestination(destinations[calculateNearestObjectIndex()]); //calls the method that allows to find the first destination to go
     }
 
     private void setDestination(GameObject obstacle)
     {
         _navMeshAgent.SetDestination(obstacle.transform.position);//use the navMesh options to set a destination for the Nav Mesh Agent
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
@@ -48,6 +42,8 @@ public class Rat_Movement_Logic : MonoBehaviour
                     targetIndex = i;
                 }
         }
+
+        destinations[targetIndex].GetComponent<PlantEatingPoint>().HasRat = true;
         return targetIndex;
     }
 
@@ -63,9 +59,12 @@ public class Rat_Movement_Logic : MonoBehaviour
         destinations.Remove(plant);
     }
 
-    public void setDestinations(List<GameObject> plantStandPoints)
+    public void setDestinations(List<PlantEatingPoint> plantEatingPoints)
     {
-        for(int i = 0; i < plantStandPoints.Count; i++)
-            destinations.Add(plantStandPoints[i]);
+        for (int i = 0; i < plantEatingPoints.Count; i++)
+        {
+            if (!plantEatingPoints[i].HasRat)
+                destinations.Add(plantEatingPoints[i].gameObject);
+        }    
     }
 }

@@ -19,7 +19,8 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         objectPooler = ObjectPooler.instance;
-        //spawnRat();
+        spawnRat();
+        spawnRat();
     }
 
     // spawns a rat
@@ -34,6 +35,6 @@ public class Spawner : MonoBehaviour
     private void setRatDestinations()
     {
         for (int i = 0; i < patchOfSoil.PlantPoints.Count; i++)
-            rat.GetComponent<Rat_Movement_Logic>().setDestinations(patchOfSoil.PlantPoints[i].EatingPlantPoints);
+            rat.GetComponent<Rat_Movement_Logic>().setDestinations(patchOfSoil.PlantPoints[i].PlantEatingPoints);
     }
 }
