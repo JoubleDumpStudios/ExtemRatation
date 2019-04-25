@@ -19,8 +19,12 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         objectPooler = ObjectPooler.instance;
-        spawnRat();
-        spawnRat();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+            spawnRat();
     }
 
     // spawns a rat
