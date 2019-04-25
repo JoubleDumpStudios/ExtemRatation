@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class Rat_Movement_Logic : MonoBehaviour
 {
 
-    private List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
+    List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
     NavMeshAgent _navMeshAgent;
 
@@ -16,16 +16,16 @@ public class Rat_Movement_Logic : MonoBehaviour
     int targetIndex = 0;
 
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
-        setDestination(destinations[calculateNearestObjectIndex()]); //calls the method that allows to find the first destination to go
     }
 
-    private void setDestination(GameObject obstacle)
+    void Start()
     {
-        _navMeshAgent.SetDestination(obstacle.transform.position);//use the navMesh options to set a destination for the Nav Mesh Agent
     }
+
 
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
     {
@@ -43,21 +43,22 @@ public class Rat_Movement_Logic : MonoBehaviour
                 }
         }
 
-        destinations[targetIndex].GetComponent<PlantEatingPoint>().HasRat = true;
-        return targetIndex;
+        return targetIndex;//returns the index on the list of the destination that is choosed by the rat spawned
     }
 
-
-    public void chooseNewTarget()//allow us to call the methods to choose a new target, it is going to be called from the plat that it is been eating once is eated
+    public void chooseNewTarget()//calls the navMeshMethod with the nearest and available position, sets the value of the destination to unavailable
     {
-        if (destinations.Count > 0)
-            setDestination(destinations[calculateNearestObjectIndex()]);
+        //if (destinations.Count > 0)
+        GameObject selectedDestination = destinations[calculateNearestObjectIndex()];
+        selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
+        navMeshSetDestination(selectedDestination);
     }
 
-    public void eatPlant(GameObject plant)//eats the plant asociated with this destination
+    private void navMeshSetDestination(GameObject obstacle)//default nav mesh method
     {
-        destinations.Remove(plant);
+        _navMeshAgent.SetDestination(obstacle.transform.position);//use the navMesh options to set a destination for the Nav Mesh Agent
     }
+
 
     public void setDestinations(List<PlantEatingPoint> plantEatingPoints)
     {
@@ -66,5 +67,11 @@ public class Rat_Movement_Logic : MonoBehaviour
             if (!plantEatingPoints[i].HasRat)
                 destinations.Add(plantEatingPoints[i].gameObject);
         }    
+    }
+
+
+    public void eatPlant(GameObject plant)//eats the plant asociated with this destination
+    {
+        destinations.Remove(plant);
     }
 }

@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         objectPooler = ObjectPooler.instance;
+        spawnRat();
+        spawnRat();
     }
 
     private void Update()
@@ -32,6 +34,9 @@ public class Spawner : MonoBehaviour
     {
         objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
         setRatDestinations();
+
+        rat.GetComponent<Rat_Movement_Logic>().chooseNewTarget();
+
         rats.Add(rat);
     }
 

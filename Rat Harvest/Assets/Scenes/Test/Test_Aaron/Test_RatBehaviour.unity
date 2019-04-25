@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -291,6 +291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Soil_1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804027624860057026, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: hasRat
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4308800871383831139, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
