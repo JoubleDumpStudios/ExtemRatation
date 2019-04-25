@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eating_State : MonoBehaviour
+public class PlantEatingPoint : MonoBehaviour
 {
     public bool ratEatingMe = false;
     float time = 0;
