@@ -12,7 +12,7 @@ public class PlantEatingPoint : MonoBehaviour
     [SerializeField]
     private float eatingTime = 3;
 
-    public bool hasRat = false;
+    private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 
     // Start is called before the first frame update

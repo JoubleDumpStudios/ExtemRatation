@@ -15,6 +15,8 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     int targetIndex = 0;
 
+    bool noDestinationsAvailables = false;
+
     // Start is called before the first frame update
 
     private void Awake()
@@ -48,10 +50,19 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     public void chooseNewTarget()//calls the navMeshMethod with the nearest and available position, sets the value of the destination to unavailable
     {
-        //if (destinations.Count > 0)
-        GameObject selectedDestination = destinations[calculateNearestObjectIndex()];
-        selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
-        navMeshSetDestination(selectedDestination);
+        if (areDestinationsAvailables())
+        {
+            GameObject selectedDestination = destinations[calculateNearestObjectIndex()];
+            selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
+            navMeshSetDestination(selectedDestination);
+        }
+    }
+
+    public bool areDestinationsAvailables()
+    {
+        if (destinations.Count > 0)
+            return true;
+        return false;
     }
 
     private void navMeshSetDestination(GameObject obstacle)//default nav mesh method
@@ -62,6 +73,7 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     public void setDestinations(List<PlantEatingPoint> plantEatingPoints)
     {
+
         for (int i = 0; i < plantEatingPoints.Count; i++)
         {
             if (!plantEatingPoints[i].HasRat)
@@ -69,9 +81,31 @@ public class Rat_Movement_Logic : MonoBehaviour
         }    
     }
 
-
     public void eatPlant(GameObject plant)//eats the plant asociated with this destination
     {
         destinations.Remove(plant);
     }
+
+
+
+    //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
+    //{
+    //    int i = 0;
+    //    while (i < plantEatingPoints.Count)
+    //    {
+    //        if (!plantEatingPoints[i].HasRat)
+    //            return true;
+    //        i++;
+    //    }
+
+    //    return false;
+    //}
+
+
+    //public void checkAndSetRatDestinations(List<PlantEatingPoint> plantEatingPoints)
+    //{
+    //    if (hasDestinations(plantEatingPoints))
+    //        setDestinations(plantEatingPoints);
+    //}
+
 }

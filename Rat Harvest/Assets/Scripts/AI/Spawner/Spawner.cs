@@ -14,7 +14,10 @@ public class Spawner : MonoBehaviour
 
     //GameObject to store the specific rat that has been spawned
     private GameObject rat;
-    
+
+    // Script of the rat chosen
+    private Rat_Movement_Logic ratScript;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -29,21 +32,43 @@ public class Spawner : MonoBehaviour
             spawnRat();
     }
 
+    private bool hasDestinations()
+    {
+        int i = 0;
+        while (i < patchOfSoil.PlantStandPoints.Count)
+        {
+            int j = 0;
+            while (j < patchOfSoil.PlantStandPoints[i].PlantEatingPoints.Count)
+            {
+                if (!patchOfSoil.PlantStandPoints[i].PlantEatingPoints[j].HasRat)
+                    return true;
+
+                j++;
+            }
+            i++;
+        }
+
+        return false;
+    }
+
     // spawns a rat
     private void spawnRat()
     {
-        objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
-        setRatDestinations();
-
-        rat.GetComponent<Rat_Movement_Logic>().chooseNewTarget();
-
-        rats.Add(rat);
+        if (hasDestinations())
+        {
+            objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
+            setRatDestinations();
+            ratScript.chooseNewTarget();
+            rats.Add(rat);
+        }
     }
 
     // Sets the destinations for each rat created
     private void setRatDestinations()
     {
-        for (int i = 0; i < patchOfSoil.PlantPoints.Count; i++)
-            rat.GetComponent<Rat_Movement_Logic>().setDestinations(patchOfSoil.PlantPoints[i].PlantEatingPoints);
+        ratScript = rat.GetComponent<Rat_Movement_Logic>();
+
+        for (int i = 0; i < patchOfSoil.PlantStandPoints.Count; i++)
+            ratScript.setDestinations(patchOfSoil.PlantStandPoints[i].PlantEatingPoints);
     }
 }
