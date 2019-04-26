@@ -11,4 +11,18 @@ public class PlantPoint : MonoBehaviour
     // A list to store the eating plant stand points around a plant
     [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
     public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
+
+    public void EnablePlantEatingPoints()
+    {
+        for (int i = 0; i < plantEatingPoints.Count; i++)
+            plantEatingPoints[i].PlantGrowing = true;
+    }
+
+
+    public void DisablePlantEatingPoints()
+    {
+        for (int i = 0; i < plantEatingPoints.Count; i++)
+            plantEatingPoints[i].PlantGrowing = false;
+    }
+
 }

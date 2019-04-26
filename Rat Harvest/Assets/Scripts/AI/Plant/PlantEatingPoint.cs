@@ -15,6 +15,9 @@ public class PlantEatingPoint : MonoBehaviour
     private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 
+    private bool plantGrowing = false;
+    public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
+
     // Start is called before the first frame update
     void Start()
     {

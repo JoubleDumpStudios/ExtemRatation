@@ -320,6 +320,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             plantBehaviour.GetComponent<Plant_Behaviour>().Soil = go;
             PlantPointScript.HasCrop = true;
+            PlantPointScript.EnablePlantEatingPoints();
         }
 
         // Method to harvest a crop
@@ -340,6 +341,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             plantBehaviourScript.resetPlant();
             plantBehaviourScript.Soil.GetComponent<PlantPoint>().HasCrop = false;
+            plantBehaviourScript.Soil.GetComponent<PlantPoint>().DisablePlantEatingPoints();
 
             ObjectPooler.instance.killGameObject(rootPlant);
         }

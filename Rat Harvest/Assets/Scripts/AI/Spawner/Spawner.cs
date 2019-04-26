@@ -51,6 +51,19 @@ public class Spawner : MonoBehaviour
         return false;
     }
 
+    private bool soilHasCrops()
+    {
+        int i = 0;
+        while (i < patchOfSoil.PlantStandPoints.Count)
+        {
+            if (patchOfSoil.PlantStandPoints[i].HasCrop)
+                return true;
+            i++;
+        }
+
+        return false;
+    }
+
     // spawns a rat
     private void spawnRat()
     {

@@ -1680,5 +1680,10 @@ PrefabInstance:
       propertyPath: itemsToPool.Array.data[5].amountToPool
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
+        type: 3}
+      propertyPath: itemsToPool.Array.data[5].shouldExpand
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e31718cdae22341817ad4d9f1393e5, type: 3}
