@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.7, y: 1, z: 0.7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &518236397579574382
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eatingPlantPoints: []
+  plantEatingPoints: []
 --- !u!1001 &1718049314789746084
 PrefabInstance:
   m_ObjectHideFlags: 0

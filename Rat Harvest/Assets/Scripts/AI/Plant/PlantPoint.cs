@@ -12,17 +12,33 @@ public class PlantPoint : MonoBehaviour
     [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
     public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
 
+    private Soil soil;
+    private Spawner spawner;
+
+    private void Start()
+    {
+        soil = GetComponentInParent<Soil>();
+        spawner = soil.Spawner;
+    }
+
     public void EnablePlantEatingPoints()
     {
         for (int i = 0; i < plantEatingPoints.Count; i++)
+        {
             plantEatingPoints[i].PlantGrowing = true;
+        }
+        spawner.ActivateSpawner = true;
     }
 
 
     public void DisablePlantEatingPoints()
     {
         for (int i = 0; i < plantEatingPoints.Count; i++)
+        {
             plantEatingPoints[i].PlantGrowing = false;
+        }
+
+        spawner.ActivateSpawner = false;
     }
 
 }

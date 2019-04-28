@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2878766986098824655}
   - component: {fileID: 2878766986098824651}
   m_Layer: 0
-  m_Name: Rat
+  m_Name: Rat_Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,10 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c187d57015a7a4ba7b9ebf62976108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!54 &2878766986098824655
 Rigidbody:
   m_ObjectHideFlags: 0

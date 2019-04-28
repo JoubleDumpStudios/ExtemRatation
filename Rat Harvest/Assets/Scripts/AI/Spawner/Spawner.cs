@@ -18,18 +18,33 @@ public class Spawner : MonoBehaviour
     // Script of the rat chosen
     private Rat_Movement_Logic ratScript;
 
+    [SerializeField] private bool activateSpawner;
+    public bool ActivateSpawner { set { this.activateSpawner = value; } }
+
+
+    float time = 0;
+
+    [SerializeField]
+    private float spawningTime = 0;
     // Start is called before the first frame update
     private void Start()
     {
         objectPooler = ObjectPooler.instance;
-        spawnRat();
-        spawnRat();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-            spawnRat();
+        if (activateSpawner)
+        {
+            time += Time.deltaTime;
+            if (time >= spawningTime)
+            {
+                spawnRat();
+                time = 0;
+            }
+        }
+        //if (Input.GetKeyDown(KeyCode.L))
+        //    spawnRat();
     }
 
     private bool hasDestinations()
@@ -40,7 +55,7 @@ public class Spawner : MonoBehaviour
             int j = 0;
             while (j < patchOfSoil.PlantStandPoints[i].PlantEatingPoints.Count)
             {
-                if (!patchOfSoil.PlantStandPoints[i].PlantEatingPoints[j].HasRat)
+                if (!patchOfSoil.PlantStandPoints[i].PlantEatingPoints[j].HasRat && patchOfSoil.PlantStandPoints[i].HasCrop)
                     return true;
 
                 j++;
@@ -82,6 +97,9 @@ public class Spawner : MonoBehaviour
         ratScript = rat.GetComponent<Rat_Movement_Logic>();
 
         for (int i = 0; i < patchOfSoil.PlantStandPoints.Count; i++)
-            ratScript.setDestinations(patchOfSoil.PlantStandPoints[i].PlantEatingPoints);
+        {
+            if(patchOfSoil.PlantStandPoints[i].HasCrop)
+                ratScript.setDestinations(patchOfSoil.PlantStandPoints[i].PlantEatingPoints);
+        }
     }
 }
