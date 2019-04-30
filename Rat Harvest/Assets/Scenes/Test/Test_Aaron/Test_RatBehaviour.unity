@@ -100,7 +100,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.3
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -1108,11 +1108,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soil_1x2_2
       objectReference: {fileID: 0}
-    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 1455090316}
     - target: {fileID: 8527914189677812657, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1168,6 +1163,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1455090316}
+    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604420f708ca2ab4a9a2b0f85ae360ae, type: 3}
 --- !u!1001 &1086978739
@@ -1187,6 +1197,12 @@ PrefabInstance:
       propertyPath: patchOfSoil
       value: 
       objectReference: {fileID: 971570398}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
+        type: 3}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1541,6 +1557,12 @@ PrefabInstance:
       propertyPath: patchOfSoil
       value: 
       objectReference: {fileID: 470994399}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
+        type: 3}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1610,6 +1632,8 @@ GameObject:
   - component: {fileID: 1681098775}
   - component: {fileID: 1681098774}
   - component: {fileID: 1681098773}
+  - component: {fileID: 1681098776}
+  - component: {fileID: 1681098777}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1690,6 +1714,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681098771}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1681098776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681098771}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &1681098777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681098771}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7aaca19793bea48b0315a0aeb6597f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1736090032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +2010,12 @@ PrefabInstance:
       propertyPath: patchOfSoil
       value: 
       objectReference: {fileID: 762004211}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
+        type: 3}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2019,6 +2090,12 @@ PrefabInstance:
       propertyPath: patchOfSoil
       value: 
       objectReference: {fileID: 1092825711}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
+        type: 3}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2099,11 +2176,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 1736555280}
     - target: {fileID: 8527914189677812657, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2159,6 +2231,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1736555280}
     - target: {fileID: 7061260723967117194, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: plantEatingPoints.Array.size
@@ -2209,6 +2286,16 @@ PrefabInstance:
       propertyPath: plantEatingPoints.Array.data[3]
       value: 
       objectReference: {fileID: 117050214}
+    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604420f708ca2ab4a9a2b0f85ae360ae, type: 3}
 --- !u!1001 &5234455193589505339
@@ -2292,7 +2379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: itemsToPool.Array.data[5].objectToPool
       value: 
-      objectReference: {fileID: 2878766986098824646, guid: 0110489fadc81904aa8c64a64aeaa5d7,
+      objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
         type: 3}
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5932534033912394594}
   - component: {fileID: 5932534033912394597}
   - component: {fileID: 518236397579574382}
+  - component: {fileID: 35015407367643180}
   m_Layer: 0
   m_Name: PlantPoint
   m_TagString: PlantPoint
@@ -113,6 +114,22 @@ MonoBehaviour:
   - {fileID: 4892563399831817564}
   - {fileID: 5746889362260360462}
   - {fileID: 899929951930565463}
+--- !u!208 &35015407367643180
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932534033912394596}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1718049314789746084
 PrefabInstance:
   m_ObjectHideFlags: 0
