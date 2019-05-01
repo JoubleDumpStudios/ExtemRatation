@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class ShotGunBehaviour : MonoBehaviour
 {
 
-    FirstPersonController firtsPersonControllerScript;
+    FirstPersonController firstPersonControllerScript_;
     public GameObject player;
     [SerializeField]
     [Range(0.0f, 20.0f)]
@@ -51,12 +51,17 @@ public class ShotGunBehaviour : MonoBehaviour
 
 
     [SerializeField]
-    private float recoilingTime = 0.2f;
+    private float weaponRecoilingTime = 0.2f;
     [SerializeField]
-    private float recoilAmount = 0.2f;
+    private float weaponRecoilAmount = 0.2f;
 
     [SerializeField]
-    private float recoilAngle = 20f;
+    private float weaponRecoilAngle = 20f;
+
+    [SerializeField]
+    private float cameraRecoilSpeed;
+    [SerializeField]
+    private float cameraRecoilingTime;
 
     private float currentRecoilPosition;
     private float currentRecoilAngle;
@@ -95,7 +100,7 @@ public class ShotGunBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firtsPersonControllerScript = player.GetComponent<FirstPersonController>();
+        firstPersonControllerScript_ = player.GetComponent<FirstPersonController>();
 
         notAimingPosition = originalTransform;
         spreadAngle = NotAimingSpreadAngle;
@@ -113,13 +118,13 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             fire();
             shooting = true;
-            currentRecoilPosition -= recoilAmount;
-            currentRecoilAngle = -recoilAngle;
-            firtsPersonControllerScript.cameraRecoil(angleForCameraRecoil);
+            currentRecoilPosition -= weaponRecoilAmount;
+            currentRecoilAngle = -weaponRecoilAngle;
+            firstPersonControllerScript_.cameraRecoil(angleForCameraRecoil, cameraRecoilSpeed,cameraRecoilingTime);
         }
 
-        currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);
-        currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, recoilingTime);
+        currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, weaponRecoilingTime);
+        currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, weaponRecoilingTime);
 
         if (Input.GetButton("Fire2") || Input.GetAxis("Fire2") > 0)
         {

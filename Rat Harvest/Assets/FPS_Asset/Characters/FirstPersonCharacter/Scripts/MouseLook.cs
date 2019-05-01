@@ -22,8 +22,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Quaternion m_CameraTargetRot;
         private bool m_cursorIsLocked = true;
 
-        float currentRecoilSpeed = 100;
-        float recoilingTime = 0.1f;
+        float cameraRecoilSpeed;
+        float cameraRecoilingTime;
+
+
         public void Init(Transform character, Transform camera)
         {
             m_CharacterTargetRot = character.localRotation;
@@ -33,9 +35,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         bool recoiling = false;
 
-        public void cameraRecoil(float ang)
+        public void cameraRecoil(float ang, float recoilSpeed, float recoilTime)
         {
             //sum = ang;
+
+            cameraRecoilSpeed = recoilSpeed;
+            cameraRecoilingTime = recoilTime;
             xRotEnd = xRot + ang;
             recoiling = true;
         }
@@ -52,9 +57,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (recoiling)
             {
-                xRot = Mathf.SmoothDamp(xRot, xRotEnd, ref currentRecoilSpeed, recoilingTime);
+                xRot = Mathf.SmoothDamp(xRot, xRotEnd, ref cameraRecoilSpeed, cameraRecoilingTime);
                 time += Time.deltaTime;
-                if (time >= recoilingTime)
+                if (time >= cameraRecoilingTime)
                 {
                     recoiling = false;
                     time = 0;

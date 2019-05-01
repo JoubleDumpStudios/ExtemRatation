@@ -692,9 +692,11 @@ MonoBehaviour:
   ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
     type: 3}
   damage: 5
-  recoilingTime: 0.2
-  recoilAmount: 0.3
-  recoilAngle: 10
+  weaponRecoilingTime: 0.2
+  weaponRecoilAmount: 0.2
+  weaponRecoilAngle: 20
+  cameraRecoilSpeed: 10
+  cameraRecoilingTime: 0.2
   originalTransform: {fileID: 1177307605}
   angleForCameraRecoil: 10
   aimPositionTransform: {fileID: 1523674488}

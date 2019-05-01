@@ -79,9 +79,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         }
 
-        public void cameraRecoil(float ang)
+        public void cameraRecoil(float ang, float cameraRecoilSpeed, float cameraRecoilTime)
         {
-            m_MouseLook.cameraRecoil(ang);
+            m_MouseLook.cameraRecoil(ang, cameraRecoilSpeed, cameraRecoilTime);
         }
         // Update is called once per frame
         private void Update()
