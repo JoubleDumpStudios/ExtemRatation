@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class ShotGunBehaviour : MonoBehaviour
 {
 
-    FirstPersonController fpc;
+    FirstPersonController firtsPersonControllerScript;
     public GameObject player;
     [SerializeField]
     [Range(0.0f, 20.0f)]
@@ -95,7 +95,7 @@ public class ShotGunBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fpc = player.GetComponent<FirstPersonController>();
+        firtsPersonControllerScript = player.GetComponent<FirstPersonController>();
 
         notAimingPosition = originalTransform;
         spreadAngle = NotAimingSpreadAngle;
@@ -115,7 +115,7 @@ public class ShotGunBehaviour : MonoBehaviour
             shooting = true;
             currentRecoilPosition -= recoilAmount;
             currentRecoilAngle = -recoilAngle;
-            fpc.cameraRecoil(angleForCameraRecoil);
+            firtsPersonControllerScript.cameraRecoil(angleForCameraRecoil);
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, recoilingTime);

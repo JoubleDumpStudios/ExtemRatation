@@ -22,23 +22,46 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Quaternion m_CameraTargetRot;
         private bool m_cursorIsLocked = true;
 
+        float currentRecoilSpeed = 100;
+        float recoilingTime = 0.1f;
         public void Init(Transform character, Transform camera)
         {
             m_CharacterTargetRot = character.localRotation;
             m_CameraTargetRot = camera.localRotation;
         }
 
+
+        bool recoiling = false;
+
         public void cameraRecoil(float ang)
         {
-            sum = ang;
+            //sum = ang;
+            xRotEnd = xRot + ang;
+            recoiling = true;
         }
+
+        float xRot;
+        float xRotBase;
+        float xRotEnd;
+        float time = 0;
 
         public void LookRotation(Transform character, Transform camera)
         {
             float yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
-            float xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+            xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
 
-            xRot += sum;
+            if (recoiling)
+            {
+                xRot = Mathf.SmoothDamp(xRot, xRotEnd, ref currentRecoilSpeed, recoilingTime);
+                time += Time.deltaTime;
+                if (time >= recoilingTime)
+                {
+                    recoiling = false;
+                    time = 0;
+                }
+
+            }
+            //xRot += sum;
 
             m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
             m_CameraTargetRot *= Quaternion.Euler (-xRot, 0f, 0f);
