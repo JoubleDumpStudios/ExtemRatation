@@ -7,6 +7,7 @@ public class Rat_Health_Logic : MonoBehaviour
 
     public RectTransform topHeadHealthBar;
 
+    private Rat_Movement_Logic ratMovementScript;
 
     public float maxHealth = 100;
     public float health;
@@ -14,8 +15,8 @@ public class Rat_Health_Logic : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
+        ratMovementScript = GetComponent<Rat_Movement_Logic>();
 
     }
 
@@ -27,11 +28,17 @@ public class Rat_Health_Logic : MonoBehaviour
 
     public void hit(float damage)
     {
-        if(health>=0)
+        if (health >= 0)
             health -= damage;
+        else
+        {
+            health = maxHealth;
+            ratMovementScript.ratDied();
+        }
 
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
 
+        
     }
 
 }

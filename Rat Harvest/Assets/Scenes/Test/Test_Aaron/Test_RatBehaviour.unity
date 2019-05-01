@@ -1566,7 +1566,7 @@ PrefabInstance:
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.6
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
@@ -1576,7 +1576,7 @@ PrefabInstance:
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.2
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
@@ -2236,6 +2236,16 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 1736555280}
+    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
     - target: {fileID: 7061260723967117194, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: plantEatingPoints.Array.size
@@ -2286,16 +2296,6 @@ PrefabInstance:
       propertyPath: plantEatingPoints.Array.data[3]
       value: 
       objectReference: {fileID: 117050214}
-    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6131921
-      objectReference: {fileID: 0}
-    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6131921
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604420f708ca2ab4a9a2b0f85ae360ae, type: 3}
 --- !u!1001 &5234455193589505339

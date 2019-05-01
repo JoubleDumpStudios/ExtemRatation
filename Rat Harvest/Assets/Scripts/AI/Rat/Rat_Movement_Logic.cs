@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Rat_Movement_Logic : MonoBehaviour
 {
-
+    [SerializeField]
     List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
     NavMeshAgent _navMeshAgent;
@@ -17,7 +17,8 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     bool noDestinationsAvailables = false;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private PlantEatingPoint ratTarget;
 
     private void Awake()
     {
@@ -53,7 +54,9 @@ public class Rat_Movement_Logic : MonoBehaviour
         if (areDestinationsAvailables())
         {
             GameObject selectedDestination = destinations[calculateNearestObjectIndex()];
-            selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
+            ratTarget = selectedDestination.GetComponent<PlantEatingPoint>();
+            //selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
+            ratTarget.HasRat = true;
             navMeshSetDestination(selectedDestination);
         }
     }
@@ -86,7 +89,13 @@ public class Rat_Movement_Logic : MonoBehaviour
         destinations.Remove(plant);
     }
 
+    public void ratDied()
+    {
+        ratTarget.HasRat = false;
+        destinations.Clear();
+        ObjectPooler.instance.killGameObject(this.gameObject);
 
+    }
 
     //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
     //{
