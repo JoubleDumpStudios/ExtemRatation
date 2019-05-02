@@ -318,7 +318,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             ObjectPooler.instance.spawnFromPool("Plant", go.transform.position,
                         go.transform.rotation, out plantBehaviour);
 
-            plantBehaviour.GetComponent<Plant_Behaviour>().Soil = go;
+            plantBehaviour.GetComponent<Plant_Behaviour>().PlantPoint = go;
             PlantPointScript.HasCrop = true;
             PlantPointScript.EnablePlantEatingPoints();
         }
@@ -340,8 +340,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void resetSoilStatus(GameObject rootPlant)
         {
             plantBehaviourScript.resetPlant();
-            plantBehaviourScript.Soil.GetComponent<PlantPoint>().HasCrop = false;
-            plantBehaviourScript.Soil.GetComponent<PlantPoint>().DisablePlantEatingPoints();
+            plantBehaviourScript.PlantPoint.GetComponent<PlantPoint>().HasCrop = false;
+            plantBehaviourScript.PlantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
 
             ObjectPooler.instance.killGameObject(rootPlant);
         }

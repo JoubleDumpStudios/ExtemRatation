@@ -34,9 +34,9 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // A variable to store the pool
     ObjectPooler objectPooler = ObjectPooler.instance;
 
-    // A variable to control when the soil can be planted and when not
-    private GameObject soil;
-    public GameObject Soil { get{ return this.soil; } set { this.soil = value; } }
+    //A variable to know the specific Plantpoint where this plant is planted
+    private GameObject plantPoint;
+    public GameObject PlantPoint { get { return this.plantPoint; } set { this.plantPoint = value; } }
 
     // Method inherited form the IpooledObject interface
     public void OnObjectSpawn()
