@@ -39,8 +39,10 @@ public class ShotGunBehaviour : MonoBehaviour
 
     [SerializeField]
     private GameObject holes;
+    private GameObject holes_;
     [SerializeField]
     private GameObject ratHoles;
+    private GameObject ratHoles_;
 
     [SerializeField]
     private float damage;
@@ -84,6 +86,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
     private bool shooting = false;
 
+    private ObjectPooler objectPooler;
 
     private void Awake()
     {
@@ -104,6 +107,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
         notAimingPosition = originalTransform;
         spreadAngle = NotAimingSpreadAngle;
+
+        objectPooler = ObjectPooler.instance;
 
     }
 
@@ -178,10 +183,13 @@ public class ShotGunBehaviour : MonoBehaviour
                     if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>() != null)
                     {
                         ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>());
-                        Instantiate(ratHoles, hit.point, holes.transform.rotation); 
+
+                        objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHoles_);
+                        //Instantiate(ratHoles, hit.point, holes.transform.rotation); 
                     }
                     else {
-                        Instantiate(holes, hit.point, holes.transform.rotation);
+                        objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
+                        //Instantiate(holes, hit.point, holes.transform.rotation);
                     }
 
                 }
