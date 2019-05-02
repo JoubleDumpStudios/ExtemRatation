@@ -10,6 +10,9 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // A variable to set the number of states the plant has
     [SerializeField] private int numOfStates = 3;
 
+    // A variable to set the plant's health
+    [SerializeField] private int plantHealth;
+
     // A variable to know the current state of the plant
     private int currentState = 0;
 
@@ -103,6 +106,11 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         currentPoints = 0;
         objectPooler.killGameObject(currentPlant);
         currentPlant.transform.parent = null;
+    }
+
+    public void SubPlantHealth(int damage)
+    {
+        plantHealth -= damage;
     }
 
 }
