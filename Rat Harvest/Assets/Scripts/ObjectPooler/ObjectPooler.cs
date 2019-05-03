@@ -66,17 +66,21 @@ public class ObjectPooler : MonoBehaviour
             return null;
         }
 
-        // We search in the queue if there's some inactive element
-        for (int i = 0; i < poolDictionary[tag].Count; i++)
-        {
-            objectToSpawn = poolDictionary[tag].Dequeue();
-            poolDictionary[tag].Enqueue(objectToSpawn);
+        // We grab the first element of the queue
+        objectToSpawn = poolDictionary[tag].Dequeue();
+        poolDictionary[tag].Enqueue(objectToSpawn);
 
-            if (!objectToSpawn.activeInHierarchy)
-                return objectToSpawn;
-            else
-                objectToSpawn = null;
-        }
+        // We search in the queue if there's some inactive element
+        //for (int i = 0; i < poolDictionary[tag].Count; i++)
+        //{
+        //    objectToSpawn = poolDictionary[tag].Dequeue();
+        //    poolDictionary[tag].Enqueue(objectToSpawn);
+
+        //    if (!objectToSpawn.activeInHierarchy)
+        //        return objectToSpawn;
+        //    else
+        //        objectToSpawn = null;
+        //}
 
         // If all the elements are inactive we create another one if the ShouldExpand attribute is true
         foreach (objectPoolItem item in itemsToPool)
@@ -92,12 +96,6 @@ public class ObjectPooler : MonoBehaviour
                 }
             }
         }
-        
-        // We search the pool and select the first element
-        //GameObject objectToSpawn = poolDictionary[tag].Dequeue();
-
-        // We add the element selected to the back to reuse it later
-        //poolDictionary[tag].Enqueue(objectToSpawn);
 
         return objectToSpawn;
     }

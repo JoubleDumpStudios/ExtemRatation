@@ -104,8 +104,8 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         time = 0f;
         currentState = 0;
         currentPoints = 0;
-        objectPooler.killGameObject(currentPlant);
         currentPlant.transform.parent = null;
+        objectPooler.killGameObject(currentPlant);
     }
 
     public void SubPlantHealth(int damage)

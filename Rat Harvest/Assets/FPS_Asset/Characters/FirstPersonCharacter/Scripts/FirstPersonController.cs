@@ -98,7 +98,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         Plant(hit.collider.gameObject);
                     else if (hit.collider.gameObject.tag == "Plant")
                         Harvest(hit.collider.gameObject);
-                }             
+                }
+                else if (Input.GetKeyDown(KeyCode.T))
+                {
+                    ObjectPooler.instance.spawnFromPool("Cube", transform.position, transform.rotation);
+                }
             }
 
             RotateView();
@@ -333,11 +337,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             playerManager.PlayerScore += points;
             Debug.Log("You get " + points + " points");
 
-            resetSoilStatus(rootPlant);
+            resetPlantPointStatus(rootPlant);
         }
 
         // Method to reset all the statistics of the soil when it is harvested
-        private void resetSoilStatus(GameObject rootPlant)
+        private void resetPlantPointStatus(GameObject rootPlant)
         {
             plantBehaviourScript.resetPlant();
             plantBehaviourScript.PlantPoint.GetComponent<PlantPoint>().HasCrop = false;
