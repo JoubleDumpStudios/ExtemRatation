@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 298014698, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
 --- !u!1001 &330246982
@@ -2373,7 +2377,7 @@ PrefabInstance:
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
       propertyPath: itemsToPool.Array.data[5].shouldExpand
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
@@ -2409,22 +2413,22 @@ PrefabInstance:
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
       propertyPath: itemsToPool.Array.data[6].shouldExpand
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
       propertyPath: itemsToPool.Array.data[7].shouldExpand
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
       propertyPath: itemsToPool.Array.data[6].amountToPool
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 912826523846713369, guid: 44e31718cdae22341817ad4d9f1393e5,
         type: 3}
       propertyPath: itemsToPool.Array.data[7].amountToPool
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44e31718cdae22341817ad4d9f1393e5, type: 3}
