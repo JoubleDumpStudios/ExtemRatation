@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlantEatingPoint : MonoBehaviour
 {
-    public bool ratEatingMe = false;
-    float time = 0;
+    //float time = 0;
 
-    Rat_Movement_Logic rat;
+    //[SerializeField]
+    //private float eatingTime = 3;
 
-    [SerializeField]
-    private float eatingTime = 3;
+    private PlantPoint plantPoint;
+
+    private Rat_Movement_Logic ratScript;
+    public Rat_Movement_Logic RatScript { set { this.ratScript = value; } }
 
     private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
@@ -21,11 +23,11 @@ public class PlantEatingPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        plantPoint = gameObject.transform.parent.gameObject.GetComponent<PlantPoint>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //if (ratEatingMe )
         //{
@@ -37,14 +39,15 @@ public class PlantEatingPoint : MonoBehaviour
         //        rat.chooseNewTarget();
         //        time = 0;
         //    }
-               
+
         //}
+        if (hasRat)
+            AttackPlant();
     }
 
-    private void OnTriggerEnter(Collider other)//when the nav mesh agent arrives to this destination it takes the RatMovementLogic, it is necessary to call the methos to find another target for the nav mesh agent
+    private void AttackPlant()
     {
-        rat = other.gameObject.GetComponent<Rat_Movement_Logic>();
-        ratEatingMe = true;
+        plantPoint.Plant.GetComponent<Plant_Behaviour>().SubPlantHealth(ratScript.Damage);
     }
 
 }

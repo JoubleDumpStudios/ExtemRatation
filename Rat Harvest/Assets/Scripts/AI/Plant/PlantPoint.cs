@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlantPoint : MonoBehaviour
 {
+    // A variable to store the specific plant in the plantPoint
+    private GameObject plant;
+    public GameObject Plant { get { return this.plant; } set { this.plant = value; } }
+
     // A variable to know if the soil has a crop or not
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }

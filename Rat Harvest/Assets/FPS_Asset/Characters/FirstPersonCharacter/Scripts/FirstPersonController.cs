@@ -324,6 +324,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             plantBehaviour.GetComponent<Plant_Behaviour>().PlantPoint = go;
             PlantPointScript.HasCrop = true;
+            PlantPointScript.Plant = plantBehaviour;
             PlantPointScript.EnablePlantEatingPoints();
         }
 

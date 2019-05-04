@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growingTime: 3
   numOfStates: 4
+  plantHealth: 100
   plantModels:
   - {fileID: 752775452142006626, guid: 170ae19e2e3d57743bad5998363740b0, type: 3}
   - {fileID: 4807115856107346429, guid: bbc2a46a54dd01441811fc854e2d70bd, type: 3}

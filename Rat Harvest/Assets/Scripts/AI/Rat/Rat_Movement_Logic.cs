@@ -20,6 +20,10 @@ public class Rat_Movement_Logic : MonoBehaviour
     [SerializeField]
     private PlantEatingPoint ratTarget;
 
+    // The damage caused by the rats
+    [SerializeField] private int damage;
+    public int Damage { get { return this.damage; } }
+
     private void Awake()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
@@ -57,6 +61,7 @@ public class Rat_Movement_Logic : MonoBehaviour
             ratTarget = selectedDestination.GetComponent<PlantEatingPoint>();
             //selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
             ratTarget.HasRat = true;
+            ratTarget.RatScript = gameObject.GetComponent<Rat_Movement_Logic>();
             navMeshSetDestination(selectedDestination);
         }
     }
