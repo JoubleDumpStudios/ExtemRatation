@@ -198,9 +198,9 @@ RectTransform:
   m_Father: {fileID: 741182471}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -247, y: -77}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 153, y: 148}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &492651679
@@ -1086,9 +1086,9 @@ RectTransform:
   m_Father: {fileID: 741182471}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -335, y: -155}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 65, y: 70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588998792
@@ -1104,10 +1104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomedMinimapTransform: {fileID: 409385885}
-  zoomTime: 0.1
-  zoomSpeed: 100
+  zoomTime: 0.2
+  zoomSpeed: 200
+  increasingScaleZoomSpeed: 2.5
   increasing_b: 0
-  zoomScaleX: 0
 --- !u!1 &1953790789
 GameObject:
   m_ObjectHideFlags: 0

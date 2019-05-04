@@ -16,8 +16,14 @@ public class MiniMapBehaviour : MonoBehaviour
     private float zoomTime;
     [SerializeField]
     private float zoomSpeed;
-    private Vector3 zoomSpeed_;
 
+    [SerializeField]
+    private float increasingScaleZoomSpeed;
+
+    private Vector3 zoomSpeed_vector;
+    private float zoomSpeed_;
+
+    float scale;
 
 
 
@@ -28,7 +34,9 @@ public class MiniMapBehaviour : MonoBehaviour
     public bool increasing_b = false;
 
 
-    public float zoomScaleX;
+    private float zoomScaleX;
+
+    private float scaleX;
 
 
 
@@ -43,16 +51,12 @@ public class MiniMapBehaviour : MonoBehaviour
         originalScaleX = originalTransform.localScale.x;
 
         zoomScaleX = zoomedMinimapTransform.localScale.x;
+        scaleX = zoomScaleX;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.M))
-        //{
-        //    this.transform.position = new Vector3(zoomedMinimapTransform.position.x, zoomedMinimapTransform.position.y, transform.position.z);
-        //    this.transform.localScale = new Vector3(zoomedMinimapTransform.transform.localScale.x, zoomedMinimapTransform.transform.localScale.y, transform.localScale.z);
-        //}
 
         if (Input.GetKey(KeyCode.M))
         {
@@ -72,20 +76,18 @@ public class MiniMapBehaviour : MonoBehaviour
 
     private void increasing()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, zoomedMinimapTransform.position, ref zoomSpeed_, zoomTime, zoomSpeed);
- 
-        //transform.localScale = Vector3.SmoothDamp(transform.lossyScale, 
-        //    new Vector3(zoomScaleX, zoomScaleX, 1),
-        //    ref zoomSpeed_, zoomTime, zoomSpeed);
+        transform.position = Vector3.SmoothDamp(transform.position, zoomedMinimapTransform.position, ref zoomSpeed_vector, zoomTime, zoomSpeed);
+
+        scaleX = Mathf.SmoothDamp(scaleX, zoomScaleX, ref zoomSpeed_, zoomTime, increasingScaleZoomSpeed);
+        this.transform.localScale = new Vector3(scaleX, scaleX, transform.localScale.z);
     }
 
     private void decreasing()
     {
         transform.position = Vector3.SmoothDamp(transform.position,
-            new Vector3(originalPositionX, originalPositionY, transform.position.z), ref zoomSpeed_, zoomTime, zoomSpeed);
+            new Vector3(originalPositionX, originalPositionY, transform.position.z), ref zoomSpeed_vector, zoomTime, zoomSpeed);
 
-        //transform.localScale = Vector3.SmoothDamp(transform.localScale, 
-        //    new Vector3(originalScaleX, originalScaleX, transform.localScale.z),
-        //    ref zoomSpeed_, zoomTime, zoomSpeed);
+        scaleX = Mathf.SmoothDamp(scaleX, originalScaleX, ref zoomSpeed_, zoomTime, zoomSpeed + 50);
+        this.transform.localScale = new Vector3(scaleX, scaleX, transform.localScale.z);
     }
 }
