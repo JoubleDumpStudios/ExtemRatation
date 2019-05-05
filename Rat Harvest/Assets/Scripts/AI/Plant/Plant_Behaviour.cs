@@ -106,7 +106,11 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         time = 0f;
         currentState = 0;
         currentPoints = 0;
+
         currentPlant.transform.parent = null;
+
+        plantPoint.GetComponent<PlantPoint>().HasCrop = false;
+        plantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
         objectPooler.killGameObject(currentPlant);
     }
 
@@ -116,7 +120,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 
         if (plantHealth <= 0)
         {
-            resetPlant();
+            resetPlant();           
             objectPooler.killGameObject(this.gameObject);
         }
             

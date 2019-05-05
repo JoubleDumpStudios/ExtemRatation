@@ -345,9 +345,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void resetPlantPointStatus(GameObject rootPlant)
         {
             plantBehaviourScript.resetPlant();
-            plantBehaviourScript.PlantPoint.GetComponent<PlantPoint>().HasCrop = false;
-            plantBehaviourScript.PlantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
-
             ObjectPooler.instance.killGameObject(rootPlant);
         }
 

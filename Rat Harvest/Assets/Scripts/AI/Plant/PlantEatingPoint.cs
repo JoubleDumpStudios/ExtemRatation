@@ -22,6 +22,8 @@ public class PlantEatingPoint : MonoBehaviour
     private bool plantGrowing = false;
     public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
 
+    [SerializeField] private float timePerAttack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,7 @@ public class PlantEatingPoint : MonoBehaviour
 
         //}
         if (plantEatingPointReached)
-            AttackPlant();
+            StartCoroutine(EatPlant());
     }
 
     private void AttackPlant()
@@ -56,6 +58,19 @@ public class PlantEatingPoint : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
             plantEatingPointReached = true;
+    }
+
+    private IEnumerator EatPlant()
+    {
+        float time = 0f;
+
+        AttackPlant();
+
+        while (time < timePerAttack)
+        {
+            time += Time.deltaTime / timePerAttack;
+            yield return null;
+        }
     }
 
 }
