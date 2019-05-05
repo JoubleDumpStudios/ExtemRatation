@@ -1112,6 +1112,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soil_1x2_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3010589437023276388, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7673007644698833725, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8527914189677812657, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1181,6 +1191,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.6131921
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312788170807084134, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376635451124417391, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604420f708ca2ab4a9a2b0f85ae360ae, type: 3}
@@ -1558,6 +1578,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2878766986098824646, guid: 0110489fadc81904aa8c64a64aeaa5d7,
         type: 3}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: spawningTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x

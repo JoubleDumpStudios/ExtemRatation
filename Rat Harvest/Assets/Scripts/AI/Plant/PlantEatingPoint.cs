@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class PlantEatingPoint : MonoBehaviour
 {
-    //float time = 0;
-
-    //[SerializeField]
-    //private float eatingTime = 3;
+    private float time = 0;
 
     private PlantPoint plantPoint;
 
@@ -22,7 +19,7 @@ public class PlantEatingPoint : MonoBehaviour
     private bool plantGrowing = false;
     public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
 
-    [SerializeField] private float timePerAttack;
+    [SerializeField] private float timePerAttack = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -33,20 +30,8 @@ public class PlantEatingPoint : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //if (ratEatingMe )
-        //{
-        //    time += Time.deltaTime;
-        //    if (time >= eatingTime)
-        //    {
-        //        ratEatingMe = false;
-        //        rat.eatPlant(this.gameObject);
-        //        rat.chooseNewTarget();
-        //        time = 0;
-        //    }
-
-        //}
         if (plantEatingPointReached)
-            StartCoroutine(EatPlant());
+            EatPlant();
     }
 
     private void AttackPlant()
@@ -60,16 +45,26 @@ public class PlantEatingPoint : MonoBehaviour
             plantEatingPointReached = true;
     }
 
-    private IEnumerator EatPlant()
+    //private IEnumerator EatPlant()
+    //{
+    //    float time = 0f;
+
+    //    AttackPlant();
+
+    //    while (time < timePerAttack)
+    //    {
+    //        time += Time.deltaTime / timePerAttack;
+    //        yield return null;
+    //    }
+    //}
+
+    private void EatPlant()
     {
-        float time = 0f;
-
-        AttackPlant();
-
-        while (time < timePerAttack)
+        time += Time.deltaTime;
+        if (time >= timePerAttack)
         {
-            time += Time.deltaTime / timePerAttack;
-            yield return null;
+            AttackPlant();
+            time = 0;
         }
     }
 
