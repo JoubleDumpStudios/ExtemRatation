@@ -336,7 +336,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             int points = plantBehaviourScript.CurrentPoints;
             playerManager.PlayerScore += points;
-            Debug.Log("You get " + points + " points");
+            playerManager.updateScore();
+            //Debug.Log("You get " + points + " points");
 
             resetPlantPointStatus(rootPlant);
         }
