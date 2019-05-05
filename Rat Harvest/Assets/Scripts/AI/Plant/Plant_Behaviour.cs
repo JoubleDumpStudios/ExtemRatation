@@ -11,7 +11,8 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     [SerializeField] private int numOfStates = 3;
 
     // A variable to set the plant's health
-    [SerializeField] private int plantHealth;
+    [SerializeField] private int Health;
+    private int plantHealth;
 
     // A variable to know the current state of the plant
     private int currentState = 0;
@@ -96,6 +97,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         objectPooler.spawnFromPool(plantModels[currentState].name, transform.position, transform.rotation, out currentPlant);
         currentPlant.transform.parent = this.gameObject.transform;
         currentPoints = pointsPerState[currentState];
+        plantHealth = Health;
     }
 
     // Method to reset all the variables when the player harvests
@@ -111,8 +113,13 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
-        Debug.Log("I've been attacked!");
-        Debug.Log(plantHealth);
+
+        if (plantHealth <= 0)
+        {
+            resetPlant();
+            objectPooler.killGameObject(this.gameObject);
+        }
+            
     }
 
 }

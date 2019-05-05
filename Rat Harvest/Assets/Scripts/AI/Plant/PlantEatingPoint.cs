@@ -17,6 +17,8 @@ public class PlantEatingPoint : MonoBehaviour
     private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 
+    private bool plantEatingPointReached = false;
+
     private bool plantGrowing = false;
     public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
 
@@ -41,13 +43,19 @@ public class PlantEatingPoint : MonoBehaviour
         //    }
 
         //}
-        if (hasRat)
+        if (plantEatingPointReached)
             AttackPlant();
     }
 
     private void AttackPlant()
     {
         plantPoint.Plant.GetComponent<Plant_Behaviour>().SubPlantHealth(ratScript.Damage);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
+            plantEatingPointReached = true;
     }
 
 }

@@ -6,6 +6,11 @@ using UnityEngine.AI;
 
 public class Rat_Movement_Logic : MonoBehaviour
 {
+
+    // The damage caused by the rats
+    [SerializeField] private int damage;
+    public int Damage { get { return this.damage; } }
+
     [SerializeField]
     List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
@@ -19,10 +24,6 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     [SerializeField]
     private PlantEatingPoint ratTarget;
-
-    // The damage caused by the rats
-    [SerializeField] private int damage;
-    public int Damage { get { return this.damage; } }
 
     private void Awake()
     {
@@ -59,9 +60,8 @@ public class Rat_Movement_Logic : MonoBehaviour
         {
             GameObject selectedDestination = destinations[calculateNearestObjectIndex()];
             ratTarget = selectedDestination.GetComponent<PlantEatingPoint>();
-            //selectedDestination.GetComponent<PlantEatingPoint>().HasRat = true;
             ratTarget.HasRat = true;
-            ratTarget.RatScript = gameObject.GetComponent<Rat_Movement_Logic>();
+            ratTarget.RatScript = this.gameObject.GetComponent<Rat_Movement_Logic>();
             navMeshSetDestination(selectedDestination);
         }
     }
