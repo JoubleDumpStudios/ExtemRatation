@@ -41,6 +41,17 @@ public class PlantPoint : MonoBehaviour
         {
             plantEatingPoints[i].PlantGrowing = false;
             plantEatingPoints[i].PlantEatingPointReached = false;
+
+        }
+
+        for (int i = 0; i < plantEatingPoints.Count; i++)
+        {
+            if (plantEatingPoints[i].HasRat)
+            {
+                ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);
+                plantEatingPoints[i].HasRat = false;
+            }
+                        
         }
 
         spawner.ActivateSpawner = false;
