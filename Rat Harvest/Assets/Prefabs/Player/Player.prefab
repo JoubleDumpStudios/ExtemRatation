@@ -1114,8 +1114,8 @@ MonoBehaviour:
   weaponRange: 20
   bulletsCount: 20
   bulletSpeed: 1000
-  NotAimingSpreadAngle: 0.3
-  AimingSpreadAngle: 0.1
+  NotAimingSpreadAngle: 0.07
+  AimingSpreadAngle: 0.03
   spreadAngle: 0
   bulletPrefab: {fileID: 3042657296125258824, guid: b8cbde9793de8024dac5d64c99435fff,
     type: 3}
@@ -1124,14 +1124,14 @@ MonoBehaviour:
   holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
   ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
     type: 3}
-  damage: 1
+  damage: 10
   weaponRecoilingTime: 0.2
   weaponRecoilAmount: 0.2
   weaponRecoilAngle: 20
   cameraRecoilSpeed: 10
   cameraRecoilingTime: 0.2
   originalTransform: {fileID: 1177307605}
-  angleForCameraRecoil: 10
+  angleForCameraRecoil: 3
   aimPositionTransform: {fileID: 1523674488}
   aimingSpeed: 15
 --- !u!1 &1588998790

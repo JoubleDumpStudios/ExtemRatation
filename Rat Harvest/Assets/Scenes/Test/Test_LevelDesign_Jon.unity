@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641252, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657862, g: 0.49641305, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -583,11 +583,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RatSpawner (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
-        type: 3}
-      propertyPath: patchOfSoil
-      value: 
-      objectReference: {fileID: 995744992}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -643,6 +638,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: patchOfSoil
+      value: 
+      objectReference: {fileID: 995744992}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e373bd4d483f47afec46ab961b340, type: 3}
 --- !u!1 &917393650
@@ -801,6 +801,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.17
       objectReference: {fileID: 0}
+    - target: {fileID: 298014698, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
+      propertyPath: weaponRange
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
 --- !u!114 &995744992 stripped
@@ -913,11 +917,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RatSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
-        type: 3}
-      propertyPath: patchOfSoil
-      value: 
-      objectReference: {fileID: 1306994435}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -973,6 +972,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: patchOfSoil
+      value: 
+      objectReference: {fileID: 1306994435}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e373bd4d483f47afec46ab961b340, type: 3}
 --- !u!1001 &1219346003
@@ -1333,11 +1337,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RatSpawner (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
-        type: 3}
-      propertyPath: patchOfSoil
-      value: 
-      objectReference: {fileID: 1149992910}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1393,6 +1392,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: patchOfSoil
+      value: 
+      objectReference: {fileID: 1149992910}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e373bd4d483f47afec46ab961b340, type: 3}
 --- !u!1 &1878725688

@@ -9,7 +9,7 @@ public class ShotGunBehaviour : MonoBehaviour
     FirstPersonController firstPersonControllerScript_;
     public GameObject player;
     [SerializeField]
-    [Range(0.0f, 20.0f)]
+    [Range(0.0f, 100.0f)]
     private int weaponRange;
 
     [SerializeField]

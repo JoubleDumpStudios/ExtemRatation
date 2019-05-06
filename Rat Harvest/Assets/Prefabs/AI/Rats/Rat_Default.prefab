@@ -115,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c187d57015a7a4ba7b9ebf62976108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 5
   destinations: []
   ratTarget: {fileID: 0}
-  damage: 20
 --- !u!54 &2878766986098824655
 Rigidbody:
   m_ObjectHideFlags: 0
