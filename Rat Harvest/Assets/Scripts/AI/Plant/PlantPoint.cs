@@ -40,6 +40,7 @@ public class PlantPoint : MonoBehaviour
         for (int i = 0; i < plantEatingPoints.Count; i++)
         {
             plantEatingPoints[i].PlantGrowing = false;
+            plantEatingPoints[i].PlantEatingPointReached = false;
         }
 
         spawner.ActivateSpawner = false;

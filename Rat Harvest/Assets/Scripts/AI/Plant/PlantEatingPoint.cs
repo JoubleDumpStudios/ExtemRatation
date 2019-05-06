@@ -15,6 +15,7 @@ public class PlantEatingPoint : MonoBehaviour
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 
     private bool plantEatingPointReached = false;
+    public bool PlantEatingPointReached { set { this.plantEatingPointReached = value; } }
 
     private bool plantGrowing = false;
     public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
