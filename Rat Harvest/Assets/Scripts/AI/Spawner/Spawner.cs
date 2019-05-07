@@ -21,15 +21,15 @@ public class Spawner : MonoBehaviour
     [SerializeField] private bool activateSpawner;
     public bool ActivateSpawner { set { this.activateSpawner = value; } }
 
-
     float time = 0;
 
     [SerializeField]
     private float spawningTime = 0;
-    // Start is called before the first frame update
-    private void Start()
+
+    private void Awake()
     {
         objectPooler = ObjectPooler.instance;
+        patchOfSoil.Spawner = gameObject.GetComponent<Spawner>();
     }
 
     private void Update()

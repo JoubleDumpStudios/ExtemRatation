@@ -70,7 +70,6 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 
         updateModel();
         updatePoints();
-  
     }
 
     // Method to change the model of the plant
@@ -124,10 +123,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         {
             resetPlant();    
             objectPooler.killGameObject(this.gameObject);
-        }
-            
+        }          
     }
 
 }
-    
-

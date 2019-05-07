@@ -16,20 +16,20 @@ public class PlantPoint : MonoBehaviour
     [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
     public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
 
-    private Spawner spawner;
+    private Spawner Soilspawner;
 
     private void Start()
     {
-        spawner = gameObject.transform.parent.GetComponent<Soil>().Spawner;
+        Soilspawner = this.gameObject.transform.parent.gameObject.GetComponent<Soil>().Spawner;
     }
 
     public void EnablePlantEatingPoints()
     {
-        for (int i = 0; i < plantEatingPoints.Count; i++)
-        {
+        for (int i = 0; i < plantEatingPoints.Count; i++)       
             plantEatingPoints[i].PlantGrowing = true;
-        }
-        spawner.ActivateSpawner = true;
+
+
+        Soilspawner.ActivateSpawner = true;
     }
 
 
@@ -52,7 +52,7 @@ public class PlantPoint : MonoBehaviour
                         
         }
 
-        spawner.ActivateSpawner = false;
+        Soilspawner.ActivateSpawner = false;
     }
 
 }
