@@ -16,13 +16,11 @@ public class PlantPoint : MonoBehaviour
     [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
     public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
 
-    private Soil soil;
     private Spawner spawner;
 
     private void Start()
     {
-        soil = GetComponentInParent<Soil>();
-        spawner = soil.Spawner;
+        spawner = gameObject.transform.parent.GetComponent<Soil>().Spawner;
     }
 
     public void EnablePlantEatingPoints()
