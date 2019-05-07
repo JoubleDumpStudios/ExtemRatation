@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (startRound && activeSpawner)
+        if (startRound && activeSpawner /*patchOfSoil.PlantPoints.*/)
         {
             time += Time.deltaTime;
             if (time >= spawningTime)

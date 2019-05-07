@@ -13,7 +13,7 @@ public class PlantPoint : MonoBehaviour
     public GameObject Plant { get { return this.plant; } set { this.plant = value; } }
 
     // A variable to know if the soil has a crop or not
-    public bool hasCrop = false;
+    private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
     // A variable to access to the spawner attached to the soil that contains the PlantPoint
@@ -43,12 +43,12 @@ public class PlantPoint : MonoBehaviour
             if (plantEatingPoints[i].HasRat)
             {
                 plantEatingPoints[i].RatScript.resetRat();
-                ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);
                 plantEatingPoints[i].HasRat = false;
+                ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);             
             }
         }
 
-        Soilspawner.ActiveSpawner = false;
+        //Soilspawner.ActiveSpawner = false;
     }
 
 }
