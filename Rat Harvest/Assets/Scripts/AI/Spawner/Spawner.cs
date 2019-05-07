@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
     // Script of the rat chosen
     private Rat_Movement_Logic ratScript;
 
-    [SerializeField] private bool activateSpawner;
+    private bool activateSpawner;
     public bool ActivateSpawner { set { this.activateSpawner = value; } }
 
     float time = 0;
