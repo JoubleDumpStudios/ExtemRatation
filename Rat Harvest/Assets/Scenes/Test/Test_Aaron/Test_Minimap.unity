@@ -2378,6 +2378,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantEatingPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantEatingPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1187708524}
+    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantEatingPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1811167271}
+    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantEatingPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 254607665}
+    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantEatingPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 117050214}
     - target: {fileID: 8527914189677812657, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2453,16 +2478,6 @@ PrefabInstance:
       propertyPath: plantPoints.Array.data[1]
       value: 
       objectReference: {fileID: 469911672}
-    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6131921
-      objectReference: {fileID: 0}
-    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6131921
-      objectReference: {fileID: 0}
     - target: {fileID: 7061260723967117194, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: plantEatingPoints.Array.size
@@ -2488,31 +2503,16 @@ PrefabInstance:
       propertyPath: plantEatingPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1372451694}
-    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+    - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
-      propertyPath: plantEatingPoints.Array.size
-      value: 4
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
       objectReference: {fileID: 0}
-    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+    - target: {fileID: 8641962262600219987, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
-      propertyPath: plantEatingPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1187708524}
-    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: plantEatingPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1811167271}
-    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: plantEatingPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 254607665}
-    - target: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
-        type: 3}
-      propertyPath: plantEatingPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 117050214}
+      propertyPath: m_LocalPosition.y
+      value: 0.6131921
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604420f708ca2ab4a9a2b0f85ae360ae, type: 3}
 --- !u!1001 &5234455193589505339
@@ -2772,6 +2772,11 @@ PrefabInstance:
       propertyPath: spawnerList.Array.data[3]
       value: 
       objectReference: {fileID: 1034785892}
+    - target: {fileID: 1996644957088968437, guid: 3e78a4d47e9200e4fa2602128743719c,
+        type: 3}
+      propertyPath: harvestingTime
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e78a4d47e9200e4fa2602128743719c, type: 3}
 --- !u!1001 &7541618302107009712

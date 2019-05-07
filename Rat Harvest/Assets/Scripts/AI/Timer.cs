@@ -15,18 +15,27 @@ public class Timer : MonoBehaviour
     private int startRoundTime;
     float time = 0;
 
+    [SerializeField]
+    private float ratsAreAwakeTextTime = 3.0f;
+
+
+    [SerializeField]
+    private float harvestingTime;
+
+    bool resetTimer = false;
+    bool preRound = true;
     // Start is called before the first frame update
     void Start()
     {
         preRoundText.text = "Round Starts In:";
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
-
-
-
+        
         time += Time.deltaTime;
 
         if (time >= startRoundTime)
@@ -34,10 +43,33 @@ public class Timer : MonoBehaviour
             TurnOnSpawnerAndPlantGrowing();
         }
 
-        if (time <= startRoundTime)
-            preRoundText.text = "Round Starts In " + startRoundTime + " seconds : " + time.ToString("F2");
-        else
-            preRoundText.text =" Rats are awake !!!";
+        if (preRound)
+        {
+            if (time <= startRoundTime)
+                preRoundText.text = "Round Starts In " + startRoundTime + " seconds : " + time.ToString("F2");
+            else if (time <= startRoundTime + ratsAreAwakeTextTime)
+                preRoundText.text = " Rats are awake !!!";
+            else
+            {
+                preRoundText.text = "";
+                preRound = false;
+                resetTimer = true;
+            }
+        }
+        else if(time <= harvestingTime /*+ startRoundTime + ratsAreAwakeTextTime*/)
+        {
+            preRoundText.text = "You have " + harvestingTime + " seconds to harvest how much you can " + time.ToString("F2");
+        }else if (time > harvestingTime)
+        {
+            preRoundText.text = "Round Over";
+        }
+
+
+        if (resetTimer)
+        {
+            time = 0;
+            resetTimer = false;
+        }
     }
 
     void TurnOnSpawnerAndPlantGrowing()
