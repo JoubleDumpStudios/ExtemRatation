@@ -25,4 +25,16 @@ public class Timer : MonoBehaviour
         for (int i = 0; i < spawnerList.Count; i++)
             spawnerList[i].StartRound = true;
     }
+
+    void updatePlant(Spawner spawner)
+    {
+        int i = 0;
+
+
+        if (spawner.PatchOfSoil.PlantStandPoints[i].HasCrop)
+        {
+            //spawner.PatchOfSoil.PlantStandPoints.Plant
+        }
+
+    }
 }

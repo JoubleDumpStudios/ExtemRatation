@@ -8,7 +8,6 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private Soil patchOfSoil;
     public Soil PatchOfSoil { get { return this.patchOfSoil; } }
-
     [SerializeField] private GameObject objectToSpawn;
    
     // List to store the rats that spawn 
@@ -28,8 +27,8 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private float spawningTime = 0;
 
-    private bool startRound;
     [SerializeField]
+    private bool startRound;
     public bool StartRound { set { this.startRound = value; } }
 
     private void Awake()
