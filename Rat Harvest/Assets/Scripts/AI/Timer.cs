@@ -19,4 +19,10 @@ public class Timer : MonoBehaviour
     {
         
     }
+
+    void updateSpawner()
+    {
+        for (int i = 0; i < spawnerList.Count; i++)
+            spawnerList[i].StartRound = true;
+    }
 }

@@ -7,6 +7,8 @@ public class Spawner : MonoBehaviour
     private ObjectPooler objectPooler;
 
     [SerializeField] private Soil patchOfSoil;
+    public Soil PatchOfSoil { get { return this.patchOfSoil; } }
+
     [SerializeField] private GameObject objectToSpawn;
    
     // List to store the rats that spawn 
