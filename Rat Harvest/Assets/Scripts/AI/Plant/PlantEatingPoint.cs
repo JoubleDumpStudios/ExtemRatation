@@ -26,13 +26,14 @@ public class PlantEatingPoint : MonoBehaviour
     void Start()
     {
         plantPoint = gameObject.transform.parent.gameObject.GetComponent<PlantPoint>();
+        StartCoroutine(EatPlant());
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (plantEatingPointReached)
-            EatPlant();
+        
+            
     }
 
     private void AttackPlant()
@@ -46,27 +47,24 @@ public class PlantEatingPoint : MonoBehaviour
             plantEatingPointReached = true;
     }
 
-    //private IEnumerator EatPlant()
+    private IEnumerator EatPlant()
+    {
+        yield return new WaitUntil(() => plantEatingPointReached);
+
+        AttackPlant();
+
+        yield return new WaitForSeconds(timePerAttack);
+        StartCoroutine(EatPlant());
+    }
+
+    //private void EatPlant()
     //{
-    //    float time = 0f;
-
-    //    AttackPlant();
-
-    //    while (time < timePerAttack)
+    //    time += Time.deltaTime;
+    //    if (time >= timePerAttack)
     //    {
-    //        time += Time.deltaTime / timePerAttack;
-    //        yield return null;
+    //        AttackPlant();
+    //        time = 0;
     //    }
     //}
-
-    private void EatPlant()
-    {
-        time += Time.deltaTime;
-        if (time >= timePerAttack)
-        {
-            AttackPlant();
-            time = 0;
-        }
-    }
 
 }
