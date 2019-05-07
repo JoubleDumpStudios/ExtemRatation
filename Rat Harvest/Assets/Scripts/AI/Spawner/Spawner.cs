@@ -69,7 +69,7 @@ public class Spawner : MonoBehaviour
     {
         int i = 0;
         while (i < patchOfSoil.PlantPoints.Count)
-        {        
+        {
             if (patchOfSoil.PlantPoints[i].HasCrop)
             {
                 int j = 0;

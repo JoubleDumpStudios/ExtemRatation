@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class PlantPoint : MonoBehaviour
 {
+    // A list to store the eating plant stand points around a plant
+    [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
+    public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
+
     // A variable to store the specific plant in the plantPoint
     private GameObject plant;
     public GameObject Plant { get { return this.plant; } set { this.plant = value; } }
 
     // A variable to know if the soil has a crop or not
-    private bool hasCrop = false;
+    public bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
-    // A list to store the eating plant stand points around a plant
-    [SerializeField] private List<PlantEatingPoint> plantEatingPoints;
-    public List<PlantEatingPoint> PlantEatingPoints { get { return this.plantEatingPoints; } }
-
+    // A variable to access to the spawner attached to the soil that contains the PlantPoint
     private Spawner Soilspawner;
 
     private void Start()
@@ -28,7 +29,6 @@ public class PlantPoint : MonoBehaviour
         for (int i = 0; i < plantEatingPoints.Count; i++)       
             plantEatingPoints[i].PlantGrowing = true;
 
-
         Soilspawner.ActiveSpawner = true;
     }
 
@@ -40,17 +40,12 @@ public class PlantPoint : MonoBehaviour
             plantEatingPoints[i].PlantGrowing = false;
             plantEatingPoints[i].PlantEatingPointReached = false;
 
-        }
-
-        for (int i = 0; i < plantEatingPoints.Count; i++)
-        {
             if (plantEatingPoints[i].HasRat)
             {
                 plantEatingPoints[i].RatScript.resetRat();
                 ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);
                 plantEatingPoints[i].HasRat = false;
             }
-                        
         }
 
         Soilspawner.ActiveSpawner = false;
