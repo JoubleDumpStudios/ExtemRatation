@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  secondsToAttack: 3
   destinations: []
   ratTarget: {fileID: 0}
 --- !u!54 &3962179238444533388

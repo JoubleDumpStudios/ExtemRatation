@@ -11,6 +11,8 @@ public class Rat_Movement_Logic : MonoBehaviour
     [SerializeField] private int damage;
     public int Damage { get { return this.damage; } }
 
+    [SerializeField] private float secondsToAttack;
+
     [SerializeField]
     List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
@@ -29,11 +31,6 @@ public class Rat_Movement_Logic : MonoBehaviour
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
     }
-
-    void Start()
-    {
-    }
-
 
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
     {
@@ -62,6 +59,7 @@ public class Rat_Movement_Logic : MonoBehaviour
             ratTarget = selectedDestination.GetComponent<PlantEatingPoint>();
             ratTarget.HasRat = true;
             ratTarget.RatScript = this.gameObject.GetComponent<Rat_Movement_Logic>();
+            ratTarget.TimePerAttack = secondsToAttack;
             navMeshSetDestination(selectedDestination);
         }
     }

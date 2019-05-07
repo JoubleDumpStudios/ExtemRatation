@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlantEatingPoint : MonoBehaviour
 {
-    private float time = 0;
-
     private PlantPoint plantPoint;
 
     private Rat_Movement_Logic ratScript;
@@ -20,7 +18,8 @@ public class PlantEatingPoint : MonoBehaviour
     private bool plantGrowing = false;
     public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
 
-    [SerializeField] private float timePerAttack = 3;
+    private float timePerAttack;
+    public float TimePerAttack { set { this.timePerAttack = value; } }
 
     // Start is called before the first frame update
     void Start()
@@ -29,24 +28,13 @@ public class PlantEatingPoint : MonoBehaviour
         StartCoroutine(EatPlant());
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        
-            
-    }
-
+    // Method that substracts life from the plant
     private void AttackPlant()
     {
         plantPoint.Plant.GetComponent<Plant_Behaviour>().SubPlantHealth(ratScript.Damage);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
-            plantEatingPointReached = true;
-    }
-
+    // Coroutine that executes the plant life substraction every 'x' seconds
     private IEnumerator EatPlant()
     {
         yield return new WaitUntil(() => plantEatingPointReached);
@@ -57,14 +45,10 @@ public class PlantEatingPoint : MonoBehaviour
         StartCoroutine(EatPlant());
     }
 
-    //private void EatPlant()
-    //{
-    //    time += Time.deltaTime;
-    //    if (time >= timePerAttack)
-    //    {
-    //        AttackPlant();
-    //        time = 0;
-    //    }
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
+            plantEatingPointReached = true;
+    }
 
 }
