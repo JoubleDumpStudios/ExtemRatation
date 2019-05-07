@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: a798d55022d763747a1f5f391aff52f2, type: 2}
+--- !u!114 &31102826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7061260723967117194, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1041111885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &58704502 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7164620363306029489, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
@@ -1175,9 +1187,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
+      propertyPath: plantPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
       propertyPath: spawner
       value: 
       objectReference: {fileID: 1455090316}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 31102826}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 2108594786}
     - target: {fileID: 3790656706096244868, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1578,6 +1605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: spawningTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: startRound
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
@@ -2089,6 +2121,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01e373bd4d483f47afec46ab961b340, type: 3}
+--- !u!114 &2108594786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2489320591538393693, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1041111885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1487436246133223573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2112,6 +2156,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
         type: 3}
+    - target: {fileID: 9033109656615080674, guid: b01e373bd4d483f47afec46ab961b340,
+        type: 3}
+      propertyPath: startRound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2246,6 +2295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
+        type: 3}
+      propertyPath: plantPoints.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5981716682425085240, guid: 604420f708ca2ab4a9a2b0f85ae360ae,
         type: 3}

@@ -55,12 +55,12 @@ public class Spawner : MonoBehaviour
     private bool hasDestinations()
     {
         int i = 0;
-        while (i < patchOfSoil.PlantStandPoints.Count)
+        while (i < patchOfSoil.PlantPoints.Count)
         {
             int j = 0;
-            while (j < patchOfSoil.PlantStandPoints[i].PlantEatingPoints.Count)
+            while (j < patchOfSoil.PlantPoints[i].PlantEatingPoints.Count)
             {
-                if (!patchOfSoil.PlantStandPoints[i].PlantEatingPoints[j].HasRat && patchOfSoil.PlantStandPoints[i].HasCrop)
+                if (!patchOfSoil.PlantPoints[i].PlantEatingPoints[j].HasRat && patchOfSoil.PlantPoints[i].HasCrop)
                     return true;
 
                 j++;
@@ -74,9 +74,9 @@ public class Spawner : MonoBehaviour
     private bool soilHasCrops()
     {
         int i = 0;
-        while (i < patchOfSoil.PlantStandPoints.Count)
+        while (i < patchOfSoil.PlantPoints.Count)
         {
-            if (patchOfSoil.PlantStandPoints[i].HasCrop)
+            if (patchOfSoil.PlantPoints[i].HasCrop)
                 return true;
             i++;
         }
@@ -101,10 +101,10 @@ public class Spawner : MonoBehaviour
     {
         ratScript = rat.GetComponent<Rat_Movement_Logic>();
 
-        for (int i = 0; i < patchOfSoil.PlantStandPoints.Count; i++)
+        for (int i = 0; i < patchOfSoil.PlantPoints.Count; i++)
         {
-            if(patchOfSoil.PlantStandPoints[i].HasCrop)
-                ratScript.setDestinations(patchOfSoil.PlantStandPoints[i].PlantEatingPoints);
+            if(patchOfSoil.PlantPoints[i].HasCrop)
+                ratScript.setDestinations(patchOfSoil.PlantPoints[i].PlantEatingPoints);
         }
     }
 }

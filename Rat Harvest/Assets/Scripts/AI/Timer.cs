@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
         int i = 0;
 
 
-        if (spawner.PatchOfSoil.PlantStandPoints[i].HasCrop)
+        if (spawner.PatchOfSoil.PlantPoints[i].HasCrop)
         {
             //spawner.PatchOfSoil.PlantStandPoints.Plant
         }

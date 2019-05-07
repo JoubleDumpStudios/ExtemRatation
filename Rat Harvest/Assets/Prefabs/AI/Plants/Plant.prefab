@@ -52,3 +52,4 @@ MonoBehaviour:
   - {fileID: 607255248345174925, guid: 401103c423805a04d870592c47885433, type: 3}
   - {fileID: 946452843077944268, guid: ee189165daf4c1a4b9d8172aaa176f5a, type: 3}
   pointsPerState: 000000000a000000140000001e000000
+  startRound: 1
