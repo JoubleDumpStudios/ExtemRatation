@@ -17422,8 +17422,8 @@ Light:
     m_CustomResolution: -1
     m_Strength: 0.93
     m_Bias: 0
-    m_NormalBias: 0
-    m_NearPlane: 0.2
+    m_NormalBias: 0.4
+    m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
