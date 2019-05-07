@@ -46,6 +46,7 @@ public class PlantPoint : MonoBehaviour
         {
             if (plantEatingPoints[i].HasRat)
             {
+                plantEatingPoints[i].RatScript.ratDied();
                 ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);
                 plantEatingPoints[i].HasRat = false;
             }

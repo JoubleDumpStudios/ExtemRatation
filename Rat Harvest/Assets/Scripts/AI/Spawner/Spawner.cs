@@ -71,6 +71,7 @@ public class Spawner : MonoBehaviour
         return false;
     }
 
+    // Checks if the any of the plantpoints in the soil has crops
     private bool soilHasCrops()
     {
         int i = 0;
