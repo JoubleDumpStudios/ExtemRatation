@@ -54,7 +54,7 @@ public class Rat_Movement_Logic : MonoBehaviour
         return targetIndex;//returns the index on the list of the destination that is choosed by the rat spawned
     }
 
-    public void chooseNewTarget()//calls the navMeshMethod with the nearest and available position, sets the value of the destination to unavailable
+    public void chooseNewTarget() //calls the navMeshMethod with the nearest and available position, sets the value of the destination to unavailable
     {
         if (areDestinationsAvailables())
         {
@@ -98,6 +98,7 @@ public class Rat_Movement_Logic : MonoBehaviour
     {
         ratTarget.HasRat = false;
         destinations.Clear();
+        ratTarget.PlantEatingPointReached = false;
         ObjectPooler.instance.killGameObject(this.gameObject);
 
     }
