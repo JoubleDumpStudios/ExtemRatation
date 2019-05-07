@@ -36,7 +36,7 @@ public class Rat_Health_Logic : MonoBehaviour
         else
         {
             health = maxHealth;
-            ratMovementScript.ratDied();
+            ratMovementScript.resetRat();
             cleanWounds(wounds_);
         }
 

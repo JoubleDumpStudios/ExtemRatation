@@ -92,7 +92,7 @@ public class Rat_Movement_Logic : MonoBehaviour
         destinations.Remove(plant);
     }
 
-    public void ratDied()
+    public void resetRat()
     {
         ratTarget.HasRat = false;
         destinations.Clear();

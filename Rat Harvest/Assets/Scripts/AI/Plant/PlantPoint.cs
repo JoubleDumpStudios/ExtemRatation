@@ -29,7 +29,7 @@ public class PlantPoint : MonoBehaviour
             plantEatingPoints[i].PlantGrowing = true;
 
 
-        Soilspawner.ActivateSpawner = true;
+        Soilspawner.ActiveSpawner = true;
     }
 
 
@@ -46,14 +46,14 @@ public class PlantPoint : MonoBehaviour
         {
             if (plantEatingPoints[i].HasRat)
             {
-                plantEatingPoints[i].RatScript.ratDied();
+                plantEatingPoints[i].RatScript.resetRat();
                 ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);
                 plantEatingPoints[i].HasRat = false;
             }
                         
         }
 
-        Soilspawner.ActivateSpawner = false;
+        Soilspawner.ActiveSpawner = false;
     }
 
 }

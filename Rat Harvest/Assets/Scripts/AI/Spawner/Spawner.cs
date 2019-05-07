@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] private Soil patchOfSoil;
     public Soil PatchOfSoil { get { return this.patchOfSoil; } }
+
     [SerializeField] private GameObject objectToSpawn;
    
     // List to store the rats that spawn 
@@ -19,8 +20,8 @@ public class Spawner : MonoBehaviour
     // Script of the rat chosen
     private Rat_Movement_Logic ratScript;
 
-    private bool activateSpawner;
-    public bool ActivateSpawner { set { this.activateSpawner = value; } }
+    private bool activeSpawner;
+    public bool ActiveSpawner { set { this.activeSpawner = value; } }
 
     float time = 0;
 
@@ -39,7 +40,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (startRound && activateSpawner)
+        if (startRound && activeSpawner)
         {
             time += Time.deltaTime;
             if (time >= spawningTime)
@@ -91,6 +92,7 @@ public class Spawner : MonoBehaviour
         if (hasDestinations())
         {
             objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
+            ratScript = rat.GetComponent<Rat_Movement_Logic>();
             setRatDestinations();
             ratScript.chooseNewTarget();
             rats.Add(rat);
@@ -100,8 +102,6 @@ public class Spawner : MonoBehaviour
     // Sets the destinations for each rat created
     private void setRatDestinations()
     {
-        ratScript = rat.GetComponent<Rat_Movement_Logic>();
-
         for (int i = 0; i < patchOfSoil.PlantPoints.Count; i++)
         {
             if(patchOfSoil.PlantPoints[i].HasCrop)
