@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c187d57015a7a4ba7b9ebf62976108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  secondsToAttack: 3
+  damage: 10
+  secondsToAttack: 4
   destinations: []
   ratTarget: {fileID: 0}
 --- !u!54 &3962179238444533388
@@ -279,16 +279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3106649658889243145}
     m_Modifications:
-    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
-        type: 3}
-      propertyPath: m_Name
-      value: HealthCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 7225693278757020083, guid: 1e82e550a4b164d4c859a709474c4de2,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -435,6 +425,16 @@ PrefabInstance:
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1871666846789332954, guid: 1e82e550a4b164d4c859a709474c4de2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
         type: 3}
       propertyPath: m_Layer
       value: 11
