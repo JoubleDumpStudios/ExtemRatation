@@ -16,20 +16,11 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
-    // A variable to access to the spawner attached to the soil that contains the PlantPoint
-    private Spawner Soilspawner;
-
-    private void Start()
-    {
-        Soilspawner = this.gameObject.transform.parent.gameObject.GetComponent<Soil>().Spawner;
-    }
 
     public void EnablePlantEatingPoints()
     {
         for (int i = 0; i < plantEatingPoints.Count; i++)       
             plantEatingPoints[i].PlantGrowing = true;
-
-        Soilspawner.ActiveSpawner = true;
     }
 
 
@@ -47,8 +38,6 @@ public class PlantPoint : MonoBehaviour
                 ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);             
             }
         }
-
-        //Soilspawner.ActiveSpawner = false;
     }
 
 }
