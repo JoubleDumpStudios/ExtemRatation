@@ -45,51 +45,16 @@ public class Spawner : MonoBehaviour
             time += Time.deltaTime;
             if (time >= spawningTime)
             {
-                spawnRat();
+                SpawnRat();
                 time = 0;
             }
         }
-        //if (Input.GetKeyDown(KeyCode.L))
-        //    spawnRat();
     }
 
-    private bool hasDestinations()
+    // Spawns a rat
+    private void SpawnRat()
     {
-        int i = 0;
-        while (i < patchOfSoil.PlantPoints.Count)
-        {
-            int j = 0;
-            while (j < patchOfSoil.PlantPoints[i].PlantEatingPoints.Count)
-            {
-                if (!patchOfSoil.PlantPoints[i].PlantEatingPoints[j].HasRat && patchOfSoil.PlantPoints[i].HasCrop)
-                    return true;
-
-                j++;
-            }
-            i++;
-        }
-
-        return false;
-    }
-
-    // Checks if the any of the plantpoints in the soil has crops
-    private bool soilHasCrops()
-    {
-        int i = 0;
-        while (i < patchOfSoil.PlantPoints.Count)
-        {
-            if (patchOfSoil.PlantPoints[i].HasCrop)
-                return true;
-            i++;
-        }
-
-        return false;
-    }
-
-    // spawns a rat
-    private void spawnRat()
-    {
-        if (hasDestinations())
+        if (ArePlantEatingPointsAvailables())
         {
             objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
             ratScript = rat.GetComponent<Rat_Movement_Logic>();
@@ -98,6 +63,30 @@ public class Spawner : MonoBehaviour
             rats.Add(rat);
         }
     }
+
+    // Checks if there's any plant eating point available
+    private bool ArePlantEatingPointsAvailables()
+    {
+        int i = 0;
+        while (i < patchOfSoil.PlantPoints.Count)
+        {        
+            if (patchOfSoil.PlantPoints[i].HasCrop)
+            {
+                int j = 0;
+                while (j < patchOfSoil.PlantPoints[i].PlantEatingPoints.Count)
+                {
+                    if (!patchOfSoil.PlantPoints[i].PlantEatingPoints[j].HasRat /*&& patchOfSoil.PlantPoints[i].HasCrop*/)
+                        return true;
+
+                    j++;
+                }
+            }
+            
+            i++;
+        }
+
+        return false;
+    } 
 
     // Sets the destinations for each rat created
     private void setRatDestinations()
@@ -108,4 +97,18 @@ public class Spawner : MonoBehaviour
                 ratScript.setDestinations(patchOfSoil.PlantPoints[i].PlantEatingPoints);
         }
     }
+
+    // Checks if the any of the plantpoints in the soil has crops
+    //private bool soilHasCrops()
+    //{
+    //    int i = 0;
+    //    while (i < patchOfSoil.PlantPoints.Count)
+    //    {
+    //        if (patchOfSoil.PlantPoints[i].HasCrop)
+    //            return true;
+    //        i++;
+    //    }
+
+    //    return false;
+    //}
 }
