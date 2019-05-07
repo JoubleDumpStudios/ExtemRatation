@@ -42,6 +42,10 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     private GameObject plantPoint;
     public GameObject PlantPoint { get { return this.plantPoint; } set { this.plantPoint = value; } }
 
+    private bool startRound;
+    [SerializeField]
+    public bool StartRound { set { this.startRound = value; } }
+
     // Method inherited form the IpooledObject interface
     public void OnObjectSpawn()
     {
@@ -51,7 +55,8 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // Update is called once per frame
     private void Update()
     {
-        CountTime();
+        if(startRound)
+            CountTime();
     }
 
     // Method with counts the time for the plant to grow

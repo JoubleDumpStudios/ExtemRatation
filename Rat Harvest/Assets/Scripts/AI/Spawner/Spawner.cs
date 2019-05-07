@@ -26,6 +26,10 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private float spawningTime = 0;
 
+    private bool startRound;
+    [SerializeField]
+    public bool StartRound { set { this.startRound = value; } }
+
     private void Awake()
     {
         objectPooler = ObjectPooler.instance;
@@ -34,7 +38,7 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (activateSpawner)
+        if (startRound && activateSpawner)
         {
             time += Time.deltaTime;
             if (time >= spawningTime)
