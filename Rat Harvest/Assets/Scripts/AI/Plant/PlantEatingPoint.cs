@@ -9,6 +9,7 @@ public class PlantEatingPoint : MonoBehaviour
     private Rat_Movement_Logic ratScript;
     public Rat_Movement_Logic RatScript { get { return this.ratScript; }  set { this.ratScript = value; } }
 
+    [SerializeField]
     private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 

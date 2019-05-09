@@ -33,9 +33,8 @@ public class PlantPoint : MonoBehaviour
 
             if (plantEatingPoints[i].HasRat)
             {
-                plantEatingPoints[i].RatScript.resetRat();
-                plantEatingPoints[i].HasRat = false;
-                ObjectPooler.instance.killGameObject(plantEatingPoints[i].RatScript.gameObject);             
+                plantEatingPoints[i].RatScript.ratBackHome();
+                plantEatingPoints[i].HasRat = false;        
             }
         }
     }

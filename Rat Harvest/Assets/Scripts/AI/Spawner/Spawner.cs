@@ -27,11 +27,18 @@ public class Spawner : MonoBehaviour
 
     [SerializeField]
     private bool startRound;
-    public bool StartRound { set { this.startRound = value; } }
+    public bool StartRound { set { this.startRound = value; } } 
+
+    [SerializeField]
+    private GameObject despawnPoint;
 
     private void Awake()
     {
         objectPooler = ObjectPooler.instance;
+    }
+
+    private void Start()
+    {
     }
 
     private void Update()
@@ -53,9 +60,7 @@ public class Spawner : MonoBehaviour
         if (ArePlantEatingPointsAvailables())
         {
             objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
-            ratScript = rat.GetComponent<Rat_Movement_Logic>();
-            setRatDestinations();
-            ratScript.chooseNewTarget();
+            setRatValues(rat);
             rats.Add(rat);
         }
     }
@@ -91,5 +96,14 @@ public class Spawner : MonoBehaviour
             if(patchOfSoil.PlantPoints[i].HasCrop)
                 ratScript.setDestinations(patchOfSoil.PlantPoints[i].PlantEatingPoints);
         }
+    }
+
+
+    private void setRatValues(GameObject rat)
+    {
+        ratScript = rat.GetComponent<Rat_Movement_Logic>();
+        setRatDestinations();
+        ratScript.chooseNewTarget();
+        ratScript.DespawnPoint = despawnPoint;
     }
 }

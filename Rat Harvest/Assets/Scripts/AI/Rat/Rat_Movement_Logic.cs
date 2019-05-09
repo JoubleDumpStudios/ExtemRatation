@@ -11,6 +11,9 @@ public class Rat_Movement_Logic : MonoBehaviour
     [SerializeField] private int damage;
     public int Damage { get { return this.damage; } }
 
+
+    
+
     [SerializeField] private float secondsToAttack;
 
     [SerializeField]
@@ -26,6 +29,11 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     [SerializeField]
     private PlantEatingPoint ratTarget;
+
+    private GameObject despawnPoint;
+    public GameObject DespawnPoint { set { this.despawnPoint = value; } }
+
+    private bool returningHome;
 
     private void Awake()
     {
@@ -92,14 +100,42 @@ public class Rat_Movement_Logic : MonoBehaviour
         destinations.Remove(plant);
     }
 
-    public void resetRat()
+
+    public void ratBackHome()
     {
-        ratTarget.HasRat = false;
-        destinations.Clear();
-        ratTarget.PlantEatingPointReached = false;
+        returningHome = true;
+
+        ResetRatDestinations();
+
+        navMeshSetDestination(despawnPoint);
+    }
+
+    public void killRat()
+    {
+        if (!returningHome)
+        {
+            ratTarget.HasRat = false;
+            ResetRatDestinations();
+        }
+
+        DespawnRat();
+    }
+
+    public void DespawnRat()
+    {
+        if (returningHome) returningHome = false;
         ObjectPooler.instance.killGameObject(this.gameObject);
 
     }
+
+    public void ResetRatDestinations()
+    {
+        //ratTarget.HasRat = false;
+        destinations.Clear();
+        ratTarget.PlantEatingPointReached = false;
+    }
+
+
 
     //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
     //{
