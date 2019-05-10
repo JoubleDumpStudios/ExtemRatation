@@ -1054,6 +1054,7 @@ MonoBehaviour:
   angleForCameraRecoil: 3
   aimPositionTransform: {fileID: 1523674488}
   aimingSpeed: 15
+  timeBetweenShoots: 0.5
 --- !u!1 &1588998790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1191,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 496092029}
     m_Modifications:
+    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Name
+      value: MARMO3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38
@@ -1245,18 +1258,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Name
-      value: MARMO3
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
