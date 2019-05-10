@@ -25,8 +25,6 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public float spreadAngle;
 
-     
-
     [SerializeField]
     private GameObject bulletPrefab;
     [SerializeField]
@@ -49,8 +47,6 @@ public class ShotGunBehaviour : MonoBehaviour
 
     RaycastHit hit;
     Ray ray;
-
-
 
     [SerializeField]
     private float weaponRecoilingTime = 0.2f;
@@ -80,13 +76,18 @@ public class ShotGunBehaviour : MonoBehaviour
 
     Transform notAimingPosition;
 
-
     [SerializeField]
     private float aimingSpeed;
 
     private bool shooting = false;
 
     private ObjectPooler objectPooler;
+
+    private bool waitingForNewShot;
+    float time = 0;
+
+    [SerializeField]
+    private float timeBetweenShoots;
 
     private void Awake()
     {
@@ -115,17 +116,87 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ShootingTimer();
+        ShootingLogicAndRecoil();
+    }
 
+
+    void fire()
+    {
+
+        for (int i = 0; i < bulletsCount; i++)
+        {
+            if (!raycasted)
+            {
+                NotRaycastedFire(i);
+            }
+            else
+            {
+                RaycastedFire();
+            }
+        }
+
+        waitingForNewShot = true;
+    }
+
+
+    void RaycastedFire()
+    {
+        //uses raycast, when collides with something it spawns a object that could be a bullet hole
+        Vector3 raycastOrigin = Barrel.position;
+        Vector3 rayDirection = new Vector3(Barrel.transform.forward.x + Random.Range(-spreadAngle, spreadAngle),
+            Barrel.transform.forward.y + Random.Range(-spreadAngle, spreadAngle),
+            Barrel.transform.forward.z + Random.Range(-spreadAngle, spreadAngle));
+        ray = new Ray(raycastOrigin, rayDirection);
+
+        Debug.DrawRay(raycastOrigin, rayDirection, Color.red, weaponRange);
+
+        if (Physics.Raycast(ray, out hit, weaponRange))
+        {
+            //call the functions on the object that is colliding with the raycast.
+
+
+            if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>() != null)
+            {
+
+                objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
+                ratHole_.transform.parent = hit.collider.gameObject.transform;
+
+                ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), ratHole_);
+
+                //Instantiate(ratHoles, hit.point, holes.transform.rotation); 
+            }
+            else
+            {
+                objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
+                //Instantiate(holes, hit.point, holes.transform.rotation);
+            }
+
+        }
+    }
+
+
+    void NotRaycastedFire(int i)
+    {
+        // instantiate bullets depending on the shoting angle selection
+        bullets[i] = Random.rotation;
+        GameObject bullet = Instantiate(bulletPrefab, Barrel.position, Barrel.rotation);
+        bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bullets[i], spreadAngle);
+        bullet.GetComponent<Rigidbody>().AddForce(-bullet.transform.right * bulletSpeed);
+    }
+
+    void ShootingLogicAndRecoil()
+    {
         if (Input.GetAxis("Fire1") <= 0)
             shooting = false;
 
-        if (Input.GetButtonDown("Fire1") || (Input.GetAxis("Fire1")>0 && !shooting))
+        if ((Input.GetButtonDown("Fire1") || (Input.GetAxis("Fire1") > 0 && !shooting)) && !waitingForNewShot)
         {
             fire();
             shooting = true;
             currentRecoilPosition -= weaponRecoilAmount;
             currentRecoilAngle = -weaponRecoilAngle;
-            firstPersonControllerScript_.cameraRecoil(angleForCameraRecoil, cameraRecoilSpeed,cameraRecoilingTime);
+            firstPersonControllerScript_.cameraRecoil(angleForCameraRecoil, cameraRecoilSpeed, cameraRecoilingTime);
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, weaponRecoilingTime);
@@ -146,62 +217,25 @@ public class ShotGunBehaviour : MonoBehaviour
         }
 
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
-
-
-
-    }
-
-
-    void fire()
-    {
-
-        for (int i = 0; i < bulletsCount; i++)
-        {
-            if (!raycasted)
-            { // instantiate bullets depending on the shoting angle selection
-                bullets[i] = Random.rotation;
-                GameObject bullet = Instantiate(bulletPrefab, Barrel.position, Barrel.rotation);
-                bullet.transform.rotation = Quaternion.RotateTowards(bullet.transform.rotation, bullets[i], spreadAngle);
-                bullet.GetComponent<Rigidbody>().AddForce(-bullet.transform.right * bulletSpeed);
-            }
-            else
-            {
-                //uses raycast, when collides with something it spawns a object that could be a bullet hole
-                Vector3 raycastOrigin = Barrel.position;
-                Vector3 rayDirection = new Vector3(Barrel.transform.forward.x + Random.Range(-spreadAngle, spreadAngle),
-                    Barrel.transform.forward.y + Random.Range(-spreadAngle, spreadAngle),
-                    Barrel.transform.forward.z + Random.Range(-spreadAngle, spreadAngle));
-                ray = new Ray(raycastOrigin, rayDirection);
-
-                Debug.DrawRay(raycastOrigin, rayDirection, Color.red, weaponRange);
-                
-                if(Physics.Raycast(ray, out hit, weaponRange))
-                {
-                    //call the functions on the object that is colliding with the raycast.
-
-
-                    if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>() != null)
-                    {
-
-                        objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
-                        ratHole_.transform.parent = hit.collider.gameObject.transform;
-
-                        ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), ratHole_);
-
-                        //Instantiate(ratHoles, hit.point, holes.transform.rotation); 
-                    }
-                    else {
-                        objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
-                        //Instantiate(holes, hit.point, holes.transform.rotation);
-                    }
-
-                }
-            }
-        }
     }
 
     void ratHit(Rat_Health_Logic healthLogic, GameObject ratHole)
     {
         healthLogic.ratHited(damage, ratHole);
+    }
+
+    void ShootingTimer()
+    {
+
+        if (waitingForNewShot)
+        {
+            time += Time.deltaTime;
+
+            if (time >= timeBetweenShoots)
+            {
+                time = 0;
+                waitingForNewShot = false;
+            }
+        }
     }
 }
