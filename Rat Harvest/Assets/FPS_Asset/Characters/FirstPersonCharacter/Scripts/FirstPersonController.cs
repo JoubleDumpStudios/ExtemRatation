@@ -61,6 +61,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Variable to acces the plantBehaviour script to pass the data of the soil
         private Plant_Behaviour plantBehaviourScript;
 
+        // Variable to access to the outline script
+        private OutlineManager outlineScript;
+
         // Use this for initialization
         private void Start()
         {
@@ -96,24 +99,36 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 if (hit.collider.gameObject.tag == "PlantPoint")
                 {
                     PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
+                    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
 
                     if (!PlantPointScript.HasCrop)
-                        PlantPointScript.EnableOutline();
-                }
-                else
-                    //PlantPointScript.DisableOutline();
+                        outlineScript.EnableOutline();
 
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    if (hit.collider.gameObject.tag == "PlantPoint")
+                    if (Input.GetKeyDown(KeyCode.E))
                         Plant(hit.collider.gameObject);
-                    else if (hit.collider.gameObject.tag == "Plant")
-                        Harvest(hit.collider.gameObject);
                 }
-                else if (Input.GetKeyDown(KeyCode.T))
-                {
-                    ObjectPooler.instance.spawnFromPool("Cube", transform.position, transform.rotation);
-                }
+                else if (outlineScript != null)
+                    outlineScript.DisableOutline();
+
+                //if (hit.collider.gameObject.tag == "Plant")
+                //{
+                //    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
+
+                //    outlineScript.EnableOutline();
+
+                //    if (Input.GetKeyDown(KeyCode.E))
+                //        Harvest(hit.collider.gameObject);
+                //}
+                //else if (outlineScript != null)
+                //    outlineScript.DisableOutline();
+
+                //if (Input.GetKeyDown(KeyCode.E))
+                //{
+                //    //if (hit.collider.gameObject.tag == "PlantPoint")
+                //    //    Plant(hit.collider.gameObject);
+                //    else if (hit.collider.gameObject.tag == "Plant")
+                //        Harvest(hit.collider.gameObject);
+                //}
             }
 
             RotateView();

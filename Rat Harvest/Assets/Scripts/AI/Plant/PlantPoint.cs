@@ -16,15 +16,6 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
-    // A variable to access to the material
-    private cakeslice.Outline outline;
-
-
-    private void Start()
-    {
-        outline = GetComponent<cakeslice.Outline>();
-        DisableOutline();
-    }
 
     public void EnablePlantEatingPoints()
     {
@@ -45,16 +36,6 @@ public class PlantPoint : MonoBehaviour
                 plantEatingPoints[i].HasRat = false;        
             }
         }
-    }
-
-    public void EnableOutline()
-    {
-        outline.enabled = true;
-    }
-
-    public void DisableOutline()
-    {
-        outline.enabled = false;
     }
 
 }
