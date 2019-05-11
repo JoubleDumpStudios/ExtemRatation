@@ -17,11 +17,12 @@ public class PlantPoint : MonoBehaviour
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
     // A variable to access to the material
-    private Renderer rend;
+    private cakeslice.Outline outline;
+
 
     private void Start()
     {
-        rend = GetComponent<Renderer>();
+        outline = GetComponent<cakeslice.Outline>();
         DisableOutline();
     }
 
@@ -48,12 +49,12 @@ public class PlantPoint : MonoBehaviour
 
     public void EnableOutline()
     {
-        rend.material.SetShaderPassEnabled(rend.material.shader.name, true);
+        outline.enabled = true;
     }
 
     public void DisableOutline()
     {
-        rend.material.SetShaderPassEnabled(rend.material.shader.name, false);
+        outline.enabled = false;
     }
 
 }

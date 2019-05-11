@@ -95,8 +95,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
                 if (hit.collider.gameObject.tag == "PlantPoint")
                 {
-                    hit.collider.gameObject.GetComponent<PlantPoint>().EnableOutline();
+                    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
+
+                    if (!PlantPointScript.HasCrop)
+                        PlantPointScript.EnableOutline();
                 }
+                else
+                    PlantPointScript.DisableOutline();
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -314,7 +319,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // A method to plant a new crop in a gameobject
         private void Plant(GameObject go)
         {
-            PlantPointScript = go.GetComponent<PlantPoint>();
+            //PlantPointScript = go.GetComponent<PlantPoint>();
 
             if (PlantPointScript != null)            
                 if (!PlantPointScript.HasCrop)            

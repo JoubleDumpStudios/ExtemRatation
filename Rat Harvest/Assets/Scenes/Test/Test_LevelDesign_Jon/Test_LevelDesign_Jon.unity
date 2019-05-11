@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657987, g: 0.496413, b: 0.5748154, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.49641275, b: 0.5748151, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2122,26 +2122,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -18.4
       objectReference: {fileID: 0}
-    - target: {fileID: 6804027624860057026, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1741623502949579467, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1445532650918218393, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319584510732416192, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 691871407671936245, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2152,20 +2132,40 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6804027624860057026, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1138064467926243006, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319584510732416192, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4635301753930062005, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1741623502949579467, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5509885254930622695, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445532650918218393, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fdbaec13f35050468f5a93a0c210b62, type: 3}
@@ -8505,7 +8505,7 @@ PrefabInstance:
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 1487436247894282274, guid: b01e373bd4d483f47afec46ab961b340,
         type: 3}
@@ -9115,6 +9115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 741182471, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 976249676, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
       propertyPath: m_Radius
       value: 0.17
@@ -9148,10 +9152,6 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1898473966}
-    - target: {fileID: 741182471, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 298014698, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
       propertyPath: weaponRange
       value: 100
@@ -15771,26 +15771,6 @@ PrefabInstance:
       propertyPath: plantPoints.Array.data[0]
       value: 
       objectReference: {fileID: 1752713576}
-    - target: {fileID: 6804027624860057026, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1741623502949579467, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1445532650918218393, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6319584510732416192, guid: 0fdbaec13f35050468f5a93a0c210b62,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 691871407671936245, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15801,20 +15781,40 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6804027624860057026, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1138064467926243006, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319584510732416192, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4635301753930062005, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1741623502949579467, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5509885254930622695, guid: 0fdbaec13f35050468f5a93a0c210b62,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445532650918218393, guid: 0fdbaec13f35050468f5a93a0c210b62,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fdbaec13f35050468f5a93a0c210b62, type: 3}
