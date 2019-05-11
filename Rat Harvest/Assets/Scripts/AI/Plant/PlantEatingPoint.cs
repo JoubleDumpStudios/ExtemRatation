@@ -22,9 +22,12 @@ public class PlantEatingPoint : MonoBehaviour
     private float timePerAttack;
     public float TimePerAttack { set { this.timePerAttack = value; } }
 
+    public Icon_Plant_Behaviour icon_Plant_Behaviour;
+
     // Start is called before the first frame update
     void Start()
     {
+        icon_Plant_Behaviour = gameObject.transform.parent.gameObject.GetComponentInChildren<Icon_Plant_Behaviour>();
         plantPoint = gameObject.transform.parent.gameObject.GetComponent<PlantPoint>();
         StartCoroutine(EatPlant());
     }
@@ -33,6 +36,8 @@ public class PlantEatingPoint : MonoBehaviour
     private void AttackPlant()
     {
         plantPoint.Plant.GetComponent<Plant_Behaviour>().SubPlantHealth(ratScript.Damage);
+
+        icon_Plant_Behaviour.PlantAttacked();
     }
 
     // Coroutine that executes the plant life substraction every 'x' seconds

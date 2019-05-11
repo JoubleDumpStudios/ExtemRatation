@@ -197,7 +197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &979132776396161173
 Transform:
   m_ObjectHideFlags: 0
@@ -279,6 +279,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3106649658889243145}
     m_Modifications:
+    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
+        type: 3}
+      propertyPath: m_Name
+      value: HealthCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7225693278757020083, guid: 1e82e550a4b164d4c859a709474c4de2,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -425,16 +435,6 @@ PrefabInstance:
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1871666846789332954, guid: 1e82e550a4b164d4c859a709474c4de2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
-        type: 3}
-      propertyPath: m_Name
-      value: HealthCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8703211156338765024, guid: 1e82e550a4b164d4c859a709474c4de2,
         type: 3}
       propertyPath: m_Layer
       value: 11
