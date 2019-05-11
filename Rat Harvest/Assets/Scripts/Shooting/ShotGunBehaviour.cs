@@ -38,9 +38,16 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private GameObject holes;
     private GameObject holes_;
+
+    [SerializeField]
+    private GameObject holesParticleEffects;
+
     [SerializeField]
     private GameObject ratHoles;
     private GameObject ratHole_;
+
+    [SerializeField]
+    private GameObject ratHolesParticleEffects;
 
     [SerializeField]
     private float damage;
@@ -164,12 +171,14 @@ public class ShotGunBehaviour : MonoBehaviour
 
                 ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), ratHole_);
 
-                //Instantiate(ratHoles, hit.point, holes.transform.rotation); 
+                Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
+
             }
             else
             {
                 objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
-                //Instantiate(holes, hit.point, holes.transform.rotation);
+
+                Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
             }
 
         }

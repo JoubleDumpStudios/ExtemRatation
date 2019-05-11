@@ -101,7 +101,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         PlantPointScript.EnableOutline();
                 }
                 else
-                    PlantPointScript.DisableOutline();
+                    //PlantPointScript.DisableOutline();
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {

@@ -1042,7 +1042,11 @@ MonoBehaviour:
   Barrel: {fileID: 492651680}
   raycasted: 1
   holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
+  holesParticleEffects: {fileID: 1186934478884049466, guid: f59afa6a4d669ce41adab84d09d015f8,
+    type: 3}
   ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
+    type: 3}
+  ratHolesParticleEffects: {fileID: 242947493191017951, guid: 3be45d8681f363649b1399cd2cf84aee,
     type: 3}
   damage: 10
   weaponRecoilingTime: 0.2
