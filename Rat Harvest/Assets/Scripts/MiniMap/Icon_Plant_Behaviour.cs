@@ -8,6 +8,7 @@ public class Icon_Plant_Behaviour : MonoBehaviour
     SpriteRenderer spriteRenderer;
     bool attacked;
     float time;
+
     [SerializeField]
     private float redTimeForPlant;
 

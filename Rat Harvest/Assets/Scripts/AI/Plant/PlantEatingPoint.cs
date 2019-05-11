@@ -9,7 +9,6 @@ public class PlantEatingPoint : MonoBehaviour
     private Rat_Movement_Logic ratScript;
     public Rat_Movement_Logic RatScript { get { return this.ratScript; }  set { this.ratScript = value; } }
 
-    [SerializeField]
     private bool hasRat = false;
     public bool HasRat { get { return this.hasRat; } set { this.hasRat = value; } }
 
@@ -22,7 +21,7 @@ public class PlantEatingPoint : MonoBehaviour
     private float timePerAttack;
     public float TimePerAttack { set { this.timePerAttack = value; } }
 
-    public Icon_Plant_Behaviour icon_Plant_Behaviour;
+    private Icon_Plant_Behaviour icon_Plant_Behaviour;
 
 
 
