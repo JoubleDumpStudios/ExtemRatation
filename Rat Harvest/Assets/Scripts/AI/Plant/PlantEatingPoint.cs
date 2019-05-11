@@ -24,6 +24,8 @@ public class PlantEatingPoint : MonoBehaviour
 
     public Icon_Plant_Behaviour icon_Plant_Behaviour;
 
+
+
     // Start is called before the first frame update
     void Start()
     {

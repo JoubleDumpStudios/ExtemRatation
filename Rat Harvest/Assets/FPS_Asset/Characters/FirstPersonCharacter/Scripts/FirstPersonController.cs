@@ -92,6 +92,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Physics.Raycast(ray, out hit, Cam_Ray_Length))
             {
                 Debug.DrawLine(ray.origin, hit.point);
+
+                if (hit.collider.gameObject.tag == "PlantPoint")
+                {
+                    hit.collider.gameObject.GetComponent<PlantPoint>().EnableOutline();
+                }
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (hit.collider.gameObject.tag == "PlantPoint")

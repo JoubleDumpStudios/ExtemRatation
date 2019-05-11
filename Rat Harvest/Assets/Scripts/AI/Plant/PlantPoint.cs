@@ -16,13 +16,20 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
+    // A variable to access to the material
+    private Renderer rend;
+
+    private void Start()
+    {
+        rend = GetComponent<Renderer>();
+        DisableOutline();
+    }
 
     public void EnablePlantEatingPoints()
     {
         for (int i = 0; i < plantEatingPoints.Count; i++)       
             plantEatingPoints[i].PlantGrowing = true;
     }
-
 
     public void DisablePlantEatingPoints()
     {
@@ -37,6 +44,16 @@ public class PlantPoint : MonoBehaviour
                 plantEatingPoints[i].HasRat = false;        
             }
         }
+    }
+
+    public void EnableOutline()
+    {
+        rend.material.SetShaderPassEnabled(rend.material.shader.name, true);
+    }
+
+    public void DisableOutline()
+    {
+        rend.material.SetShaderPassEnabled(rend.material.shader.name, false);
     }
 
 }
