@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20adae4091777e949b97c4e229b32e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growingTime: 20
+  growingTime: 3
   numOfStates: 4
   Health: 100
   plantModels:
@@ -52,4 +52,4 @@ MonoBehaviour:
   - {fileID: 1407500582956308063, guid: acf0402db1eb45747a3cd90897b4cd82, type: 3}
   - {fileID: 584618471, guid: dc6c0d58211f63941a90649821a0e837, type: 3}
   pointsPerState: 000000000a000000140000001e000000
-  startRound: 0
+  startRound: 1

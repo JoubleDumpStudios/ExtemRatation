@@ -96,6 +96,33 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Debug.DrawLine(ray.origin, hit.point);
 
+                if (hit.collider.gameObject.tag == "PlantPoint")
+                {
+                    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
+                    if (!PlantPointScript.HasCrop)
+                    {
+                        playerManager.DisableAimIcon();
+                        playerManager.EnablePlantIcon();
+                    }
+
+                    if (Input.GetKeyDown(KeyCode.R))
+                        Plant(hit.collider.gameObject);
+                }
+                else if (hit.collider.gameObject.tag == "Plant")
+                {
+                    playerManager.DisableAimIcon();
+                    playerManager.EnableHarvestIcon();
+
+                    if (Input.GetKeyDown(KeyCode.R))
+                        Harvest(hit.collider.gameObject);
+                }
+                else
+                {
+                    playerManager.EnableAimIcon();
+                    playerManager.DisablePlantIcon();
+                    playerManager.DisableHarvestIcon();
+                }
+
                 //TESTING
                 //if (hit.collider.gameObject.tag == "PlantPoint")
                 //{
@@ -123,13 +150,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //    outlineScript.DisableOutline();
                 //TESTING
 
-                if (Input.GetKeyDown(KeyCode.R))
-                {
-                    if (hit.collider.gameObject.tag == "PlantPoint")
-                        Plant(hit.collider.gameObject);
-                    else if (hit.collider.gameObject.tag == "Plant")
-                        Harvest(hit.collider.gameObject);
-                }
+                //if (Input.GetKeyDown(KeyCode.R))
+                //{
+                //    if (hit.collider.gameObject.tag == "PlantPoint")
+                //        Plant(hit.collider.gameObject);
+                //    else if (hit.collider.gameObject.tag == "Plant")
+                //        Harvest(hit.collider.gameObject);
+                //}
+            }
+            else
+            {
+                playerManager.EnableAimIcon();
+                playerManager.DisablePlantIcon();
+                playerManager.DisableHarvestIcon();
             }
 
             RotateView();
