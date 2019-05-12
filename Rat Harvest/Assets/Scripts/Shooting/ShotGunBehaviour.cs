@@ -96,6 +96,12 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float timeBetweenShoots;
 
+    [SerializeField]
+    private ParticleSystem gunFire1;
+
+    [SerializeField]
+    private ParticleSystem gunFire2;
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -181,7 +187,10 @@ public class ShotGunBehaviour : MonoBehaviour
                 Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
             }
 
-        }
+
+            gunFire1.Emit(1);
+            gunFire2.Emit(1);
+}
     }
 
 
