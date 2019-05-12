@@ -12,7 +12,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Text scoreText;
 
     // Icons
-    [SerializeField] private Image aimIcon;
     [SerializeField] private Image plantIcon;
     [SerializeField] private Image HarvestIcon;
 
@@ -32,16 +31,6 @@ public class PlayerManager : MonoBehaviour
         scoreText.text = "Score: " + playerScore;
     }
 
-    public void EnableAimIcon()
-    {
-        aimIcon.enabled = true;
-    }
-
-    public void DisableAimIcon()
-    {
-        aimIcon.enabled = false;
-    }
-
     public void EnablePlantIcon()
     {
         plantIcon.enabled = true;
@@ -49,7 +38,8 @@ public class PlayerManager : MonoBehaviour
 
     public void DisablePlantIcon()
     {
-        plantIcon.enabled = false;
+        if(plantIcon.enabled)
+            plantIcon.enabled = false;
     }
 
     public void EnableHarvestIcon()
@@ -59,6 +49,7 @@ public class PlayerManager : MonoBehaviour
 
     public void DisableHarvestIcon()
     {
-        HarvestIcon.enabled = false;
+        if(HarvestIcon.enabled)
+            HarvestIcon.enabled = false;
     }
 }

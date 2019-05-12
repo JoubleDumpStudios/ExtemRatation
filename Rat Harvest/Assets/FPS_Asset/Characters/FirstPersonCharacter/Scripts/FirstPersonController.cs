@@ -99,29 +99,23 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 if (hit.collider.gameObject.tag == "PlantPoint")
                 {
                     PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
-                    if (!PlantPointScript.HasCrop)
-                    {
-                        playerManager.DisableAimIcon();
-                        playerManager.EnablePlantIcon();
-                    }
+
+                    if (!PlantPointScript.HasCrop)                  
+                        playerManager.EnablePlantIcon();               
 
                     if (Input.GetKeyDown(KeyCode.R))
                         Plant(hit.collider.gameObject);
                 }
                 else if (hit.collider.gameObject.tag == "Plant")
                 {
-                    playerManager.DisableAimIcon();
                     playerManager.EnableHarvestIcon();
 
                     if (Input.GetKeyDown(KeyCode.R))
                         Harvest(hit.collider.gameObject);
                 }
-                else
-                {
-                    playerManager.EnableAimIcon();
-                    playerManager.DisablePlantIcon();
-                    playerManager.DisableHarvestIcon();
-                }
+                else                
+                    DisablePlayerIcons();
+               
 
                 //TESTING
                 //if (hit.collider.gameObject.tag == "PlantPoint")
@@ -158,12 +152,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //        Harvest(hit.collider.gameObject);
                 //}
             }
-            else
-            {
-                playerManager.EnableAimIcon();
-                playerManager.DisablePlantIcon();
-                playerManager.DisableHarvestIcon();
-            }
+            else           
+                DisablePlayerIcons();
+            
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
@@ -407,6 +398,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             plantBehaviourScript.resetPlant();
             ObjectPooler.instance.killGameObject(rootPlant);
+        }
+
+        // Method to disable Plant and HarvestIcons
+        private void DisablePlayerIcons()
+        {
+            playerManager.DisablePlantIcon();
+            playerManager.DisableHarvestIcon();
         }
 
     }
