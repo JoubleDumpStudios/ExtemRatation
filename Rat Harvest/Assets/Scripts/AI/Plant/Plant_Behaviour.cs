@@ -33,7 +33,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public int CurrentPoints { get { return this.currentPoints; } }
 
     // Variable to have the count of the time passed
-    private float time;
+    //private float time;
 
     // A variable to store the pool
     ObjectPooler objectPooler = ObjectPooler.instance;
@@ -51,28 +51,40 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public void OnObjectSpawn()
     {
         initializePlant();
+        StartCoroutine(CountTime());
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if(startRound)
-            CountTime();
+        //if(startRound)
+        //    CountTime();
     }
 
     // Method with counts the time for the plant to grow
-    private void CountTime()
-    {
-        time += Time.deltaTime;
+    //private void CountTime()
+    //{
+    //    time += Time.deltaTime;
 
-        if (time >= growingTime && currentState < numOfStates - 1)
-            Grow();
+    //    if (time >= growingTime && currentState < numOfStates - 1)
+    //        Grow();
+    //}
+
+    private IEnumerator CountTime()
+    {
+        yield return new WaitUntil(() => startRound);
+   
+        yield return new WaitForSeconds(growingTime);
+        Grow();
+
+        if (currentState < numOfStates - 1)
+            StartCoroutine(CountTime());
     }
 
     // Method with the growth logic of the plant
     private void Grow()
     {
-        time = 0f;
+        //time = 0f;
 
         updateModel();
         updatePoints();
@@ -108,7 +120,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // Method to reset all the variables when the player harvests
     public void resetPlant()
     {
-        time = 0f;
+        //time = 0f;
         currentState = 0;
         currentPoints = 0;
 
@@ -117,6 +129,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         plantPoint.GetComponent<PlantPoint>().HasCrop = false;
         plantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
 
+        StopCoroutine(CountTime());
         objectPooler.killGameObject(currentPlant);
     }
 
