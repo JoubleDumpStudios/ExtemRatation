@@ -16,25 +16,26 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
-
-    public void EnablePlantEatingPoints()
-    {
-        for (int i = 0; i < plantEatingPoints.Count; i++)       
-            plantEatingPoints[i].PlantGrowing = true;
-    }
+    //public void EnablePlantEatingPoints()
+    //{
+    //    for (int i = 0; i < plantEatingPoints.Count; i++)       
+    //        plantEatingPoints[i].PlantGrowing = true;
+    //}
 
     public void DisablePlantEatingPoints()
     {
         for (int i = 0; i < plantEatingPoints.Count; i++)
         {
-            plantEatingPoints[i].PlantGrowing = false;
-            plantEatingPoints[i].PlantEatingPointReached = false;
+            plantEatingPoints[i].DisablePantEatingPoint();
+           
+            //plantEatingPoints[i].PlantGrowing = false;
+            //plantEatingPoints[i].PlantEatingPointReached = false;
 
-            if (plantEatingPoints[i].HasRat)
-            {
-                plantEatingPoints[i].RatScript.ratBackHome();
-                plantEatingPoints[i].HasRat = false;        
-            }
+            //if (plantEatingPoints[i].HasRat)
+            //{
+            //    plantEatingPoints[i].RatScript.ratBackHome();
+            //    plantEatingPoints[i].HasRat = false;        
+            //}
         }
     }
 

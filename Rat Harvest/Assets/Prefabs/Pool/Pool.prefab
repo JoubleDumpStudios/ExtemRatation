@@ -46,27 +46,26 @@ MonoBehaviour:
   itemsToPool:
   - objectToPool: {fileID: 3049736864826002973, guid: ee8dd8b47f2d8eb4fae3f01286f01d03,
       type: 3}
-    amountToPool: 3
+    amountToPool: 4
     shouldExpand: 0
-  - objectToPool: {fileID: 752775452142006626, guid: 170ae19e2e3d57743bad5998363740b0,
+  - objectToPool: {fileID: 7002172916348741992, guid: e0870473c31ece940a801bf7b1679882,
       type: 3}
-    amountToPool: 3
+    amountToPool: 4
     shouldExpand: 0
-  - objectToPool: {fileID: 4807115856107346429, guid: bbc2a46a54dd01441811fc854e2d70bd,
+  - objectToPool: {fileID: 4337773968248530734, guid: 108d79c7921253745ae8a53f441b79b8,
       type: 3}
-    amountToPool: 3
+    amountToPool: 4
     shouldExpand: 0
-  - objectToPool: {fileID: 607255248345174925, guid: 401103c423805a04d870592c47885433,
+  - objectToPool: {fileID: 1407500582956308063, guid: acf0402db1eb45747a3cd90897b4cd82,
       type: 3}
-    amountToPool: 3
+    amountToPool: 4
     shouldExpand: 0
-  - objectToPool: {fileID: 946452843077944268, guid: ee189165daf4c1a4b9d8172aaa176f5a,
-      type: 3}
-    amountToPool: 3
+  - objectToPool: {fileID: 584618471, guid: dc6c0d58211f63941a90649821a0e837, type: 3}
+    amountToPool: 4
     shouldExpand: 0
   - objectToPool: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
       type: 3}
-    amountToPool: 7
+    amountToPool: 21
     shouldExpand: 1
   - objectToPool: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef,
       type: 3}
@@ -75,19 +74,4 @@ MonoBehaviour:
   - objectToPool: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
       type: 3}
     amountToPool: 100
-    shouldExpand: 0
-  - objectToPool: {fileID: 7002172916348741992, guid: e0870473c31ece940a801bf7b1679882,
-      type: 3}
-    amountToPool: 5
-    shouldExpand: 0
-  - objectToPool: {fileID: 4337773968248530734, guid: 108d79c7921253745ae8a53f441b79b8,
-      type: 3}
-    amountToPool: 5
-    shouldExpand: 0
-  - objectToPool: {fileID: 1407500582956308063, guid: acf0402db1eb45747a3cd90897b4cd82,
-      type: 3}
-    amountToPool: 5
-    shouldExpand: 0
-  - objectToPool: {fileID: 584618471, guid: dc6c0d58211f63941a90649821a0e837, type: 3}
-    amountToPool: 5
     shouldExpand: 0

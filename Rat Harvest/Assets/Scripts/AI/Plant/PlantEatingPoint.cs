@@ -15,8 +15,8 @@ public class PlantEatingPoint : MonoBehaviour
     private bool plantEatingPointReached = false;
     public bool PlantEatingPointReached { set { this.plantEatingPointReached = value; } }
 
-    private bool plantGrowing = false;
-    public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
+    //private bool plantGrowing = false;
+    //public bool PlantGrowing { get { return this.plantGrowing; } set { this.plantGrowing = value; } }
 
     private float timePerAttack;
     public float TimePerAttack { set { this.timePerAttack = value; } }
@@ -58,4 +58,14 @@ public class PlantEatingPoint : MonoBehaviour
             plantEatingPointReached = true;
     }
 
+    public void DisablePantEatingPoint()
+    {
+        plantEatingPointReached = false;
+
+        if (HasRat)
+        {
+            RatScript.ratBackHome();
+            HasRat = false;
+        }
+    }
 }

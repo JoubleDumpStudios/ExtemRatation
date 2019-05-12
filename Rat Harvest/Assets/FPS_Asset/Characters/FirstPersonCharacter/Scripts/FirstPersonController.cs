@@ -96,20 +96,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Debug.DrawLine(ray.origin, hit.point);
 
-                if (hit.collider.gameObject.tag == "PlantPoint")
-                {
-                    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
-                    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
+                //TESTING
+                //if (hit.collider.gameObject.tag == "PlantPoint")
+                //{
+                //    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
+                //    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
 
-                    if (!PlantPointScript.HasCrop)
-                        outlineScript.EnableOutline();
+                //    if (!PlantPointScript.HasCrop)
+                //        outlineScript.EnableOutline();
 
-                    if (Input.GetKeyDown(KeyCode.E))
-                        Plant(hit.collider.gameObject);
-                }
-                else if (outlineScript != null)
-                    outlineScript.DisableOutline();
-
+                //    if (Input.GetKeyDown(KeyCode.E))
+                //        Plant(hit.collider.gameObject);
+                //}
+                //else if (outlineScript != null)
+                //    outlineScript.DisableOutline();
                 //if (hit.collider.gameObject.tag == "Plant")
                 //{
                 //    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
@@ -121,14 +121,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //}
                 //else if (outlineScript != null)
                 //    outlineScript.DisableOutline();
+                //TESTING
 
-                //if (Input.GetKeyDown(KeyCode.E))
-                //{
-                //    //if (hit.collider.gameObject.tag == "PlantPoint")
-                //    //    Plant(hit.collider.gameObject);
-                //    else if (hit.collider.gameObject.tag == "Plant")
-                //        Harvest(hit.collider.gameObject);
-                //}
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    if (hit.collider.gameObject.tag == "PlantPoint")
+                        Plant(hit.collider.gameObject);
+                    else if (hit.collider.gameObject.tag == "Plant")
+                        Harvest(hit.collider.gameObject);
+                }
             }
 
             RotateView();
@@ -334,7 +335,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // A method to plant a new crop in a gameobject
         private void Plant(GameObject go)
         {
-            //PlantPointScript = go.GetComponent<PlantPoint>();
+            PlantPointScript = go.GetComponent<PlantPoint>();
 
             if (PlantPointScript != null)            
                 if (!PlantPointScript.HasCrop)            
@@ -351,7 +352,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             plantBehaviour.GetComponent<Plant_Behaviour>().PlantPoint = go;
             PlantPointScript.HasCrop = true;
             PlantPointScript.Plant = plantBehaviour;
-            PlantPointScript.EnablePlantEatingPoints();
+            //PlantPointScript.EnablePlantEatingPoints();
         }
 
         // Method to harvest a crop
