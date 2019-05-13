@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlantModel : MonoBehaviour
 {
-    private List<Transform> childrens;
-    private List<cakeslice.Outline> outlineScripts;
+    private List<GameObject> childrens = new List<GameObject>();
+    private List<cakeslice.Outline> outlineScripts = new List<cakeslice.Outline>();
 
     // Start is called before the first frame update
     void Start()
     {
         FindChildrens();
-        //FindOutlineScripts();
+        FindOutlineScripts();
     }
 
     // Method to find all the childrens of the gameObject
@@ -19,8 +19,7 @@ public class PlantModel : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            Debug.Log(child.name);
-            childrens.Add(child);
+            childrens.Add(child.gameObject);
         }
     }
 
