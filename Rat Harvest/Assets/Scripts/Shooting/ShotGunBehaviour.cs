@@ -149,6 +149,10 @@ public class ShotGunBehaviour : MonoBehaviour
             }
         }
 
+        //gunFire1.Emit(1);
+        gunFire1.Play();
+        Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+
         waitingForNewShot = true;
     }
 
@@ -184,13 +188,8 @@ public class ShotGunBehaviour : MonoBehaviour
             {
                 objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
 
-                Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
+                //Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
             }
-
-
-            gunFire1.Emit(1);
-            //gunFire2.Emit(1);
-            gunFire2.Play();
 }
     }
 
