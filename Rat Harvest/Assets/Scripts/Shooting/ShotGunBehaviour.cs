@@ -189,7 +189,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
 
             gunFire1.Emit(1);
-            gunFire2.Emit(1);
+            //gunFire2.Emit(1);
+            gunFire2.Play();
 }
     }
 
