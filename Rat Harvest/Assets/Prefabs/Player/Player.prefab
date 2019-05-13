@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 496092031}
   - component: {fileID: 496092030}
   - component: {fileID: 6302764560635827697}
+  - component: {fileID: 3244972621383116800}
   m_Layer: 10
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -346,7 +347,7 @@ MonoBehaviour:
   lineThickness: 5.7
   lineIntensity: 10
   fillAmount: 0
-  lineColor0: {r: 1, g: 0.9584457, b: 0, a: 1}
+  lineColor0: {r: 1, g: 0.053242877, b: 0, a: 1}
   lineColor1: {r: 0, g: 1, b: 0, a: 1}
   lineColor2: {r: 0, g: 0, b: 1, a: 1}
   additiveRendering: 0
@@ -361,6 +362,18 @@ MonoBehaviour:
   outlineShaderMaterial: {fileID: 0}
   renderTexture: {fileID: 0}
   extraRenderTexture: {fileID: 0}
+--- !u!114 &3244972621383116800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496092028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12900426d1676a42b765db03ad85b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &741182470
 GameObject:
   m_ObjectHideFlags: 0

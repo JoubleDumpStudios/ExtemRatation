@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5671124972433581790}
   - component: {fileID: 4705481960247062448}
   - component: {fileID: 6178624560683378600}
+  - component: {fileID: 3578909743919111217}
   m_Layer: 0
   m_Name: TomatoStage3
   m_TagString: Plant
@@ -68,6 +69,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3578909743919111217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407500582956308063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a344514e655c24498a9a18e3684b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3462605858769896791
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,6 +92,7 @@ GameObject:
   - component: {fileID: 5439441721205309652}
   - component: {fileID: 5592406082583069546}
   - component: {fileID: 7346482235489024417}
+  - component: {fileID: 2844883117943220111}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -145,6 +159,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2844883117943220111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462605858769896791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &4742434929449444540
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +186,7 @@ GameObject:
   - component: {fileID: 8823132386120331778}
   - component: {fileID: 5043084244672411297}
   - component: {fileID: 6487650609825171706}
+  - component: {fileID: 1941819300589835782}
   m_Layer: 0
   m_Name: Sphere.038
   m_TagString: Untagged
@@ -222,6 +253,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1941819300589835782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4742434929449444540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &4758840492034153670
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +280,7 @@ GameObject:
   - component: {fileID: 2234467247884554231}
   - component: {fileID: 1736218134656196632}
   - component: {fileID: 6676811346728073246}
+  - component: {fileID: 3973674634085063232}
   m_Layer: 0
   m_Name: branch_s3
   m_TagString: Untagged
@@ -299,6 +347,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3973674634085063232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758840492034153670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &6028095123028565114
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +374,7 @@ GameObject:
   - component: {fileID: 3933781564805890018}
   - component: {fileID: 2973436465617264616}
   - component: {fileID: 3285787205477437299}
+  - component: {fileID: 8706625948904327460}
   m_Layer: 0
   m_Name: Sphere.003
   m_TagString: Untagged
@@ -376,6 +441,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8706625948904327460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028095123028565114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &6307283430548026133
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +468,7 @@ GameObject:
   - component: {fileID: 3249740636151535255}
   - component: {fileID: 7881176121389651016}
   - component: {fileID: 8172033441992923082}
+  - component: {fileID: 4045542870856124029}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -453,6 +535,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4045542870856124029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6307283430548026133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &7581453876179074008
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +562,7 @@ GameObject:
   - component: {fileID: 5666491835356959611}
   - component: {fileID: 1554086901407807260}
   - component: {fileID: 6443283114355663367}
+  - component: {fileID: 1731332827897825031}
   m_Layer: 0
   m_Name: Sphere.039
   m_TagString: Untagged
@@ -530,3 +629,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1731332827897825031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581453876179074008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []

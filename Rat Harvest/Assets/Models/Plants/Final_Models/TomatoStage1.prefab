@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2902140295850790110}
   - component: {fileID: 6515421810759219088}
   - component: {fileID: 8878447663730788568}
+  - component: {fileID: 8276337587644723422}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -77,6 +78,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8276337587644723422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254473575704572514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &7002172916348741992
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +105,7 @@ GameObject:
   - component: {fileID: 631811442945892454}
   - component: {fileID: 743566805866574944}
   - component: {fileID: 3135116801523212010}
+  - component: {fileID: 1357106227601425668}
   m_Layer: 0
   m_Name: TomatoStage1
   m_TagString: Plant
@@ -141,6 +159,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1357106227601425668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7002172916348741992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a344514e655c24498a9a18e3684b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7620168741687491553
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +182,7 @@ GameObject:
   - component: {fileID: 5589370890952877298}
   - component: {fileID: 4806711108126747533}
   - component: {fileID: 8070337690503721063}
+  - component: {fileID: 6667698910089656575}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -218,3 +249,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6667698910089656575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620168741687491553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 260856945}
   - component: {fileID: 260856947}
   - component: {fileID: 260856946}
+  - component: {fileID: 4051704453488112171}
   m_Layer: 0
   m_Name: Sphere.012
   m_TagString: Untagged
@@ -77,6 +78,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4051704453488112171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260856944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &579738782
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +105,7 @@ GameObject:
   - component: {fileID: 579738783}
   - component: {fileID: 579738785}
   - component: {fileID: 579738784}
+  - component: {fileID: 7520271511852051453}
   m_Layer: 0
   m_Name: Cylinder.006
   m_TagString: Untagged
@@ -154,6 +172,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7520271511852051453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579738782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &584618471
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +199,7 @@ GameObject:
   - component: {fileID: 584618472}
   - component: {fileID: 7319731562503635929}
   - component: {fileID: 7535924552217924146}
+  - component: {fileID: 2284600616116486458}
   m_Layer: 0
   m_Name: TomatoStage4
   m_TagString: Plant
@@ -222,6 +257,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2284600616116486458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584618471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a344514e655c24498a9a18e3684b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &956735397
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +280,7 @@ GameObject:
   - component: {fileID: 956735398}
   - component: {fileID: 956735400}
   - component: {fileID: 956735399}
+  - component: {fileID: 8332734686484653866}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -299,6 +347,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8332734686484653866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956735397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &1252694667
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +374,7 @@ GameObject:
   - component: {fileID: 1252694668}
   - component: {fileID: 1252694670}
   - component: {fileID: 1252694669}
+  - component: {fileID: 1446149995791062888}
   m_Layer: 0
   m_Name: Sphere.015
   m_TagString: Untagged
@@ -376,6 +441,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1446149995791062888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252694667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &1459775842
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +468,7 @@ GameObject:
   - component: {fileID: 1459775843}
   - component: {fileID: 1459775845}
   - component: {fileID: 1459775844}
+  - component: {fileID: 1110377970859571738}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -453,6 +535,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1110377970859571738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459775842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &1720368850
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +562,7 @@ GameObject:
   - component: {fileID: 1720368851}
   - component: {fileID: 1720368853}
   - component: {fileID: 1720368852}
+  - component: {fileID: 8869835170349020967}
   m_Layer: 0
   m_Name: Sphere.014
   m_TagString: Untagged
@@ -530,3 +629,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8869835170349020967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720368850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []

@@ -29,6 +29,7 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     [SerializeField]
     private PlantEatingPoint ratTarget;
+    public PlantEatingPoint RatTarget { get { return this.ratTarget; } }
 
     private GameObject despawnPoint;
     public GameObject DespawnPoint { set { this.despawnPoint = value; } }

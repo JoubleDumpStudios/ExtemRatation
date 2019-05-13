@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657987, g: 0.496413, b: 0.5748154, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657958, g: 0.49641275, b: 0.5748151, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2574,15 +2574,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 112584942}
     m_Modifications:
-    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1031288599423453932, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
       propertyPath: m_Name
       value: PlantEatingPoint_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4147988440504157346, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
@@ -6475,38 +6475,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599711339}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &628859312
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1131
-  m_Height: 636
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &635244349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,6 +7403,38 @@ Transform:
   m_Father: {fileID: 1035756374}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &776049453
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 601
+  m_Height: 338
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &804795141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9161,7 +9161,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1688161713}
+      objectReference: {fileID: 776049453}
     - target: {fileID: 741182471, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -11209,15 +11209,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1510263266}
     m_Modifications:
-    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1031288599423453932, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
       propertyPath: m_Name
       value: PlantEatingPoint_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4147988440504157346, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
@@ -11268,15 +11268,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 112584942}
     m_Modifications:
-    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1031288599423453932, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
       propertyPath: m_Name
       value: PlantEatingPoint_4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4147988440504157346, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
@@ -16002,38 +16002,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684895297}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &1688161713
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1131
-  m_Height: 636
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1707481865
 GameObject:
   m_ObjectHideFlags: 0
@@ -16545,11 +16513,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306339076729034080, guid: 7370e3f8162aec1499f8c94303292b9d,
-        type: 3}
-      propertyPath: orthographic size
-      value: 66.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7370e3f8162aec1499f8c94303292b9d, type: 3}
@@ -17468,6 +17431,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50.000004, y: -408.901, z: 0}
+--- !u!84 &1889565695
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 601
+  m_Height: 338
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1910172377
 GameObject:
   m_ObjectHideFlags: 0
@@ -18373,15 +18368,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1510263266}
     m_Modifications:
-    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
-        type: 3}
-      propertyPath: timePerAttack
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1031288599423453932, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}
       propertyPath: m_Name
       value: PlantEatingPoint_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067013637567473912, guid: 01265a43203d4ee43a1954cf0a8a5752,
+        type: 3}
+      propertyPath: timePerAttack
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4147988440504157346, guid: 01265a43203d4ee43a1954cf0a8a5752,
         type: 3}

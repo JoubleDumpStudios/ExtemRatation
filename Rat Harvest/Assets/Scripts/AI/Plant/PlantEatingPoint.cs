@@ -55,7 +55,11 @@ public class PlantEatingPoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
-            plantEatingPointReached = true;
+        {
+            if (other.gameObject.GetComponent<Rat_Movement_Logic>().RatTarget == this)
+                plantEatingPointReached = true;
+        }
+            
     }
 
     public void DisablePantEatingPoint()

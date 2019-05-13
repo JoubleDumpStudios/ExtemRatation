@@ -44,7 +44,6 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 
     [SerializeField]
     private bool startRound;
-
     public bool StartRound { set { this.startRound = value; } }
 
     // Method inherited form the IpooledObject interface
@@ -124,6 +123,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         currentState = 0;
         currentPoints = 0;
 
+        currentPlant.GetComponent<PlantModel>().DisableOutline();
         currentPlant.transform.parent = null;
 
         plantPoint.GetComponent<PlantPoint>().HasCrop = false;
@@ -133,9 +133,16 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         objectPooler.killGameObject(currentPlant);
     }
 
+    private void PlantCriticalHealth()
+    {
+        if (plantHealth < 50)
+            currentPlant.GetComponent<PlantModel>().EnableOutline();
+    }
+
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
+        //PlantCriticalHealth();
         Debug.Log("Plant Health = " + plantHealth);
 
         if (plantHealth <= 0)
@@ -144,5 +151,4 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
             objectPooler.killGameObject(this.gameObject);
         }          
     }
-
 }
