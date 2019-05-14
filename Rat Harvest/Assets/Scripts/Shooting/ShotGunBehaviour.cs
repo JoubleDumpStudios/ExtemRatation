@@ -109,11 +109,15 @@ public class ShotGunBehaviour : MonoBehaviour
 
     private float reloadTime = 0;
 
+
     [SerializeField]
     private int maxAmmo;
 
     [SerializeField]
-    private int bulletsCapacity;
+    private int Ammo;
+
+    [SerializeField]
+    private int shotGunCapacity;
 
 
     [SerializeField]
@@ -122,8 +126,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
     private int bulletsOnWeapon;
 
-    Text ammoCounterText;
-    Text bulletsOnWeaponCounterText;
+    public Text ammoCounterText;
+    public Text bulletsOnWeaponCounterText;
 
 
     private void Awake()
@@ -146,11 +150,17 @@ public class ShotGunBehaviour : MonoBehaviour
 
         objectPooler = ObjectPooler.instance;
 
+        Ammo = maxAmmo;
+        bulletsOnWeapon = shotGunCapacity;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ammoCounterText.text = "Ammo : " + Ammo;
+        bulletsOnWeaponCounterText.text = "On Gun : " + bulletsOnWeapon;
+
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             reloading = true;
@@ -158,7 +168,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (reloading)
         {
-
+            ReloadingTimer();
         }
         else
         {
@@ -297,9 +307,18 @@ public class ShotGunBehaviour : MonoBehaviour
     void ReloadingTimer()
     {
         reloadTime += Time.deltaTime;
+
         if(reloadTime >= timePerBulletWhenRecharging)
         {
             bulletsOnWeapon++;
+            Ammo--;
+
+            if(bulletsOnWeapon >= shotGunCapacity)
+            {
+                reloading = false;
+            }
+
+            reloadTime = 0;
         }
     }
 }
