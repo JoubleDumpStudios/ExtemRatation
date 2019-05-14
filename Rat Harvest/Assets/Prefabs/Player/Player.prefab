@@ -344,10 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78da3f00f3328541b4526c0b0b5ec5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineThickness: 5.7
-  lineIntensity: 10
-  fillAmount: 0
-  lineColor0: {r: 1, g: 0.053242877, b: 0, a: 1}
+  lineThickness: 2.7
+  lineIntensity: 4.18
+  fillAmount: 0.2
+  lineColor0: {r: 1, g: 0.14901961, b: 0, a: 1}
   lineColor1: {r: 0, g: 1, b: 0, a: 1}
   lineColor2: {r: 0, g: 0, b: 1, a: 1}
   additiveRendering: 0
@@ -1653,18 +1653,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 496092029}
     m_Modifications:
-    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Name
-      value: MARMO3
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38
@@ -1721,6 +1709,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Name
+      value: MARMO3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e870f12990348ad4b94b4cdb8f09b7a0, type: 3}
 --- !u!4 &1559840316 stripped
@@ -1742,10 +1742,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1522564021239229854}
     m_Modifications:
-    - target: {fileID: 100006, guid: fc33c524972ecbc42b7738c4184c858e, type: 3}
-      propertyPath: m_Name
-      value: WFX_MF 4P RIFLE3
-      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: fc33c524972ecbc42b7738c4184c858e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -1789,6 +1785,10 @@ PrefabInstance:
     - target: {fileID: 400006, guid: fc33c524972ecbc42b7738c4184c858e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: fc33c524972ecbc42b7738c4184c858e, type: 3}
+      propertyPath: m_Name
+      value: WFX_MF 4P RIFLE3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc33c524972ecbc42b7738c4184c858e, type: 3}

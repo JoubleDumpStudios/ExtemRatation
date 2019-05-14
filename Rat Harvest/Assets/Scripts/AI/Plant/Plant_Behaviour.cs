@@ -14,6 +14,10 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     [SerializeField] private int Health;
     private int plantHealth;
 
+    // A variable to know which is the critical health of the plant
+    [Tooltip("The plant is near to be destroyed when")]
+    [SerializeField] private int plantCriticalHealth;
+
     // A variable to know the current state of the plant
     private int currentState = 0;
 
@@ -51,6 +55,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     {
         initializePlant();
         StartCoroutine(CountTime());
+        StartCoroutine(PlantCriticalState());
     }
 
     // Update is called once per frame
@@ -130,19 +135,20 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         plantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
 
         StopCoroutine(CountTime());
+        StopCoroutine(PlantCriticalState());
         objectPooler.killGameObject(currentPlant);
     }
 
-    private void PlantCriticalHealth()
+    private IEnumerator PlantCriticalState()
     {
-        if (plantHealth < 50)
-            currentPlant.GetComponent<PlantModel>().EnableOutline();
+        yield return new WaitUntil(() => plantHealth < plantCriticalHealth);
+        currentPlant.GetComponent<PlantModel>().EnableOutline();
+        yield return null;
     }
 
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
-        //PlantCriticalHealth();
         Debug.Log("Plant Health = " + plantHealth);
 
         if (plantHealth <= 0)

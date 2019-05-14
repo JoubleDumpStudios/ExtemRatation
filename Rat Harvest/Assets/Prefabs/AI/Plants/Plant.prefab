@@ -46,6 +46,7 @@ MonoBehaviour:
   growingTime: 10
   numOfStates: 4
   Health: 100
+  plantCriticalHealth: 50
   plantModels:
   - {fileID: 7002172916348741992, guid: e0870473c31ece940a801bf7b1679882, type: 3}
   - {fileID: 4337773968248530734, guid: 108d79c7921253745ae8a53f441b79b8, type: 3}
