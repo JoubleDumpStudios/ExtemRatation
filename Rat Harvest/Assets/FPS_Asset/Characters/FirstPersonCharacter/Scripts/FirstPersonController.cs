@@ -99,26 +99,31 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Debug.DrawLine(ray.origin, hit.point);
 
                 gameobjectCollided = hit.collider.gameObject;
+              
+                if (gameobjectCollided.GetComponent<PlantModel>() != null)
+                {
+                    if (gameobjectCollided.GetComponentInParent<Plant_Behaviour>().CanBeHarvested())
+                        playerManager.EnableHarvestIcon();
+                    else
+                        playerManager.DisableHarvestIcon();
 
-                if (gameobjectCollided.GetComponent<PlantPoint>() != null)
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                        Harvest(gameobjectCollided);
+                }
+                else if (gameobjectCollided.GetComponent<PlantPoint>() != null)
                 {
                     PlantPointScript = gameobjectCollided.GetComponent<PlantPoint>();
 
-                    if (!PlantPointScript.HasCrop)                  
-                        playerManager.EnablePlantIcon();               
+                    if (!PlantPointScript.HasCrop)
+                        playerManager.EnablePlantIcon();
+                    else
+                        playerManager.DisablePlantIcon();
 
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
-                        Plant(hit.collider.gameObject);
+                        Plant(gameobjectCollided);
                 }
-                else if (gameobjectCollided.GetComponent<PlantModel>() != null)
-                {
-                    playerManager.EnableHarvestIcon();
-
-                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
-                        Harvest(hit.collider.gameObject);
-                }
-                else                
-                    DisablePlayerIcons();               
+                else
+                    DisablePlayerIcons();
             }
             else           
                 DisablePlayerIcons();
@@ -327,12 +332,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // A method to plant a new crop in a gameobject
         private void Plant(GameObject go)
         {
-            PlantPointScript = go.GetComponent<PlantPoint>();
+            //PlantPointScript = go.GetComponent<PlantPoint>();
 
-            if (PlantPointScript != null)            
-                if (!PlantPointScript.HasCrop)            
+            if (PlantPointScript != null)
+                if (!PlantPointScript.HasCrop)                
                     spawnPlant(go);
-                       
+                                     
         }
 
         // A method that spawns a plant
@@ -353,11 +358,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GameObject rootPlant = go.transform.parent.gameObject;
             plantBehaviourScript = rootPlant.GetComponent<Plant_Behaviour>();
 
-            int points = plantBehaviourScript.CurrentPoints;
-            playerManager.PlayerScore += points;
-            playerManager.updateScore();
+            if (plantBehaviourScript.CanBeHarvested())
+            {
+                int points = plantBehaviourScript.CurrentPoints;
+                playerManager.PlayerScore += points;
+                playerManager.updateScore();
 
-            resetPlantPointStatus(rootPlant);
+                resetPlantPointStatus(rootPlant);
+            }          
         }
 
         // Method to reset all the statistics of the soil when it is harvested

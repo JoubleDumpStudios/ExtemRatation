@@ -120,6 +120,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         objectPooler.killGameObject(currentPlant);
     }
 
+    // The plant starts to shine
     private IEnumerator PlantCriticalState()
     {
         yield return new WaitUntil(() => plantHealth < plantCriticalHealth);
@@ -127,6 +128,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         yield return null;
     }
 
+    // Substracts health from the plant
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
@@ -137,5 +139,18 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
             resetPlant();    
             objectPooler.killGameObject(this.gameObject);
         }          
+    }
+
+    // Checks if the plant can be harvested
+    public bool CanBeHarvested()
+    {
+        bool b = false;
+
+        if (currentState > 0)
+            b = true;
+        else
+            b = false;
+
+        return b;
     }
 }
