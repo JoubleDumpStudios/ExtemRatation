@@ -70,6 +70,28 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField]
         private ShotGunBehaviour shotGunBehaviourScript_;
 
+
+        // test AAron//////////////////////////////////////////////////
+        private void OnTriggerEnter(Collider collision)
+        {
+            if(collision.gameObject.tag == "AmmoChest")
+            {
+
+                collidingWithBarrel = true;
+            }
+        }
+
+        private void OnTriggerExit(Collider collision)
+        {
+            if (collision.gameObject.tag == "AmmoChest")
+            {
+
+                collidingWithBarrel = false;
+            }
+        }
+        public bool collidingWithBarrel;
+        /// ////////////////////////////////////////////
+
         // Use this for initialization
         private void Start()
         {
@@ -137,7 +159,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else           
                 DisablePlayerIcons();
-            
+
+            IfBarrelInsideTheObject();
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
@@ -390,6 +413,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             playerManager.DisablePlantIcon();
             playerManager.DisableHarvestIcon();
+        }
+
+        private void IfBarrelInsideTheObject()
+        {
+            if (collidingWithBarrel)
+            {
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                {
+                    shotGunBehaviourScript_.FillBulletsPocket();
+                }
+            }
         }
 
     }
