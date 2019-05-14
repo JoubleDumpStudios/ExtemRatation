@@ -7,9 +7,11 @@ public class PlayerManager : MonoBehaviour
 {
     // Variables
     [SerializeField] private int playerHealth = 100;
+    [SerializeField] private int bagCapacity;
 
     // Texts
     [SerializeField] private Text scoreText;
+    [SerializeField] private Text currentHarvestText;
 
     // Icons
     [SerializeField] private Image plantIcon;
