@@ -9,6 +9,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
     FirstPersonController firstPersonControllerScript_;
     public GameObject player;
+
     [SerializeField]
     [Range(0.0f, 100.0f)]
     private int weaponRange;
@@ -110,10 +111,7 @@ public class ShotGunBehaviour : MonoBehaviour
     private float reloadTime = 0;
 
 
-    [SerializeField]
     private int maxAmmo;
-
-    [SerializeField]
     private int Ammo;
 
     [SerializeField]
@@ -130,6 +128,9 @@ public class ShotGunBehaviour : MonoBehaviour
     public Text bulletsOnWeaponCounterText;
 
 
+
+    private PlayerManager playerManagerScript_;
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -144,11 +145,17 @@ public class ShotGunBehaviour : MonoBehaviour
     void Start()
     {
         firstPersonControllerScript_ = player.GetComponent<FirstPersonController>();
+        playerManagerScript_ = player.GetComponent<PlayerManager>();
 
         notAimingPosition = originalTransform;
         spreadAngle = NotAimingSpreadAngle;
 
         objectPooler = ObjectPooler.instance;
+
+
+
+        maxAmmo = playerManagerScript_.MaxAmmo;
+
 
         Ammo = maxAmmo;
         bulletsOnWeapon = shotGunCapacity;
@@ -168,7 +175,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (reloading)
         {
-            if (Ammo > 0)
+            if (Ammo > 0 && bulletsOnWeapon < shotGunCapacity)
                 ReloadingTimer();
         }
 
@@ -323,5 +330,10 @@ public class ShotGunBehaviour : MonoBehaviour
 
             reloadTime = 0;
         }
+    }
+
+    public void FillBullets()
+    {
+        Ammo = maxAmmo;
     }
 }

@@ -9,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private int playerHealth = 100;
     [SerializeField] private int bagCapacity;
 
+    [SerializeField] private int maxAmmo;
+    public int MaxAmmo { get { return this.maxAmmo; } }
+
     // Texts
     [SerializeField] private Text scoreText;
     [SerializeField] private Text currentHarvestText;
@@ -17,9 +20,13 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Image plantIcon;
     [SerializeField] private Image HarvestIcon;
 
+
     // Player's score
     private int playerScore = 0;
     public int PlayerScore { get { return this.playerScore; } set { this.playerScore = value; } }
+
+
+
 
 
     private void Start()
