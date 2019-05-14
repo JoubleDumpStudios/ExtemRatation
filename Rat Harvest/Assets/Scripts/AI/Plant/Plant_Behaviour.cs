@@ -15,7 +15,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     private int plantHealth;
 
     // A variable to know which is the critical health of the plant
-    [Tooltip("The plant is near to be destroyed when")]
+    [Tooltip("The health conisdered critical for the plant")]
     [SerializeField] private int plantCriticalHealth;
 
     // A variable to know the current state of the plant
@@ -58,22 +58,6 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         StartCoroutine(PlantCriticalState());
     }
 
-    // Update is called once per frame
-    private void Update()
-    {
-        //if(startRound)
-        //    CountTime();
-    }
-
-    // Method with counts the time for the plant to grow
-    //private void CountTime()
-    //{
-    //    time += Time.deltaTime;
-
-    //    if (time >= growingTime && currentState < numOfStates - 1)
-    //        Grow();
-    //}
-
     private IEnumerator CountTime()
     {
         yield return new WaitUntil(() => startRound);
@@ -88,8 +72,6 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // Method with the growth logic of the plant
     private void Grow()
     {
-        //time = 0f;
-
         updateModel();
         updatePoints();
     }
@@ -124,7 +106,6 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     // Method to reset all the variables when the player harvests
     public void resetPlant()
     {
-        //time = 0f;
         currentState = 0;
         currentPoints = 0;
 
@@ -149,7 +130,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
-        Debug.Log("Plant Health = " + plantHealth);
+        //Debug.Log("Plant Health = " + plantHealth);
 
         if (plantHealth <= 0)
         {

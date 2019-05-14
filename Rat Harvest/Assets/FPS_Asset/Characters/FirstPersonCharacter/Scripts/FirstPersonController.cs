@@ -64,6 +64,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Variable to access to the outline script
         private OutlineManager outlineScript;
 
+        private GameObject gameobjectCollided;
+
         // Use this for initialization
         private void Start()
         {
@@ -96,9 +98,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Debug.DrawLine(ray.origin, hit.point);
 
-                if (hit.collider.gameObject.tag == "PlantPoint")
+                gameobjectCollided = hit.collider.gameObject;
+
+                if (gameobjectCollided.GetComponent<PlantPoint>() != null)
                 {
-                    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
+                    PlantPointScript = gameobjectCollided.GetComponent<PlantPoint>();
 
                     if (!PlantPointScript.HasCrop)                  
                         playerManager.EnablePlantIcon();               
@@ -106,7 +110,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                         Plant(hit.collider.gameObject);
                 }
-                else if (hit.collider.gameObject.tag == "Plant")
+                else if (gameobjectCollided.GetComponent<PlantModel>() != null)
                 {
                     playerManager.EnableHarvestIcon();
 
@@ -114,43 +118,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         Harvest(hit.collider.gameObject);
                 }
                 else                
-                    DisablePlayerIcons();
-               
-
-                //TESTING
-                //if (hit.collider.gameObject.tag == "PlantPoint")
-                //{
-                //    PlantPointScript = hit.collider.gameObject.GetComponent<PlantPoint>();
-                //    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
-
-                //    if (!PlantPointScript.HasCrop)
-                //        outlineScript.EnableOutline();
-
-                //    if (Input.GetKeyDown(KeyCode.E))
-                //        Plant(hit.collider.gameObject);
-                //}
-                //else if (outlineScript != null)
-                //    outlineScript.DisableOutline();
-                //if (hit.collider.gameObject.tag == "Plant")
-                //{
-                //    outlineScript = hit.collider.gameObject.GetComponent<OutlineManager>();
-
-                //    outlineScript.EnableOutline();
-
-                //    if (Input.GetKeyDown(KeyCode.E))
-                //        Harvest(hit.collider.gameObject);
-                //}
-                //else if (outlineScript != null)
-                //    outlineScript.DisableOutline();
-                //TESTING
-
-                //if (Input.GetKeyDown(KeyCode.R))
-                //{
-                //    if (hit.collider.gameObject.tag == "PlantPoint")
-                //        Plant(hit.collider.gameObject);
-                //    else if (hit.collider.gameObject.tag == "Plant")
-                //        Harvest(hit.collider.gameObject);
-                //}
+                    DisablePlayerIcons();               
             }
             else           
                 DisablePlayerIcons();
@@ -388,7 +356,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             int points = plantBehaviourScript.CurrentPoints;
             playerManager.PlayerScore += points;
             playerManager.updateScore();
-            //Debug.Log("You get " + points + " points");
 
             resetPlantPointStatus(rootPlant);
         }
