@@ -11,13 +11,9 @@ public class Rat_Movement_Logic : MonoBehaviour
     [SerializeField] private int damage;
     public int Damage { get { return this.damage; } }
 
-
-    
-
     [SerializeField] private float secondsToAttack;
 
-    [SerializeField]
-    List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
+    private List<GameObject> destinations = new List<GameObject>();// must contain all the possible destinations we want for the movable objects
 
     NavMeshAgent _navMeshAgent;
 

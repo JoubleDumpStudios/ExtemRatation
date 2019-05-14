@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 3106649658889243144}
   - component: {fileID: 3106649658889243159}
   - component: {fileID: 3106649658889243158}
-  - component: {fileID: 3106649658889243146}
-  - component: {fileID: 8529074695524949587}
-  - component: {fileID: 450326226479636694}
   - component: {fileID: 3962179238444533388}
-  - component: {fileID: 4977438538644491858}
+  - component: {fileID: 8529074695524949587}
+  - component: {fileID: 3106649658889243146}
+  - component: {fileID: 450326226479636694}
   m_Layer: 11
   m_Name: Rat_Health_Testing
   m_TagString: Untagged
@@ -98,22 +97,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3106649658889243146
-MonoBehaviour:
+--- !u!54 &3962179238444533388
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3106649658889243157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8975d911d04dcb49add30f59f7a05e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topHeadHealthBar: {fileID: 5718402364444168558}
-  wounds_: []
-  maxHealth: 100
-  health: 100
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!195 &8529074695524949587
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -136,6 +135,22 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &3106649658889243146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106649658889243157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8975d911d04dcb49add30f59f7a05e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topHeadHealthBar: {fileID: 5718402364444168558}
+  wounds_: []
+  maxHealth: 100
+  health: 100
 --- !u!114 &450326226479636694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,35 +167,6 @@ MonoBehaviour:
   secondsToAttack: 4
   destinations: []
   ratTarget: {fileID: 0}
---- !u!54 &3962179238444533388
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106649658889243157}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &4977438538644491858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106649658889243157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f40f4f0d4aec7c041a72ae9b1c7a09e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destination: {fileID: 0}
 --- !u!1 &3111663140045479804
 GameObject:
   m_ObjectHideFlags: 0
