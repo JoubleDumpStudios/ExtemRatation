@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class ShotGunBehaviour : MonoBehaviour
 {
@@ -91,7 +92,7 @@ public class ShotGunBehaviour : MonoBehaviour
     private ObjectPooler objectPooler;
 
     private bool waitingForNewShot;
-    float time = 0;
+    float shootTime = 0;
 
     [SerializeField]
     private float timeBetweenShoots;
@@ -102,6 +103,29 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private ParticleSystem gunFire2;
 
+
+
+    private bool reloading;
+
+    private float reloadTime = 0;
+
+    [SerializeField]
+    private int maxAmmo;
+
+    [SerializeField]
+    private int bulletsCapacity;
+
+
+    [SerializeField]
+    private int timePerBulletWhenRecharging;
+
+
+    private int bulletsOnWeapon;
+
+    Text ammoCounterText;
+    Text bulletsOnWeaponCounterText;
+
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -110,8 +134,6 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             bullets.Add(Quaternion.Euler(Vector3.zero));
         }
-
-
     }
 
     // Start is called before the first frame update
@@ -129,8 +151,20 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ShootingTimer();
-        ShootingLogicAndRecoil();
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            reloading = true;
+        }
+
+        if (reloading)
+        {
+
+        }
+        else
+        {
+            ShootingTimer();
+            ShootingLogicAndRecoil();
+        }
     }
 
 
@@ -154,6 +188,9 @@ public class ShotGunBehaviour : MonoBehaviour
         Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
 
         waitingForNewShot = true;
+
+
+        bulletsOnWeapon--;
     }
 
 
@@ -247,13 +284,22 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (waitingForNewShot)
         {
-            time += Time.deltaTime;
+            shootTime += Time.deltaTime;
 
-            if (time >= timeBetweenShoots)
+            if (shootTime >= timeBetweenShoots)
             {
-                time = 0;
+                shootTime = 0;
                 waitingForNewShot = false;
             }
+        }
+    }
+
+    void ReloadingTimer()
+    {
+        reloadTime += Time.deltaTime;
+        if(reloadTime >= timePerBulletWhenRecharging)
+        {
+            bulletsOnWeapon++;
         }
     }
 }

@@ -103,14 +103,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (!PlantPointScript.HasCrop)                  
                         playerManager.EnablePlantIcon();               
 
-                    if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                         Plant(hit.collider.gameObject);
                 }
                 else if (hit.collider.gameObject.tag == "Plant")
                 {
                     playerManager.EnableHarvestIcon();
 
-                    if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                         Harvest(hit.collider.gameObject);
                 }
                 else                
