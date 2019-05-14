@@ -121,7 +121,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
 
     [SerializeField]
-    private int timePerBulletWhenRecharging;
+    private float timePerBulletWhenRecharging;
 
 
     private int bulletsOnWeapon;
@@ -168,13 +168,14 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (reloading)
         {
-            ReloadingTimer();
+            if (Ammo > 0)
+                ReloadingTimer();
         }
-        else
-        {
-            ShootingTimer();
-            ShootingLogicAndRecoil();
-        }
+
+
+        ShootingTimer();
+        ShootingLogicAndRecoil();
+
     }
 
 
@@ -237,7 +238,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
                 //Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
             }
-}
+        }
     }
 
 
@@ -254,14 +255,16 @@ public class ShotGunBehaviour : MonoBehaviour
     {
         if (Input.GetAxis("Fire1") <= 0)
             shooting = false;
-
-        if ((Input.GetButtonDown("Fire1") || (Input.GetAxis("Fire1") > 0 && !shooting)) && !waitingForNewShot)
+        if ((Input.GetButtonDown("Fire1") || (Input.GetAxis("Fire1") > 0 && !shooting)) && !waitingForNewShot && bulletsOnWeapon > 0)
         {
             fire();
             shooting = true;
             currentRecoilPosition -= weaponRecoilAmount;
             currentRecoilAngle = -weaponRecoilAngle;
             firstPersonControllerScript_.cameraRecoil(angleForCameraRecoil, cameraRecoilSpeed, cameraRecoilingTime);
+
+            reloading = false;
+            reloadTime = 0;
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, weaponRecoilingTime);
@@ -308,12 +311,12 @@ public class ShotGunBehaviour : MonoBehaviour
     {
         reloadTime += Time.deltaTime;
 
-        if(reloadTime >= timePerBulletWhenRecharging)
+        if (reloadTime >= timePerBulletWhenRecharging)
         {
             bulletsOnWeapon++;
             Ammo--;
 
-            if(bulletsOnWeapon >= shotGunCapacity)
+            if (bulletsOnWeapon >= shotGunCapacity)
             {
                 reloading = false;
             }
