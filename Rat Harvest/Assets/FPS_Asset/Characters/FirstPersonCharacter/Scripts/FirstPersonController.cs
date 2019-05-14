@@ -66,6 +66,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private GameObject gameobjectCollided;
 
+        //Variable to acces the shotgunbehaviour to fill the ammo pocket.
+        [SerializeField]
+        private ShotGunBehaviour shotGunBehaviourScript_;
+
         // Use this for initialization
         private void Start()
         {
@@ -81,7 +85,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
 
             playerManager = GetComponent<PlayerManager>();
-
         }
 
         public void cameraRecoil(float ang, float cameraRecoilSpeed, float cameraRecoilTime)
@@ -121,6 +124,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                         Plant(gameobjectCollided);
+                }
+                else if (gameobjectCollided.gameObject.tag == "AmmoChest")
+                {
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    {
+                        shotGunBehaviourScript_.FillBulletsPocket();
+                    }
                 }
                 else
                     DisablePlayerIcons();

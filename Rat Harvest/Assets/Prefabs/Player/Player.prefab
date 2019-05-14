@@ -918,6 +918,7 @@ MonoBehaviour:
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   Cam_Ray_Length: 1.5
   Harvest_Raycast_SpawnPoint: {fileID: 492651680}
+  shotGunBehaviourScript_: {fileID: 298014698}
 --- !u!114 &6586784884396762487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
-  bagCapacity: 0
+  bagCapacity: 100
+  maxAmmo: 100
   scoreText: {fileID: 174930517035892618}
   currentHarvestText: {fileID: 0}
   plantIcon: {fileID: 3726147482026851731}
@@ -1166,12 +1168,6 @@ MonoBehaviour:
     type: 3}
   Barrel: {fileID: 492651680}
   raycasted: 1
-  holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
-  holesParticleEffects: {fileID: 100002, guid: 56bfc2f4b4a0c534c8ef3d0fd1124c44, type: 3}
-  ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
-    type: 3}
-  ratHolesParticleEffects: {fileID: 242947493191017951, guid: 3be45d8681f363649b1399cd2cf84aee,
-    type: 3}
   damage: 10
   weaponRecoilingTime: 0.2
   weaponRecoilAmount: 0.2
@@ -1185,8 +1181,12 @@ MonoBehaviour:
   timeBetweenShoots: 0.5
   gunFire1: {fileID: 277217278575145822}
   gunFire2: {fileID: 6610557129038923919}
-  maxAmmo: 100
-  Ammo: 0
+  holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
+  holesParticleEffects: {fileID: 100002, guid: 56bfc2f4b4a0c534c8ef3d0fd1124c44, type: 3}
+  ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
+    type: 3}
+  ratHolesParticleEffects: {fileID: 242947493191017951, guid: 3be45d8681f363649b1399cd2cf84aee,
+    type: 3}
   shotGunCapacity: 7
   timePerBulletWhenRecharging: 0.5
   ammoCounterText: {fileID: 4490191082497570655}

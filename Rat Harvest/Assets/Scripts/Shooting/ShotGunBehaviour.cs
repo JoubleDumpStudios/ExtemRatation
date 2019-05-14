@@ -8,8 +8,10 @@ public class ShotGunBehaviour : MonoBehaviour
 {
 
     FirstPersonController firstPersonControllerScript_;
+    private PlayerManager playerManagerScript_;
     public GameObject player;
 
+    //Shoting properties variables
     [SerializeField]
     [Range(0.0f, 100.0f)]
     private int weaponRange;
@@ -24,7 +26,6 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     public float AimingSpreadAngle;
 
-
     public float spreadAngle;
 
     [SerializeField]
@@ -38,24 +39,11 @@ public class ShotGunBehaviour : MonoBehaviour
     List<Quaternion> bullets;
 
     [SerializeField]
-    private GameObject holes;
-    private GameObject holes_;
-
-    [SerializeField]
-    private GameObject holesParticleEffects;
-
-    [SerializeField]
-    private GameObject ratHoles;
-    private GameObject ratHole_;
-
-    [SerializeField]
-    private GameObject ratHolesParticleEffects;
-
-    [SerializeField]
     private float damage;
 
     RaycastHit hit;
     Ray ray;
+
 
     [SerializeField]
     private float weaponRecoilingTime = 0.2f;
@@ -88,6 +76,8 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float aimingSpeed;
 
+
+    //Shooting Logic - FireRate
     private bool shooting = false;
 
     private ObjectPooler objectPooler;
@@ -98,18 +88,32 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float timeBetweenShoots;
 
+    //Shoting Special Efects
     [SerializeField]
     private ParticleSystem gunFire1;
 
     [SerializeField]
     private ParticleSystem gunFire2;
 
+    //Hit effects
+    [SerializeField]
+    private GameObject holes;
+    private GameObject holes_;
 
+    [SerializeField]
+    private GameObject holesParticleEffects;
 
+    [SerializeField]
+    private GameObject ratHoles;
+    private GameObject ratHole_;
+
+    [SerializeField]
+    private GameObject ratHolesParticleEffects;
+
+    //Reloading Logic Variables and ammo
     private bool reloading;
 
     private float reloadTime = 0;
-
 
     private int maxAmmo;
     private int Ammo;
@@ -121,15 +125,17 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float timePerBulletWhenRecharging;
 
-
     private int bulletsOnWeapon;
 
+
+
+    //UI elements for gunShot amo
     public Text ammoCounterText;
     public Text bulletsOnWeaponCounterText;
 
 
 
-    private PlayerManager playerManagerScript_;
+
 
     private void Awake()
     {
@@ -332,7 +338,7 @@ public class ShotGunBehaviour : MonoBehaviour
         }
     }
 
-    public void FillBullets()
+    public void FillBulletsPocket()
     {
         Ammo = maxAmmo;
     }

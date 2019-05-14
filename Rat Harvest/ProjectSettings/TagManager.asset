@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
+  - Plant
+  - AmmoChest
   layers:
   - Default
   - TransparentFX
