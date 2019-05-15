@@ -57,7 +57,11 @@ public class PlantEatingPoint : MonoBehaviour
         if (other.gameObject.GetComponent<Rat_Movement_Logic>() != null)
         {
             if (other.gameObject.GetComponent<Rat_Movement_Logic>().RatTarget == this)
+            {
                 plantEatingPointReached = true;
+                ratScript.RatAnimator.SetBool("Attacking", true);
+            }
+                
         }
             
     }
@@ -65,6 +69,7 @@ public class PlantEatingPoint : MonoBehaviour
     public void DisablePantEatingPoint()
     {
         plantEatingPointReached = false;
+        ratScript.RatAnimator.SetBool("Attacking", false);
 
         if (HasRat)
         {

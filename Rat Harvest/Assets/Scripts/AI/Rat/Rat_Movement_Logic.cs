@@ -32,9 +32,13 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     private bool returningHome;
 
+    private Animator ratAnimator;
+    public Animator RatAnimator { get { return this.ratAnimator; } }
+
     private void Awake()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
+        ratAnimator = GetComponentInChildren<Animator>();
     }
 
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
@@ -130,6 +134,7 @@ public class Rat_Movement_Logic : MonoBehaviour
         //ratTarget.HasRat = false;
         destinations.Clear();
         ratTarget.PlantEatingPointReached = false;
+        ratAnimator.SetBool("Attacking", false);
     }
 
 
