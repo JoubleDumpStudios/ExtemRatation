@@ -59,6 +59,7 @@ public class PlantEatingPoint : MonoBehaviour
             if (other.gameObject.GetComponent<Rat_Movement_Logic>().RatTarget == this)
             {
                 plantEatingPointReached = true;
+                ratScript.Rotate(transform.rotation);
                 ratScript.RatAnimator.SetBool("Attacking", true);
             }
                 

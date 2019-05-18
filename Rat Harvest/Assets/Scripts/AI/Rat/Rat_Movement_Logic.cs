@@ -137,7 +137,10 @@ public class Rat_Movement_Logic : MonoBehaviour
         ratAnimator.SetBool("Attacking", false);
     }
 
-
+    public void Rotate(Quaternion desiredRot)
+    {
+        transform.rotation = desiredRot;
+    }
 
     //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
     //{
