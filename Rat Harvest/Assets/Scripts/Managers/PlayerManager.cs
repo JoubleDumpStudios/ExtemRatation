@@ -8,13 +8,14 @@ public class PlayerManager : MonoBehaviour
     // Variables
     [SerializeField] private int playerHealth = 100;
     [SerializeField] private int bagCapacity;
+    public int BagCapacity { get { return this.bagCapacity; } }
 
     [SerializeField] private int maxAmmo;
     public int MaxAmmo { get { return this.maxAmmo; } }
 
     // Texts
     [SerializeField] private Text scoreText;
-    [SerializeField] private Text currentHarvestText;
+    [SerializeField] private Text bagText;
 
     // Icons
     [SerializeField] private Image plantIcon;
@@ -23,10 +24,11 @@ public class PlayerManager : MonoBehaviour
 
     // Player's score
     private int playerScore = 0;
-    public int PlayerScore { get { return this.playerScore; } set { this.playerScore = value; } }
+    public int PlayerScore { get { return this.playerScore; } }
 
-
-
+    // Player's Harvest
+    private int playerHarvest = 0;
+    public int PlayerHarvest { get { return this.playerHarvest; } }
 
 
     private void Start()
@@ -37,7 +39,22 @@ public class PlayerManager : MonoBehaviour
 
     public void updateScore()
     {
+        playerScore += playerHarvest;
         scoreText.text = "Score: " + playerScore;
+
+        playerHarvest = 0;
+        bagText.text = "Bag: " + playerHarvest + " / " + bagCapacity;
+    }
+
+    public void updateBag(int harvest)
+    {
+
+        if (playerHarvest + harvest > bagCapacity)
+            playerHarvest += bagCapacity - playerHarvest;
+        else
+            playerHarvest += harvest;
+
+        bagText.text = "Bag: " + playerHarvest + " / " + bagCapacity;
     }
 
     public void EnablePlantIcon()

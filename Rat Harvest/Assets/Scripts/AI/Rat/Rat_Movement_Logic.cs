@@ -32,7 +32,7 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     private bool returningHome;
 
-    private Animator ratAnimator;
+    public Animator ratAnimator;
     public Animator RatAnimator { get { return this.ratAnimator; } }
 
     private void Awake()

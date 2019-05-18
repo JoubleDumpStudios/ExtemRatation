@@ -70,7 +70,7 @@ public class PlantEatingPoint : MonoBehaviour
     public void DisablePantEatingPoint()
     {
         plantEatingPointReached = false;
-        ratScript.RatAnimator.SetBool("Attacking", false);
+        //ratScript.RatAnimator.SetBool("Attacking", false);
 
         if (HasRat)
         {

@@ -154,6 +154,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         shotGunBehaviourScript_.FillBulletsPocket();
                     }
                 }
+                else if (gameobjectCollided.gameObject.tag == "HarvestChest")
+                {
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    {
+                        playerManager.updateScore();
+                    }
+                }
                 else
                     DisablePlayerIcons();
             }
@@ -394,8 +401,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (plantBehaviourScript.CanBeHarvested())
             {
                 int points = plantBehaviourScript.CurrentPoints;
-                playerManager.PlayerScore += points;
-                playerManager.updateScore();
+
+                //int maxpoints = playerManager.BagCapacity;
+                //int p = playerManager.PlayerHarvest + points;
+
+                //if (playerManager.PlayerHarvest < playerManager.BagCapacity && p > maxpoints)               
+                //    points = playerManager.BagCapacity - playerManager.PlayerHarvest;               
+                //else
+                //    points = 0;
+
+                //playerManager.updateScore(points);
+                playerManager.updateBag(points);
 
                 resetPlantPointStatus(rootPlant);
             }          

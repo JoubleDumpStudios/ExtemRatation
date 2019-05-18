@@ -109,14 +109,15 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         currentState = 0;
         currentPoints = 0;
 
-        currentPlant.GetComponent<PlantModel>().DisableOutline();
-        currentPlant.transform.parent = null;
-
         plantPoint.GetComponent<PlantPoint>().HasCrop = false;
         plantPoint.GetComponent<PlantPoint>().DisablePlantEatingPoints();
 
         StopCoroutine(CountTime());
         StopCoroutine(PlantCriticalState());
+
+        currentPlant.GetComponent<PlantModel>().DisableOutline();
+        currentPlant.transform.parent = null;
+
         objectPooler.killGameObject(currentPlant);
     }
 
