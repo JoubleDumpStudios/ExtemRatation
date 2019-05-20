@@ -207,13 +207,15 @@ public class ShotGunBehaviour : MonoBehaviour
             }
         }
 
-        //gunFire1.Emit(1);
+        //fire efect for shotgun shot
         gunFire1.Play();
+
+        //particles efect from hitting point 
         Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
 
         waitingForNewShot = true;
 
-
+        //discount bullets on the weapon
         bulletsOnWeapon--;
     }
 
@@ -236,9 +238,10 @@ public class ShotGunBehaviour : MonoBehaviour
 
             if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>() != null)
             {
+                //holes on the rats
 
-                objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
-                ratHole_.transform.parent = hit.collider.gameObject.transform;
+                //objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
+                //ratHole_.transform.parent = hit.collider.gameObject.transform;
 
                 ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), ratHole_);
 
@@ -247,7 +250,9 @@ public class ShotGunBehaviour : MonoBehaviour
             }
             else
             {
-                objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
+                //holes on the surfices
+
+                //objectPooler.spawnFromPool(holes.name, hit.point, holes.transform.rotation, out holes_);
 
                 //Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
             }
