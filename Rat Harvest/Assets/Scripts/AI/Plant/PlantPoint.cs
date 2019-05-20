@@ -16,6 +16,14 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
+
+    private Icon_Plant_Behaviour iconPlantBehaviouScript;
+
+    private void Start()
+    {
+        iconPlantBehaviouScript = GetComponentInChildren<Icon_Plant_Behaviour>();
+        iconPlantBehaviouScript.gameObject.SetActive(false);
+    }
     //public void EnablePlantEatingPoints()
     //{
     //    for (int i = 0; i < plantEatingPoints.Count; i++)       
@@ -37,6 +45,17 @@ public class PlantPoint : MonoBehaviour
             //    plantEatingPoints[i].HasRat = false;        
             //}
         }
+        disabePlantIcon();
+    }
+
+    public void enablePlantIcon()
+    {
+        iconPlantBehaviouScript.gameObject.SetActive(true);
+    }
+
+    private void disabePlantIcon()
+    {
+        iconPlantBehaviouScript.gameObject.SetActive(false);
     }
 
 }

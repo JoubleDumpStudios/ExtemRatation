@@ -375,8 +375,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //PlantPointScript = go.GetComponent<PlantPoint>();
 
             if (PlantPointScript != null)
-                if (!PlantPointScript.HasCrop)                
+                if (!PlantPointScript.HasCrop)
+                {
+                    PlantPointScript.enablePlantIcon();
                     spawnPlant(go);
+                }
                                      
         }
 
