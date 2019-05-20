@@ -1188,7 +1188,14 @@ MonoBehaviour:
   gunFire1: {fileID: 277217278575145822}
   gunFire2: {fileID: 6610557129038923919}
   holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
-  holesParticleEffects: {fileID: 100002, guid: 56bfc2f4b4a0c534c8ef3d0fd1124c44, type: 3}
+  dirtHolesParticleEffects: {fileID: 100002, guid: 56bfc2f4b4a0c534c8ef3d0fd1124c44,
+    type: 3}
+  sandHolesParticleEffects: {fileID: 100002, guid: fc7f8379080d0a844ad699b91bfd56f0,
+    type: 3}
+  woodHolesParticleEffects: {fileID: 100002, guid: ac1aa04288fad804ba1cd769f4377aaf,
+    type: 3}
+  metalHolesParticleEffects: {fileID: 100002, guid: 00fedc70b62a31e448e8ccc298257b56,
+    type: 3}
   ratHoles: {fileID: 6875684606579858105, guid: 9fd4e76618e5b9840a1d4fc7ecccd85f,
     type: 3}
   ratHolesParticleEffects: {fileID: 242947493191017951, guid: 3be45d8681f363649b1399cd2cf84aee,
@@ -1552,7 +1559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3801597436298307608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.000000059604645, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 496092029}

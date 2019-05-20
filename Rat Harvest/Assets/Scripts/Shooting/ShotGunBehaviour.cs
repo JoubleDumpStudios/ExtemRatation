@@ -101,7 +101,16 @@ public class ShotGunBehaviour : MonoBehaviour
     private GameObject holes_;
 
     [SerializeField]
-    private GameObject holesParticleEffects;
+    private GameObject dirtHolesParticleEffects;
+
+    [SerializeField]
+    private GameObject sandHolesParticleEffects;
+
+    [SerializeField]
+    private GameObject woodHolesParticleEffects;
+
+    [SerializeField]
+    private GameObject metalHolesParticleEffects;
 
     [SerializeField]
     private GameObject ratHoles;
@@ -210,11 +219,12 @@ public class ShotGunBehaviour : MonoBehaviour
         //fire efect for shotgun shot
         gunFire1.Play();
 
-        //particles efect from hitting point 
-        Instantiate(holesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+        //particles efect from hitting point
+        HittingParticleEffect();
 
+
+        //boolean for timing between shots
         waitingForNewShot = true;
-
         //discount bullets on the weapon
         bulletsOnWeapon--;
     }
@@ -243,7 +253,7 @@ public class ShotGunBehaviour : MonoBehaviour
                 //objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
                 //ratHole_.transform.parent = hit.collider.gameObject.transform;
 
-                ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), ratHole_);
+                ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>()/*, ratHole_*/);
 
                 Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
 
@@ -305,9 +315,9 @@ public class ShotGunBehaviour : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
     }
 
-    void ratHit(Rat_Health_Logic healthLogic, GameObject ratHole)
+    void ratHit(Rat_Health_Logic healthLogic/*, GameObject ratHole*/)
     {
-        healthLogic.ratHited(damage, ratHole);
+        healthLogic.ratHited(damage/*, ratHole*/);
     }
 
     void ShootingTimer()
@@ -346,5 +356,28 @@ public class ShotGunBehaviour : MonoBehaviour
     public void FillBulletsPocket()
     {
         Ammo = maxAmmo;
+    }
+
+
+    void HittingParticleEffect()
+    {
+        Vector3 raycastOrigin = Barrel.position;
+        ray = new Ray(raycastOrigin, Barrel.transform.forward);
+
+        if (Physics.Raycast(ray, out hit, weaponRange))
+        {
+            if (hit.collider.gameObject.tag == "Wood")
+            {
+                Instantiate(woodHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+            }
+            else if (hit.collider.gameObject.tag == "Metal")
+            {
+                Instantiate(metalHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+            }
+            else
+            {
+                Instantiate(dirtHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+            }
+        }
     }
 }
