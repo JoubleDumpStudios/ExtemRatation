@@ -23,7 +23,12 @@ public class Spawner : MonoBehaviour
     float time = 0;
 
     [SerializeField]
-    private float spawningTime = 0;
+    private float minimumSpawningTime = 3;
+
+    [SerializeField]
+    private float maximumSpawningTime = 5;
+
+    private float spawningTime;
 
     [SerializeField]
     private bool startRound;
@@ -39,6 +44,7 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        SetNewSpawningTime();
     }
 
     private void Update()
@@ -49,6 +55,7 @@ public class Spawner : MonoBehaviour
             if (time >= spawningTime)
             {
                 SpawnRat();
+                SetNewSpawningTime();
                 time = 0;
             }
         }
@@ -105,5 +112,10 @@ public class Spawner : MonoBehaviour
         setRatDestinations();
         ratScript.chooseNewTarget();
         ratScript.DespawnPoint = despawnPoint;
+    }
+
+    private void SetNewSpawningTime()
+    {
+        spawningTime = Random.Range(minimumSpawningTime,maximumSpawningTime);
     }
 }
