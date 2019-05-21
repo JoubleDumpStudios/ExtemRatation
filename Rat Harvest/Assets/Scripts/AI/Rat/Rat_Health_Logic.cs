@@ -15,9 +15,17 @@ public class Rat_Health_Logic : MonoBehaviour
     public float maxHealth = 100;
     public float health;
     // Start is called before the first frame update
+
+    public void OnEnable()
+    {
+        ResetRatHealth();
+        topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
+    }
+
+
     public void Start()
     {
-        health = maxHealth;
+        ResetRatHealth();
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
         ratMovementScript = GetComponent<Rat_Movement_Logic>();
     }
@@ -28,7 +36,7 @@ public class Rat_Health_Logic : MonoBehaviour
             health -= damage;
         else
         {
-            health = maxHealth;
+            health = 0;
             ratMovementScript.killRat();
             //cleanWounds(wounds_);
         }
@@ -49,4 +57,8 @@ public class Rat_Health_Logic : MonoBehaviour
         wounds.Clear();
     }
 
+    public void ResetRatHealth()
+    {
+        health = maxHealth;
+    }
 }
