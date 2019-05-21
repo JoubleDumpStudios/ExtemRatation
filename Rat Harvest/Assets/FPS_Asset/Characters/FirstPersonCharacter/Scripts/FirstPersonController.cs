@@ -386,6 +386,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     PlantPointScript.enablePlantIcon();
                     spawnPlant(go);
+                    playerManager.DisablePlantIcon();
                 }
                                      
         }

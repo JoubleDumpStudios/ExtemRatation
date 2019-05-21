@@ -167,10 +167,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1159864127, guid: 37d0cc80e81e52b4a9fa41ebec96ecc9, type: 3}
-      propertyPath: m_Name
-      value: Texturized_Rat
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37d0cc80e81e52b4a9fa41ebec96ecc9, type: 3}
 --- !u!1 &1575482097
