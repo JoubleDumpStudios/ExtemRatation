@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: bcc5a201c4f17134588be378dcb30ae0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aiSkyDomeLight1
+    100002: barrel
+    100004: base
+    100006: bullet1
+    100008: bullet_ctrl1
+    100010: bullet_ctrl_grp
+    100012: bullet_JNT
+    100014: cover
+    100016: cover_ctrl
+    100018: cover_ctrl_grp
+    100020: cover_JNT
+    100022: forestock
+    100024: forestock_ctrl
+    100026: forestock_ctrl_grp
+    100028: forestock_JNT
+    100030: FPview
+    100032: //RootNode
+    100034: magazine_ctrl
+    100036: magazine_ctrl_grp
+    100038: main_ctrl
+    100040: main_ctrl_grp
+    100042: shotgun
+    100044: stock
+    100046: stock_JNT
+    100048: tag_flash_JNT
+    100050: tubular
+    100052: tubular_JNT
+    400000: aiSkyDomeLight1
+    400002: barrel
+    400004: base
+    400006: bullet1
+    400008: bullet_ctrl1
+    400010: bullet_ctrl_grp
+    400012: bullet_JNT
+    400014: cover
+    400016: cover_ctrl
+    400018: cover_ctrl_grp
+    400020: cover_JNT
+    400022: forestock
+    400024: forestock_ctrl
+    400026: forestock_ctrl_grp
+    400028: forestock_JNT
+    400030: FPview
+    400032: //RootNode
+    400034: magazine_ctrl
+    400036: magazine_ctrl_grp
+    400038: main_ctrl
+    400040: main_ctrl_grp
+    400042: shotgun
+    400044: stock
+    400046: stock_JNT
+    400048: tag_flash_JNT
+    400050: tubular
+    400052: tubular_JNT
+    2000000: FPview
+    2100000: aiStandardSurface18
+    4300000: barrel
+    4300002: base
+    4300004: stock
+    4300006: tubular
+    4300008: cover
+    4300010: forestock
+    4300012: bullet1
+    7400000: walking
+    7400002: shooting
+    7400004: jumping
+    7400006: eqiping
+    7400008: reloading
+    9500000: //RootNode
+    13700000: barrel
+    13700002: base
+    13700004: bullet1
+    13700006: cover
+    13700008: forestock
+    13700010: stock
+    13700012: tubular
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
