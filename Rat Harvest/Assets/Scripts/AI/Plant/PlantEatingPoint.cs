@@ -31,6 +31,7 @@ public class PlantEatingPoint : MonoBehaviour
         icon_Plant_Behaviour = gameObject.transform.parent.gameObject.GetComponentInChildren<Icon_Plant_Behaviour>();
         plantPoint = gameObject.transform.parent.gameObject.GetComponent<PlantPoint>();
         StartCoroutine(EatPlant());
+        StartCoroutine(RotateRat());
     }
 
     // Method that substracts life from the plant
@@ -59,12 +60,20 @@ public class PlantEatingPoint : MonoBehaviour
             if (other.gameObject.GetComponent<Rat_Movement_Logic>().RatTarget == this)
             {
                 plantEatingPointReached = true;
-                ratScript.Rotate(transform.rotation);
-                ratScript.RatAnimator.SetBool("Attacking", true);
+
+                if (ratScript.ratAnimator != null)
+                    ratScript.RatAnimator.SetBool("Attacking", true);
             }
                 
         }
             
+    }
+
+    private IEnumerator RotateRat()
+    {
+        yield return new WaitUntil(() => plantEatingPointReached);
+        ratScript.gameObject.transform.LookAt(plantPoint.transform);
+        StartCoroutine(RotateRat());
     }
 
     public void DisablePantEatingPoint()

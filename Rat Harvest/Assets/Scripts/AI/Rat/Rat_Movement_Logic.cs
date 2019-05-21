@@ -134,23 +134,23 @@ public class Rat_Movement_Logic : MonoBehaviour
         //ratTarget.HasRat = false;
         destinations.Clear();
         ratTarget.PlantEatingPointReached = false;
-        ratAnimator.SetBool("Attacking", false);
-    }
 
-    public void Rotate(Quaternion desiredRot)
-    {
-        transform.rotation = desiredRot;
+        if(ratAnimator != null)
+            ratAnimator.SetBool("Attacking", false);
     }
 
     private IEnumerator KilledRatAnim()
     {
         if (returningHome) returningHome = false;
-        ratAnimator.SetBool("Killed", true);
+
+        if (ratAnimator != null)
+            ratAnimator.SetBool("Killed", true);
 
         yield return new WaitForSeconds(0.917f);
 
         ObjectPooler.instance.killGameObject(this.gameObject);
     }
+
 
     //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
     //{
