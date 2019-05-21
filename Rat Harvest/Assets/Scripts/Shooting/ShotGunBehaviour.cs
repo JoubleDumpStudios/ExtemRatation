@@ -124,8 +124,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
     private float reloadTime = 0;
 
-    private int maxAmmo;
-    private int Ammo;
+    public int maxAmmo;
+    public int Ammo;
 
     [SerializeField]
     private int shotGunCapacity;
@@ -356,7 +356,9 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public void FillBulletsPocket()
     {
+
         Ammo = maxAmmo;
+
     }
 
 
