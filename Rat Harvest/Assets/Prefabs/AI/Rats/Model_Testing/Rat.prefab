@@ -397,7 +397,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.5
-  m_BaseOffset: -0.33
+  m_BaseOffset: -0.31
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1182159530
@@ -459,8 +459,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47482097, y: 0.45324028, z: 0.8575518}
-  m_Center: {x: -0.0015035272, y: 0.55712503, z: 0.07122469}
+  m_Size: {x: 0.47482097, y: 0.5051749, z: 0.99604416}
+  m_Center: {x: -0.0015035272, y: 0.561453, z: 0.07555258}
 --- !u!1001 &1159960991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,15 +474,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.001255
+      value: -0.0019132
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24489
+      value: 0.18395
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.020141
+      value: 0.030704
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalRotation.x
@@ -518,15 +518,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5075018
+      value: 1.7737266
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5075018
+      value: 1.7737266
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5075018
+      value: 1.7737266
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_Controller
