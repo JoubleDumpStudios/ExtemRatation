@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 
+
 namespace UnityStandardAssets.Characters.FirstPerson
 {
     [RequireComponent(typeof (CharacterController))]
@@ -70,6 +71,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField]
         private ShotGunBehaviour shotGunBehaviourScript_;
 
+        private Animator shotGunAnimator;
+        public Animator ShotGunAnimator { get { return this.shotGunAnimator; } }
 
         // test AAron//////////////////////////////////////////////////
         private void OnTriggerEnter(Collider collision)
@@ -107,6 +110,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
 
             playerManager = GetComponent<PlayerManager>();
+            shotGunAnimator = GetComponentInChildren<Animator>();
         }
 
         public void cameraRecoil(float ang, float cameraRecoilSpeed, float cameraRecoilTime)
@@ -189,6 +193,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
         }
 
 
@@ -206,6 +211,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -314,6 +320,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Read input
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+
 
             bool waswalking = m_IsWalking;
 

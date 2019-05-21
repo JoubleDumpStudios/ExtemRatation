@@ -142,10 +142,6 @@ public class ShotGunBehaviour : MonoBehaviour
     public Text ammoCounterText;
     public Text bulletsOnWeaponCounterText;
 
-
-
-
-
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -227,6 +223,8 @@ public class ShotGunBehaviour : MonoBehaviour
         waitingForNewShot = true;
         //discount bullets on the weapon
         bulletsOnWeapon--;
+
+        firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
     }
 
 
