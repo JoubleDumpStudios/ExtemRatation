@@ -8,6 +8,8 @@ TagManager:
   - Plant
   - AmmoChest
   - HarvestChest
+  - Metal
+  - Wood
   layers:
   - Default
   - TransparentFX
