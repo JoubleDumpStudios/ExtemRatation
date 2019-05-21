@@ -124,9 +124,9 @@ public class Rat_Movement_Logic : MonoBehaviour
 
     public void DespawnRat()
     {
-        if (returningHome) returningHome = false;
-        ObjectPooler.instance.killGameObject(this.gameObject);
-
+        //if (returningHome) returningHome = false;
+        //ObjectPooler.instance.killGameObject(this.gameObject);
+        StartCoroutine(KilledRatAnim());
     }
 
     public void ResetRatDestinations()
@@ -140,6 +140,16 @@ public class Rat_Movement_Logic : MonoBehaviour
     public void Rotate(Quaternion desiredRot)
     {
         transform.rotation = desiredRot;
+    }
+
+    private IEnumerator KilledRatAnim()
+    {
+        if (returningHome) returningHome = false;
+        ratAnimator.SetBool("Killed", true);
+
+        yield return new WaitForSeconds(0.917f);
+
+        ObjectPooler.instance.killGameObject(this.gameObject);
     }
 
     //private bool hasDestinations(List<PlantEatingPoint> plantEatingPoints)
