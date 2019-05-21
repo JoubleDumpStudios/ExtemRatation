@@ -340,6 +340,9 @@ public class ShotGunBehaviour : MonoBehaviour
         if (reloadTime >= timePerBulletWhenRecharging)
         {
             bulletsOnWeapon++;
+
+            firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+
             Ammo--;
 
             if (bulletsOnWeapon >= shotGunCapacity)
