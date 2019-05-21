@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Rat_Movement_Logic : MonoBehaviour
+public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
 {
 
     // The damage caused by the rats
@@ -35,9 +35,10 @@ public class Rat_Movement_Logic : MonoBehaviour
     public Animator ratAnimator;
     public Animator RatAnimator { get { return this.ratAnimator; } }
 
-    private void Awake()
+    public void OnObjectSpawn()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
+        _navMeshAgent.speed = 3.5f;
         ratAnimator = GetComponentInChildren<Animator>();
     }
 
@@ -144,7 +145,11 @@ public class Rat_Movement_Logic : MonoBehaviour
         if (returningHome) returningHome = false;
 
         if (ratAnimator != null)
+        {
+            _navMeshAgent.speed = 0;
             ratAnimator.SetBool("Killed", true);
+        }
+            
 
         yield return new WaitForSeconds(0.917f);
 

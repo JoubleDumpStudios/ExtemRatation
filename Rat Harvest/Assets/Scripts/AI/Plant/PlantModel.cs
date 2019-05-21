@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlantModel : MonoBehaviour
+public class PlantModel : MonoBehaviour, IPooledObject
 {
     private List<GameObject> childrens = new List<GameObject>();
     private List<cakeslice.Outline> outlineScripts = new List<cakeslice.Outline>();
 
     // Start is called before the first frame update
-    void Start()
+    public void OnObjectSpawn()
     {
         FindChildrens();
         FindOutlineScripts();

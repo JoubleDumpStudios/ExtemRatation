@@ -73,6 +73,7 @@ public class PlantEatingPoint : MonoBehaviour
     {
         yield return new WaitUntil(() => plantEatingPointReached);
         ratScript.gameObject.transform.LookAt(plantPoint.transform);
+        //ratScript.transform.rotation = Quaternion.Lerp(ratScript.transform.rotation, Quaternion.LookRotation(plantPoint.transform.position - ratScript.transform.position), Time.deltaTime);
         StartCoroutine(RotateRat());
     }
 
