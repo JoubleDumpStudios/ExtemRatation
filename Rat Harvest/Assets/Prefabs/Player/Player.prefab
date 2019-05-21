@@ -2126,7 +2126,7 @@ MonoBehaviour:
   angleForCameraRecoil: 3
   aimPositionTransform: {fileID: 1523674488}
   aimingSpeed: 15
-  timeBetweenShoots: 0.5
+  timeBetweenShoots: 1
   gunFire1: {fileID: 2967114108175769833}
   gunFire2: {fileID: 1818630651245180060}
   holes: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef, type: 3}
@@ -3583,6 +3583,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2168079674721791674, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d568468746de5fa4d973866dc381ed6b, type: 2}
     - target: {fileID: 3097386579911868686, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
