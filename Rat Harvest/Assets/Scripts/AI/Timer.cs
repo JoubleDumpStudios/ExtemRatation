@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        preRoundText.text = "Round Starts In:";
+        preRoundText.text = "00:00"/* "Round Starts In:"*/;
 
         MinsAndSecondsConverter(ref minsAndSecsHarvestingTime_String, harvestingTime);
         MinsAndSecondsConverter(ref minsAndSecsstartRoundTime_String, startRoundTime);
@@ -74,9 +74,9 @@ public class Timer : MonoBehaviour
         if (preRound)
         {
             if (time <= startRoundTime)
-                preRoundText.text = "Round Starts In " + minsAndSecsstartRoundTime_String + "  -> " + minsAndSecsTime_String/*time.ToString("F2")*/;
+                preRoundText.text = /*"Round Starts In " + minsAndSecsstartRoundTime_String + "  -> " +*/ minsAndSecsTime_String/*time.ToString("F2")*/;
             else if (time <= startRoundTime + ratsAreAwakeTextTime)
-                preRoundText.text = " Rats are awake !!!";
+                preRoundText.text = minsAndSecsstartRoundTime_String; /*" Rats are awake !!!";*/
             else
             {
                 preRoundText.text = "";
@@ -86,11 +86,11 @@ public class Timer : MonoBehaviour
         }
         else if (time <= harvestingTime /*+ startRoundTime + ratsAreAwakeTextTime*/)
         {
-            preRoundText.text = "You have " + minsAndSecsHarvestingTime_String + " seconds to harvest how much you can " + minsAndSecsTime_String /*time.ToString("F2")*/;
+            preRoundText.text = /*"You have " + minsAndSecsHarvestingTime_String + " seconds to harvest how much you can " + */minsAndSecsTime_String /*time.ToString("F2")*/;
         }
         else if (time > harvestingTime)
         {
-            preRoundText.text = "Round Over";
+            preRoundText.text = minsAndSecsHarvestingTime_String /*"Round Over"*/;
         }
     }
 

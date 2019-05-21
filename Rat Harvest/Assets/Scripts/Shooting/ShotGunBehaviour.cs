@@ -175,8 +175,8 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ammoCounterText.text = "Ammo : " + Ammo;
-        bulletsOnWeaponCounterText.text = "On Gun : " + bulletsOnWeapon;
+        ammoCounterText.text = "| " + Ammo;
+        bulletsOnWeaponCounterText.text = bulletsOnWeapon.ToString();
 
 
         if (Input.GetKeyDown(KeyCode.R))

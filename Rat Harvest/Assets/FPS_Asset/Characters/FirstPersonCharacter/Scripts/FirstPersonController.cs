@@ -74,26 +74,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private Animator shotGunAnimator;
         public Animator ShotGunAnimator { get { return this.shotGunAnimator; } }
 
-        // test AAron//////////////////////////////////////////////////
-        private void OnTriggerEnter(Collider collision)
-        {
-            if(collision.gameObject.tag == "AmmoChest")
-            {
-
-                collidingWithBarrel = true;
-            }
-        }
-
-        private void OnTriggerExit(Collider collision)
-        {
-            if (collision.gameObject.tag == "AmmoChest")
-            {
-
-                collidingWithBarrel = false;
-            }
-        }
-        public bool collidingWithBarrel;
-        /// ////////////////////////////////////////////
+        //allow us to detect the colision of an object with the barrel to avoid the raycasting inside the objects bug
+        private bool collidingWithBarrel;
 
         // Use this for initialization
         private void Start()
@@ -450,6 +432,25 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     shotGunBehaviourScript_.FillBulletsPocket();
                 }
+            }
+        }
+
+
+        private void OnTriggerEnter(Collider collision)
+        {
+            if (collision.gameObject.tag == "AmmoChest")
+            {
+
+                collidingWithBarrel = true;
+            }
+        }
+
+        private void OnTriggerExit(Collider collision)
+        {
+            if (collision.gameObject.tag == "AmmoChest")
+            {
+
+                collidingWithBarrel = false;
             }
         }
 
