@@ -6,6 +6,11 @@ public class Spawner : MonoBehaviour
 {
     private ObjectPooler objectPooler;
 
+    [SerializeField]
+    private List<Transform> spawningPositions_Transform_List = new List<Transform>();
+
+    private Transform spawningPosition_Transform;
+
     [SerializeField] private Soil patchOfSoil;
     public Soil PatchOfSoil { get { return this.patchOfSoil; } }
 
@@ -64,9 +69,10 @@ public class Spawner : MonoBehaviour
     // Spawns a rat
     private void SpawnRat()
     {
+        SelectSpawningPosition();
         if (ArePlantEatingPointsAvailables())
         {
-            objectPooler.spawnFromPool(objectToSpawn.name, transform.position, transform.rotation, out rat);
+            objectPooler.spawnFromPool(objectToSpawn.name, spawningPosition_Transform.position, spawningPosition_Transform.rotation, out rat);
             setRatValues(rat);
             rats.Add(rat);
         }
@@ -117,5 +123,11 @@ public class Spawner : MonoBehaviour
     private void SetNewSpawningTime()
     {
         spawningTime = Random.Range(minimumSpawningTime,maximumSpawningTime);
+    }
+
+    private void SelectSpawningPosition() {
+
+        int i = Random.Range(0, spawningPositions_Transform_List.Count - 1);
+        spawningPosition_Transform = spawningPositions_Transform_List[i];
     }
 }

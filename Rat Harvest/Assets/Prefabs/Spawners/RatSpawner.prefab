@@ -46,10 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda5df804d01ffd4db3acdbd219a0246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawningPositions_Transform_List:
+  - {fileID: 1487436247894282274}
   patchOfSoil: {fileID: 0}
   objectToSpawn: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
     type: 3}
-  spawningTime: 2
+  minimumSpawningTime: 3
+  maximumSpawningTime: 5
   startRound: 0
   despawnPoint: {fileID: 4521792510819127303}
 --- !u!23 &1569141002627456134
