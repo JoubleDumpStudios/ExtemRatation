@@ -224,6 +224,16 @@ public class ShotGunBehaviour : MonoBehaviour
         //discount bullets on the weapon
         bulletsOnWeapon--;
 
+        //shooting we stop the reloading giving priority to the first one
+        reloading = false;
+        reloadTime = 0;
+
+        //automatioc reloading
+        if (bulletsOnWeapon <= 0)
+        {
+            reloading = true;
+        }
+
         firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
     }
 
@@ -288,9 +298,6 @@ public class ShotGunBehaviour : MonoBehaviour
             currentRecoilPosition -= weaponRecoilAmount;
             currentRecoilAngle = -weaponRecoilAngle;
             firstPersonControllerScript_.cameraRecoil(angleForCameraRecoil, cameraRecoilSpeed, cameraRecoilingTime);
-
-            reloading = false;
-            reloadTime = 0;
         }
 
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, weaponRecoilingTime);
