@@ -1197,7 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 100
-  bagCapacity: 20
+  bagCapacity: 200
   maxAmmo: 100
   scoreText: {fileID: 2060851833220978151}
   bagText: {fileID: 4721962375557203054}
@@ -2258,7 +2258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3801597436298307608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.000000059604645, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 496092029}
@@ -3828,36 +3828,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d568468746de5fa4d973866dc381ed6b, type: 2}
-    - target: {fileID: 3097386579911868686, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_Bones.Array.data[0]
-      value: 
-      objectReference: {fileID: 1314615879152178161}
-    - target: {fileID: 3097386579911868686, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 1314615879152178161}
-    - target: {fileID: 6062029611939933313, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_Bones.Array.data[0]
-      value: 
-      objectReference: {fileID: 4833348530956411864}
-    - target: {fileID: 6062029611939933313, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 4833348530956411864}
-    - target: {fileID: 367836112613987638, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_Bones.Array.data[0]
-      value: 
-      objectReference: {fileID: 2318409352820162976}
-    - target: {fileID: 367836112613987638, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 2318409352820162976}
     - target: {fileID: 6631662482317146779, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -3868,16 +3838,16 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 3322008304054299146}
-    - target: {fileID: 4734613873775153791, guid: a3d00c87644c3934091bb24ac98256fa,
+    - target: {fileID: 6062029611939933313, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
       value: 
-      objectReference: {fileID: 492881149510806074}
-    - target: {fileID: 4734613873775153791, guid: a3d00c87644c3934091bb24ac98256fa,
+      objectReference: {fileID: 4833348530956411864}
+    - target: {fileID: 6062029611939933313, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_RootBone
       value: 
-      objectReference: {fileID: 492881149510806074}
+      objectReference: {fileID: 4833348530956411864}
     - target: {fileID: 4682327262256360226, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -3888,6 +3858,26 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 4833348530956411864}
+    - target: {fileID: 4734613873775153791, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_Bones.Array.data[0]
+      value: 
+      objectReference: {fileID: 492881149510806074}
+    - target: {fileID: 4734613873775153791, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 492881149510806074}
+    - target: {fileID: 3097386579911868686, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_Bones.Array.data[0]
+      value: 
+      objectReference: {fileID: 1314615879152178161}
+    - target: {fileID: 3097386579911868686, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 1314615879152178161}
     - target: {fileID: 264433728563618179, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_Bones.Array.data[0]
@@ -3898,6 +3888,16 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 7650970527774033308}
+    - target: {fileID: 367836112613987638, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_Bones.Array.data[0]
+      value: 
+      objectReference: {fileID: 2318409352820162976}
+    - target: {fileID: 367836112613987638, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 2318409352820162976}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d00c87644c3934091bb24ac98256fa, type: 3}
 --- !u!4 &4833348530956411864 stripped

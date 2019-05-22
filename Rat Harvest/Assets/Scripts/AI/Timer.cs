@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     [SerializeField]
-    Text preRoundText;
+    Text timeText;
 
     [SerializeField]
     private List<Spawner> spawnerList;
@@ -29,69 +29,45 @@ public class Timer : MonoBehaviour
 
     bool resetTimer = false;
     bool preRound = true;
+    bool endGame = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        preRoundText.text = "00:00"/* "Round Starts In:"*/;
+        timeText.text = "00:00"/* "Round Starts In:"*/;
 
-        MinsAndSecondsConverter(ref minsAndSecsHarvestingTime_String, harvestingTime);
-        MinsAndSecondsConverter(ref minsAndSecsstartRoundTime_String, startRoundTime);
+        time = startRoundTime + 1;
     }
 
-    void MinsAndSecondsConverter(ref string outPutString, float timeToChange )
+    string MinsAndSecondsConverter(float timeToChange)
     {
         int mins = Mathf.FloorToInt(timeToChange / 60F);
         int secs = Mathf.FloorToInt(timeToChange - mins * 60);
-        outPutString = string.Format("{0:00}:{1:00}", mins, secs);
+        string outPutString = string.Format("{0:00}:{1:00}", mins, secs);
+
+        return outPutString;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        time += Time.deltaTime;
+        if(!endGame)
+            time -= Time.deltaTime;
 
-        if (time >= startRoundTime)
+        if (time <= 0 && preRound)
         {
             TurnOnSpawnerAndPlantGrowing();
-        }
-
-        MinsAndSecondsConverter(ref minsAndSecsTime_String, time);
-
-        PreroundLogicAndText();
-
-
-        if (resetTimer)
+            time = harvestingTime +1;
+            preRound = false;
+        }else if (time <= 0 && !preRound)
         {
+            //endGame;
+            endGame = true;
             time = 0;
-            resetTimer = false;
         }
-    }
 
-    void PreroundLogicAndText()
-    {
-        if (preRound)
-        {
-            if (time <= startRoundTime)
-                preRoundText.text = /*"Round Starts In " + minsAndSecsstartRoundTime_String + "  -> " +*/ minsAndSecsTime_String/*time.ToString("F2")*/;
-            else if (time <= startRoundTime + ratsAreAwakeTextTime)
-                preRoundText.text = minsAndSecsstartRoundTime_String; /*" Rats are awake !!!";*/
-            else
-            {
-                preRoundText.text = "";
-                preRound = false;
-                resetTimer = true;
-            }
-        }
-        else if (time <= harvestingTime /*+ startRoundTime + ratsAreAwakeTextTime*/)
-        {
-            preRoundText.text = /*"You have " + minsAndSecsHarvestingTime_String + " seconds to harvest how much you can " + */minsAndSecsTime_String /*time.ToString("F2")*/;
-        }
-        else if (time > harvestingTime)
-        {
-            preRoundText.text = minsAndSecsHarvestingTime_String /*"Round Over"*/;
-        }
+        timeText.text = MinsAndSecondsConverter(time);
+
     }
 
     void TurnOnSpawnerAndPlantGrowing()
