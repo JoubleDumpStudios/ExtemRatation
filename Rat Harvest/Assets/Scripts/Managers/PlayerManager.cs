@@ -44,7 +44,7 @@ public class PlayerManager : MonoBehaviour
         scoreText.text = playerScore.ToString();
 
         playerHarvest = 0;
-        bagText.text = playerHarvest.ToString();
+        bagText.text = playerHarvest + " / " + bagCapacity;
     }
 
     public void updateBag(int harvest)
@@ -55,7 +55,7 @@ public class PlayerManager : MonoBehaviour
         else
             playerHarvest += harvest;
 
-        bagText.text = playerHarvest.ToString();
+        bagText.text = playerHarvest + " / " + bagCapacity;
     }
 
     public void EnablePlantIcon()
