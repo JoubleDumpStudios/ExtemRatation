@@ -41,6 +41,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        //Time.timeScale = 1f;
         SceneManager.instance.loadGame();
     }
 
@@ -51,6 +52,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
+        //Time.timeScale = 1f;
         SceneManager.instance.loadMenu();
     }
 }
