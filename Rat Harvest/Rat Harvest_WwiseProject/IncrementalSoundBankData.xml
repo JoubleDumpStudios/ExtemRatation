@@ -3,26 +3,36 @@
 	<Platform GUID="{F905E0D1-2301-4797-B65A-C17916D08729}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Footsteps" Hash="3577897976" Timestamp="1558611987"/>
+				<File Name="Footsteps" Hash="1055940848" Timestamp="1558636044"/>
 				<File Name="Init" Hash="1182415902" Timestamp="1558611987"/>
+				<File Name="Jumps" Hash="2773733164" Timestamp="1558637621"/>
+				<File Name="Landing" Hash="1268207701" Timestamp="1558637621"/>
+				<File Name="Shotgun_Pumping" Hash="1495999251" Timestamp="1558638743"/>
+				<File Name="Shotgun_Reloading" Hash="1100103252" Timestamp="1558638743"/>
+				<File Name="Shotgun_Shooting" Hash="436951125" Timestamp="1558638743"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3005959686" Timestamp="1558612167"/>
+				<File Name="" Hash="111727760" Timestamp="1558638743"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{AD8FA7C8-0570-4FAB-A8D6-3C96F59CCFC6}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Footsteps" Hash="3577897976" Timestamp="1558611987"/>
+				<File Name="Footsteps" Hash="1055940848" Timestamp="1558636043"/>
 				<File Name="Init" Hash="2279659568" Timestamp="1558611987"/>
+				<File Name="Jumps" Hash="2773733164" Timestamp="1558637621"/>
+				<File Name="Landing" Hash="1268207701" Timestamp="1558637621"/>
+				<File Name="Shotgun_Pumping" Hash="1495999251" Timestamp="1558638743"/>
+				<File Name="Shotgun_Reloading" Hash="1100103252" Timestamp="1558638743"/>
+				<File Name="Shotgun_Shooting" Hash="436951125" Timestamp="1558638743"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3915569472" Timestamp="1558612167"/>
+				<File Name="" Hash="942220058" Timestamp="1558638743"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

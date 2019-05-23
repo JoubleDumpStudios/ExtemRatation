@@ -3,11 +3,56 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{6CE49317-9FA6-42DB-AB8B-461509DE6E1C}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Footsteps" ID="{058565A3-8411-46A3-A3AA-CD460B54858F}">
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
+				<Folder Name="Foley_Player" ID="{5FACE2BA-13C6-4DD4-8091-7EE5E2A04800}" ShortID="982337946">
+					<ChildrenList>
+						<SoundBank Name="Footsteps" ID="{058565A3-8411-46A3-A3AA-CD460B54858F}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Footstep" ID="{70108D08-98AA-4A5F-A96F-0EBECF59799F}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Jumps" ID="{B9C83DA1-E723-40A4-9033-A3E6180E884E}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Jump" ID="{5128215D-938A-4A0A-B02F-9B391203F7FB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Landing" ID="{068C1A19-6974-4EA7-A21A-6DCA9C3F9E38}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Land" ID="{5470801A-3FE8-4BAD-9BEE-AA469B09191D}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX_Shotgun" ID="{ED9BAAC2-D7A0-40BE-A41B-E940B86E04DB}" ShortID="863578603">
+					<ChildrenList>
+						<SoundBank Name="Shotgun_Shooting" ID="{D99FD5D2-9B4E-485D-9A74-3EECDA8FAAAD}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Shoot" ID="{E66EBD65-E1E6-4A90-A3B8-26FB1944C6FC}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Shotgun_Reloading" ID="{4B218687-DC6E-4496-9238-B056D6B958A4}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Reload" ID="{6DF664A2-C5D8-4DF6-9E24-823A81873FE2}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Shotgun_Pumping" ID="{3F035D51-9E9A-40CD-AA00-5FBBC5E302BE}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Pump" ID="{57E7C149-DDF4-4DEF-B8F0-CF619BAC9374}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -11,15 +11,114 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="1071740888" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Jumps</ObjectPath>
+			<ShortName>Jumps</ShortName>
+			<Path>Jumps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Foley_Player\Jump" DurationType="OneShot" DurationMin="0.410780" DurationMax="0.573703"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="223178980" Language="SFX">
+					<ShortName>Foley_Player_Jump02.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump02_10C4C929.wem</Path>
+				</File>
+				<File Id="557519647" Language="SFX">
+					<ShortName>Foley_Player_Jump01.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump01_10C4C929.wem</Path>
+				</File>
+				<File Id="575523147" Language="SFX">
+					<ShortName>Foley_Player_Jump03.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump03_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1194489829" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Reloading</ObjectPath>
+			<ShortName>Shotgun_Reloading</ShortName>
+			<Path>Shotgun_Reloading.bnk</Path>
+			<IncludedEvents>
+				<Event Id="456382354" Name="Reload" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Reload" DurationType="OneShot" DurationMin="0.576949" DurationMax="0.611256"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="53781168" Language="SFX">
+					<ShortName>SFX_Shotgun_Reload.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Reload_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="2288755958" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Pumping</ObjectPath>
+			<ShortName>Shotgun_Pumping</ShortName>
+			<Path>Shotgun_Pumping.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1925777311" Name="Pump" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Pump" DurationType="OneShot" DurationMin="0.801886" DurationMax="0.926462"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="925049353" Language="SFX">
+					<ShortName>SFX_Shotgun_Pump.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Pump_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="2385628198" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Footsteps</ObjectPath>
 			<ShortName>Footsteps</ShortName>
 			<Path>Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Foley_Player\Footstep" DurationType="OneShot" DurationMin="0.342369" DurationMax="0.440555"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="11723387" Language="SFX">
+					<ShortName>Foley_Player_Foostep02.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep02_10C4C929.wem</Path>
+				</File>
+				<File Id="206385899" Language="SFX">
+					<ShortName>Foley_Player_Foostep01.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2548270042" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Landing</ObjectPath>
+			<ShortName>Landing</ShortName>
+			<Path>Landing.bnk</Path>
+			<IncludedEvents>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Foley_Player\Land" DurationType="OneShot" DurationMin="0.450136" DurationMax="0.567136"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13580875" Language="SFX">
+					<ShortName>Foley_Player_Land01.wav</ShortName>
+					<Path>SFX\Foley_Player_Land01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2816976351" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Shooting</ObjectPath>
+			<ShortName>Shotgun_Shooting</ShortName>
+			<Path>Shotgun_Shooting.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3038207054" Name="Shoot" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Shoot" DurationType="OneShot" DurationMin="1.937909" DurationMax="2.063856"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="198662933" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot03.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot03_10C4C929.wem</Path>
+				</File>
+				<File Id="530368113" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot01.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot01_10C4C929.wem</Path>
+				</File>
+				<File Id="1062683667" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot02.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

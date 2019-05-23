@@ -11,10 +11,25 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID LAND = 674522502U;
+        static const AkUniqueID PUMP = 1925777311U;
+        static const AkUniqueID RELOAD = 456382354U;
+        static const AkUniqueID SHOOT = 3038207054U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID JUMPS = 1071740888U;
+        static const AkUniqueID LANDING = 2548270042U;
+        static const AkUniqueID SHOTGUN_PUMPING = 2288755958U;
+        static const AkUniqueID SHOTGUN_RELOADING = 1194489829U;
+        static const AkUniqueID SHOTGUN_SHOOTING = 2816976351U;
     } // namespace BANKS
 
     namespace BUSSES

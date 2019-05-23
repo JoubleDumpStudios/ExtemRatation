@@ -1,6 +1,377 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Foley_Player" ID="{B3353B96-1FA5-4219-AD39-C533A5D20C87}" ShortID="356017893">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Jumping" ID="{0DFDA3D6-F98A-4D51-8EE8-0C33AC4A78EC}" ShortID="466480028">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{661DD226-CA78-4DCF-966B-4B27DB5A7B18}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Foley_Player_Jump02" ID="{0E18CA9E-B928-4E0E-8BB6-33BA0DA16657}" ShortID="62952365">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Foley_Player_Jump02" ID="{D5ADA598-7BFD-4D1F-BB1B-610D6413F62A}" ShortID="223178980">
+											<Language>SFX</Language>
+											<AudioFile>Foley_Player_Jump02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Foley_Player_Jump02" ID="{D5ADA598-7BFD-4D1F-BB1B-610D6413F62A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Foley_Player_Jump03" ID="{0A4647B4-5FD1-4312-9DD5-59AE0DB87253}" ShortID="773062709">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Foley_Player_Jump03" ID="{CEF78B65-A3B1-457B-B56B-ED838AFD019E}" ShortID="575523147">
+											<Language>SFX</Language>
+											<AudioFile>Foley_Player_Jump03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Foley_Player_Jump03" ID="{CEF78B65-A3B1-457B-B56B-ED838AFD019E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Foley_Player_Jump01" ID="{C8B91ECE-B032-4ECE-A7AC-3D5D432A2BF7}" ShortID="601303108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Foley_Player_Jump01" ID="{F3E9E406-CF05-433F-B7F6-D16A77E244DB}" ShortID="557519647">
+											<Language>SFX</Language>
+											<AudioFile>Foley_Player_Jump01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Foley_Player_Jump01" ID="{F3E9E406-CF05-433F-B7F6-D16A77E244DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Footsteps_Grass" ID="{2F3E259B-8CF4-47CD-994E-369E1100209B}" ShortID="398501056">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AE3C6E11-6608-4E94-9435-C7181992C905}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Foley_Player_Foostep01" ID="{75AA3EF4-42EA-4C24-ACBA-8FCBEC3D4A24}" ShortID="835014423">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Foley_Player_Foostep01" ID="{CE4E6F0A-C2AD-446B-88F8-A3DA9DFCF7C1}" ShortID="206385899">
+											<Language>SFX</Language>
+											<AudioFile>Foley_Player_Foostep01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Foley_Player_Foostep01" ID="{CE4E6F0A-C2AD-446B-88F8-A3DA9DFCF7C1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Foley_Player_Foostep02" ID="{113BF212-2E70-423E-A4A2-5BD6DD2AD92D}" ShortID="428323513">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Foley_Player_Foostep02" ID="{A1FD3C1E-3AD9-494A-8986-E3993C72152A}" ShortID="11723387">
+											<Language>SFX</Language>
+											<AudioFile>Foley_Player_Foostep02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Foley_Player_Foostep02" ID="{A1FD3C1E-3AD9-494A-8986-E3993C72152A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Foley_Player_Land01" ID="{C5041D48-3861-4A01-8653-B077FDA456C0}" ShortID="104274788">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{545CCED2-FD03-41E9-B4ED-B39624ABC335}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Foley_Player_Land01" ID="{5EF98DB0-08CE-4B06-A519-A7BA27633956}" ShortID="13580875">
+									<Language>SFX</Language>
+									<AudioFile>Foley_Player_Land01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Foley_Player_Land01" ID="{5EF98DB0-08CE-4B06-A519-A7BA27633956}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX_Shotgun" ID="{3F50153F-7093-4575-98A7-784974111813}" ShortID="163709974">
+					<ChildrenList>
+						<Sound Name="SFX_Shotgun_Pump" ID="{E09CE8CE-69BE-449B-9490-33D61C6CA9F5}" ShortID="28897885">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1D5FEC2B-5AF3-4F0A-895D-FDA7CA70A7FA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Shotgun_Pump" ID="{1CA15D6E-A994-41C3-8B40-0B361C52E80B}" ShortID="925049353">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Shotgun_Pump.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Shotgun_Pump" ID="{1CA15D6E-A994-41C3-8B40-0B361C52E80B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="SFX_Shotgun_Shot" ID="{4AE8124D-1D7E-4A0D-90B6-4B23F7E6E3B5}" ShortID="445274520">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{889B2EA7-1078-45D1-A467-B12930060B39}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Shotgun_Shot01" ID="{2CC950DE-8623-4848-BE3C-38E0CEE360E4}" ShortID="11667745">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Shotgun_Shot01" ID="{CE9DF35E-1409-4FD2-AE74-F1E9D04F3D9F}" ShortID="530368113">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Shotgun_Shot01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Shotgun_Shot01" ID="{CE9DF35E-1409-4FD2-AE74-F1E9D04F3D9F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Shotgun_Shot02" ID="{895FAE11-E8C6-4B26-ADC0-29FC2F716112}" ShortID="126121379">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Shotgun_Shot02" ID="{6160CD83-606D-4067-8CA1-A2F7182696D0}" ShortID="1062683667">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Shotgun_Shot02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Shotgun_Shot02" ID="{6160CD83-606D-4067-8CA1-A2F7182696D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Shotgun_Shot03" ID="{B446BE2E-D967-448B-AD4C-78C3470FE78D}" ShortID="282522917">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Shotgun_Shot03" ID="{ABD99E36-5D3E-442D-9B54-C4A5B4CB4BC5}" ShortID="198662933">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Shotgun_Shot03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Shotgun_Shot03" ID="{ABD99E36-5D3E-442D-9B54-C4A5B4CB4BC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SFX_Shotgun_Reload" ID="{9D7EBE5B-3C00-4AA0-8BEB-A9C80E120B81}" ShortID="989743132">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8ED0B33E-67CF-44DE-A7EF-55332D7B0FAB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Shotgun_Reload" ID="{4BD67474-4F68-4B0A-AAB9-726DF5F9F55B}" ShortID="53781168">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Shotgun_Reload.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Shotgun_Reload" ID="{4BD67474-4F68-4B0A-AAB9-726DF5F9F55B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

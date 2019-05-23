@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586429946855345286
+    m_lastTime: -8586429681444151240
     List:
     - name: Footsteps
       guid: a36585051184a346a3aacd460b54858f
@@ -39,16 +39,157 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
       - ElementName: Footsteps
         ObjectType: 7
-      Path: Default Work Unit\Footsteps
+      Path: Default Work Unit\Foley_Player\Footsteps
+    - name: Jumps
+      guid: a13dc8b923e7a4409033a3e6180e884e
+      id: 1071740888
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
+      - ElementName: Jumps
+        ObjectType: 7
+      Path: Default Work Unit\Foley_Player\Jumps
+    - name: Landing
+      guid: 191a8c067469a74ea21a6dca9c3f9e38
+      id: 2548270042
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
+      - ElementName: Landing
+        ObjectType: 7
+      Path: Default Work Unit\Foley_Player\Landing
+    - name: Shotgun_Pumping
+      guid: 515d033f9a9ecd40aa005fbbc5e302be
+      id: 2288755958
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Shotgun_Pumping
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Shotgun_Pumping
+    - name: Shotgun_Reloading
+      guid: 8786214b6edc96449238b056d6b958a4
+      id: 1194489829
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Shotgun_Reloading
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Shotgun_Reloading
+    - name: Shotgun_Shooting
+      guid: d2d59fd94e9b5d489a743eecda8faaad
+      id: 2816976351
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Shotgun_Shooting
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Shotgun_Shooting
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586429958900705350
-    List: []
+    m_lastTime: -8586429681443861410
+    List:
+    - name: Footstep
+      guid: 088d1070aa985f4aa96f0ebecf59799f
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
+      - ElementName: Footstep
+        ObjectType: 3
+      Path: Default Work Unit\Foley_Player\Footstep
+      maxAttenuation: 0
+      maxDuration: 0.440555
+      minDuration: 0.342369
+    - name: Jump
+      guid: 5d2128518a930a4ab02f9b391203f7fb
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
+      - ElementName: Jump
+        ObjectType: 3
+      Path: Default Work Unit\Foley_Player\Jump
+      maxAttenuation: 0
+      maxDuration: 0.573703
+      minDuration: 0.41078
+    - name: Land
+      guid: 1a807054e83fad4b9beeaa469b09191d
+      id: 674522502
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Foley_Player
+        ObjectType: 4
+      - ElementName: Land
+        ObjectType: 3
+      Path: Default Work Unit\Foley_Player\Land
+      maxAttenuation: 0
+      maxDuration: 0.567136
+      minDuration: 0.450136
+    - name: Pump
+      guid: 49c1e757f4ddef4db8f0cf619bac9374
+      id: 1925777311
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Pump
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Pump
+      maxAttenuation: 0
+      maxDuration: 0.926462
+      minDuration: 0.801886
+    - name: Reload
+      guid: a264f66dd8c5f64d9e24823a81873fe2
+      id: 456382354
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Reload
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Reload
+      maxAttenuation: 0
+      maxDuration: 0.611256
+      minDuration: 0.576949
+    - name: Shoot
+      guid: 65bd6ee6e6e1904aa3b826fb1944c6fc
+      id: 3038207054
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Shoot
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Shoot
+      maxAttenuation: 0
+      maxDuration: 2.063856
+      minDuration: 1.937909
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -79,7 +220,13 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Rat Harvest_WwiseProject
+  - /Rat Harvest_WwiseProject/Events
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/Foley_Player
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Shotgun
   - /Rat Harvest_WwiseProject/SoundBanks
   - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit
+  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/Foley_Player
+  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/SFX_Shotgun
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

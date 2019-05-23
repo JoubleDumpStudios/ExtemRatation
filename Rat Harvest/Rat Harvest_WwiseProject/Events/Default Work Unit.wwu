@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Foley_Player" ID="{E150A5B9-407A-4492-B82B-B4BE7CC0E152}" ShortID="288131038">
+					<ChildrenList>
+						<Event Name="Footstep" ID="{70108D08-98AA-4A5F-A96F-0EBECF59799F}">
+							<ChildrenList>
+								<Action Name="" ID="{61F28DB7-0E6C-4222-8D5E-8D6B448AD1A7}" ShortID="837148673">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps_Grass" ID="{2F3E259B-8CF4-47CD-994E-369E1100209B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Land" ID="{5470801A-3FE8-4BAD-9BEE-AA469B09191D}">
+							<ChildrenList>
+								<Action Name="" ID="{0CB71E78-F267-4412-A411-44DB93CF5936}" ShortID="524167411">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Foley_Player_Land01" ID="{C5041D48-3861-4A01-8653-B077FDA456C0}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jump" ID="{5128215D-938A-4A0A-B02F-9B391203F7FB}">
+							<ChildrenList>
+								<Action Name="" ID="{5EC39906-026D-4CF5-8D87-3DA05B3822D7}" ShortID="155522515">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jumping" ID="{0DFDA3D6-F98A-4D51-8EE8-0C33AC4A78EC}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX_Shotgun" ID="{F93B2D32-8C11-4AE7-88FB-39D3B214F58C}" ShortID="498177648">
+					<ChildrenList>
+						<Event Name="Shoot" ID="{E66EBD65-E1E6-4A90-A3B8-26FB1944C6FC}">
+							<ChildrenList>
+								<Action Name="" ID="{C4657349-6780-4DCA-A69A-0873BE7B3C99}" ShortID="605097023">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Shotgun_Shot" ID="{4AE8124D-1D7E-4A0D-90B6-4B23F7E6E3B5}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Reload" ID="{6DF664A2-C5D8-4DF6-9E24-823A81873FE2}">
+							<ChildrenList>
+								<Action Name="" ID="{4977A7B7-2098-4999-A38F-3562B5C18178}" ShortID="882032142">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Shotgun_Reload" ID="{9D7EBE5B-3C00-4AA0-8BEB-A9C80E120B81}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pump" ID="{57E7C149-DDF4-4DEF-B8F0-CF619BAC9374}">
+							<ChildrenList>
+								<Action Name="" ID="{7250CDB2-A322-47C8-9707-19E79E26E25C}" ShortID="7648157">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Shotgun_Pump" ID="{E09CE8CE-69BE-449B-9490-33D61C6CA9F5}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
