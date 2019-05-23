@@ -2015,7 +2015,8 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6219397094150736785, guid: 974fb8a6f7bda764a87005ff2d445f18, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 974fb8a6f7bda764a87005ff2d445f18, type: 3}
 --- !u!114 &1233415778 stripped
 MonoBehaviour:

@@ -275,7 +275,23 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.022058899
+        functionName: WwiseShotgunShoot
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c3c3e917869b60c42be60ce40e5eb7bb,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5878906
+        functionName: WWiseShotgunPump
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c3c3e917869b60c42be60ce40e5eb7bb,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -340,6 +356,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.9862148
+        functionName: WWiseShotgunReload
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c3c3e917869b60c42be60ce40e5eb7bb,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -367,7 +391,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.6286768
+        functionName: WWiseShotgunPump
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: c3c3e917869b60c42be60ce40e5eb7bb,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

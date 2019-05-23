@@ -306,9 +306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualizeFocus: 0
-  focalLength: 4.13
-  focalSize: 1.05
-  aperture: 0.6
+  focalLength: 0.72
+  focalSize: 0.593
+  aperture: 0.394
   focalTransform: {fileID: 0}
   maxBlurSize: 2
   highResolution: 1

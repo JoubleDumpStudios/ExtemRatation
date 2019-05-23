@@ -170,6 +170,9 @@ public class ShotGunBehaviour : MonoBehaviour
 
         Ammo = maxAmmo;
         bulletsOnWeapon = shotGunCapacity;
+
+        //Make the gameobject self-aware.
+        AkSoundEngine.RegisterGameObj(gameObject);
     }
 
     // Update is called once per frame
@@ -203,7 +206,6 @@ public class ShotGunBehaviour : MonoBehaviour
         }
     }
 
-
     void fire()
     {
 
@@ -218,6 +220,7 @@ public class ShotGunBehaviour : MonoBehaviour
                 RaycastedFire();
             }
         }
+
 
         //fire efect for shotgun shot
         gunFire1.Play();

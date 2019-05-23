@@ -22,4 +22,21 @@ public class ShotGun_AnimationFixer : MonoBehaviour
     {
         shotGunScript.InsertBullet();
     }
+
+    //These are functions to use in amimation events to play Wwise audio.
+    public void WwiseShotgunShoot()
+    {
+        //Wwise play shooting sfx
+        AkSoundEngine.PostEvent("Shoot", gameObject);
+    }
+    public void WWiseShotgunPump()
+    {
+        //Wwise play pumping sfx
+        AkSoundEngine.PostEvent("Pump", gameObject);
+    }
+    public void WWiseShotgunReload()
+    {
+        //Wwise play reloading sfx
+        AkSoundEngine.PostEvent("Reload", gameObject);
+    }
 }
