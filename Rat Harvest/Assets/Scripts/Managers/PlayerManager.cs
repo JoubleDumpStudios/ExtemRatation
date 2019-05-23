@@ -30,9 +30,10 @@ public class PlayerManager : MonoBehaviour
     private int playerHarvest = 0;
     public int PlayerHarvest { get { return this.playerHarvest; } }
 
-
+    
     private void Start()
     {
+        bagText.text = playerHarvest + " / " + bagCapacity;
         DisablePlantIcon();
         DisableHarvestIcon();
     }
