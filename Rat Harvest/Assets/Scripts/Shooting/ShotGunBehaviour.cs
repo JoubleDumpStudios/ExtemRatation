@@ -182,6 +182,8 @@ public class ShotGunBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             reloading = true;
+            if (bulletsOnWeapon < shotGunCapacity)
+                firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
         }
 
         if (reloading)
@@ -226,12 +228,15 @@ public class ShotGunBehaviour : MonoBehaviour
 
         //shooting we stop the reloading giving priority to the first one
         reloading = false;
+
+
         reloadTime = 0;
 
         //automatioc reloading
         if (bulletsOnWeapon <= 0)
         {
             reloading = true;
+            firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
         }
 
         firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
@@ -340,6 +345,12 @@ public class ShotGunBehaviour : MonoBehaviour
         }
     }
 
+
+    public void InsertBullet()
+    {
+        Debug.Log("Hellow world");
+    }
+
     void ReloadingTimer()
     {
         reloadTime += Time.deltaTime;
@@ -348,13 +359,14 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             bulletsOnWeapon++;
 
-            firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+            //firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
 
             Ammo--;
 
             if (bulletsOnWeapon >= shotGunCapacity)
             {
                 reloading = false;
+                firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
             }
 
             reloadTime = 0;
