@@ -175,30 +175,32 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ammoCounterText.text = "| " + Ammo;
-        bulletsOnWeaponCounterText.text = bulletsOnWeapon.ToString();
-
-
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Time.timeScale != 0)
         {
-            //reloading = true;
-            if (bulletsOnWeapon < shotGunCapacity)
+            ammoCounterText.text = "| " + Ammo;
+            bulletsOnWeaponCounterText.text = bulletsOnWeapon.ToString();
+
+
+            if (Input.GetKeyDown(KeyCode.R))
             {
-                firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
-                reloading = true;
+                //reloading = true;
+                if (bulletsOnWeapon < shotGunCapacity)
+                {
+                    firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+                    reloading = true;
+                }
             }
+
+            //if (reloading)
+            //{
+            //    if (Ammo > 0 && bulletsOnWeapon < shotGunCapacity)
+            //        ReloadingTimer();
+            //}
+
+
+            ShootingTimer();
+            ShootingLogicAndRecoil();
         }
-
-        //if (reloading)
-        //{
-        //    if (Ammo > 0 && bulletsOnWeapon < shotGunCapacity)
-        //        ReloadingTimer();
-        //}
-
-
-        ShootingTimer();
-        ShootingLogicAndRecoil();
-
     }
 
 

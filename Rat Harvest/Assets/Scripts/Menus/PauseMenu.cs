@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool gameIsPaused = false;
+    private bool gameIsPaused = false; 
     [SerializeField] private GameObject pauseMenuUI;
-
+    UnityStandardAssets.Characters.FirstPerson.MouseLook mouse = new UnityStandardAssets.Characters.FirstPerson.MouseLook();
 
     private void Update()
     {
@@ -28,15 +28,16 @@ public class PauseMenu : MonoBehaviour
     private void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         gameIsPaused = true;
+        Time.timeScale = 0f;
+        mouse.SetCursorLock(false);
     }
 
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
         gameIsPaused = false;
+        Time.timeScale = 1f;
     }
 
     public void Restart()
