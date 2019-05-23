@@ -5,31 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static SceneManager instance;
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void loadMenu()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
+
+    public void loadGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");
+    }  
 
     public void loadCredits()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
     }
 
-    public void loadGame()
+    public void loadControls()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");
-    }
-
-    public void loadMenu()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Controls");
     }
 
     public void Exit()
