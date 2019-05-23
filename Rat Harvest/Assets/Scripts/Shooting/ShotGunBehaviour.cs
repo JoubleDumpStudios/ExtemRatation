@@ -181,16 +181,16 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            reloading = true;
+            //reloading = true;
             if (bulletsOnWeapon < shotGunCapacity)
                 firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
         }
 
-        if (reloading)
-        {
-            if (Ammo > 0 && bulletsOnWeapon < shotGunCapacity)
-                ReloadingTimer();
-        }
+        //if (reloading)
+        //{
+        //    if (Ammo > 0 && bulletsOnWeapon < shotGunCapacity)
+        //        ReloadingTimer();
+        //}
 
 
         ShootingTimer();
@@ -227,7 +227,7 @@ public class ShotGunBehaviour : MonoBehaviour
         bulletsOnWeapon--;
 
         //shooting we stop the reloading giving priority to the first one
-        reloading = false;
+        //reloading = false;
 
 
         reloadTime = 0;
@@ -235,7 +235,7 @@ public class ShotGunBehaviour : MonoBehaviour
         //automatioc reloading
         if (bulletsOnWeapon <= 0)
         {
-            reloading = true;
+            //reloading = true;
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
         }
 
@@ -348,29 +348,37 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public void InsertBullet()
     {
-        Debug.Log("Hellow world");
+        bulletsOnWeapon++;
+
+        Ammo--;
+
+        if (bulletsOnWeapon >= shotGunCapacity)
+        {
+            //reloading = false;
+            firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
+        }
     }
 
     void ReloadingTimer()
     {
-        reloadTime += Time.deltaTime;
+        //reloadTime += Time.deltaTime;
 
-        if (reloadTime >= timePerBulletWhenRecharging)
-        {
-            bulletsOnWeapon++;
+        //if (reloadTime >= timePerBulletWhenRecharging)
+        //{
+        //    bulletsOnWeapon++;
 
-            //firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+        //    //firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
 
-            Ammo--;
+        //    Ammo--;
 
-            if (bulletsOnWeapon >= shotGunCapacity)
-            {
-                reloading = false;
-                firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
-            }
+        //    if (bulletsOnWeapon >= shotGunCapacity)
+        //    {
+        //        reloading = false;
+        //        firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
+        //    }
 
-            reloadTime = 0;
-        }
+        //    reloadTime = 0;
+        //}
     }
 
     public void FillBulletsPocket()

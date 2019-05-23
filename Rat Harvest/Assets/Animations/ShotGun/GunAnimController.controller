@@ -379,7 +379,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: insertingBullet
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101689802683917402}
@@ -563,7 +563,7 @@ AnimatorStateMachine:
     m_Position: {x: 900, y: -372, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102687745285675838}
-    m_Position: {x: 1608, y: -372, z: 0}
+    m_Position: {x: 1548, y: -360, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102370745591136670}
     m_Position: {x: 1200, y: -372, z: 0}
