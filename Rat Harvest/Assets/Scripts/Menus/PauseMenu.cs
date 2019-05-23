@@ -5,9 +5,17 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    private bool gameIsPaused = false; 
+    private bool gameIsPaused = false;
+    [SerializeField] private List<GameObject> objsToDisable;
     [SerializeField] private GameObject pauseMenuUI;
     UnityStandardAssets.Characters.FirstPerson.MouseLook mouse = new UnityStandardAssets.Characters.FirstPerson.MouseLook();
+
+    private void Start()
+    {
+        pauseMenuUI.SetActive(false);
+        setObjectsVisibility(true);
+        gameIsPaused = false;
+    }
 
     private void Update()
     {
@@ -28,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     private void Pause()
     {
         pauseMenuUI.SetActive(true);
+        setObjectsVisibility(false);
         gameIsPaused = true;
         Time.timeScale = 0f;
         mouse.SetCursorLock(false);
@@ -37,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        setObjectsVisibility(true);
         gameIsPaused = false;
         Time.timeScale = 1f;
         mouse.SetCursorLock(true);
@@ -45,7 +55,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        //Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
+        setObjectsVisibility(true);
+        gameIsPaused = false;
+        Time.timeScale = 1f;
         SceneManager.instance.loadGame();
     }
 
@@ -56,7 +69,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
-        //Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
+        setObjectsVisibility(true);
+        gameIsPaused = false;
+        Time.timeScale = 1f;
         SceneManager.instance.loadMenu();
+    }
+
+    private void setObjectsVisibility(bool b)
+    {
+        for (int i = 0; i < objsToDisable.Count; i++)
+            objsToDisable[i].SetActive(b);
     }
 }

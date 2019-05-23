@@ -21,7 +21,7 @@ public class SceneManager : MonoBehaviour
 
     public void loadGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");       
         Cursor.SetCursor(null, Vector2.one, CursorMode.Auto);
     }  
 
