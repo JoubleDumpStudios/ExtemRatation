@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7ad0651120a7e4ab32768999835e10, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 0947a706b8f1c349b920ce2deda2851e
+    GuidInternal: 
+    m_lastTime: -8586429958900125660
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c3043a09235d414d86d9062d4bd63631
+    GuidInternal: 
+    m_lastTime: -8586429958900595314
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1793e46ca69fdb42ab8b461509de6e1c
+    GuidInternal: 
+    m_lastTime: -8586429946855345286
+    List:
+    - name: Footsteps
+      guid: a36585051184a346a3aacd460b54858f
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 7
+      Path: Default Work Unit\Footsteps
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: b4609ff119cd234494087f9db71a18c3
+    GuidInternal: 
+    m_lastTime: -8586429958900705350
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: a745c145bc032b4283043be00d570d09
+    GuidInternal: 
+    m_lastTime: -8586429958900245463
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2913b0175050824aa9859ecf9c29f1d2
+    GuidInternal: 
+    m_lastTime: -8586429958900535456
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 237e698212b1734a9c3d4c03a87aecdc
+    GuidInternal: 
+    m_lastTime: -8586429958900655242
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 22068e014fdbd34eafc200da01db3f97
+    GuidInternal: 
+    m_lastTime: -8586429958900195646
+    List: []
+  ExpandedItems:
+  - /Rat Harvest_WwiseProject
+  - /Rat Harvest_WwiseProject/SoundBanks
+  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
