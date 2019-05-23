@@ -31,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = true;
         Time.timeScale = 0f;
         mouse.SetCursorLock(false);
+        SceneManager.instance.EnableCursorTexture();
     }
 
     public void Resume()
@@ -38,6 +39,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         gameIsPaused = false;
         Time.timeScale = 1f;
+        mouse.SetCursorLock(true);
+        SceneManager.instance.DisableCursorTexture();
     }
 
     public void Restart()
