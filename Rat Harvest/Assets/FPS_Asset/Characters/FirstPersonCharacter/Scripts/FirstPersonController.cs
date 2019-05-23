@@ -194,6 +194,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
                 else if (gameobjectCollided.gameObject.tag == "AmmoChest")
                 {
+
+                    playerManager.EnableFillingAmmoIcon();
+
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                     {
                         shotGunBehaviourScript_.FillBulletsPocket();
@@ -430,6 +433,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             playerManager.DisablePlantIcon();
             playerManager.DisableHarvestIcon();
+
+            if(!collidingWithBarrel)
+                playerManager.DisableFillingAmmoIcon();
         }
 
         private void IfBarrelInsideTheObject()
@@ -448,7 +454,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (collision.gameObject.tag == "AmmoChest")
             {
-
+                playerManager.EnableFillingAmmoIcon();
                 collidingWithBarrel = true;
             }
         }
@@ -457,7 +463,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             if (collision.gameObject.tag == "AmmoChest")
             {
-
+                playerManager.DisableFillingAmmoIcon();
                 collidingWithBarrel = false;
             }
         }
