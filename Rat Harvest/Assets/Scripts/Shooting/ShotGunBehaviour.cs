@@ -183,7 +183,10 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             //reloading = true;
             if (bulletsOnWeapon < shotGunCapacity)
+            {
                 firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+                reloading = true;
+            }
         }
 
         //if (reloading)
@@ -229,14 +232,18 @@ public class ShotGunBehaviour : MonoBehaviour
         //shooting we stop the reloading giving priority to the first one
         //reloading = false;
 
-
-        reloadTime = 0;
+        if (reloading)
+        {
+            reloading = false;
+        }
+        //reloadTime = 0;
 
         //automatioc reloading
         if (bulletsOnWeapon <= 0)
         {
             //reloading = true;
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+            reloading = true;
         }
 
         firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
@@ -308,7 +315,7 @@ public class ShotGunBehaviour : MonoBehaviour
         currentRecoilAngle = Mathf.SmoothDamp(currentRecoilAngle, 0, ref currentRecoilAngleSpeed, weaponRecoilingTime);
         currentRecoilPosition = Mathf.SmoothDamp(currentRecoilPosition, 0, ref currentRecoilPositionSpeed, weaponRecoilingTime);
 
-        if (Input.GetButton("Fire2") || Input.GetAxis("Fire2") > 0)
+        if ((Input.GetButton("Fire2") || Input.GetAxis("Fire2") > 0) && !reloading)
         {
             transform.position = Vector3.Lerp(transform.position, aimPositionTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
 
@@ -354,8 +361,8 @@ public class ShotGunBehaviour : MonoBehaviour
 
         if (bulletsOnWeapon >= shotGunCapacity)
         {
-            //reloading = false;
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
+            reloading = false;
         }
     }
 
