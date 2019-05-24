@@ -35,11 +35,15 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     public Animator ratAnimator;
     public Animator RatAnimator { get { return this.ratAnimator; } }
 
-    public void OnObjectSpawn()
+    private void Start()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
-        _navMeshAgent.speed = 3.5f;
         ratAnimator = GetComponentInChildren<Animator>();
+    }
+
+    public void OnObjectSpawn()
+    {
+        _navMeshAgent.speed = 3.5f;
     }
 
     int calculateNearestObjectIndex()//allow us to select the nearest destination from the list of destinations
@@ -132,9 +136,9 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
 
     public void ResetRatDestinations()
     {
-        //ratTarget.HasRat = false;
         destinations.Clear();
         ratTarget.PlantEatingPointReached = false;
+        Debug.Log(ratTarget.plantEatingPointReached + "is false");
 
         if(ratAnimator != null)
             ratAnimator.SetBool("Attacking", false);
@@ -152,6 +156,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             
         yield return new WaitForSeconds(0.917f);
 
+        ratTarget.PlantEatingPointReached = false;
         ObjectPooler.instance.killGameObject(this.gameObject);
     }
 
