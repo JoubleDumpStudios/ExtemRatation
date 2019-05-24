@@ -150,7 +150,6 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             ratAnimator.SetBool("Killed", true);
         }
             
-
         yield return new WaitForSeconds(0.917f);
 
         ObjectPooler.instance.killGameObject(this.gameObject);

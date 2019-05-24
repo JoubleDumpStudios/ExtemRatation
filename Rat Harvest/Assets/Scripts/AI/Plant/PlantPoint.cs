@@ -16,6 +16,9 @@ public class PlantPoint : MonoBehaviour
     private bool hasCrop = false;
     public bool HasCrop { get { return this.hasCrop; } set { this.hasCrop = value; } }
 
+    private bool roundStarted = false;
+    public bool RoundStarted { get { return this.roundStarted; } set { this.roundStarted = value; } }
+
 
     private Icon_Plant_Behaviour iconPlantBehaviouScript;
 

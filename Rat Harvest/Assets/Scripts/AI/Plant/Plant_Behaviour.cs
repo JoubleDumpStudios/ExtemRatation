@@ -50,6 +50,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     private bool startRound;
     public bool StartRound { set { this.startRound = value; } }
 
+
     // Method inherited form the IpooledObject interface
     public void OnObjectSpawn()
     {
@@ -71,7 +72,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
 
     // Method with the growth logic of the plant
     private void Grow()
-    {
+    {  
         updateModel();
         updatePoints();
     }
@@ -133,7 +134,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
-        //Debug.Log("Plant Health = " + plantHealth);
+        Debug.Log("Plant Health = " + plantHealth);
 
         if (plantHealth <= 0)
         {
