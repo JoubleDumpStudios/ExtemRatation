@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146068945139041910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9336083, y: -1.5331922, z: -5.225471}
+  m_LocalPosition: {x: 0, y: -1.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3790656706096244868}
@@ -45,10 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a71dc4006bc944b3ee75d4a38d9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantStandPoints:
-  - {fileID: 7061260723967117194}
-  - {fileID: 2489320591538393693}
-  spawner: {fileID: 0}
+  plantPoints: []
 --- !u!1001 &2718752100889562675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +163,41 @@ PrefabInstance:
       propertyPath: plantEatingPoints.Array.data[3]
       value: 
       objectReference: {fileID: 3010589437023276388}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.9409921
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.3710783
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.9209578
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0062356186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.68553936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.005524751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725758105164844424, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5d4249d385985499ab94d4865edcd6, type: 3}
 --- !u!4 &8641962262600219987 stripped
@@ -174,18 +206,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2718752100889562675}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2489320591538393693 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 2718752100889562675}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8819508017261045362 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6908483834221914177, guid: 5a5d4249d385985499ab94d4865edcd6,
@@ -375,6 +395,41 @@ PrefabInstance:
       propertyPath: plantEatingPoints.Array.data[3]
       value: 
       objectReference: {fileID: 7688409758224390323}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.3710783
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.9209578
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.68553936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.9409921
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0062356186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932534033912394597, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.005524751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725758105164844424, guid: 5a5d4249d385985499ab94d4865edcd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5d4249d385985499ab94d4865edcd6, type: 3}
 --- !u!4 &3790656706096244868 stripped
@@ -383,18 +438,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7408287750678567908}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7061260723967117194 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 518236397579574382, guid: 5a5d4249d385985499ab94d4865edcd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7408287750678567908}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0da9d397afa66c45b5b9ad62333b3c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4111886535048147877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6908483834221914177, guid: 5a5d4249d385985499ab94d4865edcd6,
