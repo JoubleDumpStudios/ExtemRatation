@@ -37,12 +37,13 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
 
     private void Start()
     {
-        _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
-        ratAnimator = GetComponentInChildren<Animator>();
+
     }
 
     public void OnObjectSpawn()
     {
+        _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
+        ratAnimator = GetComponentInChildren<Animator>();
         _navMeshAgent.speed = 3.5f;
     }
 
@@ -138,7 +139,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     {
         destinations.Clear();
         ratTarget.PlantEatingPointReached = false;
-        Debug.Log(ratTarget.plantEatingPointReached + "is false");
+        //Debug.Log(ratTarget.plantEatingPointReached + "is false");
 
         if(ratAnimator != null)
             ratAnimator.SetBool("Attacking", false);

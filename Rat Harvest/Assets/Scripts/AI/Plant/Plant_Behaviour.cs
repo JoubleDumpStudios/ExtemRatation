@@ -134,7 +134,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     public void SubPlantHealth(int damage)
     {
         plantHealth -= damage;
-        Debug.Log("Plant Health = " + plantHealth);
+        //Debug.Log("Plant Health = " + plantHealth);
 
         if (plantHealth <= 0)
         {
