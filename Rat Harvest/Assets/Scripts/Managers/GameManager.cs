@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public bool Victory()
+    private bool Victory()
     {
         bool b = false;
 
@@ -22,5 +22,13 @@ public class GameManager : MonoBehaviour
             b = true;
 
         return b;
+    }
+
+    public void EndGame()
+    {
+        if (Victory())
+            Debug.Log("YOU WIN!!!!");
+        else
+            Debug.Log("YOU LOSE!");
     }
 }

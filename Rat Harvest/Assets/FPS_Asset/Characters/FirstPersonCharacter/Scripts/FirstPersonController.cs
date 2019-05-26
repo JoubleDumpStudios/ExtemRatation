@@ -187,7 +187,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
                 else if (gameobjectCollided.gameObject.tag == "AmmoChest")
                 {
-
                     playerManager.EnableFillingAmmoIcon();
 
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
@@ -197,13 +196,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
                 else if (gameobjectCollided.gameObject.tag == "HarvestChest")
                 {
+                    playerManager.EnableFillingHarvestIcon();
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                     {
                         playerManager.updateScore();
                     }
                 }
-                else
-                    DisablePlayerIcons();
+                //else
+                    //DisablePlayerIcons();
             }
             else
                 DisablePlayerIcons();
@@ -392,19 +392,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (plantBehaviourScript.CanBeHarvested())
             {
                 int points = plantBehaviourScript.CurrentPoints;
-
-                //int maxpoints = playerManager.BagCapacity;
-                //int p = playerManager.PlayerHarvest + points;
-
-                //if (playerManager.PlayerHarvest < playerManager.BagCapacity && p > maxpoints)               
-                //    points = playerManager.BagCapacity - playerManager.PlayerHarvest;               
-                //else
-                //    points = 0;
-
-                //playerManager.updateScore(points);
                 playerManager.updateBag(points);
-
                 resetPlantPointStatus(rootPlant);
+                playerManager.DisableHarvestIcon();
             }          
         }
 
@@ -423,6 +413,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if(!collidingWithBarrel)
                 playerManager.DisableFillingAmmoIcon();
+            playerManager.DisableFillingHarvestIcon();
         }
 
         private void IfBarrelInsideTheObject()

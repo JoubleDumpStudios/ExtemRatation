@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private Image plantIcon;
     [SerializeField] private Image HarvestIcon;
     [SerializeField] private Image fillingAmmoIcon;
+    [SerializeField] private Image fillingHarvestIcon;
 
 
     // Player's score
@@ -90,5 +91,15 @@ public class PlayerManager : MonoBehaviour
     public void EnableFillingAmmoIcon()
     {
         fillingAmmoIcon.enabled = true;
+    }
+
+    public void EnableFillingHarvestIcon()
+    {
+        fillingHarvestIcon.enabled = true;
+    }
+
+    public void DisableFillingHarvestIcon()
+    {
+        fillingHarvestIcon.enabled = false;
     }
 }
