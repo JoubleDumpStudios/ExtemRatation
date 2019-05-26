@@ -898,6 +898,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShotGun
       objectReference: {fileID: 0}
+    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -83.16396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.10465
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.010622
+      objectReference: {fileID: 0}
     - target: {fileID: 125923150483668453, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -997,21 +1012,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -83.16396
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 79.10465
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316217763642551692, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 11.010622
       objectReference: {fileID: 0}
     - target: {fileID: 3509171314502024229, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
