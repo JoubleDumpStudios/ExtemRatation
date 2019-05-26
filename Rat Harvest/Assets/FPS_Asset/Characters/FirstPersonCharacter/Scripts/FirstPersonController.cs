@@ -73,6 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool barrelCollidingWithAmmoChest;
         private bool barrelCollidingWithHarvestChest;
         private bool barrelCollidingWithPlant;
+        private bool barrelCollidingWithPlantPoint;
 
         // Use this for initialization
         private void Start()
@@ -206,7 +207,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             else
                 DisablePlayerIcons();
 
-            IfBarrelInsideTheObject();
+            IfBarrelInsideTheObject(gameobjectCollided);
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
@@ -414,7 +415,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             playerManager.DisableFillingHarvestIcon();
         }
 
-        private void IfBarrelInsideTheObject()
+        private void IfBarrelInsideTheObject(GameObject collidedGameObject)
         {
             if (barrelCollidingWithAmmoChest)
             {
@@ -425,6 +426,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                     playerManager.updateScore();
+            }
+            else if (barrelCollidingWithPlant)
+            {
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    Harvest(collidedGameObject);
+            }
+            else if (barrelCollidingWithPlantPoint)
+            {
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    Plant(collidedGameObject);
             }
 
         }
@@ -441,6 +452,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 playerManager.EnableFillingHarvestIcon();
                 barrelCollidingWithHarvestChest = true;
             }
+            else if (collision.gameObject.GetComponent<PlantModel>() != null)
+            {
+                playerManager.EnableHarvestIcon();
+                barrelCollidingWithPlant = true;
+            }
+            else if (collision.gameObject.GetComponent<PlantPoint>() != null)
+            {
+                playerManager.EnablePlantIcon();
+                barrelCollidingWithPlantPoint = true;
+            }
         }
 
         private void OnTriggerExit(Collider collision)
@@ -454,6 +475,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 playerManager.DisableFillingHarvestIcon();
                 barrelCollidingWithHarvestChest = false;
+            }
+            else if (collision.gameObject.GetComponent<PlantModel>() != null)
+            {
+                playerManager.DisableHarvestIcon();
+                barrelCollidingWithPlant = false;
+            }
+            else if (collision.gameObject.GetComponent<PlantPoint>() != null)
+            {
+                playerManager.DisablePlantIcon();
+                barrelCollidingWithPlantPoint = false;
             }
         }
 
