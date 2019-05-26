@@ -21,6 +21,7 @@ public class PlantEatingPoint : MonoBehaviour
     private float timePerAttack;
     public float TimePerAttack { set { this.timePerAttack = value; } }
 
+    [SerializeField]
     private Icon_Plant_Behaviour icon_Plant_Behaviour;
 
 

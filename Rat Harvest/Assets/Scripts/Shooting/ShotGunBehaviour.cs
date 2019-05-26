@@ -92,8 +92,6 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private ParticleSystem gunFire1;
 
-    [SerializeField]
-    private ParticleSystem gunFire2;
 
     //Hit effects
     [SerializeField]

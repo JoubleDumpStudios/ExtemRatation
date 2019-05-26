@@ -89,8 +89,8 @@ public class Timer : MonoBehaviour
             if (plantPoint.HasCrop)
             {
                 plantPoint.Plant.GetComponent<Plant_Behaviour>().StartRound = true;
-                plantPoint.RoundStarted = true;
             }
+            plantPoint.RoundStarted = true;
         }
     }
 }
