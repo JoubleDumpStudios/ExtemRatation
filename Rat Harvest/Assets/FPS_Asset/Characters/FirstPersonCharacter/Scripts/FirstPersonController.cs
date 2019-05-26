@@ -70,7 +70,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public Animator ShotGunAnimator { get { return this.shotGunAnimator; } }
 
         //allow us to detect the colision of an object with the barrel to avoid the raycasting inside the objects bug
-        private bool collidingWithBarrel;
+        private bool barrelCollidingWithAmmoChest;
+        private bool barrelCollidingWithHarvestChest;
+        private bool barrelCollidingWithPlant;
 
         // Use this for initialization
         private void Start()
@@ -190,17 +192,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     playerManager.EnableFillingAmmoIcon();
 
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
-                    {
                         shotGunBehaviourScript_.FillBulletsPocket();
-                    }
                 }
                 else if (gameobjectCollided.gameObject.tag == "HarvestChest")
                 {
                     playerManager.EnableFillingHarvestIcon();
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
-                    {
                         playerManager.updateScore();
-                    }
                 }
                 //else
                     //DisablePlayerIcons();
@@ -411,29 +409,37 @@ namespace UnityStandardAssets.Characters.FirstPerson
             playerManager.DisablePlantIcon();
             playerManager.DisableHarvestIcon();
 
-            if(!collidingWithBarrel)
+            if(!barrelCollidingWithAmmoChest)
                 playerManager.DisableFillingAmmoIcon();
             playerManager.DisableFillingHarvestIcon();
         }
 
         private void IfBarrelInsideTheObject()
         {
-            if (collidingWithBarrel)
+            if (barrelCollidingWithAmmoChest)
             {
                 if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
-                {
                     shotGunBehaviourScript_.FillBulletsPocket();
-                }
             }
-        }
+            else if (barrelCollidingWithHarvestChest)
+            {
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    playerManager.updateScore();
+            }
 
+        }
 
         private void OnTriggerEnter(Collider collision)
         {
             if (collision.gameObject.tag == "AmmoChest")
             {
                 playerManager.EnableFillingAmmoIcon();
-                collidingWithBarrel = true;
+                barrelCollidingWithAmmoChest = true;
+            }
+            else if (collision.gameObject.tag == "HarvestChest")
+            {
+                playerManager.EnableFillingHarvestIcon();
+                barrelCollidingWithHarvestChest = true;
             }
         }
 
@@ -442,7 +448,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (collision.gameObject.tag == "AmmoChest")
             {
                 playerManager.DisableFillingAmmoIcon();
-                collidingWithBarrel = false;
+                barrelCollidingWithAmmoChest = false;
+            }
+            else if (collision.gameObject.tag == "HarvestChest")
+            {
+                playerManager.DisableFillingHarvestIcon();
+                barrelCollidingWithHarvestChest = false;
             }
         }
 
