@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4710092610875348830}
   - component: {fileID: 3420209039974838996}
   - component: {fileID: 1753491894975939557}
+  - component: {fileID: 1746354431873015222}
   m_Layer: 0
   m_Name: trunkTree4
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1746354431873015222
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485678177393808289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: c58cb6b5d88240b4fb8a67e3c230a6e7, type: 3}
 --- !u!1 &5529098637071266752
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +103,7 @@ GameObject:
   - component: {fileID: 1579718655269633104}
   - component: {fileID: 6495804932328402972}
   - component: {fileID: 467299208283445060}
+  - component: {fileID: 6745498527499160346}
   m_Layer: 0
   m_Name: crownTree4
   m_TagString: Untagged
@@ -154,6 +170,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6745498527499160346
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529098637071266752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: c58cb6b5d88240b4fb8a67e3c230a6e7, type: 3}
 --- !u!1 &7012605265670311033
 GameObject:
   m_ObjectHideFlags: 0

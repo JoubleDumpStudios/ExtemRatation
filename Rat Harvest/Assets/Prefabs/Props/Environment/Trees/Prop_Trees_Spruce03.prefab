@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 1342104723}
   - component: {fileID: 1342104725}
   - component: {fileID: 1342104724}
+  - component: {fileID: 8071901116400129838}
   m_Layer: 0
   m_Name: crownTree3
   m_TagString: Untagged
@@ -360,6 +361,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8071901116400129838
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342104722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: c1d4d934157f47e4c990983a3515b1cd, type: 3}
 --- !u!1 &1349495015
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +569,7 @@ GameObject:
   - component: {fileID: 1942171873}
   - component: {fileID: 1942171875}
   - component: {fileID: 1942171874}
+  - component: {fileID: 951081689328186696}
   m_Layer: 0
   m_Name: trunkTree3
   m_TagString: Untagged
@@ -620,6 +636,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &951081689328186696
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942171872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: c1d4d934157f47e4c990983a3515b1cd, type: 3}
 --- !u!1 &2019275675
 GameObject:
   m_ObjectHideFlags: 0
