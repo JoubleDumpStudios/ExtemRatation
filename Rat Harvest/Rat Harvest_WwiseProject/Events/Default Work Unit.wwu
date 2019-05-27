@@ -95,7 +95,7 @@
 								<Action Name="" ID="{EDC1CDBA-E1CD-45E6-B894-410E7CAB34CE}" ShortID="199523168">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Rats_Hit01" ID="{FFD12AEB-4C7F-4E87-8852-B87B84B79E05}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+											<ObjectRef Name="SFX_Rats_Hit" ID="{B1CD176A-5F64-4BAD-A638-8B76DB165491}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -152,9 +152,77 @@
 						<Event Name="MX_CombatLoop02" ID="{CBBED55F-4487-4E23-BF68-38B95D0B309C}">
 							<ChildrenList>
 								<Action Name="" ID="{02933CA8-DD9B-4429-B25F-BB747A587E94}" ShortID="603497329">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4EF0DC33-1B72-4537-848C-34415BCC3FCD}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MX_Combat_Loop02_Dark" ID="{D502EA4B-5487-4442-9372-6132B971ED5B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI&amp;HUD" ID="{8C2A5194-CF13-483D-89CB-72C397045A9D}" ShortID="854381710">
+					<ChildrenList>
+						<Event Name="UI_Click" ID="{81E9FB7E-C645-4F85-A396-F27AA5E3F775}">
+							<ChildrenList>
+								<Action Name="" ID="{A41BB413-1441-42A0-ADA0-5944BA5FE805}" ShortID="353756576">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Click" ID="{13B24406-71AD-44C2-9D0D-126EE3F8A006}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Switch" ID="{B5911688-E2FE-4196-A4D3-E56A11C2D170}">
+							<ChildrenList>
+								<Action Name="" ID="{3F5C73D4-62E7-4393-99C5-BC79DB49B1A0}" ShortID="501908308">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Switch" ID="{98D29954-70BF-44E0-9A22-0076774228B3}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HUD_Harvest" ID="{F8D47FE3-2F92-433D-A8AF-287C63FDA025}">
+							<ChildrenList>
+								<Action Name="" ID="{A6202915-45AC-4E78-9A24-87585D1B6126}" ShortID="277053971">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HUD_HarvestPlant" ID="{87A5F597-AFF9-4C0D-B2B5-8E1B273900AF}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HUD_AmmoBox" ID="{037C6720-60D7-451A-8224-360285950798}">
+							<ChildrenList>
+								<Action Name="" ID="{D25E9701-1AC6-4737-AD21-17121924B664}" ShortID="360094078">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HUD_AmmoBox" ID="{9FC93C7A-A1E3-46BE-A41C-184A2C844640}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HUD_FoodBox" ID="{CE5A0E86-3EB5-44CE-AD5E-E9A2D53BD398}">
+							<ChildrenList>
+								<Action Name="" ID="{E883CEA2-A07C-41B3-836B-F2C766DCC257}" ShortID="889161544">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HUD_FoodBox" ID="{3726AA03-CBA4-40DC-8692-CF331BC42CBC}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

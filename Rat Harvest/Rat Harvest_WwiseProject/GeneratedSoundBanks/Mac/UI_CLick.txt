@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2249769530	UI_Click			\Default Work Unit\UI&HUD\UI_Click	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	245155087	UI_ButtonClick01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR1_stereo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\UI_Click\UI_ButtonClick01		194768
+	914938205	UI_ButtonClick02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR2_stereo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\UI_Click\UI_ButtonClick02		199504
+

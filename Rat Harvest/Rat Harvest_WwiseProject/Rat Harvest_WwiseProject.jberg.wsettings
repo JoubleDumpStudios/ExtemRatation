@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{3CFC6DAF-79CF-495B-A8EA-67D2EDEF9712}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\SPO\Gamelab 6_RatHarvest\Sound\AudacityProject_RatHarvest\Export"/>
+				<Property Name="Event Action List\{037C6720-60D7-451A-8224-360285950798}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{306D1750-45B3-4162-948D-5E98BD699D85}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4188A983-96F9-4B9B-942E-46B9873D55BB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5128215D-938A-4A0A-B02F-9B391203F7FB}\x64_Expand States" Type="string" Value=""/>
@@ -13,10 +14,14 @@
 				<Property Name="Event Action List\{6DF664A2-C5D8-4DF6-9E24-823A81873FE2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{70108D08-98AA-4A5F-A96F-0EBECF59799F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7BE86DFD-965F-4384-9838-6EBCDB85AE93}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{81E9FB7E-C645-4F85-A396-F27AA5E3F775}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B5911688-E2FE-4196-A4D3-E56A11C2D170}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CBBED55F-4487-4E23-BF68-38B95D0B309C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CE5A0E86-3EB5-44CE-AD5E-E9A2D53BD398}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D9777D6E-25FD-4EF4-80D7-2E6B7FE414C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E66EBD65-E1E6-4A90-A3B8-26FB1944C6FC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F8A483D9-B436-4D3A-81E3-BAF35EE22E97}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F8D47FE3-2F92-433D-A8AF-287C63FDA025}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

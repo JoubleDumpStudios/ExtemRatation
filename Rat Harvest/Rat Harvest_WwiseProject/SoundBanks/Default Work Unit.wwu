@@ -110,6 +110,45 @@
 						</SoundBank>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="UI&amp;HUD" ID="{A4B06F6F-BD6A-4D32-8287-4148FD2C903F}" ShortID="1033230895">
+					<ChildrenList>
+						<SoundBank Name="UI_CLick" ID="{6AAA5680-ED32-4F6C-9432-290078231AFE}">
+							<ObjectInclusionList>
+								<ObjectRef Name="UI_Click" ID="{81E9FB7E-C645-4F85-A396-F27AA5E3F775}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="UI_Switch" ID="{CCBAB936-439D-4597-8E5E-ECDEEF827122}">
+							<ObjectInclusionList>
+								<ObjectRef Name="UI_Switch" ID="{B5911688-E2FE-4196-A4D3-E56A11C2D170}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="HUD_Harvest" ID="{F4D8CCDF-DD89-45F0-96C5-6431855EFA23}">
+							<ObjectInclusionList>
+								<ObjectRef Name="HUD_Harvest" ID="{F8D47FE3-2F92-433D-A8AF-287C63FDA025}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="HUD_AmmoBox" ID="{83A79857-3769-4F34-A941-3ADB63464F76}">
+							<ObjectInclusionList>
+								<ObjectRef Name="HUD_AmmoBox" ID="{037C6720-60D7-451A-8224-360285950798}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="HUD_FoodBox" ID="{E5987789-6A1A-4DE0-8CCA-3AFE0D8F5B7D}">
+							<ObjectInclusionList>
+								<ObjectRef Name="HUD_FoodBox" ID="{CE5A0E86-3EB5-44CE-AD5E-E9A2D53BD398}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

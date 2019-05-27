@@ -14,6 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID HUD_AMMOBOX = 765648692U;
+        static const AkUniqueID HUD_FOODBOX = 2550439886U;
+        static const AkUniqueID HUD_HARVEST = 1821446674U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
@@ -26,11 +29,16 @@ namespace AK
         static const AkUniqueID RAT_STARTTIMER = 2192569790U;
         static const AkUniqueID RELOAD = 456382354U;
         static const AkUniqueID SHOOT = 3038207054U;
+        static const AkUniqueID UI_CLICK = 2249769530U;
+        static const AkUniqueID UI_SWITCH = 441552802U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID HUD_AMMOBOX = 765648692U;
+        static const AkUniqueID HUD_FOODBOX = 2550439886U;
+        static const AkUniqueID HUD_HARVEST = 1821446674U;
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
         static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
         static const AkUniqueID MX_STING = 3235245272U;
@@ -44,6 +52,8 @@ namespace AK
         static const AkUniqueID SHOTGUN_PUMPING = 2288755958U;
         static const AkUniqueID SHOTGUN_RELOADING = 1194489829U;
         static const AkUniqueID SHOTGUN_SHOOTING = 2816976351U;
+        static const AkUniqueID UI_CLICK = 2249769530U;
+        static const AkUniqueID UI_SWITCH = 441552802U;
     } // namespace BANKS
 
     namespace BUSSES

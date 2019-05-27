@@ -4,27 +4,32 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Footsteps" Hash="1561013802" Timestamp="1558963719"/>
+				<File Name="HUD_AmmoBox" Hash="3805950789" Timestamp="1558976464"/>
+				<File Name="HUD_FoodBox" Hash="2946546679" Timestamp="1558976464"/>
+				<File Name="HUD_Harvest" Hash="1147016829" Timestamp="1558976464"/>
 				<File Name="Init" Hash="2647710745" Timestamp="1558963719"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963719"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963719"/>
-				<File Name="MX_CombatLoop01" Hash="1356989165" Timestamp="1558965443"/>
-				<File Name="MX_CombatLoop02" Hash="3987951513" Timestamp="1558965443"/>
-				<File Name="MX_Sting" Hash="2778020448" Timestamp="1558965443"/>
-				<File Name="MX_WindUp" Hash="2963810923" Timestamp="1558965443"/>
+				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1558976464"/>
+				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976464"/>
+				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976464"/>
+				<File Name="MX_WindUp" Hash="3900833875" Timestamp="1558976464"/>
 				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
 				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963719"/>
-				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963719"/>
+				<File Name="Rat_Hit" Hash="3288205021" Timestamp="1558976464"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
 				<File Name="Shotgun_Pumping" Hash="403850293" Timestamp="1558963719"/>
 				<File Name="Shotgun_Reloading" Hash="1535909688" Timestamp="1558963719"/>
 				<File Name="Shotgun_Shooting" Hash="2015009806" Timestamp="1558963719"/>
+				<File Name="UI_CLick" Hash="3812709515" Timestamp="1558976464"/>
+				<File Name="UI_Switch" Hash="3227099084" Timestamp="1558976464"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3796133848" Timestamp="1558965443"/>
+				<File Name="" Hash="937712003" Timestamp="1558976464"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -32,27 +37,32 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Footsteps" Hash="1561013802" Timestamp="1558963718"/>
+				<File Name="HUD_AmmoBox" Hash="3805950789" Timestamp="1558976463"/>
+				<File Name="HUD_FoodBox" Hash="2946546679" Timestamp="1558976463"/>
+				<File Name="HUD_Harvest" Hash="1147016829" Timestamp="1558976463"/>
 				<File Name="Init" Hash="399428863" Timestamp="1558963718"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963718"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963718"/>
-				<File Name="MX_CombatLoop01" Hash="1356989165" Timestamp="1558965443"/>
-				<File Name="MX_CombatLoop02" Hash="3987951513" Timestamp="1558965443"/>
-				<File Name="MX_Sting" Hash="2778020448" Timestamp="1558965443"/>
-				<File Name="MX_WindUp" Hash="2963810923" Timestamp="1558965443"/>
+				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1558976463"/>
+				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976463"/>
+				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976463"/>
+				<File Name="MX_WindUp" Hash="3900833875" Timestamp="1558976463"/>
 				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
 				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963718"/>
-				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963718"/>
+				<File Name="Rat_Hit" Hash="3288205021" Timestamp="1558976463"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
 				<File Name="Shotgun_Pumping" Hash="403850293" Timestamp="1558963718"/>
 				<File Name="Shotgun_Reloading" Hash="1535909688" Timestamp="1558963718"/>
 				<File Name="Shotgun_Shooting" Hash="2015009806" Timestamp="1558963718"/>
+				<File Name="UI_CLick" Hash="3812709515" Timestamp="1558976463"/>
+				<File Name="UI_Switch" Hash="3227099084" Timestamp="1558976463"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1107809902" Timestamp="1558965443"/>
+				<File Name="" Hash="1117404373" Timestamp="1558976463"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

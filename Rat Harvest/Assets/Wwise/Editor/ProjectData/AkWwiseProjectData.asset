@@ -31,41 +31,118 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586426431617618497
+    m_lastTime: -8586426304259967250
     List:
-    - name: Footsteps
+    - name: HUD_AmmoBox
+      guid: 5798a7836937344fa9413adb63464f76
+      id: 765648692
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_AmmoBox
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\HUD_AmmoBox
+    - name: HUD_FoodBox
+      guid: 897798e51a6ae04d8cca3afe0d8f5b7d
+      id: 2550439886
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_FoodBox
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\HUD_FoodBox
+    - name: HUD_Harvest
+      guid: dfccd8f489ddf04596c56431855efa23
+      id: 1821446674
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_Harvest
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\HUD_Harvest
+    - name: MX_CombatLoop01
+      guid: 1fcd699e32b46d4c89d5fb0b2324ba66
+      id: 3400939750
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_CombatLoop01
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_CombatLoop01
+    - name: MX_CombatLoop02
+      guid: ced4fd427195e44ba5b2d3840ff80183
+      id: 3400939749
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_CombatLoop02
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_CombatLoop02
+    - name: MX_Sting
+      guid: ff858472e3047e4dbfe4b0fb053755d3
+      id: 3235245272
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_Sting
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_Sting
+    - name: MX_WindUp
+      guid: f7228d77ec34874abaa7358c362d630d
+      id: 1230257716
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_WindUp
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_WindUp
+    - name: Player_Footsteps
       guid: a36585051184a346a3aacd460b54858f
-      id: 2385628198
+      id: 1730208058
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Foley_Player
         ObjectType: 4
-      - ElementName: Footsteps
+      - ElementName: Player_Footsteps
         ObjectType: 7
-      Path: Default Work Unit\Foley_Player\Footsteps
-    - name: Jumps
+      Path: Default Work Unit\Foley_Player\Player_Footsteps
+    - name: Player_Jumps
       guid: a13dc8b923e7a4409033a3e6180e884e
-      id: 1071740888
+      id: 2335147900
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Foley_Player
         ObjectType: 4
-      - ElementName: Jumps
+      - ElementName: Player_Jumps
         ObjectType: 7
-      Path: Default Work Unit\Foley_Player\Jumps
-    - name: Landing
+      Path: Default Work Unit\Foley_Player\Player_Jumps
+    - name: Player_Landing
       guid: 191a8c067469a74ea21a6dca9c3f9e38
-      id: 2548270042
+      id: 1282282006
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Foley_Player
         ObjectType: 4
-      - ElementName: Landing
+      - ElementName: Player_Landing
         ObjectType: 7
-      Path: Default Work Unit\Foley_Player\Landing
+      Path: Default Work Unit\Foley_Player\Player_Landing
     - name: Rat_Deaths
       guid: 06ed3e62f895ec469a4284ca9b58009a
       id: 4162641848
@@ -132,12 +209,34 @@ MonoBehaviour:
       - ElementName: Shotgun_Shooting
         ObjectType: 7
       Path: Default Work Unit\SFX_Shotgun\Shotgun_Shooting
+    - name: UI_CLick
+      guid: 8056aa6a32ed6c4f9432290078231afe
+      id: 2249769530
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: UI_CLick
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\UI_CLick
+    - name: UI_Switch
+      guid: 36b9bacc9d4397458e5eecdeef827122
+      id: 441552802
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: UI_Switch
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\UI_Switch
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586426432059795714
+    m_lastTime: -8586426304259867519
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -153,6 +252,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.440555
       minDuration: 0.342369
+    - name: HUD_AmmoBox
+      guid: 20677c03d7601a458224360285950798
+      id: 765648692
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_AmmoBox
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\HUD_AmmoBox
+      maxAttenuation: 0
+      maxDuration: 0.899439
+      minDuration: 0.801309
+    - name: HUD_FoodBox
+      guid: 860e5aceb53ece44ad5ee9a2d53bd398
+      id: 2550439886
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_FoodBox
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\HUD_FoodBox
+      maxAttenuation: 0
+      maxDuration: 0.528867
+      minDuration: 0.471167
+    - name: HUD_Harvest
+      guid: e37fd4f8922f3d43a8af287c63fda025
+      id: 1821446674
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_Harvest
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\HUD_Harvest
+      maxAttenuation: 0
+      maxDuration: 0.666866
+      minDuration: 0.560766
     - name: Jump
       guid: 5d2128518a930a4ab02f9b391203f7fb
       id: 3833651337
@@ -181,6 +322,62 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.567136
       minDuration: 0.450136
+    - name: MX_CombatLoop01
+      guid: 50176d30b3456241948d5e98bd699d85
+      id: 3400939750
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_CombatLoop01
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_CombatLoop01
+      maxAttenuation: 0
+      maxDuration: 84
+      minDuration: 84
+    - name: MX_CombatLoop02
+      guid: 5fd5becb8744234ebf6838b95d0b309c
+      id: 3400939749
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_CombatLoop02
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_CombatLoop02
+      maxAttenuation: 0
+      maxDuration: 51.200024
+      minDuration: 51.200024
+    - name: MX_Sting01
+      guid: 6e7d77d9fd25f44e80d72e6b7fe414c7
+      id: 609050649
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_Sting01
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_Sting01
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: MX_Windup01
+      guid: 6abb8d53d4a8924583efdc9d8dafd98d
+      id: 2107270325
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_Windup01
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_Windup01
+      maxAttenuation: 0
+      maxDuration: 12.800023
+      minDuration: 12.800023
     - name: Pump
       guid: 49c1e757f4ddef4db8f0cf619bac9374
       id: 1925777311
@@ -221,7 +418,7 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\SFX_Rats\Rat_Hit
       maxAttenuation: 0
-      maxDuration: 0.422336
+      maxDuration: 0.805739
       minDuration: 0.345031
     - name: Rat_StartTimer
       guid: 83a98841f9969b4b942e46b9873d55bb
@@ -265,6 +462,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.063856
       minDuration: 1.937909
+    - name: UI_Click
+      guid: 7efbe98145c6854fa396f27aa5e3f775
+      id: 2249769530
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: UI_Click
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\UI_Click
+      maxAttenuation: 0
+      maxDuration: 1.269069
+      minDuration: 0.955348
+    - name: UI_Switch
+      guid: 881691b5fee29641a4d3e56a11c2d170
+      id: 441552802
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: UI_Switch
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\UI_Switch
+      maxAttenuation: 0
+      maxDuration: 0.22253
+      minDuration: 0.166709
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -297,12 +522,9 @@ MonoBehaviour:
   - /Rat Harvest_WwiseProject
   - /Rat Harvest_WwiseProject/Events
   - /Rat Harvest_WwiseProject/Events/Default Work Unit
-  - /Rat Harvest_WwiseProject/Events/Default Work Unit/Foley_Player
-  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Rats
-  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Shotgun
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/MX
   - /Rat Harvest_WwiseProject/SoundBanks
   - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit
-  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/Foley_Player
-  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/SFX_Shotgun
+  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/MX
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -90,28 +90,28 @@ public class Timer : MonoBehaviour
     void PreRoundEvents()
     {
         
-        Invoke("PreroundFirstSoundEvent", 2);
+        Invoke("MX_WindUp", 4);
         //Invoke("Name of the method you want to play", YourTime)
     }
 
     void RoundEvents()
     {
-        Invoke("RoundFirstSoundEvent", fstartRoundTime + 3);
+        Invoke("MX_CombatStart", fstartRoundTime + 2);
 
         //Invoke("Name of the method you want to play", fstartRoundTime + YourTime), 
         //this will call you method in YourTime seconds after the start of the round.
     }
 
 
-    void PreroundFirstSoundEvent()
+    void MX_WindUp()
     {
 
         AkSoundEngine.PostEvent("MX_Windup01", gameObject);
     }
 
-    void RoundFirstSoundEvent()
+    void MX_CombatStart()
     {
-        Debug.Log("Hello World, three seconds after the start of the round");
+        AkSoundEngine.PostEvent("MX_CombatLoop01", gameObject);
     }
 
 

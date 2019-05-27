@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	441552802	UI_Switch			\Default Work Unit\UI&HUD\UI_Switch	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	656693509	UI_Switch02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\WHOOSH_Air_Fast_Wind_Subtle_RR2_mono_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\UI_Switch\UI_Switch02		17052
+	748809363	UI_Switch01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\WHOOSH_Air_Fast_Wind_Subtle_RR1_mono_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\UI_Switch\UI_Switch01		17052
+
