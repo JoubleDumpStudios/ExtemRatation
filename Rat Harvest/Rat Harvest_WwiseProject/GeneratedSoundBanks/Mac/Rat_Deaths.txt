@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1268870121	Rat_Death			\Default Work Unit\SFX_Rats\Rat_Death	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	739880799	SFX_Rats_Death01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Death01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Death\SFX_Rats_Death01		81014
+	845905714	SFX_Rats_Death02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Death02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Death\SFX_Rats_Death02		71914
+	1027654733	SFX_Rats_Death03	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Death03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Death\SFX_Rats_Death03		61796
+

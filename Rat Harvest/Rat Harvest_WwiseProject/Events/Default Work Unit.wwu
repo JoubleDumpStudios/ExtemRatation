@@ -77,6 +77,43 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX_Rats" ID="{41A4AAEA-7C58-4A2A-9341-99C42B7BF0DA}" ShortID="659098282">
+					<ChildrenList>
+						<Event Name="Rat_Death" ID="{7BE86DFD-965F-4384-9838-6EBCDB85AE93}">
+							<ChildrenList>
+								<Action Name="" ID="{9BC755C1-26CE-4652-8DF7-857CAD966EA1}" ShortID="598419866">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Rats_Death" ID="{494F073D-059C-405E-A868-E3628D38187B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rat_Hit" ID="{F8A483D9-B436-4D3A-81E3-BAF35EE22E97}">
+							<ChildrenList>
+								<Action Name="" ID="{EDC1CDBA-E1CD-45E6-B894-410E7CAB34CE}" ShortID="199523168">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Rats_Hit01" ID="{FFD12AEB-4C7F-4E87-8852-B87B84B79E05}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rat_StartTimer" ID="{4188A983-96F9-4B9B-942E-46B9873D55BB}">
+							<ChildrenList>
+								<Action Name="" ID="{DB78236D-F7EF-4312-A18D-A582899422C8}" ShortID="368321400">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Rats_Start" ID="{F5AD2B7F-8C81-415D-BC79-9A4426B78CAE}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

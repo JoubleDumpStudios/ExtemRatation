@@ -17,6 +17,9 @@ namespace AK
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID PUMP = 1925777311U;
+        static const AkUniqueID RAT_DEATH = 1268870121U;
+        static const AkUniqueID RAT_HIT = 1082451816U;
+        static const AkUniqueID RAT_STARTTIMER = 2192569790U;
         static const AkUniqueID RELOAD = 456382354U;
         static const AkUniqueID SHOOT = 3038207054U;
     } // namespace EVENTS
@@ -27,6 +30,9 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID JUMPS = 1071740888U;
         static const AkUniqueID LANDING = 2548270042U;
+        static const AkUniqueID RAT_DEATHS = 4162641848U;
+        static const AkUniqueID RAT_HIT = 1082451816U;
+        static const AkUniqueID RAT_STARTTIMER = 2192569790U;
         static const AkUniqueID SHOTGUN_PUMPING = 2288755958U;
         static const AkUniqueID SHOTGUN_RELOADING = 1194489829U;
         static const AkUniqueID SHOTGUN_SHOOTING = 2816976351U;

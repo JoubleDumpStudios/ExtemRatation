@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0947a706b8f1c349b920ce2deda2851e
     GuidInternal: 
-    m_lastTime: -8586429958900125660
+    m_lastTime: -8586428994215903668
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c3043a09235d414d86d9062d4bd63631
     GuidInternal: 
-    m_lastTime: -8586429958900595314
+    m_lastTime: -8586428994216322853
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586429681444151240
+    m_lastTime: -8586426431617618497
     List:
     - name: Footsteps
       guid: a36585051184a346a3aacd460b54858f
@@ -66,6 +66,39 @@ MonoBehaviour:
       - ElementName: Landing
         ObjectType: 7
       Path: Default Work Unit\Foley_Player\Landing
+    - name: Rat_Deaths
+      guid: 06ed3e62f895ec469a4284ca9b58009a
+      id: 4162641848
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Deaths
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Rats\Rat_Deaths
+    - name: Rat_Hit
+      guid: aa1d010d47d5d84f833cbe27425e8093
+      id: 1082451816
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Hit
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Rats\Rat_Hit
+    - name: Rat_StartTimer
+      guid: f6242d9a5d078a48a71dfb64105ec7ed
+      id: 2192569790
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_StartTimer
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Rats\Rat_StartTimer
     - name: Shotgun_Pumping
       guid: 515d033f9a9ecd40aa005fbbc5e302be
       id: 2288755958
@@ -104,7 +137,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586429681443861410
+    m_lastTime: -8586426432059795714
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -162,6 +195,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.926462
       minDuration: 0.801886
+    - name: Rat_Death
+      guid: fd6de87b5f96844398386ebcdb85ae93
+      id: 1268870121
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Death
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Rats\Rat_Death
+      maxAttenuation: 0
+      maxDuration: 1.030196
+      minDuration: 0.64182
+    - name: Rat_Hit
+      guid: d983a4f836b43a4d81e3baf35ee22e97
+      id: 1082451816
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Hit
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Rats\Rat_Hit
+      maxAttenuation: 0
+      maxDuration: 0.422336
+      minDuration: 0.345031
+    - name: Rat_StartTimer
+      guid: 83a98841f9969b4b942e46b9873d55bb
+      id: 2192569790
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_StartTimer
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Rats\Rat_StartTimer
+      maxAttenuation: 0
+      maxDuration: 1.472766
+      minDuration: 1.472766
     - name: Reload
       guid: a264f66dd8c5f64d9e24823a81873fe2
       id: 456382354
@@ -195,34 +270,35 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a745c145bc032b4283043be00d570d09
     GuidInternal: 
-    m_lastTime: -8586429958900245463
+    m_lastTime: -8586428994216701556
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 2913b0175050824aa9859ecf9c29f1d2
     GuidInternal: 
-    m_lastTime: -8586429958900535456
+    m_lastTime: -8586428994215923927
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 237e698212b1734a9c3d4c03a87aecdc
     GuidInternal: 
-    m_lastTime: -8586429958900655242
+    m_lastTime: -8586428994215913639
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 22068e014fdbd34eafc200da01db3f97
     GuidInternal: 
-    m_lastTime: -8586429958900195646
+    m_lastTime: -8586428994215913639
     List: []
   ExpandedItems:
   - /Rat Harvest_WwiseProject
   - /Rat Harvest_WwiseProject/Events
   - /Rat Harvest_WwiseProject/Events/Default Work Unit
   - /Rat Harvest_WwiseProject/Events/Default Work Unit/Foley_Player
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Rats
   - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Shotgun
   - /Rat Harvest_WwiseProject/SoundBanks
   - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit

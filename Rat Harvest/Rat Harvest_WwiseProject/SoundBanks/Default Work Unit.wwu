@@ -53,6 +53,31 @@
 						</SoundBank>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX_Rats" ID="{6D3F8BBF-F6B2-4E02-BDBF-8C774FD45AEB}" ShortID="924758301">
+					<ChildrenList>
+						<SoundBank Name="Rat_Deaths" ID="{623EED06-95F8-46EC-9A42-84CA9B58009A}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Rat_Death" ID="{7BE86DFD-965F-4384-9838-6EBCDB85AE93}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Rat_Hit" ID="{0D011DAA-D547-4FD8-833C-BE27425E8093}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Rat_Hit" ID="{F8A483D9-B436-4D3A-81E3-BAF35EE22E97}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Rat_StartTimer" ID="{9A2D24F6-075D-488A-A71D-FB64105EC7ED}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Rat_StartTimer" ID="{4188A983-96F9-4B9B-942E-46B9873D55BB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -3,13 +3,16 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{3CFC6DAF-79CF-495B-A8EA-67D2EDEF9712}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\jberg\Desktop\SPO\3rd Year\GameLab 6, Take 2\Sound_Assets\AudacityProject_RatHarvest\Export"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\SPO\Gamelab 6_RatHarvest\Sound\AudacityProject_RatHarvest\Export"/>
+				<Property Name="Event Action List\{4188A983-96F9-4B9B-942E-46B9873D55BB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5128215D-938A-4A0A-B02F-9B391203F7FB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5470801A-3FE8-4BAD-9BEE-AA469B09191D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{57E7C149-DDF4-4DEF-B8F0-CF619BAC9374}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6DF664A2-C5D8-4DF6-9E24-823A81873FE2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{70108D08-98AA-4A5F-A96F-0EBECF59799F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7BE86DFD-965F-4384-9838-6EBCDB85AE93}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E66EBD65-E1E6-4A90-A3B8-26FB1944C6FC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F8A483D9-B436-4D3A-81E3-BAF35EE22E97}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

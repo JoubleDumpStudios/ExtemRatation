@@ -3,36 +3,42 @@
 	<Platform GUID="{F905E0D1-2301-4797-B65A-C17916D08729}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Footsteps" Hash="1055940848" Timestamp="1558636044"/>
-				<File Name="Init" Hash="1182415902" Timestamp="1558611987"/>
-				<File Name="Jumps" Hash="2773733164" Timestamp="1558637621"/>
-				<File Name="Landing" Hash="1268207701" Timestamp="1558637621"/>
-				<File Name="Shotgun_Pumping" Hash="1495999251" Timestamp="1558638743"/>
-				<File Name="Shotgun_Reloading" Hash="1100103252" Timestamp="1558638743"/>
-				<File Name="Shotgun_Shooting" Hash="436951125" Timestamp="1558638743"/>
+				<File Name="Footsteps" Hash="1561013802" Timestamp="1558963719"/>
+				<File Name="Init" Hash="2647710745" Timestamp="1558963719"/>
+				<File Name="Jumps" Hash="4208187421" Timestamp="1558963719"/>
+				<File Name="Landing" Hash="3221066936" Timestamp="1558963719"/>
+				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963719"/>
+				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963719"/>
+				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
+				<File Name="Shotgun_Pumping" Hash="403850293" Timestamp="1558963719"/>
+				<File Name="Shotgun_Reloading" Hash="1535909688" Timestamp="1558963719"/>
+				<File Name="Shotgun_Shooting" Hash="2015009806" Timestamp="1558963719"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="111727760" Timestamp="1558638743"/>
+				<File Name="" Hash="2630567566" Timestamp="1558963719"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{AD8FA7C8-0570-4FAB-A8D6-3C96F59CCFC6}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Footsteps" Hash="1055940848" Timestamp="1558636043"/>
-				<File Name="Init" Hash="2279659568" Timestamp="1558611987"/>
-				<File Name="Jumps" Hash="2773733164" Timestamp="1558637621"/>
-				<File Name="Landing" Hash="1268207701" Timestamp="1558637621"/>
-				<File Name="Shotgun_Pumping" Hash="1495999251" Timestamp="1558638743"/>
-				<File Name="Shotgun_Reloading" Hash="1100103252" Timestamp="1558638743"/>
-				<File Name="Shotgun_Shooting" Hash="436951125" Timestamp="1558638743"/>
+				<File Name="Footsteps" Hash="1561013802" Timestamp="1558963718"/>
+				<File Name="Init" Hash="399428863" Timestamp="1558963718"/>
+				<File Name="Jumps" Hash="4208187421" Timestamp="1558963718"/>
+				<File Name="Landing" Hash="3221066936" Timestamp="1558963718"/>
+				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963718"/>
+				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963718"/>
+				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
+				<File Name="Shotgun_Pumping" Hash="403850293" Timestamp="1558963718"/>
+				<File Name="Shotgun_Reloading" Hash="1535909688" Timestamp="1558963718"/>
+				<File Name="Shotgun_Shooting" Hash="2015009806" Timestamp="1558963718"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="942220058" Timestamp="1558638743"/>
+				<File Name="" Hash="2790352952" Timestamp="1558963718"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

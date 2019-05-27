@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2192569790	Rat_StartTimer			\Default Work Unit\SFX_Rats\Rat_StartTimer	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2791153688	Hall_Small	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	423142833	SFX_Rats_Start	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Start		129962
+

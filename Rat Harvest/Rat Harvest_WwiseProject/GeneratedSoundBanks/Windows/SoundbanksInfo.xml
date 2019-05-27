@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\jberg\Desktop\SPO\3rd Year\GameLab 6, Take 2\RatHarvest_Git\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\jberg\Desktop\SPO\3rd Year\GameLab 6, Take 2\RatHarvest_Git\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\jberg\Desktop\SPO\3rd Year\GameLab 6, Take 2\RatHarvest_Git\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\jberg\Desktop\SPO\3rd Year\GameLab 6, Take 2\RatHarvest_Git\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -33,6 +33,20 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="1082451816" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Hit</ObjectPath>
+			<ShortName>Rat_Hit</ShortName>
+			<Path>Rat_Hit.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1082451816" Name="Rat_Hit" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Hit" DurationType="OneShot" DurationMin="0.345031" DurationMax="0.422336"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="562273146" Language="SFX">
+					<ShortName>SFX_Rats_Hit01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Hit01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1194489829" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Reloading</ObjectPath>
 			<ShortName>Shotgun_Reloading</ShortName>
@@ -51,6 +65,20 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2192569790" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_StartTimer</ObjectPath>
+			<ShortName>Rat_StartTimer</ShortName>
+			<Path>Rat_StartTimer.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2192569790" Name="Rat_StartTimer" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_StartTimer" DurationType="OneShot" DurationMin="1.472766" DurationMax="1.472766"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="423142833" Language="SFX">
+					<ShortName>SFX_Rats_Start.wav</ShortName>
+					<Path>SFX\SFX_Rats_Start_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="2288755958" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Pumping</ObjectPath>
@@ -117,6 +145,28 @@
 				<File Id="1062683667" Language="SFX">
 					<ShortName>SFX_Shotgun_Shot02.wav</ShortName>
 					<Path>SFX\SFX_Shotgun_Shot02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="4162641848" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Deaths</ObjectPath>
+			<ShortName>Rat_Deaths</ShortName>
+			<Path>Rat_Deaths.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1268870121" Name="Rat_Death" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Death" DurationType="OneShot" DurationMin="0.641820" DurationMax="1.030196"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="739880799" Language="SFX">
+					<ShortName>SFX_Rats_Death01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death01_10C4C929.wem</Path>
+				</File>
+				<File Id="845905714" Language="SFX">
+					<ShortName>SFX_Rats_Death02.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death02_10C4C929.wem</Path>
+				</File>
+				<File Id="1027654733" Language="SFX">
+					<ShortName>SFX_Rats_Death03.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death03_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
