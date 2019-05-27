@@ -393,7 +393,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public void FillBulletsPocket()
     {
-
+        AkSoundEngine.PostEvent("HUD_AmmoBox", gameObject);
         Ammo = maxAmmo;
 
     }

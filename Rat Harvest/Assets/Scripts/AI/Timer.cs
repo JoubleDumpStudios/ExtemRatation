@@ -71,7 +71,6 @@ public class Timer : MonoBehaviour
             TurnOnSpawnerAndPlantGrowing();
             time = harvestingTime +1;
             preRound = false;
-            AkSoundEngine.PostEvent("Rat_StartTimer", gameObject);
         }
         else if (time <= 0 && !preRound)
         {
@@ -90,13 +89,14 @@ public class Timer : MonoBehaviour
     void PreRoundEvents()
     {
         
-        Invoke("MX_WindUp", 4);
+        Invoke("MX_WindUp", 2);
         //Invoke("Name of the method you want to play", YourTime)
+        Invoke("Rat_Scream", 13);
     }
 
     void RoundEvents()
     {
-        Invoke("MX_CombatStart", fstartRoundTime + 2);
+        Invoke("MX_CombatStart", fstartRoundTime + 0);
 
         //Invoke("Name of the method you want to play", fstartRoundTime + YourTime), 
         //this will call you method in YourTime seconds after the start of the round.
@@ -107,6 +107,10 @@ public class Timer : MonoBehaviour
     {
 
         AkSoundEngine.PostEvent("MX_Windup01", gameObject);
+    }
+    void Rat_Scream()
+    {
+        AkSoundEngine.PostEvent("Rat_StartTimer", gameObject);
     }
 
     void MX_CombatStart()
