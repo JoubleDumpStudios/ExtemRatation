@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Foley_Player\Footstep	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	11723387	Foley_Player_Foostep02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\Foley_Player_Foostep02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Footsteps_Grass\Foley_Player_Foostep02		32994
+	206385899	Foley_Player_Foostep01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\Foley_Player_Foostep01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Footsteps_Grass\Foley_Player_Foostep01		35696
+

@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3833651337	Jump			\Default Work Unit\Foley_Player\Jump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	223178980	Foley_Player_Jump02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\Foley_Player_Jump02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Jumping\Foley_Player_Jump02		44370
+	557519647	Foley_Player_Jump01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\Foley_Player_Jump01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Jumping\Foley_Player_Jump01		45144
+	575523147	Foley_Player_Jump03	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\Foley_Player_Jump03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Jumping\Foley_Player_Jump03		39574
+

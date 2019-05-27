@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	609050649	MX_Sting01			\Default Work Unit\MX\MX_Sting01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	882272191	MX_Sting_Alert01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\MX_Sting_Alert01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MX\MX_Sting_Alert01		705664
+

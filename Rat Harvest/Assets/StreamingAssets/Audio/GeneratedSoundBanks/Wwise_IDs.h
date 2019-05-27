@@ -16,6 +16,10 @@ namespace AK
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
+        static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
+        static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
+        static const AkUniqueID MX_STING01 = 609050649U;
+        static const AkUniqueID MX_WINDUP01 = 2107270325U;
         static const AkUniqueID PUMP = 1925777311U;
         static const AkUniqueID RAT_DEATH = 1268870121U;
         static const AkUniqueID RAT_HIT = 1082451816U;
@@ -27,9 +31,13 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID JUMPS = 1071740888U;
-        static const AkUniqueID LANDING = 2548270042U;
+        static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
+        static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
+        static const AkUniqueID MX_STING = 3235245272U;
+        static const AkUniqueID MX_WINDUP = 1230257716U;
+        static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
+        static const AkUniqueID PLAYER_JUMPS = 2335147900U;
+        static const AkUniqueID PLAYER_LANDING = 1282282006U;
         static const AkUniqueID RAT_DEATHS = 4162641848U;
         static const AkUniqueID RAT_HIT = 1082451816U;
         static const AkUniqueID RAT_STARTTIMER = 2192569790U;

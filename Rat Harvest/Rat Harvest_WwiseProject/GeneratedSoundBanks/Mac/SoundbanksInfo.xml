@@ -11,28 +11,6 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1071740888" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Jumps</ObjectPath>
-			<ShortName>Jumps</ShortName>
-			<Path>Jumps.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Foley_Player\Jump" DurationType="OneShot" DurationMin="0.410780" DurationMax="0.573703"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="223178980" Language="SFX">
-					<ShortName>Foley_Player_Jump02.wav</ShortName>
-					<Path>SFX\Foley_Player_Jump02_10C4C929.wem</Path>
-				</File>
-				<File Id="557519647" Language="SFX">
-					<ShortName>Foley_Player_Jump01.wav</ShortName>
-					<Path>SFX\Foley_Player_Jump01_10C4C929.wem</Path>
-				</File>
-				<File Id="575523147" Language="SFX">
-					<ShortName>Foley_Player_Jump03.wav</ShortName>
-					<Path>SFX\Foley_Player_Jump03_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
 		<SoundBank Id="1082451816" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Hit</ObjectPath>
 			<ShortName>Rat_Hit</ShortName>
@@ -61,10 +39,56 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="1230257716" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_WindUp</ObjectPath>
+			<ShortName>MX_WindUp</ShortName>
+			<Path>MX_WindUp.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2107270325" Name="MX_Windup01" ObjectPath="\Events\Default Work Unit\MX\MX_Windup01" DurationType="OneShot" DurationMin="12.800023" DurationMax="12.800023"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="154317991" Language="SFX">
+					<ShortName>MX_Combat_Loop03_WindUp.wav</ShortName>
+					<Path>SFX\MX_Combat_Loop03_WindUp_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1282282006" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Landing</ObjectPath>
+			<ShortName>Player_Landing</ShortName>
+			<Path>Player_Landing.bnk</Path>
+			<IncludedEvents>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Foley_Player\Land" DurationType="OneShot" DurationMin="0.450136" DurationMax="0.567136"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13580875" Language="SFX">
+					<ShortName>Foley_Player_Land01.wav</ShortName>
+					<Path>SFX\Foley_Player_Land01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1730208058" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Footsteps</ObjectPath>
+			<ShortName>Player_Footsteps</ShortName>
+			<Path>Player_Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Foley_Player\Footstep" DurationType="OneShot" DurationMin="0.342369" DurationMax="0.440555"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="11723387" Language="SFX">
+					<ShortName>Foley_Player_Foostep02.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep02_10C4C929.wem</Path>
+				</File>
+				<File Id="206385899" Language="SFX">
+					<ShortName>Foley_Player_Foostep01.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="2192569790" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_StartTimer</ObjectPath>
@@ -94,35 +118,25 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="2385628198" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Footsteps</ObjectPath>
-			<ShortName>Footsteps</ShortName>
-			<Path>Footsteps.bnk</Path>
+		<SoundBank Id="2335147900" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Jumps</ObjectPath>
+			<ShortName>Player_Jumps</ShortName>
+			<Path>Player_Jumps.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Foley_Player\Footstep" DurationType="OneShot" DurationMin="0.342369" DurationMax="0.440555"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Foley_Player\Jump" DurationType="OneShot" DurationMin="0.410780" DurationMax="0.573703"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="11723387" Language="SFX">
-					<ShortName>Foley_Player_Foostep02.wav</ShortName>
-					<Path>SFX\Foley_Player_Foostep02_10C4C929.wem</Path>
+				<File Id="223178980" Language="SFX">
+					<ShortName>Foley_Player_Jump02.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump02_10C4C929.wem</Path>
 				</File>
-				<File Id="206385899" Language="SFX">
-					<ShortName>Foley_Player_Foostep01.wav</ShortName>
-					<Path>SFX\Foley_Player_Foostep01_10C4C929.wem</Path>
+				<File Id="557519647" Language="SFX">
+					<ShortName>Foley_Player_Jump01.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump01_10C4C929.wem</Path>
 				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="2548270042" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Landing</ObjectPath>
-			<ShortName>Landing</ShortName>
-			<Path>Landing.bnk</Path>
-			<IncludedEvents>
-				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Foley_Player\Land" DurationType="OneShot" DurationMin="0.450136" DurationMax="0.567136"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="13580875" Language="SFX">
-					<ShortName>Foley_Player_Land01.wav</ShortName>
-					<Path>SFX\Foley_Player_Land01_10C4C929.wem</Path>
+				<File Id="575523147" Language="SFX">
+					<ShortName>Foley_Player_Jump03.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump03_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -145,6 +159,48 @@
 				<File Id="1062683667" Language="SFX">
 					<ShortName>SFX_Shotgun_Shot02.wav</ShortName>
 					<Path>SFX\SFX_Shotgun_Shot02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3235245272" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_Sting</ObjectPath>
+			<ShortName>MX_Sting</ShortName>
+			<Path>MX_Sting.bnk</Path>
+			<IncludedEvents>
+				<Event Id="609050649" Name="MX_Sting01" ObjectPath="\Events\Default Work Unit\MX\MX_Sting01" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="882272191" Language="SFX">
+					<ShortName>MX_Sting_Alert01.wav</ShortName>
+					<Path>SFX\MX_Sting_Alert01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3400939749" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop02</ObjectPath>
+			<ShortName>MX_CombatLoop02</ShortName>
+			<Path>MX_CombatLoop02.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3400939749" Name="MX_CombatLoop02" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop02" DurationType="OneShot" DurationMin="51.200024" DurationMax="51.200024"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="270229255" Language="SFX">
+					<ShortName>MX_Combat_Loop02_Dark.wav</ShortName>
+					<Path>SFX\MX_Combat_Loop02_Dark_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3400939750" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop01</ObjectPath>
+			<ShortName>MX_CombatLoop01</ShortName>
+			<Path>MX_CombatLoop01.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="OneShot" DurationMin="84.000000" DurationMax="84.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="772817735" Language="SFX">
+					<ShortName>MX_Combat_Loop01.wav</ShortName>
+					<Path>SFX\MX_Combat_Loop01_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

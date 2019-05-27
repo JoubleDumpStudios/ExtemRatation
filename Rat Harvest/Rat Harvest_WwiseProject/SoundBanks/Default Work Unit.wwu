@@ -5,21 +5,21 @@
 			<ChildrenList>
 				<Folder Name="Foley_Player" ID="{5FACE2BA-13C6-4DD4-8091-7EE5E2A04800}" ShortID="982337946">
 					<ChildrenList>
-						<SoundBank Name="Footsteps" ID="{058565A3-8411-46A3-A3AA-CD460B54858F}">
+						<SoundBank Name="Player_Footsteps" ID="{058565A3-8411-46A3-A3AA-CD460B54858F}">
 							<ObjectInclusionList>
 								<ObjectRef Name="Footstep" ID="{70108D08-98AA-4A5F-A96F-0EBECF59799F}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
-						<SoundBank Name="Jumps" ID="{B9C83DA1-E723-40A4-9033-A3E6180E884E}">
+						<SoundBank Name="Player_Jumps" ID="{B9C83DA1-E723-40A4-9033-A3E6180E884E}">
 							<ObjectInclusionList>
 								<ObjectRef Name="Jump" ID="{5128215D-938A-4A0A-B02F-9B391203F7FB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
-						<SoundBank Name="Landing" ID="{068C1A19-6974-4EA7-A21A-6DCA9C3F9E38}">
+						<SoundBank Name="Player_Landing" ID="{068C1A19-6974-4EA7-A21A-6DCA9C3F9E38}">
 							<ObjectInclusionList>
 								<ObjectRef Name="Land" ID="{5470801A-3FE8-4BAD-9BEE-AA469B09191D}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
@@ -72,6 +72,38 @@
 						<SoundBank Name="Rat_StartTimer" ID="{9A2D24F6-075D-488A-A71D-FB64105EC7ED}">
 							<ObjectInclusionList>
 								<ObjectRef Name="Rat_StartTimer" ID="{4188A983-96F9-4B9B-942E-46B9873D55BB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MX" ID="{6BD2C618-9E6A-4BB2-93D7-CD8FCAA34B36}" ShortID="424693365">
+					<ChildrenList>
+						<SoundBank Name="MX_Sting" ID="{728485FF-04E3-4D7E-BFE4-B0FB053755D3}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_Sting01" ID="{D9777D6E-25FD-4EF4-80D7-2E6B7FE414C7}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_WindUp" ID="{778D22F7-34EC-4A87-BAA7-358C362D630D}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_Windup01" ID="{538DBB6A-A8D4-4592-83EF-DC9D8DAFD98D}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_CombatLoop01" ID="{9E69CD1F-B432-4C6D-89D5-FB0B2324BA66}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_CombatLoop01" ID="{306D1750-45B3-4162-948D-5E98BD699D85}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_CombatLoop02" ID="{42FDD4CE-9571-4BE4-A5B2-D3840FF80183}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_CombatLoop02" ID="{CBBED55F-4487-4E23-BF68-38B95D0B309C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

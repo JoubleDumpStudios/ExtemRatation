@@ -59,12 +59,19 @@ public class Timer : MonoBehaviour
             TurnOnSpawnerAndPlantGrowing();
             time = harvestingTime +1;
             preRound = false;
-        }else if (time <= 0 && !preRound)
+            AkSoundEngine.PostEvent("Rat_StartTimer", gameObject);
+        }
+        else if (time <= 0 && !preRound)
         {
             //endGame;
             endGame = true;
             time = 0;
             GameManager.instance.EndGame();
+        }
+        if (time == 12.8f && preRound)
+        {
+            Debug.Log("Time is 12.8");
+            AkSoundEngine.PostEvent("MX_Windup01", gameObject);
         }
 
         timeText.text = MinsAndSecondsConverter(time);
@@ -78,7 +85,6 @@ public class Timer : MonoBehaviour
             spawnerList[i].StartRound = true;
             UpdatePlant(spawnerList[i]);
         }
-        AkSoundEngine.PostEvent("Rat_StartTimer", gameObject);
     }
 
     void UpdatePlant(Spawner spawner)

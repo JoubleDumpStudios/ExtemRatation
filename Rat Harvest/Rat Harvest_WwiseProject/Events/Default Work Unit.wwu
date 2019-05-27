@@ -114,6 +114,54 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="MX" ID="{CC929FB0-8151-4822-B1B9-2712BBBB918C}" ShortID="648482403">
+					<ChildrenList>
+						<Event Name="MX_Sting01" ID="{D9777D6E-25FD-4EF4-80D7-2E6B7FE414C7}">
+							<ChildrenList>
+								<Action Name="" ID="{D999B437-B3FB-4C00-97DC-33485807DBE3}" ShortID="181607046">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Sting_Alert01" ID="{E6F8D9A5-7FDE-4A07-8003-93D98C2F6B62}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_Windup01" ID="{538DBB6A-A8D4-4592-83EF-DC9D8DAFD98D}">
+							<ChildrenList>
+								<Action Name="" ID="{4406A3ED-E573-44EF-A00B-8E2897B890E3}" ShortID="211071199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Combat_WindUp01" ID="{64DDA25D-462D-4AFF-BBBF-79338F2659B5}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_CombatLoop01" ID="{306D1750-45B3-4162-948D-5E98BD699D85}">
+							<ChildrenList>
+								<Action Name="" ID="{4E7FFBE9-DF5B-4F43-9A85-2D40F44C645C}" ShortID="313152853">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Combat_Loop01" ID="{36BE8E25-66CD-4E43-910E-175A6D8B870B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_CombatLoop02" ID="{CBBED55F-4487-4E23-BF68-38B95D0B309C}">
+							<ChildrenList>
+								<Action Name="" ID="{02933CA8-DD9B-4429-B25F-BB747A587E94}" ShortID="603497329">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Combat_Loop02_Dark" ID="{D502EA4B-5487-4442-9372-6132B971ED5B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

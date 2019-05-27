@@ -7,6 +7,13 @@
 				<File Name="Init" Hash="2647710745" Timestamp="1558963719"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963719"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963719"/>
+				<File Name="MX_CombatLoop01" Hash="1356989165" Timestamp="1558965443"/>
+				<File Name="MX_CombatLoop02" Hash="3987951513" Timestamp="1558965443"/>
+				<File Name="MX_Sting" Hash="2778020448" Timestamp="1558965443"/>
+				<File Name="MX_WindUp" Hash="2963810923" Timestamp="1558965443"/>
+				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
+				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
+				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963719"/>
 				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963719"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
@@ -17,7 +24,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2630567566" Timestamp="1558963719"/>
+				<File Name="" Hash="3796133848" Timestamp="1558965443"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -28,6 +35,13 @@
 				<File Name="Init" Hash="399428863" Timestamp="1558963718"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963718"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963718"/>
+				<File Name="MX_CombatLoop01" Hash="1356989165" Timestamp="1558965443"/>
+				<File Name="MX_CombatLoop02" Hash="3987951513" Timestamp="1558965443"/>
+				<File Name="MX_Sting" Hash="2778020448" Timestamp="1558965443"/>
+				<File Name="MX_WindUp" Hash="2963810923" Timestamp="1558965443"/>
+				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
+				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
+				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="1686550598" Timestamp="1558963718"/>
 				<File Name="Rat_Hit" Hash="3618715655" Timestamp="1558963718"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
@@ -38,7 +52,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2790352952" Timestamp="1558963718"/>
+				<File Name="" Hash="1107809902" Timestamp="1558965443"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
