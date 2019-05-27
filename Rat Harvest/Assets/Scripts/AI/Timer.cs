@@ -78,6 +78,7 @@ public class Timer : MonoBehaviour
             spawnerList[i].StartRound = true;
             UpdatePlant(spawnerList[i]);
         }
+        AkSoundEngine.PostEvent("Rat_StartTimer", gameObject);
     }
 
     void UpdatePlant(Spawner spawner)
