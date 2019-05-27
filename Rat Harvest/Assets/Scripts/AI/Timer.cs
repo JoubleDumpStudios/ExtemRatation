@@ -31,12 +31,29 @@ public class Timer : MonoBehaviour
     bool preRound = true;
     bool endGame = false;
 
+    bool boolForPreroundTrigger = true;
+    bool boolForRroundTrigger = true;
+
+    [SerializeField]
+    private float preroundTriggerTime = 1;
+
+    [SerializeField]
+    private float roundTriggerTime = 5;
+
+
+    float musicTimer = 0;
+
+    private 
+
     // Start is called before the first frame update
     void Start()
     {
         timeText.text = "00:00"/* "Round Starts In:"*/;
 
         time = startRoundTime + 1;
+
+        boolForPreroundTrigger = true;
+        boolForRroundTrigger = true;
     }
 
     string MinsAndSecondsConverter(float timeToChange)
@@ -51,8 +68,12 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!endGame)
+        if (!endGame)
+        {
             time -= Time.deltaTime;
+
+            musicTimer += Time.deltaTime;
+        }
 
         if (time <= 0 && preRound)
         {
@@ -68,11 +89,30 @@ public class Timer : MonoBehaviour
             time = 0;
             GameManager.instance.EndGame();
         }
-        if (time == 12.8f && preRound)
+
+
+
+        //triggering sound events
+        if (musicTimer >= preroundTriggerTime && preRound && boolForPreroundTrigger)
         {
+            //will trigger this event in preroundTriggerTime after the game starts
             Debug.Log("Time is 12.8");
             AkSoundEngine.PostEvent("MX_Windup01", gameObject);
+
+
+            boolForPreroundTrigger = false;
         }
+
+        if(musicTimer >= roundTriggerTime + startRoundTime +1 && !preRound && boolForRroundTrigger)
+        {
+            //will trigger this event in roundTriggerTime after the preround is ended.
+            Debug.Log("Round event timer happenning");
+
+
+            boolForRroundTrigger = false;
+        }
+
+
 
         timeText.text = MinsAndSecondsConverter(time);
 
