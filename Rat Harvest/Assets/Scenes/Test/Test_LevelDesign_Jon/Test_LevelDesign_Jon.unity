@@ -12449,38 +12449,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1602535289}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &783062338
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 967
-  m_Height: 544
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!4 &791537784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2109013898, guid: 2bf8373bcc9fa434390510d45a04c9a6,
@@ -13246,6 +13214,16 @@ PrefabInstance:
       propertyPath: spawnerList.Array.data[3]
       value: 
       objectReference: {fileID: 82542751}
+    - target: {fileID: 3718557223292202659, guid: 3e78a4d47e9200e4fa2602128743719c,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718557223292202659, guid: 3e78a4d47e9200e4fa2602128743719c,
+        type: 3}
+      propertyPath: unloadTriggerList.Array.data[0]
+      value: -358577003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e78a4d47e9200e4fa2602128743719c, type: 3}
 --- !u!1001 &827227204
@@ -14997,7 +14975,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1295441492}
+      objectReference: {fileID: 1509382653}
     - target: {fileID: 4833348530956411864, guid: 6f0fc64c38c1d184798eb659213508d1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19374,38 +19352,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba6a95907f1fc1642b34cb56314ca457, type: 3}
---- !u!84 &1295441492
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 967
-  m_Height: 544
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1298470985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21171,6 +21117,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bf8373bcc9fa434390510d45a04c9a6, type: 3}
+--- !u!84 &1397054070
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 967
+  m_Height: 544
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &1400908536 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2109013898, guid: 2bf8373bcc9fa434390510d45a04c9a6,
@@ -23378,6 +23356,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 853399087}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1509382653
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 967
+  m_Height: 544
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &1510178683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 142538232, guid: ba6a95907f1fc1642b34cb56314ca457,

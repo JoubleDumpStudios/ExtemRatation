@@ -50,4 +50,15 @@ public class SceneManager : MonoBehaviour
     {
         Cursor.SetCursor(null, Vector2.one, CursorMode.Auto);
     }
+
+    public void SFX_Button_Hover()
+    {
+        AkSoundEngine.PostEvent("UI_Switch", gameObject);
+    }
+
+    public void SFX_Button_Click()
+    {
+        AkSoundEngine.PostEvent("UI_Click", gameObject);
+    }
+
 }
