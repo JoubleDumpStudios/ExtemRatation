@@ -29,7 +29,8 @@ public class PlantEatingPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        icon_Plant_Behaviour = gameObject.transform.parent.gameObject.GetComponentInChildren<Icon_Plant_Behaviour>();
+        if(icon_Plant_Behaviour == null)
+            icon_Plant_Behaviour = gameObject.transform.parent.gameObject.GetComponentInChildren<Icon_Plant_Behaviour>();
         plantPoint = gameObject.transform.parent.gameObject.GetComponent<PlantPoint>();
         StartCoroutine(EatPlant());
         StartCoroutine(RotateRat());
