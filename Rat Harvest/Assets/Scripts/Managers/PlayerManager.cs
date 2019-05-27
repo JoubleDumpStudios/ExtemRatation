@@ -67,8 +67,8 @@ public class PlayerManager : MonoBehaviour
 
     public void DisablePlantIcon()
     {
-        if(plantIcon.enabled)
-            plantIcon.enabled = false;
+        if (plantIcon.enabled)
+            plantIcon.enabled = false;            
     }
 
     public void EnableHarvestIcon()

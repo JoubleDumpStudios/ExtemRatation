@@ -440,7 +440,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         }
 
-        private void OnTriggerEnter(Collider collision)
+        private void OnTriggerStay(Collider collision)
         {
             if (collision.gameObject.tag == "AmmoChest")
             {
@@ -461,6 +461,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 playerManager.EnablePlantIcon();
                 barrelCollidingWithPlantPoint = true;
+            }
+            else
+            {
+                DisablePlayerIcons();
+                Debug.Log("I'm disabling things!");
             }
         }
 
