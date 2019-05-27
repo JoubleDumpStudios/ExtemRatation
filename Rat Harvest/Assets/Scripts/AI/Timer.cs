@@ -64,6 +64,7 @@ public class Timer : MonoBehaviour
             //endGame;
             endGame = true;
             time = 0;
+            GameManager.instance.EndGame();
         }
 
         timeText.text = MinsAndSecondsConverter(time);
