@@ -69,9 +69,11 @@ public class Spawner : MonoBehaviour
     // Spawns a rat
     private void SpawnRat()
     {
-        SelectSpawningPosition();
+       
+
         if (ArePlantEatingPointsAvailables())
         {
+            SelectSpawningPosition();
             objectPooler.spawnFromPool(objectToSpawn.name, spawningPosition_Transform.position, spawningPosition_Transform.rotation, out rat);
             setRatValues(rat);
             rats.Add(rat);
@@ -127,7 +129,7 @@ public class Spawner : MonoBehaviour
 
     private void SelectSpawningPosition() {
 
-        int i = Random.Range(0, spawningPositions_Transform_List.Count - 1);
+        int i = Random.Range(0, spawningPositions_Transform_List.Count);
         spawningPosition_Transform = spawningPositions_Transform_List[i];
     }
 }
