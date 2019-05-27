@@ -202,8 +202,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
                         playerManager.updateScore(); 
                 }
-                //else
-                    //DisablePlayerIcons();
+                else
+                    DisablePlayerIcons();
             }
             else
                 DisablePlayerIcons();
@@ -409,12 +409,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Method to disable Plant and HarvestIcons
         private void DisablePlayerIcons()
         {
-            playerManager.DisablePlantIcon();
-            playerManager.DisableHarvestIcon();
+            if(!barrelCollidingWithPlantPoint)
+                playerManager.DisablePlantIcon();
+
+            if (!barrelCollidingWithPlant)
+                playerManager.DisableHarvestIcon();
 
             if(!barrelCollidingWithAmmoChest)
                 playerManager.DisableFillingAmmoIcon();
-            playerManager.DisableFillingHarvestIcon();
+
+            if(!barrelCollidingWithHarvestChest)
+                playerManager.DisableFillingHarvestIcon();
         }
 
         private void IfBarrelInsideTheObject(GameObject collidedGameObject)
@@ -442,7 +447,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         }
 
-        private void OnTriggerStay(Collider collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (collision.gameObject.tag == "AmmoChest")
             {
