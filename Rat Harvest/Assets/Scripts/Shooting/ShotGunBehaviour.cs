@@ -288,7 +288,7 @@ public class ShotGunBehaviour : MonoBehaviour
                 if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>().Health > 0) {
                     ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), hit.distance, damage_/*, ratHole_*/);
 
-                    Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
+                    //Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
                 }
             }
             else
@@ -310,8 +310,9 @@ public class ShotGunBehaviour : MonoBehaviour
         ratHealthOnBarrelScript = ratOnBarrel.GetComponent<Rat_Health_Logic>();
         instaKillDistance = ratOnBarrel.GetComponent<Rat_Movement_Logic>().ExplodeDistance;
         instaKillDamage = ratHealthOnBarrelScript.MaxHealth;
-        Debug.Log("Rat On Barrel Hit");
-        //ratHit(ratHealthOnBarrelScript, instaKillDistance, instaKillDamage/2);
+
+        if (ratHealthOnBarrelScript.gameObject.activeSelf)
+            ratHit(ratHealthOnBarrelScript, instaKillDistance, instaKillDamage);
     }
 
     void NotRaycastedFire(int i)
