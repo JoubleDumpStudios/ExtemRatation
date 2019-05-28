@@ -185,7 +185,7 @@ public class ShotGunBehaviour : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 //reloading = true;
-                if (bulletsOnWeapon < shotGunCapacity)
+                if (bulletsOnWeapon < shotGunCapacity && Ammo > 0)
                 {
                     firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
                     reloading = true;
@@ -242,7 +242,7 @@ public class ShotGunBehaviour : MonoBehaviour
         //reloadTime = 0;
 
         //automatioc reloading
-        if (bulletsOnWeapon <= 0)
+        if (bulletsOnWeapon <= 0 && Ammo>0)
         {
             //reloading = true;
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
@@ -362,7 +362,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
         Ammo--;
 
-        if (bulletsOnWeapon >= shotGunCapacity)
+        if (bulletsOnWeapon >= shotGunCapacity || Ammo <= 0)
         {
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
             reloading = false;
