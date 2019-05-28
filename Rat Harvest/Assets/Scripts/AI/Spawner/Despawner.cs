@@ -21,7 +21,7 @@ public class Despawner : MonoBehaviour
         Rat_Movement_Logic ratMovementScript = other.gameObject.GetComponent<Rat_Movement_Logic>();
         if(ratMovementScript != null)
         {
-            ratMovementScript.DespawnRat();
+            ratMovementScript.DespawnRat(1000);
         }
     }
 }

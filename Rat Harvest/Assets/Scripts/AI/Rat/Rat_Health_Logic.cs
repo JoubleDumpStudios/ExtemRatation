@@ -13,7 +13,10 @@ public class Rat_Health_Logic : MonoBehaviour
     private List<GameObject> wounds_ = new List<GameObject>();
 
     public float maxHealth = 100;
-    public float health;
+
+    [SerializeField]
+    private float health;
+    public float Health { get { return this.health; } }
     // Start is called before the first frame update
 
     public void OnEnable()
@@ -30,7 +33,7 @@ public class Rat_Health_Logic : MonoBehaviour
         ratMovementScript = GetComponent<Rat_Movement_Logic>();
     }
 
-    public void ratHited(float damage/*, GameObject wound*/)
+    public void ratHited(float damage, float hitDistance/*, GameObject wound*/)
     {
         AkSoundEngine.PostEvent("Rat_Hit", gameObject);
         if (health > 0)
@@ -42,7 +45,7 @@ public class Rat_Health_Logic : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Rat_Death", gameObject);
             health = 0;
-            ratMovementScript.killRat();
+            ratMovementScript.killRat(hitDistance);
         }
 
         //in the case you want wonds on the rat
@@ -67,4 +70,6 @@ public class Rat_Health_Logic : MonoBehaviour
     {
         health = maxHealth;
     }
+
+
 }

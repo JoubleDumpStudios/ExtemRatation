@@ -275,11 +275,11 @@ public class ShotGunBehaviour : MonoBehaviour
 
                 //objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
                 //ratHole_.transform.parent = hit.collider.gameObject.transform;
+                if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>().Health > 0) {
+                    ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), hit.distance/*, ratHole_*/);
 
-                ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>()/*, ratHole_*/);
-
-                Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
-
+                    Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
+                }
             }
             else
             {
@@ -335,9 +335,9 @@ public class ShotGunBehaviour : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
     }
 
-    void ratHit(Rat_Health_Logic healthLogic/*, GameObject ratHole*/)
+    void ratHit(Rat_Health_Logic healthLogic, float hitDistance/*, GameObject ratHole*/)
     {
-        healthLogic.ratHited(damage/*, ratHole*/);
+        healthLogic.ratHited(damage, hitDistance/*, ratHole*/);
     }
 
     void ShootingTimer()

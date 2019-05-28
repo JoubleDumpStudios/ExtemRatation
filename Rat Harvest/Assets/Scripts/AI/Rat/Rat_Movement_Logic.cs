@@ -117,7 +117,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
         navMeshSetDestination(despawnPoint);
     }
 
-    public void killRat()
+    public void killRat(float distance)
     {
         if (!returningHome)
         {
@@ -125,14 +125,14 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             ResetRatDestinations();
         }
 
-        DespawnRat();
+        DespawnRat(distance);
     }
 
-    public void DespawnRat()
+    public void DespawnRat(float distance)
     {
         //if (returningHome) returningHome = false;
         //ObjectPooler.instance.killGameObject(this.gameObject);
-        StartCoroutine(KilledRatAnim());
+        StartCoroutine(KilledRatAnim(distance));
     }
 
     public void ResetRatDestinations()
@@ -145,7 +145,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             ratAnimator.SetBool("Attacking", false);
     }
 
-    private IEnumerator KilledRatAnim()
+    private IEnumerator KilledRatAnim(float distance)
     {
         if (returningHome) returningHome = false;
 
@@ -154,7 +154,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             _navMeshAgent.speed = 0;
             ratAnimator.SetBool("Killed", true);
         }
-            
+        Debug.Log("Distancia = " + distance);
         yield return new WaitForSeconds(0.917f);
 
         ratTarget.PlantEatingPointReached = false;
