@@ -433,7 +433,8 @@ MonoBehaviour:
   damage: 10
   secondsToAttack: 4
   ratTarget: {fileID: 0}
-  ratAnimator: {fileID: 0}
+  explodeRat: {fileID: 100004, guid: 8e401d0942a9af64ea87f38bfd626114, type: 3}
+  explodeDistance: 3
 --- !u!54 &1182159527
 Rigidbody:
   m_ObjectHideFlags: 0

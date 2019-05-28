@@ -32,8 +32,13 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
 
     private bool returningHome;
 
-    public Animator ratAnimator;
+    private Animator ratAnimator;
     public Animator RatAnimator { get { return this.ratAnimator; } }
+
+    [SerializeField] private GameObject explodeRat;
+
+    [SerializeField] private float explodeDistance;
+    public float ExplodeDistance { get { return this.explodeDistance; } }
 
     private void Start()
     {
@@ -149,13 +154,20 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     {
         if (returningHome) returningHome = false;
 
-        if (ratAnimator != null)
+        if (distance <= explodeDistance)
         {
-            _navMeshAgent.speed = 0;
-            ratAnimator.SetBool("Killed", true);
+            ObjectPooler.instance.spawnFromPool(explodeRat.name, transform.position, transform.rotation);
         }
-        Debug.Log("Distancia = " + distance);
-        yield return new WaitForSeconds(0.917f);
+        else
+        {
+            if (ratAnimator != null)
+            {
+                _navMeshAgent.speed = 0;
+                ratAnimator.SetBool("Killed", true);
+            }
+            Debug.Log("Distancia = " + distance);
+            yield return new WaitForSeconds(0.917f);
+        }
 
         ratTarget.PlantEatingPointReached = false;
         ObjectPooler.instance.killGameObject(this.gameObject);

@@ -63,7 +63,7 @@ public class PlantEatingPoint : MonoBehaviour
             {
                 plantEatingPointReached = true;
 
-                if (ratScript.ratAnimator != null)
+                if (ratScript.RatAnimator != null)
                     ratScript.RatAnimator.SetBool("Attacking", true);
             }
                 
