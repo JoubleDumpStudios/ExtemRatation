@@ -36,6 +36,8 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         bagText.text = playerHarvest + " / " + bagCapacity;
+        scoreText.text = playerScore + " / " + GameManager.instance.PointsToWin;
+
         DisablePlantIcon();
         DisableHarvestIcon();
     }
@@ -44,7 +46,7 @@ public class PlayerManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("HUD_FoodBox", gameObject);
         playerScore += playerHarvest;
-        scoreText.text = playerScore.ToString();
+        scoreText.text = playerScore + " / " + GameManager.instance.PointsToWin;
 
         playerHarvest = 0;
         bagText.text = playerHarvest + " / " + bagCapacity;

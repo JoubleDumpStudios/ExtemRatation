@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] private int pointsToWin;
+    public int PointsToWin { get { return this.pointsToWin; } }
 
     private void Awake()
     {
