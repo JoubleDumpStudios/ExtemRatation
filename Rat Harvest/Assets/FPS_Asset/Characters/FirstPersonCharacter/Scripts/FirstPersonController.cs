@@ -452,8 +452,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnTriggerEnter(Collider collision)
         {
-            nastyCollidedGameObject = collision.gameObject;
-
             if (collision.gameObject.tag == "AmmoChest")
             {
                 playerManager.EnableFillingAmmoIcon();
@@ -466,11 +464,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collision.gameObject.GetComponent<PlantModel>() != null)
             {
+                nastyCollidedGameObject = collision.gameObject;
                 playerManager.EnableHarvestIcon();
                 barrelCollidingWithPlant = true;
             }
             else if (collision.gameObject.GetComponent<PlantPoint>() != null)
             {
+                nastyCollidedGameObject = collision.gameObject;
                 playerManager.EnablePlantIcon();
                 barrelCollidingWithPlantPoint = true;
                 PlantPointScript = collision.gameObject.GetComponent<PlantPoint>();
