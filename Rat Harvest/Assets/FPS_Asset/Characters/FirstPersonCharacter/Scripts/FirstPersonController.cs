@@ -74,7 +74,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool barrelCollidingWithHarvestChest;
         private bool barrelCollidingWithPlant;
         private bool barrelCollidingWithPlantPoint;
-        private bool barrelCollidingWithRat;
+
 
         private GameObject nastyCollidedGameObject;
 
@@ -483,7 +483,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 shotGunBehaviourScript_.BarrelOnRat = true;
                 shotGunBehaviourScript_.RatOnBarrel = nastyCollidedGameObject;
 
-                barrelCollidingWithRat = true;
             }
             else        
                 DisablePlayerIcons();    
@@ -513,11 +512,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collision.gameObject.GetComponent<Rat_Movement_Logic>() != null)
             {
-
                 shotGunBehaviourScript_.BarrelOnRat = false;
                 shotGunBehaviourScript_.RatOnBarrel = null;
 
-                barrelCollidingWithRat = false;
             }
 
         }

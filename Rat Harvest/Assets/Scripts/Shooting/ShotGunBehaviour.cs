@@ -39,7 +39,7 @@ public class ShotGunBehaviour : MonoBehaviour
     List<Quaternion> bullets;
 
     [SerializeField]
-    private float damage;
+    private float damage_;
 
     RaycastHit hit;
     Ray ray;
@@ -286,7 +286,7 @@ public class ShotGunBehaviour : MonoBehaviour
                 //objectPooler.spawnFromPool(ratHoles.name, hit.point, ratHoles.transform.rotation, out ratHole_);
                 //ratHole_.transform.parent = hit.collider.gameObject.transform;
                 if (hit.collider.gameObject.GetComponent<Rat_Health_Logic>().Health > 0) {
-                    ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), hit.distance/*, ratHole_*/);
+                    ratHit(hit.collider.gameObject.GetComponent<Rat_Health_Logic>(), hit.distance, damage_/*, ratHole_*/);
 
                     Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(-Vector3.forward, hit.normal));
                 }
@@ -301,10 +301,17 @@ public class ShotGunBehaviour : MonoBehaviour
             }
         }
     }
+    public Rat_Health_Logic ratHealthOnBarrelScript;
+    float instaKillDistance;
+    float instaKillDamage;
 
     void InstaKill()
     {
-        Debug.Log("Holi");
+        ratHealthOnBarrelScript = ratOnBarrel.GetComponent<Rat_Health_Logic>();
+        instaKillDistance = ratOnBarrel.GetComponent<Rat_Movement_Logic>().ExplodeDistance;
+        instaKillDamage = ratHealthOnBarrelScript.MaxHealth;
+        Debug.Log("Rat On Barrel Hit");
+        //ratHit(ratHealthOnBarrelScript, instaKillDistance, instaKillDamage/2);
     }
 
     void NotRaycastedFire(int i)
@@ -349,7 +356,7 @@ public class ShotGunBehaviour : MonoBehaviour
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
     }
 
-    void ratHit(Rat_Health_Logic healthLogic, float hitDistance/*, GameObject ratHole*/)
+    void ratHit(Rat_Health_Logic healthLogic, float hitDistance, float damage/*, GameObject ratHole*/)
     {
         healthLogic.ratHited(damage, hitDistance/*, ratHole*/);
     }

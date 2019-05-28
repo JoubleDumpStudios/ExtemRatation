@@ -63,8 +63,7 @@ MonoBehaviour:
   - objectToPool: {fileID: 584618471, guid: dc6c0d58211f63941a90649821a0e837, type: 3}
     amountToPool: 4
     shouldExpand: 0
-  - objectToPool: {fileID: 3106649658889243157, guid: 8f0cb4e42d623d246928087b9b0a61ae,
-      type: 3}
+  - objectToPool: {fileID: 100004, guid: 8e401d0942a9af64ea87f38bfd626114, type: 3}
     amountToPool: 21
     shouldExpand: 1
   - objectToPool: {fileID: 8837138678445364863, guid: 81800a8a96a234940992c88a06aef9ef,

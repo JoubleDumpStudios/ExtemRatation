@@ -12,8 +12,9 @@ public class Rat_Health_Logic : MonoBehaviour
     [SerializeField]
     private List<GameObject> wounds_ = new List<GameObject>();
 
-    public float maxHealth = 100;
-
+    [SerializeField]
+    private float maxHealth = 100;
+    public float MaxHealth { get { return this.maxHealth; } }
     [SerializeField]
     private float health;
     public float Health { get { return this.health; } }

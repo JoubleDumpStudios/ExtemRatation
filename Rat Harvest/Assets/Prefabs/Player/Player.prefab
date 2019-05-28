@@ -2164,6 +2164,16 @@ PrefabInstance:
       propertyPath: bulletsOnWeaponCounterText
       value: 
       objectReference: {fileID: 956399484849946889}
+    - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
+        type: 3}
+      propertyPath: damage_
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905117163239590161, guid: 974fb8a6f7bda764a87005ff2d445f18,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6905117163857134683, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2182,7 +2192,7 @@ PrefabInstance:
     - target: {fileID: 3892039755602495144, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000000059604645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2781378321515200063, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
