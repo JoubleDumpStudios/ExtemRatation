@@ -33,19 +33,21 @@ public class Rat_Health_Logic : MonoBehaviour
     public void ratHited(float damage/*, GameObject wound*/)
     {
         AkSoundEngine.PostEvent("Rat_Hit", gameObject);
-        if (health >= 0)
+        if (health > 0)
         { 
             health -= damage;
         }
-        else
+
+        if(health <= 0)
         {
             AkSoundEngine.PostEvent("Rat_Death", gameObject);
             health = 0;
             ratMovementScript.killRat();
-            //cleanWounds(wounds_);
         }
 
+        //in the case you want wonds on the rat
         /*wounds_.Add(wound);*/ // each time the rat recieve damage this method recieve the object that allow us to visualice the hole and add it to a list to manage it
+
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
     }
 
