@@ -35,18 +35,17 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     private Animator ratAnimator;
     public Animator RatAnimator { get { return this.ratAnimator; } }
 
+    [SerializeField] private GameObject normalRat;
     [SerializeField] private GameObject explodeRat;
 
     [SerializeField] private float explodeDistance;
     public float ExplodeDistance { get { return this.explodeDistance; } }
 
-    private void Start()
-    {
-
-    }
 
     public void OnObjectSpawn()
     {
+        normalRat.SetActive(true);
+        explodeRat.SetActive(false);
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
         ratAnimator = GetComponentInChildren<Animator>();
         _navMeshAgent.speed = 3.5f;
@@ -154,15 +153,20 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     {
         if (returningHome) returningHome = false;
 
+        _navMeshAgent.speed = 0;
+
         if (distance <= explodeDistance)
         {
-            ObjectPooler.instance.spawnFromPool(explodeRat.name, transform.position, transform.rotation);
+            //_navMeshAgent.speed = 0;
+            normalRat.SetActive(false);
+            explodeRat.SetActive(true);
+            yield return new WaitForSeconds(1.5f);
         }
         else
         {
             if (ratAnimator != null)
             {
-                _navMeshAgent.speed = 0;
+                //_navMeshAgent.speed = 0;
                 ratAnimator.SetBool("Killed", true);
             }
             Debug.Log("Distancia = " + distance);
