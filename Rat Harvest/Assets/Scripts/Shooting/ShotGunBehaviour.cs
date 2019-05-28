@@ -135,6 +135,11 @@ public class ShotGunBehaviour : MonoBehaviour
     private int bulletsOnWeapon;
 
 
+    private bool barrelOnRat;
+    public bool BarrelOnRat { set { this.barrelOnRat = value; } }
+
+    private GameObject ratOnBarrel;
+    public GameObject RatOnBarrel { set { this.ratOnBarrel = value; } }
 
     //UI elements for gunShot amo
     public Text ammoCounterText;
@@ -206,19 +211,24 @@ public class ShotGunBehaviour : MonoBehaviour
 
     void fire()
     {
-
-        for (int i = 0; i < bulletsCount; i++)
+        if (!barrelOnRat)
         {
-            if (!raycasted)
+            for (int i = 0; i < bulletsCount; i++)
             {
-                NotRaycastedFire(i);
-            }
-            else
-            {
-                RaycastedFire();
+                if (!raycasted)
+                {
+                    NotRaycastedFire(i);
+                }
+                else
+                {
+                    RaycastedFire();
+                }
             }
         }
-
+        else
+        {
+            InstaKill();
+        }
 
         //fire efect for shotgun shot
         gunFire1.Play();
@@ -292,6 +302,10 @@ public class ShotGunBehaviour : MonoBehaviour
         }
     }
 
+    void InstaKill()
+    {
+        Debug.Log("Holi");
+    }
 
     void NotRaycastedFire(int i)
     {
