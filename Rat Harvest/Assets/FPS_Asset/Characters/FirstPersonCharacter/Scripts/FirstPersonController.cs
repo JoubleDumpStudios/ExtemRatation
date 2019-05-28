@@ -75,6 +75,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool barrelCollidingWithPlant;
         private bool barrelCollidingWithPlantPoint;
 
+        private GameObject nastyCollidedGameObject;
+
         // Use this for initialization
         private void Start()
         {
@@ -208,7 +210,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             else
                 DisablePlayerIcons();
 
-            IfBarrelInsideTheObject(gameobjectCollided);
+            IfBarrelInsideTheObject(nastyCollidedGameObject);
 
             RotateView();
             // the jump state needs to read here to make sure it is not missed
@@ -396,6 +398,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 playerManager.updateBag(points);
                 resetPlantPointStatus(rootPlant);
                 playerManager.DisableHarvestIcon();
+                barrelCollidingWithPlant = false;
             }          
         }
 
@@ -449,6 +452,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnTriggerEnter(Collider collision)
         {
+            nastyCollidedGameObject = collision.gameObject;
+
             if (collision.gameObject.tag == "AmmoChest")
             {
                 playerManager.EnableFillingAmmoIcon();
@@ -468,12 +473,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 playerManager.EnablePlantIcon();
                 barrelCollidingWithPlantPoint = true;
+                PlantPointScript = collision.gameObject.GetComponent<PlantPoint>();
             }
-            else
-            {
-                DisablePlayerIcons();
-                Debug.Log("I'm disabling things!");
-            }
+            else        
+                DisablePlayerIcons();    
         }
 
         private void OnTriggerExit(Collider collision)
