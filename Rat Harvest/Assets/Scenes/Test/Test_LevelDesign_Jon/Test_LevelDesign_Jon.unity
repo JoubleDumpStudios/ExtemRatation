@@ -7498,6 +7498,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 480933600}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &481336990
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 609
+  m_Height: 343
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &485756873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9050,6 +9082,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 848018824}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &574308842
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 609
+  m_Height: 343
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &582776435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5594608965975563036, guid: ac6ed85991e0f4b43a377c47aa583081,
@@ -14846,6 +14910,11 @@ PrefabInstance:
       propertyPath: extraRenderTexture
       value: 
       objectReference: {fileID: 763297043}
+    - target: {fileID: 6302764560635827697, guid: 6f0fc64c38c1d184798eb659213508d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7304334444133464041, guid: 6f0fc64c38c1d184798eb659213508d1,
         type: 3}
       propertyPath: converted3DLut
@@ -14855,7 +14924,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1648521339}
+      objectReference: {fileID: 574308842}
+    - target: {fileID: 3244972621383116800, guid: 6f0fc64c38c1d184798eb659213508d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0fc64c38c1d184798eb659213508d1, type: 3}
 --- !u!4 &967960531 stripped
