@@ -153,27 +153,31 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
 
     private IEnumerator KilledRatAnim(float distance)
     {
-        if (returningHome) returningHome = false;
-
+        //if (returningHome) returningHome = false;
         _navMeshAgent.speed = 0;
 
-        if (distance <= explodeDistance)
+        if (!returningHome)
         {
-            //_navMeshAgent.speed = 0;
-            normalRat.SetActive(false);
-            explodeRat.SetActive(true);
-            yield return new WaitForSeconds(explosionDuration);
-        }
-        else
-        {
-            if (ratAnimator != null)
+            if (distance <= explodeDistance)
             {
                 //_navMeshAgent.speed = 0;
-                ratAnimator.SetBool("Killed", true);
+                normalRat.SetActive(false);
+                explodeRat.SetActive(true);
+                yield return new WaitForSeconds(explosionDuration);
             }
-            //Debug.Log("Distance = " + distance);
-            yield return new WaitForSeconds(0.917f);
+            else
+            {
+                if (ratAnimator != null)
+                {
+                    //_navMeshAgent.speed = 0;
+                    ratAnimator.SetBool("Killed", true);
+                }
+                //Debug.Log("Distance = " + distance);
+                yield return new WaitForSeconds(0.917f);
+            }
         }
+        else
+            returningHome = false;
 
         ratTarget.PlantEatingPointReached = false;
         ObjectPooler.instance.killGameObject(this.gameObject);
