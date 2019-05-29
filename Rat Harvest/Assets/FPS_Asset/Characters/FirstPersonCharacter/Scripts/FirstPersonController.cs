@@ -103,7 +103,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             if(Time.timeScale != 0)
-                GetPlayerInput();          
+                GetPlayerInput();
         }
 
 

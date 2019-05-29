@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         if (Victory())
-            Debug.Log("YOU WIN!!!!");
+            SceneManager.instance.loadYouWin();
         else
-            Debug.Log("YOU LOSE!");
+            SceneManager.instance.loadYouLose();
     }
 }

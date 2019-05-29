@@ -25,7 +25,7 @@ public class PlayerManager : MonoBehaviour
 
 
     // Player's score
-    private int playerScore = 0;
+    private int playerScore;
     public int PlayerScore { get { return this.playerScore; } }
 
     // Player's Harvest
