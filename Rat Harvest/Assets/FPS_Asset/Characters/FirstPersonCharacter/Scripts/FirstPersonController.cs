@@ -176,9 +176,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     else
                         playerManager.DisableHarvestIcon();
 
-                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))                      
                         Harvest(gameobjectCollided);
-                        
+                 
                 }
                 else if (gameobjectCollided.GetComponent<PlantPoint>() != null)
                 {
@@ -389,12 +389,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Method to harvest a crop
         private void Harvest(GameObject go)
         {
-            AkSoundEngine.PostEvent("HUD_Harvest", gameObject);
             GameObject rootPlant = go.transform.parent.gameObject;
             plantBehaviourScript = rootPlant.GetComponent<Plant_Behaviour>();
 
             if (plantBehaviourScript.CanBeHarvested())
             {
+                AkSoundEngine.PostEvent("HUD_Harvest", gameObject);
                 int points = plantBehaviourScript.CurrentPoints;
                 playerManager.updateBag(points);
                 resetPlantPointStatus(rootPlant);

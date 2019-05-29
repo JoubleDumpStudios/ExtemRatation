@@ -44,7 +44,9 @@ public class PlayerManager : MonoBehaviour
 
     public void updateScore()
     {
-        AkSoundEngine.PostEvent("HUD_FoodBox", gameObject);
+        if(playerHarvest != 0)
+            AkSoundEngine.PostEvent("HUD_FoodBox", gameObject);
+
         playerScore += playerHarvest;
         scoreText.text = playerScore + " / " + GameManager.instance.PointsToWin;
 
