@@ -19,6 +19,18 @@ public class SceneManager : MonoBehaviour
         Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
     }
 
+    public void loadYouWonScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("YouWonScene");
+        Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
+    }
+
+    public void loadYouLostScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("YouLostScene");
+        Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
+    }
+
     public void loadGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");       
