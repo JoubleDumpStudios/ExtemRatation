@@ -50,6 +50,8 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     private bool startRound;
     public bool StartRound { set { this.startRound = value; } }
 
+    private Plant_Health_Logic plantHealthScript;
+
 
     // Method inherited form the IpooledObject interface
     public void OnObjectSpawn()
@@ -86,6 +88,8 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
         currentState++;
         objectPooler.spawnFromPool(plantModels[currentState].name, transform.position, transform.rotation, out currentPlant);
 
+        plantHealthScript = currentPlant.GetComponent<Plant_Health_Logic>();
+        plantHealthScript.updateHealth(plantHealth);
         currentPlant.transform.parent = this.gameObject.transform;
     }
 
@@ -99,6 +103,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     private void initializePlant()
     {
         objectPooler.spawnFromPool(plantModels[currentState].name, transform.position, transform.rotation, out currentPlant);
+        plantHealthScript = currentPlant.GetComponent<Plant_Health_Logic>();
         currentPlant.transform.parent = this.gameObject.transform;
         currentPoints = pointsPerState[currentState];
         plantHealth = Health;
@@ -135,6 +140,7 @@ public class Plant_Behaviour : MonoBehaviour, IPooledObject
     {
         plantHealth -= damage;
         //Debug.Log("Plant Health = " + plantHealth);
+        plantHealthScript.updateHealth(plantHealth);
 
         if (plantHealth <= 0)
         {
