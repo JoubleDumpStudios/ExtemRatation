@@ -41,6 +41,8 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     [SerializeField] private float explodeDistance;
     public float ExplodeDistance { get { return this.explodeDistance; } }
 
+    [SerializeField] private float explosionDuration;
+
 
     public void OnObjectSpawn()
     {
@@ -160,7 +162,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             //_navMeshAgent.speed = 0;
             normalRat.SetActive(false);
             explodeRat.SetActive(true);
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(explosionDuration);
         }
         else
         {
@@ -169,7 +171,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
                 //_navMeshAgent.speed = 0;
                 ratAnimator.SetBool("Killed", true);
             }
-            Debug.Log("Distancia = " + distance);
+            //Debug.Log("Distance = " + distance);
             yield return new WaitForSeconds(0.917f);
         }
 

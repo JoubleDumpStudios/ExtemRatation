@@ -10,24 +10,22 @@ public class Rat_Explosion : MonoBehaviour
     public float upwardsModifier = 0.2f;
     public Transform explosionPoint;
 
-    void Start()
+    void OnEnable()
     {
-        Debug.Log("bang");
+        Explode();
+    }
+
+    private void Explode()
+    {
         Vector3 explosionPos = explosionPoint.transform.position;
         Collider[] colliders = Physics.OverlapSphere(explosionPos, radius);
+
         foreach (Collider hit in colliders)
         {
             Rigidbody rb = hit.GetComponent<Rigidbody>();
 
             if (rb != null)
                 rb.AddExplosionForce(power, explosionPos, radius, upwardsModifier);
-
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
