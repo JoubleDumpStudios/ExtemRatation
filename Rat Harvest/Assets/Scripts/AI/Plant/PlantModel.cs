@@ -12,7 +12,7 @@ public class PlantModel : MonoBehaviour, IPooledObject
     {
         FindChildrens();
         FindOutlineScripts();
-        DisableOutline();
+        //DisableOutline();
     }
 
     // Method to find all the childrens of the gameObject
