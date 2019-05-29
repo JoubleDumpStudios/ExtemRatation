@@ -32,7 +32,9 @@ public class PlayerManager : MonoBehaviour
     private int playerHarvest = 0;
     public int PlayerHarvest { get { return this.playerHarvest; } }
 
-    
+    [SerializeField]
+    private DontDestroyOnLoadScript dontDesroyScript_;
+
     private void Start()
     {
         bagText.text = playerHarvest + " / " + bagCapacity;
@@ -40,6 +42,8 @@ public class PlayerManager : MonoBehaviour
 
         DisablePlantIcon();
         DisableHarvestIcon();
+
+        try { dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>(); } catch { }
     }
 
     public void updateScore()
@@ -52,6 +56,9 @@ public class PlayerManager : MonoBehaviour
 
         playerHarvest = 0;
         bagText.text = playerHarvest + " / " + bagCapacity;
+
+        try { dontDesroyScript_.Score = playerScore; } catch { }
+
     }
 
     public void updateBag(int harvest)

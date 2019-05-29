@@ -11,6 +11,7 @@ TagManager:
   - Metal
   - Wood
   - Rat
+  - DontDestroy
   layers:
   - Default
   - TransparentFX
