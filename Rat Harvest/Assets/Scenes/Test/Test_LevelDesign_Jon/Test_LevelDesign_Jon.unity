@@ -13197,12 +13197,12 @@ PrefabInstance:
     - target: {fileID: 1996644957088968437, guid: 3e78a4d47e9200e4fa2602128743719c,
         type: 3}
       propertyPath: startRoundTime
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1996644957088968437, guid: 3e78a4d47e9200e4fa2602128743719c,
         type: 3}
       propertyPath: harvestingTime
-      value: 15
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1996644957088968437, guid: 3e78a4d47e9200e4fa2602128743719c,
         type: 3}

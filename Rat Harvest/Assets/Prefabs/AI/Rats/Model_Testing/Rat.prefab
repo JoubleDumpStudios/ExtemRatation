@@ -4729,6 +4729,59 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.671425
       objectReference: {fileID: 0}
+    - target: {fileID: 1310928028552852408, guid: 9eda71f5a45b60040a68dee3af1e085a,
+        type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970322957, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912418540, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803668079, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781993824, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740787654, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715735698, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375109545, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161207886, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 868914780, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 581632785, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 266238865, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 145443767, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eda71f5a45b60040a68dee3af1e085a, type: 3}
 --- !u!4 &2165502756958821172 stripped
