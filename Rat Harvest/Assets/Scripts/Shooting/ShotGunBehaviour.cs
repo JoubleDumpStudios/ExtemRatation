@@ -76,6 +76,8 @@ public class ShotGunBehaviour : MonoBehaviour
     [SerializeField]
     private float aimingSpeed;
 
+    [SerializeField]
+    private float goToReloadingPositionSpeed;
 
     //Shooting Logic - FireRate
     private bool shooting = false;
@@ -145,6 +147,13 @@ public class ShotGunBehaviour : MonoBehaviour
     public Text ammoCounterText;
     public Text bulletsOnWeaponCounterText;
 
+    [SerializeField]
+    private Transform reloadingTransform;
+
+    Rat_Health_Logic ratHealthOnBarrelScript;
+    float instaKillDistance;
+    float instaKillDamage;
+
     private void Awake()
     {
         bullets = new List<Quaternion>(bulletsCount);
@@ -166,10 +175,7 @@ public class ShotGunBehaviour : MonoBehaviour
 
         objectPooler = ObjectPooler.instance;
 
-
-
         maxAmmo = playerManagerScript_.MaxAmmo;
-
 
         Ammo = maxAmmo;
         bulletsOnWeapon = shotGunCapacity;
@@ -301,9 +307,6 @@ public class ShotGunBehaviour : MonoBehaviour
             }
         }
     }
-    public Rat_Health_Logic ratHealthOnBarrelScript;
-    float instaKillDistance;
-    float instaKillDamage;
 
     void InstaKill()
     {
@@ -348,10 +351,13 @@ public class ShotGunBehaviour : MonoBehaviour
             spreadAngle = AimingSpreadAngle;
 
         }
-        else
+        else if (!reloading)
         {
             transform.position = Vector3.Lerp(transform.position, originalTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
             spreadAngle = NotAimingSpreadAngle;
+        }else if (reloading)
+        {
+            transform.position = Vector3.Lerp(transform.position, reloadingTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * goToReloadingPositionSpeed);
         }
 
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);

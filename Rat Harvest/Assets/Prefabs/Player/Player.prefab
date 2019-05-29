@@ -1145,6 +1145,36 @@ MonoBehaviour:
   zoomSpeed: 200
   increasingScaleZoomSpeed: 2.5
   increasing_b: 0
+--- !u!1 &2004017175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2004017176}
+  m_Layer: 10
+  m_Name: ReloadingPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2004017176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004017175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06, y: -0.14, z: 0.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496092029}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797263899823747964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2171,11 @@ PrefabInstance:
       objectReference: {fileID: 492651680}
     - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
+      propertyPath: damage_
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
+        type: 3}
       propertyPath: originalTransform
       value: 
       objectReference: {fileID: 1177307605}
@@ -2149,6 +2184,11 @@ PrefabInstance:
       propertyPath: aimPositionTransform
       value: 
       objectReference: {fileID: 1523674488}
+    - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
+        type: 3}
+      propertyPath: goToReloadingPositionSpeed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
       propertyPath: gunFire1
@@ -2166,9 +2206,9 @@ PrefabInstance:
       objectReference: {fileID: 956399484849946889}
     - target: {fileID: 6905117163980350444, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
-      propertyPath: damage_
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: reloadingTransform
+      value: 
+      objectReference: {fileID: 2004017176}
     - target: {fileID: 6905117163239590161, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
       propertyPath: m_Layer
@@ -2192,7 +2232,7 @@ PrefabInstance:
     - target: {fileID: 3892039755602495144, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.000000059604645
       objectReference: {fileID: 0}
     - target: {fileID: 2781378321515200063, guid: 974fb8a6f7bda764a87005ff2d445f18,
         type: 3}
