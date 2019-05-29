@@ -27,8 +27,11 @@ public class PlantModel : MonoBehaviour, IPooledObject
     // Method to store all the outlines scripts
     private void FindOutlineScripts()
     {
-        for (int i = 0; i < childrens.Count; i++)      
-            outlineScripts.Add(childrens[i].GetComponent<cakeslice.Outline>());
+        for (int i = 0; i < childrens.Count; i++)
+        {
+            if(childrens[i].GetComponent<cakeslice.Outline>() != null)
+                outlineScripts.Add(childrens[i].GetComponent<cakeslice.Outline>());
+        }           
     }
 
     // Method to enable outlineScripts
