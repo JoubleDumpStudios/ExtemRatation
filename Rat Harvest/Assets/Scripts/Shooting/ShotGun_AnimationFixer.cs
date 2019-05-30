@@ -22,7 +22,10 @@ public class ShotGun_AnimationFixer : MonoBehaviour
     {
         shotGunScript.InsertBullet();
     }
-
+     public void AllowShotingAgain()
+    {
+        shotGunScript.ShootingAgainAllowed();
+    }
     //These are functions to use in amimation events to play Wwise audio.
     public void WwiseShotgunShoot()
     {

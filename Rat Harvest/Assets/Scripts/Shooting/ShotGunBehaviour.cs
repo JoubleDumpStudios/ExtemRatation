@@ -210,7 +210,7 @@ public class ShotGunBehaviour : MonoBehaviour
             //}
 
 
-            ShootingTimer();
+            //ShootingTimer();
             ShootingLogicAndRecoil();
         }
     }
@@ -395,6 +395,11 @@ public class ShotGunBehaviour : MonoBehaviour
                 waitingForNewShot = false;
             }
         }
+    }
+
+    public void ShootingAgainAllowed()
+    {
+        waitingForNewShot = false;
     }
 
 
