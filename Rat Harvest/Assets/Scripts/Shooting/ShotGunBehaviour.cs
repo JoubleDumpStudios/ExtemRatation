@@ -193,7 +193,7 @@ public class ShotGunBehaviour : MonoBehaviour
             bulletsOnWeaponCounterText.text = bulletsOnWeapon.ToString();
 
 
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R) && !reloading)
             {
                 //reloading = true;
                 if (bulletsOnWeapon < shotGunCapacity && Ammo > 0)
@@ -217,6 +217,14 @@ public class ShotGunBehaviour : MonoBehaviour
 
     void fire()
     {
+
+        if (reloading)
+        {
+            reloading = false;
+        }
+
+        firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
+
         if (!barrelOnRat)
         {
             for (int i = 0; i < bulletsCount; i++)
@@ -248,24 +256,28 @@ public class ShotGunBehaviour : MonoBehaviour
         //discount bullets on the weapon
         bulletsOnWeapon--;
 
-        //shooting we stop the reloading giving priority to the first one
-        //reloading = false;
-
-        if (reloading)
-        {
-            reloading = false;
-        }
-        //reloadTime = 0;
-
-        //automatioc reloading
-        if (bulletsOnWeapon <= 0 && Ammo>0)
+        if (bulletsOnWeapon <= 0 && Ammo > 0 && !reloading)
         {
             //reloading = true;
             firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
             reloading = true;
         }
 
-        firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Shooting");
+        //shooting we stop the reloading giving priority to the first one
+        //reloading = false;
+
+
+        //reloadTime = 0;
+
+        //automatioc reloading
+        //if (bulletsOnWeapon <= 0 && Ammo>0)
+        //{
+        //    //reloading = true;
+        //    firstPersonControllerScript_.ShotGunAnimator.SetTrigger("Reload");
+        //    reloading = true;
+        //}
+
+
     }
 
 
@@ -351,14 +363,16 @@ public class ShotGunBehaviour : MonoBehaviour
             spreadAngle = AimingSpreadAngle;
 
         }
-        else if (!reloading)
+        else
         {
             transform.position = Vector3.Lerp(transform.position, originalTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * aimingSpeed);
             spreadAngle = NotAimingSpreadAngle;
-        }else if (reloading)
-        {
-            transform.position = Vector3.Lerp(transform.position, reloadingTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * goToReloadingPositionSpeed);
         }
+
+        //else if (reloading)
+        //{
+        //    transform.position = Vector3.Lerp(transform.position, reloadingTransform.position - transform.right * currentRecoilPosition, Time.deltaTime * goToReloadingPositionSpeed);
+        //}
 
         transform.localRotation = Quaternion.Euler(0.0f, 90.0f, currentRecoilAngle);
     }
@@ -386,14 +400,19 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public void InsertBullet()
     {
-        bulletsOnWeapon++;
 
-        Ammo--;
-
-        if (bulletsOnWeapon >= shotGunCapacity || Ammo <= 0)
+        if (reloading)
         {
-            firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
-            reloading = false;
+
+            bulletsOnWeapon++;
+
+            Ammo--;
+
+            if (bulletsOnWeapon >= shotGunCapacity || Ammo <= 0)
+            {
+                firstPersonControllerScript_.ShotGunAnimator.SetTrigger("StopReloading");
+                reloading = false;
+            }
         }
     }
 
