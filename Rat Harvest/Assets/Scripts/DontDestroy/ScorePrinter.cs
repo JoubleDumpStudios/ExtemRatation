@@ -12,24 +12,40 @@ public class ScorePrinter : MonoBehaviour
     [SerializeField]
     private Text scoreText;
 
+    [SerializeField]
+    private Text maxScoreText;
+
     private float score;
+    private float maxScore;
+
+    [SerializeField]
+    private bool mainMenuScene;
 
     void Start()
     {
-        try
-        {
-            dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>();
-            score = dontDesroyScript_.Score;
-        }
-        catch
-        {
-            score = 1000;
-        }
+            try { dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>();
+                score = dontDesroyScript_.Score;
+                maxScore = dontDesroyScript_.MaxScore;
+        } catch { score = 1000; maxScore = 4000; }
+
+        updateScoreBoard();
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score : " + score ;
+
+    }
+
+    void updateScoreBoard()
+    {
+        if (!mainMenuScene)
+            scoreText.text = "Score : " + score;
+        else 
+        {
+            if (maxScore > 0)
+                maxScoreText.text = "Max Score : " + maxScore;
+            else maxScoreText.text = "";
+        }
     }
 }

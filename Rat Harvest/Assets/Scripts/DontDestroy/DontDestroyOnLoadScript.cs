@@ -7,6 +7,9 @@ public class DontDestroyOnLoadScript : MonoBehaviour
     private int score;
     public int Score { get { return this.score;  } set { this.score = value; } }
 
+    private int maxScore;
+    public int MaxScore { get { return this.maxScore; } set { this.maxScore = value; } }
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -21,5 +24,11 @@ public class DontDestroyOnLoadScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateScore(int newScore)
+    {
+        score = newScore;
+        if(score > maxScore) { maxScore = score; }
     }
 }
