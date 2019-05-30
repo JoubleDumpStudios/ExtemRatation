@@ -57,8 +57,16 @@ public class PlayerManager : MonoBehaviour
         playerHarvest = 0;
         bagText.text = playerHarvest + " / " + bagCapacity;
 
-        try { dontDesroyScript_.Score = playerScore; } catch { }
 
+        UpdateEndGameScores();
+    }
+
+    private void UpdateEndGameScores()
+    {
+        try {
+            dontDesroyScript_.Score = playerScore;
+            dontDesroyScript_.UpdateScore(playerScore);
+        } catch { }
     }
 
     public void updateBag(int harvest)
