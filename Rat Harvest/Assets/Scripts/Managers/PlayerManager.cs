@@ -44,6 +44,7 @@ public class PlayerManager : MonoBehaviour
         DisableHarvestIcon();
 
         try { dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>(); } catch { }
+        UpdateEndGameScores();
     }
 
     public void updateScore()
