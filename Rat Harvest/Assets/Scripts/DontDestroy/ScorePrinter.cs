@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScorePrinter : MonoBehaviour
 {
@@ -8,14 +9,27 @@ public class ScorePrinter : MonoBehaviour
     [SerializeField]
     private DontDestroyOnLoadScript dontDesroyScript_;
 
+    [SerializeField]
+    private Text scoreText;
+
+    private float score;
+
     void Start()
     {
-        try { dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>(); } catch { }
+        try
+        {
+            dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>();
+            score = dontDesroyScript_.Score;
+        }
+        catch
+        {
+            score = 1000;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        try { Debug.Log(dontDesroyScript_.Score); } catch { }
+        scoreText.text = "Score : " + score ;
     }
 }
