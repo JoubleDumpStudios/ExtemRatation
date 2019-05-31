@@ -197,7 +197,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     playerManager.EnableFillingAmmoIcon();
 
                     if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E))
+                    {
                         shotGunBehaviourScript_.FillBulletsPocket();
+                        Debug.Log("Fill ammo now!");
+                    }
                 }
                 else if (gameobjectCollided.gameObject.tag == "HarvestChest")
                 {

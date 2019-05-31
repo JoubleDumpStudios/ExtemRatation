@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 namespace UnityStandardAssets.ImageEffects
 {
-    [ExecuteInEditMode]
+    //[ExecuteInEditMode]
     [AddComponentMenu ("Image Effects/Color Adjustments/Color Correction (3D Lookup Texture)")]
     public class ColorCorrectionLookup : PostEffectsBase
     {
@@ -72,6 +73,7 @@ namespace UnityStandardAssets.ImageEffects
 
             // conversion fun: the given 2D texture needs to be of the format
             //  w * h, wheras h is the 'depth' (or 3d dimension 'dim') and w = dim * dim
+            Debug.Log("LUT applied!");
 
             if (temp2DTex) {
                 int dim = temp2DTex.width * temp2DTex.height;

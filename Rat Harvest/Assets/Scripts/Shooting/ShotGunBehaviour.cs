@@ -143,6 +143,8 @@ public class ShotGunBehaviour : MonoBehaviour
     private GameObject ratOnBarrel;
     public GameObject RatOnBarrel { set { this.ratOnBarrel = value; } }
 
+    public GameObject TransformValues;
+
     //UI elements for gunShot amo
     public Text ammoCounterText;
     public Text bulletsOnWeaponCounterText;
@@ -187,6 +189,7 @@ public class ShotGunBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Time.timeScale != 0)
         {
             ammoCounterText.text = "| " + Ammo;
@@ -445,10 +448,15 @@ public class ShotGunBehaviour : MonoBehaviour
 
     public void FillBulletsPocket()
     {
+        Debug.Log("FillBilletPockets starting!");
         if (Ammo < maxAmmo)
         {
+
+            Debug.Log("Filling ammo!");
             AkSoundEngine.PostEvent("HUD_AmmoBox", gameObject);
+            Debug.Log("Ammo sfx played!");
             Ammo = maxAmmo;
+            Debug.Log("Ammo filled!");
         }
     }
 
