@@ -36,18 +36,18 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
     public Animator RatAnimator { get { return this.ratAnimator; } }
 
     [SerializeField] private GameObject normalRat;
-    [SerializeField] private GameObject explodeRat;
 
     [SerializeField] private float explodeDistance;
     public float ExplodeDistance { get { return this.explodeDistance; } }
 
     [SerializeField] private float explosionDuration;
 
+    public GameObject ExplodingRat;
+
 
     public void OnObjectSpawn()
     {
         normalRat.SetActive(true);
-        explodeRat.SetActive(false);
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//allos the object to use the navmesh component and options
         ratAnimator = GetComponentInChildren<Animator>();
         _navMeshAgent.speed = 3.5f;
@@ -162,8 +162,9 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             {
                 //_navMeshAgent.speed = 0;
                 normalRat.SetActive(false);
-                explodeRat.SetActive(true);
+               var ExplodeClone = Instantiate(ExplodingRat, new Vector3(gameObject.transform.position.x, 0.8f, gameObject.transform.position.z), gameObject.transform.rotation);
                 yield return new WaitForSeconds(explosionDuration);
+                Destroy(ExplodeClone);
             }
             else
             {

@@ -143,8 +143,6 @@ public class ShotGunBehaviour : MonoBehaviour
     private GameObject ratOnBarrel;
     public GameObject RatOnBarrel { set { this.ratOnBarrel = value; } }
 
-    public GameObject TransformValues;
-
     //UI elements for gunShot amo
     public Text ammoCounterText;
     public Text bulletsOnWeaponCounterText;
