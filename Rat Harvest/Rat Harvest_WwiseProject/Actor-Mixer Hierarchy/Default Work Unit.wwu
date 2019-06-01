@@ -1014,6 +1014,11 @@
 						<RandomSequenceContainer Name="SFX_Rats_Hit" ID="{B1CD176A-5F64-4BAD-A638-8B76DB165491}" ShortID="95844697">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
@@ -1035,7 +1040,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>12</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1142,6 +1147,11 @@
 						<Sound Name="SFX_Rats_Explode01" ID="{CFF6E7B6-B562-4C89-A094-6AFB4B891727}" ShortID="684803825">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1166,7 +1176,7 @@
 									<Custom>
 										<Attenuation Name="Attenuation (Custom)" ID="{015A7879-1F77-41C4-A60F-343E8B207CE1}" ShortID="315956402">
 											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="5"/>
+												<Property Name="RadiusMax" Type="Real64" Value="10"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -1183,7 +1193,7 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>5</XPos>
+																	<XPos>10</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>

@@ -21,8 +21,8 @@
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
 				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="2885491306" Timestamp="1559402982"/>
-				<File Name="Rat_Explode" Hash="3536410613" Timestamp="1559406065"/>
-				<File Name="Rat_Hit" Hash="2782808097" Timestamp="1559406065"/>
+				<File Name="Rat_Explode" Hash="3805513377" Timestamp="1559409243"/>
+				<File Name="Rat_Hit" Hash="1508575924" Timestamp="1559409243"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
@@ -33,7 +33,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="822124208" Timestamp="1559406065"/>
+				<File Name="" Hash="1901780354" Timestamp="1559409243"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -58,8 +58,8 @@
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
 				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
 				<File Name="Rat_Deaths" Hash="2885491306" Timestamp="1559402982"/>
-				<File Name="Rat_Explode" Hash="3536410613" Timestamp="1559406065"/>
-				<File Name="Rat_Hit" Hash="2782808097" Timestamp="1559406065"/>
+				<File Name="Rat_Explode" Hash="3805513377" Timestamp="1559409243"/>
+				<File Name="Rat_Hit" Hash="1508575924" Timestamp="1559409243"/>
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
@@ -70,7 +70,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2735880350" Timestamp="1559406065"/>
+				<File Name="" Hash="2397697628" Timestamp="1559409243"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

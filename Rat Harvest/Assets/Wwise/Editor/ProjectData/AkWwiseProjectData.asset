@@ -503,7 +503,7 @@ MonoBehaviour:
       - ElementName: Rat_Explode
         ObjectType: 3
       Path: Default Work Unit\SFX_Rats\Rat_Explode
-      maxAttenuation: 5
+      maxAttenuation: 10
       maxDuration: 1.082629
       minDuration: 0.859283
     - name: Rat_Hit

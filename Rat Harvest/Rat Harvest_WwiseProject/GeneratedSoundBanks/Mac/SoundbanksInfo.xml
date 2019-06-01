@@ -88,7 +88,7 @@
 			<ShortName>Rat_Explode</ShortName>
 			<Path>Rat_Explode.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1166222504" Name="Rat_Explode" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Explode" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="0.859283" DurationMax="1.082629"/>
+				<Event Id="1166222504" Name="Rat_Explode" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Explode" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.859283" DurationMax="1.082629"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="878420502" Language="SFX">
