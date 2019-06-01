@@ -554,6 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124259828}
   - component: {fileID: 1310928028552852408}
+  - component: {fileID: 5847055803541589940}
   m_Layer: 11
   m_Name: Rat_ShatterPrefab
   m_TagString: Untagged
@@ -594,6 +595,31 @@ MonoBehaviour:
   power: 200
   upwardsModifier: 0.3
   explosionPoint: {fileID: 4960272639085825785}
+--- !u!114 &5847055803541589940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124259827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fed6742d95ea74c9720de1ff4f202d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db70bb6cf65c22e4182e82f68c538687,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1161207884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,31 +1597,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.227
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.022
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457184777962672040, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.007
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457184777962672040, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.073
-      objectReference: {fileID: 0}
     - target: {fileID: 5457184777181111087, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1610,6 +1611,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457184777962672040, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457184777962672040, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.227
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457184778319475463, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.062
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b8b0a37c1e3e024ea2d8cd1eacec754, type: 3}

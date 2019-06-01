@@ -102,9 +102,10 @@ GameObject:
   - component: {fileID: 4318561357279060782}
   - component: {fileID: 463691513642182615}
   - component: {fileID: 6576805799127567314}
+  - component: {fileID: 8469083528733859500}
   m_Layer: 0
   m_Name: polySurface2
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,6 +169,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8469083528733859500
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4145800971869873956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: a7bec82c139795d44821d35bc4a843e3, type: 3}
 --- !u!1 &4255037772255889349
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,9 +257,10 @@ GameObject:
   - component: {fileID: 7775901625981322378}
   - component: {fileID: 6477126185083400672}
   - component: {fileID: 1504846529131123827}
+  - component: {fileID: 1100643088215210632}
   m_Layer: 0
   m_Name: polySurface1
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,6 +324,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1100643088215210632
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291734765582277204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a7bec82c139795d44821d35bc4a843e3, type: 3}
 --- !u!1 &5541597842695980196
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,8 +501,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5594608965975563036}
   m_Layer: 0
-  m_Name: Trees_Spruce01
-  m_TagString: Untagged
+  m_Name: Prop_Trees_Spruce01
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

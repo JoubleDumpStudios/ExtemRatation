@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 827413137622199551}
   - component: {fileID: 7695447105666631958}
   m_Layer: 0
-  m_Name: Bucket_01
-  m_TagString: Untagged
+  m_Name: Prop_Bucket_01
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

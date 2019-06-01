@@ -51,6 +51,27 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
+						<SoundBank Name="Impact_Wood" ID="{687ECF02-3F5C-496A-A98D-F759A2C88B4C}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Impact_Wood" ID="{F4E08C9B-C745-412B-96BA-F81C684BFB01}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Impact_Metal" ID="{5B60DDA6-A16B-4F87-8E6B-5453A65A0AA7}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Impact_Metal" ID="{272E7CED-DDDE-4E91-B52E-446441A56B11}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Impact_Dirt" ID="{D8517B93-ED95-49E4-83A8-2829DCB63EE6}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Impact_Dirt" ID="{5E08E3F9-8100-44D7-A43F-D91364ECD11F}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX_Rats" ID="{6D3F8BBF-F6B2-4E02-BDBF-8C774FD45AEB}" ShortID="924758301">
@@ -72,6 +93,13 @@
 						<SoundBank Name="Rat_StartTimer" ID="{9A2D24F6-075D-488A-A71D-FB64105EC7ED}">
 							<ObjectInclusionList>
 								<ObjectRef Name="Rat_StartTimer" ID="{4188A983-96F9-4B9B-942E-46B9873D55BB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="Rat_Explode" ID="{BC988821-24FD-4572-B9B1-2AAC803F219D}">
+							<ObjectInclusionList>
+								<ObjectRef Name="Rat_Explode" ID="{6EACE685-1F6E-4825-B39B-D8D7032683DC}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

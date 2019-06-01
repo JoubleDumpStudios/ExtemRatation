@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586426304259967250
+    m_lastTime: -8586422039040957459
     List:
     - name: HUD_AmmoBox
       guid: 5798a7836937344fa9413adb63464f76
@@ -66,6 +66,39 @@ MonoBehaviour:
       - ElementName: HUD_Harvest
         ObjectType: 7
       Path: Default Work Unit\UI&HUD\HUD_Harvest
+    - name: Impact_Dirt
+      guid: 937b51d895ede44983a82829dcb63ee6
+      id: 3045234065
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Dirt
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Impact_Dirt
+    - name: Impact_Metal
+      guid: a6dd605b6ba1874f8e6b5453a65a0aa7
+      id: 1659816351
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Metal
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Impact_Metal
+    - name: Impact_Wood
+      guid: 02cf7e685c3f6a49a98df759a2c88b4c
+      id: 694741453
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Wood
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Shotgun\Impact_Wood
     - name: MX_CombatLoop01
       guid: 1fcd699e32b46d4c89d5fb0b2324ba66
       id: 3400939750
@@ -154,6 +187,17 @@ MonoBehaviour:
       - ElementName: Rat_Deaths
         ObjectType: 7
       Path: Default Work Unit\SFX_Rats\Rat_Deaths
+    - name: Rat_Explode
+      guid: 218898bcfd247245b9b12aac803f219d
+      id: 1166222504
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Explode
+        ObjectType: 7
+      Path: Default Work Unit\SFX_Rats\Rat_Explode
     - name: Rat_Hit
       guid: aa1d010d47d5d84f833cbe27425e8093
       id: 1082451816
@@ -236,7 +280,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586426304259867519
+    m_lastTime: -8586422039041007321
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -294,6 +338,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.666866
       minDuration: 0.560766
+    - name: Impact_Dirt
+      guid: f9e3085e0081d744a43fd91364ecd11f
+      id: 3045234065
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Dirt
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Impact_Dirt
+      maxAttenuation: 15
+      maxDuration: 1.06891
+      minDuration: 0.873254
+    - name: Impact_Metal
+      guid: ed7c2e27dedd914eb52e446441a56b11
+      id: 1659816351
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Metal
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Impact_Metal
+      maxAttenuation: 15
+      maxDuration: 0.788727
+      minDuration: 0.644356
+    - name: Impact_Wood
+      guid: 9b8ce0f445c72b4196baf81c684bfb01
+      id: 694741453
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Shotgun
+        ObjectType: 4
+      - ElementName: Impact_Wood
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Shotgun\Impact_Wood
+      maxAttenuation: 15
+      maxDuration: 0.857805
+      minDuration: 0.424546
     - name: Jump
       guid: 5d2128518a930a4ab02f9b391203f7fb
       id: 3833651337
@@ -334,8 +420,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\MX\MX_CombatLoop01
       maxAttenuation: 0
-      maxDuration: 84
-      minDuration: 84
+      maxDuration: -1
+      minDuration: -1
     - name: MX_CombatLoop02
       guid: 5fd5becb8744234ebf6838b95d0b309c
       id: 3400939749
@@ -403,9 +489,23 @@ MonoBehaviour:
       - ElementName: Rat_Death
         ObjectType: 3
       Path: Default Work Unit\SFX_Rats\Rat_Death
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 1.030196
       minDuration: 0.64182
+    - name: Rat_Explode
+      guid: 85e6ac6e6e1f2548b39bd8d7032683dc
+      id: 1166222504
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX_Rats
+        ObjectType: 4
+      - ElementName: Rat_Explode
+        ObjectType: 3
+      Path: Default Work Unit\SFX_Rats\Rat_Explode
+      maxAttenuation: 5
+      maxDuration: 1.082629
+      minDuration: 0.859283
     - name: Rat_Hit
       guid: d983a4f836b43a4d81e3baf35ee22e97
       id: 1082451816
@@ -417,9 +517,9 @@ MonoBehaviour:
       - ElementName: Rat_Hit
         ObjectType: 3
       Path: Default Work Unit\SFX_Rats\Rat_Hit
-      maxAttenuation: 0
-      maxDuration: 0.805739
-      minDuration: 0.345031
+      maxAttenuation: 10
+      maxDuration: 0.81603
+      minDuration: 0.435463
     - name: Rat_StartTimer
       guid: 83a98841f9969b4b942e46b9873d55bb
       id: 2192569790
@@ -522,9 +622,6 @@ MonoBehaviour:
   - /Rat Harvest_WwiseProject
   - /Rat Harvest_WwiseProject/Events
   - /Rat Harvest_WwiseProject/Events/Default Work Unit
-  - /Rat Harvest_WwiseProject/Events/Default Work Unit/UI&HUD
-  - /Rat Harvest_WwiseProject/SoundBanks
-  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit
-  - /Rat Harvest_WwiseProject/SoundBanks/Default Work Unit/MX
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Rats
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

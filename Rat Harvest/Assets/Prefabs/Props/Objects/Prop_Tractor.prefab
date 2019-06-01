@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 115389856345146657}
   - component: {fileID: 902117639521521271}
   m_Layer: 0
-  m_Name: Tractor
-  m_TagString: Untagged
+  m_Name: Prop_Tractor
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -75,6 +75,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Impact_Wood" ID="{F4E08C9B-C745-412B-96BA-F81C684BFB01}">
+							<ChildrenList>
+								<Action Name="" ID="{97EE9C85-123E-40AE-A856-3F55EC445B07}" ShortID="67913036">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Impact_Wood" ID="{B8027916-17BC-4CF5-9668-B1077FA598D4}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Impact_Metal" ID="{272E7CED-DDDE-4E91-B52E-446441A56B11}">
+							<ChildrenList>
+								<Action Name="" ID="{A9328778-19BF-46FB-9FE6-58485A19E49B}" ShortID="461072534">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Impact_Metal" ID="{D1ECD41B-BEFF-46B5-885A-776B02B4885B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Impact_Dirt" ID="{5E08E3F9-8100-44D7-A43F-D91364ECD11F}">
+							<ChildrenList>
+								<Action Name="" ID="{F0BFFDA8-6C0F-4475-8BC6-87AEB7E9993C}" ShortID="809675536">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Impact_Dirt01" ID="{68D7EC9E-D1C2-44E2-A348-1EF5C65E67E0}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX_Rats" ID="{41A4AAEA-7C58-4A2A-9341-99C42B7BF0DA}" ShortID="659098282">
@@ -107,6 +140,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Rats_Start" ID="{F5AD2B7F-8C81-415D-BC79-9A4426B78CAE}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rat_Explode" ID="{6EACE685-1F6E-4825-B39B-D8D7032683DC}">
+							<ChildrenList>
+								<Action Name="" ID="{37A89B15-6AE0-45B0-908B-501F5D6C57BB}" ShortID="393044598">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Rats_Explode01" ID="{CFF6E7B6-B562-4C89-A094-6AFB4B891727}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

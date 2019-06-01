@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 374068805572407832}
   m_Layer: 0
   m_Name: crownTree2
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 1545068527102992681}
   m_Layer: 0
   m_Name: trunkTree2
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 2143364730}
   m_Layer: 0
   m_Name: Prop_Trees_Spruce04
-  m_TagString: Untagged
+  m_TagString: Wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

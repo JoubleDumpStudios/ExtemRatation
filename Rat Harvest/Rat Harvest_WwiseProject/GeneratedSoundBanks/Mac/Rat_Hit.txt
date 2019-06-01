@@ -2,7 +2,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1082451816	Rat_Hit			\Default Work Unit\SFX_Rats\Rat_Hit	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	70541935	SFX_Rats_Hit03	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\GORE_Stab_02_mono_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Hit\SFX_Rats_Hit03		65232
-	209294354	SFX_Rats_Hit02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\GORE_Stab_03_mono_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Hit\SFX_Rats_Hit02		33250
-	836430326	SFX_Rats_Hit01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Hit01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Hit\SFX_Rats_Hit01		33250
+	671815718	SFX_Rats_Hit01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Hit01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Hit\SFX_Rats_Hit01		62360
+	757888080	SFX_Rats_Hit02	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Mac\SFX\SFX_Rats_Hit02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Hit\SFX_Rats_Hit02		41948
 

@@ -29,6 +29,28 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="694741453" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Wood</ObjectPath>
+			<ShortName>Impact_Wood</ShortName>
+			<Path>Impact_Wood.bnk</Path>
+			<IncludedEvents>
+				<Event Id="694741453" Name="Impact_Wood" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Wood" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.424546" DurationMax="0.857805"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="490732921" Language="SFX">
+					<ShortName>SFX_Impact_Wood02.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood02_10C4C929.wem</Path>
+				</File>
+				<File Id="547767945" Language="SFX">
+					<ShortName>SFX_Impact_Wood03.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood03_10C4C929.wem</Path>
+				</File>
+				<File Id="810890971" Language="SFX">
+					<ShortName>SFX_Impact_Wood01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="765648692" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_AmmoBox</ObjectPath>
 			<ShortName>HUD_AmmoBox</ShortName>
@@ -48,20 +70,30 @@
 			<ShortName>Rat_Hit</ShortName>
 			<Path>Rat_Hit.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1082451816" Name="Rat_Hit" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Hit" DurationType="OneShot" DurationMin="0.345031" DurationMax="0.805739"/>
+				<Event Id="1082451816" Name="Rat_Hit" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Hit" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.435463" DurationMax="0.816030"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="70541935" Language="SFX">
-					<ShortName>GORE_Stab_02_mono.wav</ShortName>
-					<Path>SFX\GORE_Stab_02_mono_10C4C929.wem</Path>
-				</File>
-				<File Id="209294354" Language="SFX">
-					<ShortName>GORE_Stab_03_mono.wav</ShortName>
-					<Path>SFX\GORE_Stab_03_mono_10C4C929.wem</Path>
-				</File>
-				<File Id="836430326" Language="SFX">
+				<File Id="671815718" Language="SFX">
 					<ShortName>SFX_Rats_Hit01.wav</ShortName>
 					<Path>SFX\SFX_Rats_Hit01_10C4C929.wem</Path>
+				</File>
+				<File Id="757888080" Language="SFX">
+					<ShortName>SFX_Rats_Hit02.wav</ShortName>
+					<Path>SFX\SFX_Rats_Hit02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1166222504" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Explode</ObjectPath>
+			<ShortName>Rat_Explode</ShortName>
+			<Path>Rat_Explode.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1166222504" Name="Rat_Explode" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Explode" MaxAttenuation="5.000000" DurationType="OneShot" DurationMin="0.859283" DurationMax="1.082629"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="878420502" Language="SFX">
+					<ShortName>SFX_Rats_Explode01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Explode01_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -111,6 +143,24 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1659816351" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Metal</ObjectPath>
+			<ShortName>Impact_Metal</ShortName>
+			<Path>Impact_Metal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1659816351" Name="Impact_Metal" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Metal" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.644356" DurationMax="0.788727"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="358432503" Language="SFX">
+					<ShortName>SFX_Impact_Metal01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Metal01_10C4C929.wem</Path>
+				</File>
+				<File Id="689436614" Language="SFX">
+					<ShortName>SFX_Impact_Metal02.wav</ShortName>
+					<Path>SFX\SFX_Impact_Metal02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1730208058" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Footsteps</ObjectPath>
@@ -248,6 +298,20 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="3045234065" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Dirt</ObjectPath>
+			<ShortName>Impact_Dirt</ShortName>
+			<Path>Impact_Dirt.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3045234065" Name="Impact_Dirt" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Dirt" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.873254" DurationMax="1.068910"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="708833663" Language="SFX">
+					<ShortName>SFX_Impact_Dirt01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Dirt01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="3235245272" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_Sting</ObjectPath>
 			<ShortName>MX_Sting</ShortName>
@@ -295,7 +359,7 @@
 			<ShortName>Rat_Deaths</ShortName>
 			<Path>Rat_Deaths.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1268870121" Name="Rat_Death" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Death" DurationType="OneShot" DurationMin="0.641820" DurationMax="1.030196"/>
+				<Event Id="1268870121" Name="Rat_Death" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Death" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.641820" DurationMax="1.030196"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="739880799" Language="SFX">

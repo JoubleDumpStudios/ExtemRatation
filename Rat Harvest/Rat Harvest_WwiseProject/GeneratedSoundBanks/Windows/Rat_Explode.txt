@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1166222504	Rat_Explode			\Default Work Unit\SFX_Rats\Rat_Explode	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	878420502	SFX_Rats_Explode01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\SFX\SFX_Rats_Explode01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Rats\SFX_Rats_Explode01		85134
+

@@ -468,11 +468,19 @@ public class ShotGunBehaviour : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Wood")
             {
-                Instantiate(woodHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+               var tmpWoodPS = Instantiate(woodHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                Destroy(tmpWoodPS, 3);
             }
             else if (hit.collider.gameObject.tag == "Metal")
             {
-                Instantiate(metalHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                var tmpMetalPS = Instantiate(metalHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                Destroy(tmpMetalPS, 3);
+
+            }
+            else if (hit.collider.gameObject.tag == "Rat")
+            {
+                var tmpRatPS = Instantiate(ratHolesParticleEffects, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                Destroy(tmpRatPS, 3);
             }
             else
             {

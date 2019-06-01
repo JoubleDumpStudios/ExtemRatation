@@ -10,11 +10,12 @@ public class Rat_Explosion : MonoBehaviour
     public float upwardsModifier = 0.2f;
     public Transform explosionPoint;
 
-    void OnEnable()
+    private void Start()
     {
         Explode();
+        AkSoundEngine.PostEvent("Rat_Explode", gameObject);
     }
-
+    
     private void Explode()
     {
         Vector3 explosionPos = explosionPoint.transform.position;

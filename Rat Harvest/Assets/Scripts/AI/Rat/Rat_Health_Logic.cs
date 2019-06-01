@@ -36,7 +36,6 @@ public class Rat_Health_Logic : MonoBehaviour
 
     public void ratHited(float damage, float hitDistance/*, GameObject wound*/)
     {
-        AkSoundEngine.PostEvent("Rat_Hit", gameObject);
         if (health > 0)
         { 
             health -= damage;

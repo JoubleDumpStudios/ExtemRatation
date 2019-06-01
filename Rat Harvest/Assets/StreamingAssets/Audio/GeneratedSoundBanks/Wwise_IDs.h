@@ -17,6 +17,9 @@ namespace AK
         static const AkUniqueID HUD_AMMOBOX = 765648692U;
         static const AkUniqueID HUD_FOODBOX = 2550439886U;
         static const AkUniqueID HUD_HARVEST = 1821446674U;
+        static const AkUniqueID IMPACT_DIRT = 3045234065U;
+        static const AkUniqueID IMPACT_METAL = 1659816351U;
+        static const AkUniqueID IMPACT_WOOD = 694741453U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
@@ -25,6 +28,7 @@ namespace AK
         static const AkUniqueID MX_WINDUP01 = 2107270325U;
         static const AkUniqueID PUMP = 1925777311U;
         static const AkUniqueID RAT_DEATH = 1268870121U;
+        static const AkUniqueID RAT_EXPLODE = 1166222504U;
         static const AkUniqueID RAT_HIT = 1082451816U;
         static const AkUniqueID RAT_STARTTIMER = 2192569790U;
         static const AkUniqueID RELOAD = 456382354U;
@@ -39,6 +43,9 @@ namespace AK
         static const AkUniqueID HUD_AMMOBOX = 765648692U;
         static const AkUniqueID HUD_FOODBOX = 2550439886U;
         static const AkUniqueID HUD_HARVEST = 1821446674U;
+        static const AkUniqueID IMPACT_DIRT = 3045234065U;
+        static const AkUniqueID IMPACT_METAL = 1659816351U;
+        static const AkUniqueID IMPACT_WOOD = 694741453U;
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
         static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
         static const AkUniqueID MX_STING = 3235245272U;
@@ -47,6 +54,7 @@ namespace AK
         static const AkUniqueID PLAYER_JUMPS = 2335147900U;
         static const AkUniqueID PLAYER_LANDING = 1282282006U;
         static const AkUniqueID RAT_DEATHS = 4162641848U;
+        static const AkUniqueID RAT_EXPLODE = 1166222504U;
         static const AkUniqueID RAT_HIT = 1082451816U;
         static const AkUniqueID RAT_STARTTIMER = 2192569790U;
         static const AkUniqueID SHOTGUN_PUMPING = 2288755958U;

@@ -355,7 +355,6 @@ GameObject:
   - component: {fileID: 1182159527}
   - component: {fileID: 3939648505119458125}
   - component: {fileID: 406971726619967273}
-  - component: {fileID: 8843725746112422334}
   m_Layer: 11
   m_Name: Rat
   m_TagString: Rat
@@ -491,31 +490,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &8843725746112422334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182159526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1fed6742d95ea74c9720de1ff4f202d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b3037c3c33ec31f47921e6bffffc4397,
-      type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1001 &1159960991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,6 +497,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 661165007}
     m_Modifications:
+    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Name
+      value: Texturized_Rat
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100506, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100512, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 101320, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 101322, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0019132
@@ -578,34 +580,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.7737266
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Name
-      value: Texturized_Rat
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 100506, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 100512, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 101322, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 101320, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
-      propertyPath: m_Layer
-      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 461857a9a45ccef4e8c580d7e081c3ab, type: 3}
       propertyPath: m_Controller
