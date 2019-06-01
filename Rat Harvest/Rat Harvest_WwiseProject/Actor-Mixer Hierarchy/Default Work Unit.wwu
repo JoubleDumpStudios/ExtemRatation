@@ -248,6 +248,11 @@
 						</Sound>
 						<RandomSequenceContainer Name="SFX_Shotgun_Shot" ID="{4AE8124D-1D7E-4A0D-90B6-4B23F7E6E3B5}" ShortID="445274520">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -260,11 +265,6 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>

@@ -26,14 +26,14 @@
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
-				<File Name="Shotgun_Shooting" Hash="3516564362" Timestamp="1559394015"/>
+				<File Name="Shotgun_Shooting" Hash="3685575335" Timestamp="1559410812"/>
 				<File Name="UI_CLick" Hash="3812709515" Timestamp="1558976464"/>
 				<File Name="UI_Switch" Hash="3227099084" Timestamp="1558976464"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1901780354" Timestamp="1559409243"/>
+				<File Name="" Hash="1901780354" Timestamp="1559410812"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -63,14 +63,14 @@
 				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
-				<File Name="Shotgun_Shooting" Hash="3516564362" Timestamp="1559394015"/>
+				<File Name="Shotgun_Shooting" Hash="3685575335" Timestamp="1559410812"/>
 				<File Name="UI_CLick" Hash="3812709515" Timestamp="1558976463"/>
 				<File Name="UI_Switch" Hash="3227099084" Timestamp="1558976463"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2397697628" Timestamp="1559409243"/>
+				<File Name="" Hash="2397697628" Timestamp="1559410812"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
