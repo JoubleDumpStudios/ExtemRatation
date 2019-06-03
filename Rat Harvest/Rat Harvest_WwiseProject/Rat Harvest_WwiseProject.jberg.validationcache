@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1558979910" DateHigh="0"/>
+	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1559410808" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
@@ -9,7 +9,7 @@
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Effects\Factory Effects.wwu" DateLow="1558707463" DateHigh="0"/>
-	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Events\Default Work Unit.wwu" DateLow="1558976459" DateHigh="0"/>
+	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Events\Default Work Unit.wwu" DateLow="1559402981" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
@@ -18,9 +18,9 @@
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Queries\Factory Queries.wwu" DateLow="1558707463" DateHigh="0"/>
-	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Rat Harvest_WwiseProject.jberg.wsettings" DateLow="1558981921" DateHigh="0"/>
+	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Rat Harvest_WwiseProject.jberg.wsettings" DateLow="1559431697" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Rat Harvest_WwiseProject.wproj" DateLow="1558707463" DateHigh="0"/>
-	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1558976459" DateHigh="0"/>
+	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1559402981" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\States\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
 	<ValidationCacheItem File="C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1558707463" DateHigh="0"/>
