@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20adae4091777e949b97c4e229b32e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growingTime: 10
+  growingTime: 30
   numOfStates: 4
-  Health: 100
+  Health: 200
   plantCriticalHealth: 35
   plantModels:
   - {fileID: 7002172916348741992, guid: e0870473c31ece940a801bf7b1679882, type: 3}
