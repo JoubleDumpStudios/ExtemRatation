@@ -26,7 +26,7 @@ public class ScorePrinter : MonoBehaviour
             try { dontDesroyScript_ = GameObject.FindGameObjectWithTag("DontDestroy").GetComponent<DontDestroyOnLoadScript>();
                 score = dontDesroyScript_.Score;
                 maxScore = dontDesroyScript_.MaxScore;
-        } catch { score = 1000; maxScore = 4000; }
+        } catch { score = 1995; maxScore = 4000; }
 
         updateScoreBoard();
     }
@@ -40,7 +40,7 @@ public class ScorePrinter : MonoBehaviour
     void updateScoreBoard()
     {
         if (!mainMenuScene)
-            scoreText.text = "Score : " + score;
+            scoreText.text = score.ToString();
         else 
         {
             if (maxScore > 0)
