@@ -162,7 +162,7 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             {
                 //_navMeshAgent.speed = 0;
                 normalRat.SetActive(false);
-               var ExplodeClone = Instantiate(ExplodingRat, new Vector3(gameObject.transform.position.x, 0.8f, gameObject.transform.position.z), gameObject.transform.rotation);
+                var ExplodeClone = Instantiate(ExplodingRat, new Vector3(gameObject.transform.position.x, 0.8f, gameObject.transform.position.z), gameObject.transform.rotation);
                 yield return new WaitForSeconds(explosionDuration);
                 Destroy(ExplodeClone);
             }
@@ -178,7 +178,19 @@ public class Rat_Movement_Logic : MonoBehaviour, IPooledObject
             }
         }
         else
+        {
+            if (distance <= explodeDistance)
+            {
+                //_navMeshAgent.speed = 0;
+                normalRat.SetActive(false);
+                var ExplodeClone = Instantiate(ExplodingRat, new Vector3(gameObject.transform.position.x, 0.8f, gameObject.transform.position.z), gameObject.transform.rotation);
+                yield return new WaitForSeconds(explosionDuration);
+                Destroy(ExplodeClone);
+            }
+
             returningHome = false;
+        }
+            
 
         ratTarget.PlantEatingPointReached = false;
         ObjectPooler.instance.killGameObject(this.gameObject);
