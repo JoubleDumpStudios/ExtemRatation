@@ -336,7 +336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -666}
+  m_AnchoredPosition: {x: 0, y: -667.6}
   m_SizeDelta: {x: 463.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384254319
@@ -372,7 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jon
+  m_Text: Jon Robin J Ryggvik
 --- !u!222 &384254320
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1211,7 +1211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -713.0001}
+  m_AnchoredPosition: {x: 0, y: -718.6}
   m_SizeDelta: {x: 463.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151357934
@@ -1472,7 +1472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -743.0001}
+  m_AnchoredPosition: {x: 0, y: -746.2}
   m_SizeDelta: {x: 463.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338659278
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ting Ting Chuang
+  m_Text: "Yu-Ting Chuang\r\n"
 --- !u!222 &1338659279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 1691890010}
   - component: {fileID: 1691890009}
   m_Layer: 5
-  m_Name: Lizaveta Navitskaya
+  m_Name: Lizaveta Novitskaya
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2034,7 +2034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -688.0001}
+  m_AnchoredPosition: {x: 0, y: -692}
   m_SizeDelta: {x: 463.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1691890009
@@ -2070,7 +2070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lizaveta Navitskaya
+  m_Text: Elizaveta Novitskaya
 --- !u!222 &1691890010
 CanvasRenderer:
   m_ObjectHideFlags: 0
