@@ -77,3 +77,24 @@ MonoBehaviour:
   - objectToPool: {fileID: 1182159526, guid: 37d0cc80e81e52b4a9fa41ebec96ecc9, type: 3}
     amountToPool: 20
     shouldExpand: 0
+  - objectToPool: {fileID: 100000, guid: 358b75ea5451cf143ab19029a189097d, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: cfc7596704bbd7f489156fcd4c05c7e9, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: 18a11fd6df8ceb449b8785301026d639, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: 6fe4d785744af2c40a2157f5b209d97f, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: aec54d7a991d7b644b145d550a4b7831, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: 14987c031123b98408a165a8bf1288d4, type: 3}
+    amountToPool: 20
+    shouldExpand: 1
+  - objectToPool: {fileID: 100000, guid: 43dd1ba2a5dde844eb01240da13ab96b, type: 3}
+    amountToPool: 20
+    shouldExpand: 1

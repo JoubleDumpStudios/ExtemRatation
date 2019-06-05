@@ -18,6 +18,9 @@ public class Rat_Health_Logic : MonoBehaviour
     [SerializeField]
     private float health;
     public float Health { get { return this.health; } }
+
+    [SerializeField]
+    private List<GameObject> bloodObject;
     // Start is called before the first frame update
 
     public void OnEnable()
@@ -31,7 +34,7 @@ public class Rat_Health_Logic : MonoBehaviour
     {
         ResetRatHealth();
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
-        ratMovementScript = GetComponent<Rat_Movement_Logic>();
+        ratMovementScript = GetComponent<Rat_Movement_Logic>();        
     }
 
     public void ratHited(float damage, float hitDistance/*, GameObject wound*/)
@@ -46,6 +49,8 @@ public class Rat_Health_Logic : MonoBehaviour
             AkSoundEngine.PostEvent("Rat_Death", gameObject);
             health = 0;
             ratMovementScript.killRat(hitDistance);
+
+            ObjectPooler.instance.spawnFromPool(randomBloodEfectName(), new Vector3(this.transform.position.x, 0.001f, this.transform.position.z), new Quaternion(0,0,0,0));
         }
 
         //in the case you want wonds on the rat
@@ -54,6 +59,14 @@ public class Rat_Health_Logic : MonoBehaviour
         topHeadHealthBar.sizeDelta = new Vector2(health * 2, topHeadHealthBar.sizeDelta.y);
     }
 
+    string randomBloodEfectName()
+    {
+        int i;
+        string bloodName;
+        i = Random.Range(0, bloodObject.Count);
+        bloodName = bloodObject[i].name;
+        return bloodName;
+    }
 
     void cleanWounds(List<GameObject> wounds)// allow us to remove the wounds from the rat and send them again to the pooler to be used again when needed
     {
