@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	674522502	Land			\Default Work Unit\Foley_Player\Land	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	13580875	Foley_Player_Land01	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\SFX\Foley_Player_Land01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley_Player\Foley_Player_Land01		44628
+
