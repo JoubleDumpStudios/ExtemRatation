@@ -17,7 +17,9 @@ public class MiniMapCameraBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerTransform !=null)
+        if (playerTransform != null)
             this.transform.position = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
+        else
+            Debug.Log("CAMERA IS NOT FOLLOWING THE PLAYER, ASIGN THE PLAYER TO THE CAMERA; THE REFERENCE IS MISSING");
     }
 }
