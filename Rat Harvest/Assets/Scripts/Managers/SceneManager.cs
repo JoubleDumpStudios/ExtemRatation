@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour
 {
     public static SceneManager instance;
+    [SerializeField] private string gameSceneName = "Test_LevelDesign_01";
     [SerializeField] private Texture2D cursorTexture;
 
     private void Awake()
@@ -21,7 +22,7 @@ public class SceneManager : MonoBehaviour
 
     public void loadGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Test_LevelDesign_Jon");       
+        UnityEngine.SceneManagement.SceneManager.LoadScene(gameSceneName);       
         Cursor.SetCursor(null, Vector2.one, CursorMode.Auto);
     }  
 

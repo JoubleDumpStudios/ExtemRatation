@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game/MainMenu.unity
     guid: 19e7753b1cedf0d48b8c9ce55e018d3e
   - enabled: 1
     path: Assets/Scenes/Test/Test_LevelDesign/Test_LevelDesign_01.unity
     guid: 2d385632e1c564548a8ef49e2cfaa8eb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game/Credits.unity
     guid: 93530ee69ce674e498f6de8487b590da
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game/YouWin.unity
     guid: 41dba760032826247ab5dda90f693714
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game/YouLose.unity
     guid: 68adc651b11540349b523de0a32a8c59
   m_configObjects: {}

@@ -7055,6 +7055,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 490373880397374731, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972052869451082401, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4309529392506495377, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_IsActive
@@ -7065,7 +7075,7 @@ PrefabInstance:
       propertyPath: m_positionOffsetData.positionOffset.y
       value: 0.06574583
       objectReference: {fileID: 0}
-    - target: {fileID: 490373880397374731, guid: a3d00c87644c3934091bb24ac98256fa,
+    - target: {fileID: 6479447400969407318, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7075,29 +7085,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5972052869451082401, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6479447400969407318, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6470948251205993788, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 18415904941333914, guid: a3d00c87644c3934091bb24ac98256fa,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6902196547833544343, guid: a3d00c87644c3934091bb24ac98256fa,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18415904941333914, guid: a3d00c87644c3934091bb24ac98256fa,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -15633,6 +15633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838619184757223237, guid: eaaf952a9efa5784a9c1360afc9e5c5c,
+        type: 3}
+      propertyPath: gameSceneName
+      value: Test_LevelDesign_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaaf952a9efa5784a9c1360afc9e5c5c, type: 3}
