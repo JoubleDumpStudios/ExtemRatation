@@ -50,7 +50,7 @@ public class Rat_Health_Logic : MonoBehaviour
             health = 0;
             ratMovementScript.killRat(hitDistance);
 
-            ObjectPooler.instance.spawnFromPool(randomBloodEfectName(), new Vector3(this.transform.position.x, 0.001f, this.transform.position.z), new Quaternion(0,0,0,0));
+            ObjectPooler.instance.spawnFromPool(randomBloodEfectName(), new Vector3(this.transform.position.x, 0.001f, this.transform.position.z), new Quaternion(0,this.transform.rotation.y,0,0));
         }
 
         //in the case you want wonds on the rat
