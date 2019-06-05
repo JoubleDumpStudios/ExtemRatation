@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6021303530335337559}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_Fence_Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence_Small (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883333742123360442, guid: d4322e71a9acd7e46a03161a7e5f018a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6321259641325717769, guid: d4322e71a9acd7e46a03161a7e5f018a,
         type: 3}
@@ -122,6 +127,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Small (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2883333742123360442, guid: d4322e71a9acd7e46a03161a7e5f018a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6321259641325717769, guid: d4322e71a9acd7e46a03161a7e5f018a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence_Small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883333742123360442, guid: d4322e71a9acd7e46a03161a7e5f018a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6321259641325717769, guid: d4322e71a9acd7e46a03161a7e5f018a,
         type: 3}
@@ -272,6 +287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Small (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2883333742123360442, guid: d4322e71a9acd7e46a03161a7e5f018a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6321259641325717769, guid: d4322e71a9acd7e46a03161a7e5f018a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,6 +366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence_Small
+      objectReference: {fileID: 0}
+    - target: {fileID: 2883333742123360442, guid: d4322e71a9acd7e46a03161a7e5f018a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6321259641325717769, guid: d4322e71a9acd7e46a03161a7e5f018a,
         type: 3}

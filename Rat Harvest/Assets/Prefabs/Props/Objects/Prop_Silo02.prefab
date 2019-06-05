@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 275583463}
   - component: {fileID: 275583462}
   - component: {fileID: 9159468322071301497}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_Silo02
   m_TagString: Wood
   m_Icon: {fileID: 0}

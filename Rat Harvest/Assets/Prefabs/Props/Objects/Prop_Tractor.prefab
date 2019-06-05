@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8763554478071667347}
   - component: {fileID: 115389856345146657}
   - component: {fileID: 902117639521521271}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_Tractor
   m_TagString: Metal
   m_Icon: {fileID: 0}

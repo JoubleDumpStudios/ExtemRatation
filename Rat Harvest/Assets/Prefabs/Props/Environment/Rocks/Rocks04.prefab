@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 4349052601367763511}
   - component: {fileID: 4774422550423400742}
   - component: {fileID: 1633318243753153673}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Rocks04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6159834937425851736
 Transform:
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7729272561399697038}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3901, y: 1.3901, z: 1.3901}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

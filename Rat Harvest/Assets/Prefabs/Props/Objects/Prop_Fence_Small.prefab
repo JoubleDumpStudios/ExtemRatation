@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5461568636762371726}
   - component: {fileID: 1441327717630947236}
   - component: {fileID: 2780819217264058562}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_Fence_Small
   m_TagString: Wood
   m_Icon: {fileID: 0}

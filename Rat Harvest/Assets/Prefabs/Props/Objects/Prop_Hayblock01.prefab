@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1789553003}
   - component: {fileID: 1789553002}
   - component: {fileID: 5158129179279116043}
-  m_Layer: 0
-  m_Name: Props_Hayblock01
+  m_Layer: 13
+  m_Name: Prop_Hayblock01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

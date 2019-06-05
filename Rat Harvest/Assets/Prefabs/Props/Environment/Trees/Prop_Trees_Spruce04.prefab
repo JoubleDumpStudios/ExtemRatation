@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 99105210}
   - component: {fileID: 99105209}
   - component: {fileID: 374068805572407832}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: crownTree2
   m_TagString: Wood
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &99105208
@@ -101,11 +101,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112084128}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &112084128
@@ -132,11 +132,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494104825}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &494104825
@@ -162,11 +162,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 600091261}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &600091261
@@ -192,11 +192,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605438565}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &605438565
@@ -222,11 +222,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 640841169}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &640841169
@@ -253,11 +253,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 647196782}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: tree2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &647196782
@@ -289,11 +289,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743612693}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &743612693
@@ -320,11 +320,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852697665}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &852697665
@@ -353,12 +353,12 @@ GameObject:
   - component: {fileID: 957392144}
   - component: {fileID: 957392143}
   - component: {fileID: 1545068527102992681}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: trunkTree2
   m_TagString: Wood
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &957392142
 Transform:
@@ -442,11 +442,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215075015}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1215075015
@@ -473,11 +473,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1343466819}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1343466819
@@ -503,11 +503,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1519458601}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1519458601
@@ -534,11 +534,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2099955140}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2099955140
@@ -564,11 +564,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2143364730}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_Trees_Spruce04
   m_TagString: Wood
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2143364730
@@ -580,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 2143364729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.08, z: 0}
-  m_LocalScale: {x: 1.024098, y: 1.024098, z: 1.024098}
+  m_LocalScale: {x: 1.151803, y: 1.151803, z: 1.151803}
   m_Children:
   - {fileID: 99105208}
   - {fileID: 647196782}

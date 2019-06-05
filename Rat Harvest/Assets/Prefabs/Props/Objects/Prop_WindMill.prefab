@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2516995601851649109}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Prop_WindMill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2516995602113831988}
   - component: {fileID: 2516995602113831991}
   - component: {fileID: 8478018258634016408}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MetalPart (1)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2516995602514973832}
   - component: {fileID: 2516995602514973835}
   - component: {fileID: 8821505599803667015}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: WoodenPart (1)
   m_TagString: Wood
   m_Icon: {fileID: 0}
