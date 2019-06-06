@@ -22,7 +22,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -111,7 +111,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -181,7 +181,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -838,6 +838,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Rats_Start" ID="{C60B6C50-6C2B-41CF-9311-0F2AC46D1D42}" ShortID="423142833">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>11.3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Rats_Start.wav</AudioFile>
 								</AudioFileSource>
@@ -1040,7 +1047,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1167,7 +1174,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1271,58 +1278,6 @@
 								<ActiveSource Name="MX_Combat_Loop01" ID="{5A812C88-C802-4163-914A-9EDCD3721A82}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="MX_Combat_Loop02_Dark" ID="{D502EA4B-5487-4442-9372-6132B971ED5B}" ShortID="769650782">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MX_Combat_Loop02_Dark" ID="{626F270A-F38D-45E2-BA38-0D7FA6FDEB05}" ShortID="270229255">
-									<Language>SFX</Language>
-									<AudioFile>MX_Combat_Loop02_Dark.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="MX_Combat_Loop02_Dark" ID="{626F270A-F38D-45E2-BA38-0D7FA6FDEB05}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="MX_Combat_WindUp01" ID="{64DDA25D-462D-4AFF-BBBF-79338F2659B5}" ShortID="348956203">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MX_Combat_Loop03_WindUp" ID="{E99FB655-86A2-4E92-ABF4-4126556E7CDA}" ShortID="154317991">
-									<Language>SFX</Language>
-									<AudioFile>MX_Combat_Loop03_WindUp.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="MX_Combat_Loop03_WindUp" ID="{E99FB655-86A2-4E92-ABF4-4126556E7CDA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="MX_Sting_Alert01" ID="{E6F8D9A5-7FDE-4A07-8003-93D98C2F6B62}" ShortID="580122299">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
@@ -1347,6 +1302,171 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="MX_Sting_Alert01" ID="{6BF16C9C-3FFF-40DB-AB26-3E95101EDBD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_Combat_WindUp02" ID="{201A9EA7-73DD-4CDC-9200-BAA62EB0B71E}" ShortID="166306424">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_Combat_WindUp02" ID="{D429B51D-C04B-4B5F-A010-F317E33A3792}" ShortID="232044691">
+									<Language>SFX</Language>
+									<AudioFile>MX_Combat_WindUp02.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="800445981"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_Combat_WindUp02" ID="{D429B51D-C04B-4B5F-A010-F317E33A3792}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_Combat_Loop03" ID="{8CF0A581-199D-497D-BAA3-FE72AA7EF3DD}" ShortID="375974292">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_Combat_Loop03" ID="{B38BF080-9180-47F8-842F-856822F4D1CA}" ShortID="860826220">
+									<Language>SFX</Language>
+									<AudioFile>MX_Combat_Loop03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_Combat_Loop03" ID="{B38BF080-9180-47F8-842F-856822F4D1CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_Combat_Outro" ID="{0AB92A43-B9A5-47EA-A49E-B2FBE857220A}" ShortID="933547918">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_Combat_Outro" ID="{1ED7A04E-FDC4-41FC-AD71-4A89645CF3BC}" ShortID="240594575">
+									<Language>SFX</Language>
+									<AudioFile>MX_Combat_Outro.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_Combat_Outro" ID="{1ED7A04E-FDC4-41FC-AD71-4A89645CF3BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_LooseScreen" ID="{575F61F1-1CEC-42A2-903F-C1D4A153C6C8}" ShortID="820962859">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_LooseScreen" ID="{ABE054F8-4618-49CC-9ECD-FA9E73AB1FC1}" ShortID="155487320">
+									<Language>SFX</Language>
+									<AudioFile>MX_LooseScreen.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_LooseScreen" ID="{ABE054F8-4618-49CC-9ECD-FA9E73AB1FC1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_MainMenu01" ID="{17A4D936-AF7E-485C-8D40-7F88A2AD40E4}" ShortID="516265335">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{817D8B37-812B-4AD9-A86A-212FDDE05159}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_MainMenu01" ID="{E46F0721-D61B-442F-B0E1-1878C64B4197}" ShortID="633040560">
+									<Language>SFX</Language>
+									<AudioFile>MX_MainMenu01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_MainMenu01" ID="{E46F0721-D61B-442F-B0E1-1878C64B4197}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MX_WinScreen01" ID="{495D57BE-DC01-450A-8C0F-50FA03087487}" ShortID="634965824">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MX_WinScreen01" ID="{83291AB8-BFB3-47D9-9577-1D49F1C8AA85}" ShortID="502551664">
+									<Language>SFX</Language>
+									<AudioFile>MX_WinScreen01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MX_WinScreen01" ID="{83291AB8-BFB3-47D9-9577-1D49F1C8AA85}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1635,6 +1755,28 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="MX_Combat_Outro" ID="{5C2802E5-A835-4A47-9382-0A0374A8699E}" ShortID="151594474">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BDE987BE-0B0D-466F-82BE-61EC803BD8BD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{093A04C3-5D23-4D41-86D9-062D4BD63631}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="MX_Combat_Outro" ID="{F15280C3-2E6D-47C1-8C07-AA6833EE3254}" ShortID="600587377">
+							<Language>SFX</Language>
+							<AudioFile>MX_Combat_Outro.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="240594575"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="MX_Combat_Outro" ID="{F15280C3-2E6D-47C1-8C07-AA6833EE3254}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

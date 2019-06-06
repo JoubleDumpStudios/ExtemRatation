@@ -129,16 +129,58 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
-						<SoundBank Name="MX_CombatLoop02" ID="{42FDD4CE-9571-4BE4-A5B2-D3840FF80183}">
+						<SoundBank Name="MX_StopCombat" ID="{F6DF86D3-09C1-42FD-AF7F-9111373F8D43}">
 							<ObjectInclusionList>
-								<ObjectRef Name="MX_CombatLoop02" ID="{CBBED55F-4487-4E23-BF68-38B95D0B309C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="MX_CombatStop" ID="{B3C53167-C4AA-4DB3-905B-1BA6F2ABDE5C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
-						<SoundBank Name="MX_StopCombat" ID="{F6DF86D3-09C1-42FD-AF7F-9111373F8D43}">
+						<SoundBank Name="MX_Outro" ID="{67692BE3-1633-4F3A-9E2E-DC629836F848}">
 							<ObjectInclusionList>
-								<ObjectRef Name="MX_CombatStop" ID="{B3C53167-C4AA-4DB3-905B-1BA6F2ABDE5C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="MX_Outro" ID="{AE244640-CE90-4F4B-B461-891EDEAADB08}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_WinScreen" ID="{D5EDE17B-6785-4F05-BC86-59D2F949D5A1}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_WinScreen" ID="{F0015415-0D38-493B-AC5E-59BBBF18E795}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_LooseScreen" ID="{058F773A-2AF8-4373-B9A6-A73418BF394E}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_LooseScreen" ID="{4B014B29-9193-4077-864C-ABC06F01ADA7}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_MainMenu" ID="{48B8CB66-6260-4F5D-AC1F-545B285CB65D}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_MainMenu" ID="{B515BBA2-17DF-47AB-B1BF-21ADA08B3D45}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_StopWinScreen" ID="{B58AA6A8-966B-4D66-B422-7E87AE4F14C4}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_StopWinScreen" ID="{906B97F4-F84A-42A2-850A-F3A8966D5C5B}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_StopLooseScreen" ID="{5E00BD20-E0F9-40A3-B8B9-BA06593E94F1}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_StopLooseScreen" ID="{804EBAFE-639C-4DAA-AC61-FD58F48DFB24}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+						<SoundBank Name="MX_StopMainMenu" ID="{756AD359-F64D-487B-89F9-E4ACBAD5289F}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_StopMainMenu" ID="{96323A9D-361C-4E9A-9E37-6B4519CD47FB}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
@@ -184,6 +226,20 @@
 						</SoundBank>
 					</ChildrenList>
 				</Folder>
+				<SoundBank Name="ResumeAll" ID="{B2D8E4A0-B365-430F-809C-2B90F1A26286}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ResumeAll" ID="{15EE6136-67A2-4E55-B4D1-87AD7340DD5E}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="PauseAll" ID="{848E525F-61A6-4A83-81B7-0A69658BB38A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PauseAll" ID="{42DF7BBE-BC4D-403E-91B6-8EF823A7149C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

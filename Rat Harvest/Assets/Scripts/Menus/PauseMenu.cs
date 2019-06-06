@@ -28,13 +28,18 @@ public class PauseMenu : MonoBehaviour
         {
             if (gameIsPaused)
                 Resume();
-            else
+            
+        
+        else
+        
                 Pause();
+                
         }
     }
 
     private void Pause()
     {
+        AkSoundEngine.PostEvent("PauseAll", gameObject);
         pauseMenuUI.SetActive(true);
         setObjectsVisibility(false);
         gameIsPaused = true;
@@ -45,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        AkSoundEngine.PostEvent("ResumeAll", gameObject);
         pauseMenuUI.SetActive(false);
         setObjectsVisibility(true);
         gameIsPaused = false;

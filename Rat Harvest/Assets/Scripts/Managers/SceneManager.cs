@@ -14,20 +14,28 @@ public class SceneManager : MonoBehaviour
         instance = this;
     }
 
+
     public void loadMenu()
     {
+        AkSoundEngine.PostEvent("MX_StopLooseScreen", gameObject);
+        AkSoundEngine.PostEvent("MX_StopWinScreen", gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
     }
 
     public void loadGame()
     {
+        AkSoundEngine.PostEvent("MX_StopMainMenu", gameObject);
+        AkSoundEngine.PostEvent("MX_StopLooseScreen", gameObject);
+        AkSoundEngine.PostEvent("MX_StopWinScreen", gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameSceneName);       
         Cursor.SetCursor(null, Vector2.one, CursorMode.Auto);
     }  
 
     public void loadCredits()
     {
+        AkSoundEngine.PostEvent("MX_StopLooseScreen", gameObject);
+        AkSoundEngine.PostEvent("MX_StopWinScreen", gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
     }
 
@@ -39,12 +47,14 @@ public class SceneManager : MonoBehaviour
 
     public void loadYouWin()
     {
+        AkSoundEngine.PostEvent("MX_WinScreen", gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene("YouWin");
         Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
     }
 
     public void loadYouLose()
     {
+        AkSoundEngine.PostEvent("MX_LooseScreen", gameObject);
         UnityEngine.SceneManagement.SceneManager.LoadScene("YouLose");
         Cursor.SetCursor(cursorTexture, Vector2.one, CursorMode.Auto);
     }

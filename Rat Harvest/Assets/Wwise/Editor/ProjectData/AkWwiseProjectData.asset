@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586417571322139614
+    m_lastTime: -8586417459622024414
     List:
     - name: HUD_AmmoBox
       guid: 5798a7836937344fa9413adb63464f76
@@ -110,17 +110,39 @@ MonoBehaviour:
       - ElementName: MX_CombatLoop01
         ObjectType: 7
       Path: Default Work Unit\MX\MX_CombatLoop01
-    - name: MX_CombatLoop02
-      guid: ced4fd427195e44ba5b2d3840ff80183
-      id: 3400939749
+    - name: MX_LooseScreen
+      guid: 3a778f05f82a7343b9a6a73418bf394e
+      id: 312234509
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: MX
         ObjectType: 4
-      - ElementName: MX_CombatLoop02
+      - ElementName: MX_LooseScreen
         ObjectType: 7
-      Path: Default Work Unit\MX\MX_CombatLoop02
+      Path: Default Work Unit\MX\MX_LooseScreen
+    - name: MX_MainMenu
+      guid: 66cbb84860625d4fac1f545b285cb65d
+      id: 3462007883
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_MainMenu
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_MainMenu
+    - name: MX_Outro
+      guid: e32b696733163a4f9e2edc629836f848
+      id: 3640244166
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_Outro
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_Outro
     - name: MX_Sting
       guid: ff858472e3047e4dbfe4b0fb053755d3
       id: 3235245272
@@ -143,6 +165,39 @@ MonoBehaviour:
       - ElementName: MX_StopCombat
         ObjectType: 7
       Path: Default Work Unit\MX\MX_StopCombat
+    - name: MX_StopLooseScreen
+      guid: 20bd005ef9e0a340b8b9ba06593e94f1
+      id: 2481286517
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopLooseScreen
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_StopLooseScreen
+    - name: MX_StopMainMenu
+      guid: 59d36a754df67b4889f9e4acbad5289f
+      id: 3930152595
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopMainMenu
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_StopMainMenu
+    - name: MX_StopWinScreen
+      guid: a8a68ab56b96664db4227e87ae4f14c4
+      id: 3312933569
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopWinScreen
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_StopWinScreen
     - name: MX_WindUp
       guid: f7228d77ec34874abaa7358c362d630d
       id: 1230257716
@@ -154,6 +209,26 @@ MonoBehaviour:
       - ElementName: MX_WindUp
         ObjectType: 7
       Path: Default Work Unit\MX\MX_WindUp
+    - name: MX_WinScreen
+      guid: 7be1edd58567054fbc8659d2f949d5a1
+      id: 2460493385
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_WinScreen
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_WinScreen
+    - name: PauseAll
+      guid: 5f528e84a661834a81b70a69658bb38a
+      id: 4091047182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PauseAll
+        ObjectType: 7
+      Path: Default Work Unit\PauseAll
     - name: Player_Footsteps
       guid: a36585051184a346a3aacd460b54858f
       id: 1730208058
@@ -231,6 +306,15 @@ MonoBehaviour:
       - ElementName: Rat_StartTimer
         ObjectType: 7
       Path: Default Work Unit\SFX_Rats\Rat_StartTimer
+    - name: ResumeAll
+      guid: a0e4d8b265b30f43809c2b90f1a26286
+      id: 3240900869
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ResumeAll
+        ObjectType: 7
+      Path: Default Work Unit\ResumeAll
     - name: Shotgun_Pumping
       guid: 515d033f9a9ecd40aa005fbbc5e302be
       id: 2288755958
@@ -291,7 +375,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586417571322189477
+    m_lastTime: -8586417431313972881
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -431,22 +515,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\MX\MX_CombatLoop01
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: MX_CombatLoop02
-      guid: 5fd5becb8744234ebf6838b95d0b309c
-      id: 3400939749
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: MX
-        ObjectType: 4
-      - ElementName: MX_CombatLoop02
-        ObjectType: 3
-      Path: Default Work Unit\MX\MX_CombatLoop02
-      maxAttenuation: 0
-      maxDuration: 51.200024
-      minDuration: 51.200024
+      maxDuration: 109.254486
+      minDuration: 109.254486
     - name: MX_CombatStop
       guid: 6731c5b3aac4b34d905b1ba6f2abde5c
       id: 2458422485
@@ -461,6 +531,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: MX_LooseScreen
+      guid: 294b014b93917740864cabc06f01ada7
+      id: 312234509
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_LooseScreen
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_LooseScreen
+      maxAttenuation: 0
+      maxDuration: 84.97936
+      minDuration: 84.97936
+    - name: MX_MainMenu
+      guid: a2bb15b5df17ab47b1bf21ada08b3d45
+      id: 3462007883
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_MainMenu
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_MainMenu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MX_Outro
+      guid: 404624ae90ce4b4fb461891edeaadb08
+      id: 3640244166
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_Outro
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_Outro
+      maxAttenuation: 0
+      maxDuration: 13.769864
+      minDuration: 13.769864
     - name: MX_Sting01
       guid: 6e7d77d9fd25f44e80d72e6b7fe414c7
       id: 609050649
@@ -475,6 +587,48 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4
       minDuration: 4
+    - name: MX_StopLooseScreen
+      guid: feba4e809c63aa4dac61fd58f48dfb24
+      id: 2481286517
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopLooseScreen
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_StopLooseScreen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MX_StopMainMenu
+      guid: 9d3a32961c369a4e9e376b4519cd47fb
+      id: 3930152595
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopMainMenu
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_StopMainMenu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MX_StopWinScreen
+      guid: f4976b904af8a242850af3a8966d5c5b
+      id: 3312933569
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopWinScreen
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_StopWinScreen
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: MX_Windup01
       guid: 6abb8d53d4a8924583efdc9d8dafd98d
       id: 2107270325
@@ -487,8 +641,34 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\MX\MX_Windup01
       maxAttenuation: 0
-      maxDuration: 12.800023
-      minDuration: 12.800023
+      maxDuration: 15.754172
+      minDuration: 15.754172
+    - name: MX_WinScreen
+      guid: 155401f0380d3b49ac5e59bbbf18e795
+      id: 2460493385
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_WinScreen
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_WinScreen
+      maxAttenuation: 0
+      maxDuration: 23.008253
+      minDuration: 23.008253
+    - name: PauseAll
+      guid: be7bdf424dbc3e4091b68ef823a7149c
+      id: 4091047182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PauseAll
+        ObjectType: 3
+      Path: Default Work Unit\PauseAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Pump
       guid: 49c1e757f4ddef4db8f0cf619bac9374
       id: 1925777311
@@ -573,6 +753,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.611256
       minDuration: 0.576949
+    - name: ResumeAll
+      guid: 3661ee15a267554eb4d187ad7340dd5e
+      id: 3240900869
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ResumeAll
+        ObjectType: 3
+      Path: Default Work Unit\ResumeAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Shoot
       guid: 65bd6ee6e6e1904aa3b826fb1944c6fc
       id: 3038207054

@@ -11,6 +11,20 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="312234509" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_LooseScreen</ObjectPath>
+			<ShortName>MX_LooseScreen</ShortName>
+			<Path>MX_LooseScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="312234509" Name="MX_LooseScreen" ObjectPath="\Events\Default Work Unit\MX\MX_LooseScreen" DurationType="OneShot" DurationMin="84.979362" DurationMax="84.979362"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="155487320" Language="SFX">
+					<ShortName>MX_LooseScreen.wav</ShortName>
+					<Path>SFX\MX_LooseScreen_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="441552802" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\UI_Switch</ObjectPath>
 			<ShortName>UI_Switch</ShortName>
@@ -116,12 +130,12 @@
 			<ShortName>MX_WindUp</ShortName>
 			<Path>MX_WindUp.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2107270325" Name="MX_Windup01" ObjectPath="\Events\Default Work Unit\MX\MX_Windup01" DurationType="OneShot" DurationMin="12.800023" DurationMax="12.800023"/>
+				<Event Id="2107270325" Name="MX_Windup01" ObjectPath="\Events\Default Work Unit\MX\MX_Windup01" DurationType="OneShot" DurationMin="15.754172" DurationMax="15.754172"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="154317991" Language="SFX">
-					<ShortName>MX_Combat_Loop03_WindUp.wav</ShortName>
-					<Path>SFX\MX_Combat_Loop03_WindUp_10C4C929.wem</Path>
+				<File Id="800445981" Language="SFX">
+					<ShortName>MX_Combat_WindUp02.wav</ShortName>
+					<Path>SFX\MX_Combat_WindUp02_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -262,6 +276,28 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="2460493385" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_WinScreen</ObjectPath>
+			<ShortName>MX_WinScreen</ShortName>
+			<Path>MX_WinScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2460493385" Name="MX_WinScreen" ObjectPath="\Events\Default Work Unit\MX\MX_WinScreen" DurationType="OneShot" DurationMin="23.008253" DurationMax="23.008253"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="502551664" Language="SFX">
+					<ShortName>MX_WinScreen01.wav</ShortName>
+					<Path>SFX\MX_WinScreen01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2481286517" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopLooseScreen</ObjectPath>
+			<ShortName>MX_StopLooseScreen</ShortName>
+			<Path>MX_StopLooseScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2481286517" Name="MX_StopLooseScreen" ObjectPath="\Events\Default Work Unit\MX\MX_StopLooseScreen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="2550439886" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_FoodBox</ObjectPath>
 			<ShortName>HUD_FoodBox</ShortName>
@@ -326,31 +362,61 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3400939749" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop02</ObjectPath>
-			<ShortName>MX_CombatLoop02</ShortName>
-			<Path>MX_CombatLoop02.bnk</Path>
+		<SoundBank Id="3240900869" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\ResumeAll</ObjectPath>
+			<ShortName>ResumeAll</ShortName>
+			<Path>ResumeAll.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3400939749" Name="MX_CombatLoop02" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop02" DurationType="OneShot" DurationMin="51.200024" DurationMax="51.200024"/>
+				<Event Id="3240900869" Name="ResumeAll" ObjectPath="\Events\Default Work Unit\ResumeAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="270229255" Language="SFX">
-					<ShortName>MX_Combat_Loop02_Dark.wav</ShortName>
-					<Path>SFX\MX_Combat_Loop02_Dark_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3312933569" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopWinScreen</ObjectPath>
+			<ShortName>MX_StopWinScreen</ShortName>
+			<Path>MX_StopWinScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3312933569" Name="MX_StopWinScreen" ObjectPath="\Events\Default Work Unit\MX\MX_StopWinScreen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3400939750" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop01</ObjectPath>
 			<ShortName>MX_CombatLoop01</ShortName>
 			<Path>MX_CombatLoop01.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="Infinite"/>
+				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="OneShot" DurationMin="109.254486" DurationMax="109.254486"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="772817735" Language="SFX">
-					<ShortName>MX_Combat_Loop01.wav</ShortName>
-					<Path>SFX\MX_Combat_Loop01_D79FB2B7.wem</Path>
+				<File Id="860826220" Language="SFX">
+					<ShortName>MX_Combat_Loop03.wav</ShortName>
+					<Path>SFX\MX_Combat_Loop03_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3462007883" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_MainMenu</ObjectPath>
+			<ShortName>MX_MainMenu</ShortName>
+			<Path>MX_MainMenu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3462007883" Name="MX_MainMenu" ObjectPath="\Events\Default Work Unit\MX\MX_MainMenu" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="633040560" Language="SFX">
+					<ShortName>MX_MainMenu01.wav</ShortName>
+					<Path>SFX\MX_MainMenu01_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3640244166" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_Outro</ObjectPath>
+			<ShortName>MX_Outro</ShortName>
+			<Path>MX_Outro.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3640244166" Name="MX_Outro" ObjectPath="\Events\Default Work Unit\MX\MX_Outro" DurationType="OneShot" DurationMin="13.769864" DurationMax="13.769864"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="240594575" Language="SFX">
+					<ShortName>MX_Combat_Outro.wav</ShortName>
+					<Path>SFX\MX_Combat_Outro_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -360,6 +426,22 @@
 			<Path>MX_StopCombat.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2458422485" Name="MX_CombatStop" ObjectPath="\Events\Default Work Unit\MX\MX_CombatStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3930152595" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopMainMenu</ObjectPath>
+			<ShortName>MX_StopMainMenu</ShortName>
+			<Path>MX_StopMainMenu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3930152595" Name="MX_StopMainMenu" ObjectPath="\Events\Default Work Unit\MX\MX_StopMainMenu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="4091047182" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\PauseAll</ObjectPath>
+			<ShortName>PauseAll</ShortName>
+			<Path>PauseAll.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4091047182" Name="PauseAll" ObjectPath="\Events\Default Work Unit\PauseAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="4162641848" Language="SFX">

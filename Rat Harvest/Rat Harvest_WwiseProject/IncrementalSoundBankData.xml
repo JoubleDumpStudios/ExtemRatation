@@ -13,18 +13,27 @@
 				<File Name="Init" Hash="2647710745" Timestamp="1558963719"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963719"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963719"/>
-				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1559394015"/>
+				<File Name="MX_CombatLoop01" Hash="1716806453" Timestamp="1559864910"/>
 				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976464"/>
+				<File Name="MX_LooseScreen" Hash="3255629718" Timestamp="1559864910"/>
+				<File Name="MX_MainMenu" Hash="1955555098" Timestamp="1559864910"/>
+				<File Name="MX_Outro" Hash="2482269905" Timestamp="1559864910"/>
 				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976464"/>
-				<File Name="MX_StopCombat" Hash="3518958560" Timestamp="1559849757"/>
-				<File Name="MX_WindUp" Hash="2455779782" Timestamp="1558979517"/>
-				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
-				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
-				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
+				<File Name="MX_StopCombat" Hash="3928127344" Timestamp="1559855036"/>
+				<File Name="MX_StopLooseScreen" Hash="3570005026" Timestamp="1559863768"/>
+				<File Name="MX_StopMainMenu" Hash="1517295380" Timestamp="1559862761"/>
+				<File Name="MX_StopWinScreen" Hash="2382476481" Timestamp="1559863768"/>
+				<File Name="MX_WinScreen" Hash="1758116923" Timestamp="1559864910"/>
+				<File Name="MX_WindUp" Hash="1365044678" Timestamp="1559864910"/>
+				<File Name="PauseAll" Hash="851450336" Timestamp="1559856623"/>
+				<File Name="Player_Footsteps" Hash="3310718906" Timestamp="1559865272"/>
+				<File Name="Player_Jumps" Hash="3503244528" Timestamp="1559865272"/>
+				<File Name="Player_Landing" Hash="3316168764" Timestamp="1559865272"/>
 				<File Name="Rat_Deaths" Hash="2885491306" Timestamp="1559402982"/>
-				<File Name="Rat_Explode" Hash="3805513377" Timestamp="1559409243"/>
-				<File Name="Rat_Hit" Hash="1508575924" Timestamp="1559409243"/>
-				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963719"/>
+				<File Name="Rat_Explode" Hash="4024755394" Timestamp="1559865272"/>
+				<File Name="Rat_Hit" Hash="1997782551" Timestamp="1559865272"/>
+				<File Name="Rat_StartTimer" Hash="3485986702" Timestamp="1559865272"/>
+				<File Name="ResumeAll" Hash="2748013964" Timestamp="1559856623"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
 				<File Name="Shotgun_Shooting" Hash="3685575335" Timestamp="1559410812"/>
@@ -34,7 +43,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2885620996" Timestamp="1559849757"/>
+				<File Name="" Hash="510344246" Timestamp="1559865272"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -51,18 +60,27 @@
 				<File Name="Init" Hash="399428863" Timestamp="1558963718"/>
 				<File Name="Jumps" Hash="4208187421" Timestamp="1558963718"/>
 				<File Name="Landing" Hash="3221066936" Timestamp="1558963718"/>
-				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1559394015"/>
+				<File Name="MX_CombatLoop01" Hash="1716806453" Timestamp="1559864909"/>
 				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976463"/>
+				<File Name="MX_LooseScreen" Hash="3255629718" Timestamp="1559864909"/>
+				<File Name="MX_MainMenu" Hash="1955555098" Timestamp="1559864909"/>
+				<File Name="MX_Outro" Hash="2482269905" Timestamp="1559864909"/>
 				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976463"/>
-				<File Name="MX_StopCombat" Hash="3518958560" Timestamp="1559849756"/>
-				<File Name="MX_WindUp" Hash="2455779782" Timestamp="1558979517"/>
-				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
-				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
-				<File Name="Player_Landing" Hash="3425128305" Timestamp="1558965443"/>
+				<File Name="MX_StopCombat" Hash="3928127344" Timestamp="1559855036"/>
+				<File Name="MX_StopLooseScreen" Hash="3570005026" Timestamp="1559863768"/>
+				<File Name="MX_StopMainMenu" Hash="1517295380" Timestamp="1559862761"/>
+				<File Name="MX_StopWinScreen" Hash="2382476481" Timestamp="1559863768"/>
+				<File Name="MX_WinScreen" Hash="1758116923" Timestamp="1559864909"/>
+				<File Name="MX_WindUp" Hash="1365044678" Timestamp="1559864909"/>
+				<File Name="PauseAll" Hash="851450336" Timestamp="1559856623"/>
+				<File Name="Player_Footsteps" Hash="3310718906" Timestamp="1559865272"/>
+				<File Name="Player_Jumps" Hash="3503244528" Timestamp="1559865272"/>
+				<File Name="Player_Landing" Hash="3316168764" Timestamp="1559865271"/>
 				<File Name="Rat_Deaths" Hash="2885491306" Timestamp="1559402982"/>
-				<File Name="Rat_Explode" Hash="3805513377" Timestamp="1559409243"/>
-				<File Name="Rat_Hit" Hash="1508575924" Timestamp="1559409243"/>
-				<File Name="Rat_StartTimer" Hash="2806651143" Timestamp="1558963718"/>
+				<File Name="Rat_Explode" Hash="4024755394" Timestamp="1559865272"/>
+				<File Name="Rat_Hit" Hash="1997782551" Timestamp="1559865272"/>
+				<File Name="Rat_StartTimer" Hash="3485986702" Timestamp="1559865272"/>
+				<File Name="ResumeAll" Hash="2748013964" Timestamp="1559856623"/>
 				<File Name="Shotgun_Pumping" Hash="1874497527" Timestamp="1558979913"/>
 				<File Name="Shotgun_Reloading" Hash="3649250824" Timestamp="1558979913"/>
 				<File Name="Shotgun_Shooting" Hash="3685575335" Timestamp="1559410812"/>
@@ -72,7 +90,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1402540662" Timestamp="1559849756"/>
+				<File Name="" Hash="3517778980" Timestamp="1559865272"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

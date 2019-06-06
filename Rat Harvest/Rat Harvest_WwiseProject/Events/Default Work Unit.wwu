@@ -176,7 +176,7 @@
 								<Action Name="" ID="{4406A3ED-E573-44EF-A00B-8E2897B890E3}" ShortID="211071199">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MX_Combat_WindUp01" ID="{64DDA25D-462D-4AFF-BBBF-79338F2659B5}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+											<ObjectRef Name="MX_Combat_WindUp02" ID="{201A9EA7-73DD-4CDC-9200-BAA62EB0B71E}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -187,27 +187,7 @@
 								<Action Name="" ID="{4E7FFBE9-DF5B-4F43-9A85-2D40F44C645C}" ShortID="313152853">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MX_Combat_Loop01" ID="{36BE8E25-66CD-4E43-910E-175A6D8B870B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="MX_CombatLoop02" ID="{CBBED55F-4487-4E23-BF68-38B95D0B309C}">
-							<ChildrenList>
-								<Action Name="" ID="{02933CA8-DD9B-4429-B25F-BB747A587E94}" ShortID="603497329">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{4EF0DC33-1B72-4537-848C-34415BCC3FCD}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MX_Combat_Loop02_Dark" ID="{D502EA4B-5487-4442-9372-6132B971ED5B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+											<ObjectRef Name="MX_Combat_Loop03" ID="{8CF0A581-199D-497D-BAA3-FE72AA7EF3DD}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -221,7 +201,99 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MX_Combat_Loop01" ID="{36BE8E25-66CD-4E43-910E-175A6D8B870B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+											<ObjectRef Name="MX_Combat_Loop03" ID="{8CF0A581-199D-497D-BAA3-FE72AA7EF3DD}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_Outro" ID="{AE244640-CE90-4F4B-B461-891EDEAADB08}">
+							<ChildrenList>
+								<Action Name="" ID="{3630F9B7-DE73-49D0-AD50-564F1D6DE803}" ShortID="189285658">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Combat_Outro" ID="{0AB92A43-B9A5-47EA-A49E-B2FBE857220A}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_WinScreen" ID="{F0015415-0D38-493B-AC5E-59BBBF18E795}">
+							<ChildrenList>
+								<Action Name="" ID="{E04ADCC7-1B69-429C-96E0-EB9A16FC9492}" ShortID="765054483">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_WinScreen01" ID="{495D57BE-DC01-450A-8C0F-50FA03087487}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_LooseScreen" ID="{4B014B29-9193-4077-864C-ABC06F01ADA7}">
+							<ChildrenList>
+								<Action Name="" ID="{60DA42AB-F0DD-4B9E-93FC-EB27E56F97CE}" ShortID="311590086">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_LooseScreen" ID="{575F61F1-1CEC-42A2-903F-C1D4A153C6C8}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_MainMenu" ID="{B515BBA2-17DF-47AB-B1BF-21ADA08B3D45}">
+							<ChildrenList>
+								<Action Name="" ID="{0D5DA74E-1DE5-4A51-942A-E66659B068D0}" ShortID="634577558">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_MainMenu01" ID="{17A4D936-AF7E-485C-8D40-7F88A2AD40E4}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_StopMainMenu" ID="{96323A9D-361C-4E9A-9E37-6B4519CD47FB}">
+							<ChildrenList>
+								<Action Name="" ID="{C66B8E96-35F1-4D3E-A86D-6A94F8C5B32F}" ShortID="940194288">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_MainMenu01" ID="{17A4D936-AF7E-485C-8D40-7F88A2AD40E4}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_StopLooseScreen" ID="{804EBAFE-639C-4DAA-AC61-FD58F48DFB24}">
+							<ChildrenList>
+								<Action Name="" ID="{28394255-B49A-4077-9E3D-71BB1E488E46}" ShortID="157929582">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_LooseScreen" ID="{575F61F1-1CEC-42A2-903F-C1D4A153C6C8}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MX_StopWinScreen" ID="{906B97F4-F84A-42A2-850A-F3A8966D5C5B}">
+							<ChildrenList>
+								<Action Name="" ID="{051421B1-E27B-4626-B8B2-8B2E37249304}" ShortID="598470449">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_WinScreen01" ID="{495D57BE-DC01-450A-8C0F-50FA03087487}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -288,6 +360,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="PauseAll" ID="{42DF7BBE-BC4D-403E-91B6-8EF823A7149C}">
+					<ChildrenList>
+						<Action Name="" ID="{75846056-DC5D-45D9-AC78-DD05BDCF0A9A}" ShortID="590807215">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ResumeAll" ID="{15EE6136-67A2-4E55-B4D1-87AD7340DD5E}">
+					<ChildrenList>
+						<Action Name="" ID="{71FFE730-0862-4EB3-94BD-4F189430DCAE}" ShortID="165745342">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

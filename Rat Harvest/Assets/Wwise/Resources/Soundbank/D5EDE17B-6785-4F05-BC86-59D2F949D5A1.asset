@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2ffcabeb87f184ca19037b29c303f0, type: 3}
+  m_Name: D5EDE17B-6785-4F05-BC86-59D2F949D5A1
+  m_EditorClassIdentifier: 
+  objectName: MX_WinScreen
+  id: 2460493385
+  guid: D5EDE17B-6785-4F05-BC86-59D2F949D5A1
