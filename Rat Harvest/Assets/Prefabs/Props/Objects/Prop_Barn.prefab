@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6564534554503892333}
   - component: {fileID: 6564534554500992333}
   - component: {fileID: 6564534554501992333}
-  - component: {fileID: 13631428623885087}
+  - component: {fileID: 670940184504252183}
   m_Layer: 0
   m_Name: Prop_Barn
   m_TagString: Wood
@@ -88,8 +88,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &13631428623885087
-BoxCollider:
+--- !u!64 &670940184504252183
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,9 +98,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5796814, y: 4.504561, z: 5.436035}
-  m_Center: {x: 0.0014190674, y: 0, z: -0.033996582}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 23bde4ee8d98b44edab4e8d210ad9199, type: 3}
 --- !u!1 &7680677197482175998
 GameObject:
   m_ObjectHideFlags: 0
