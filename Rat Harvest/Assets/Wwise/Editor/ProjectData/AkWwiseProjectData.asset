@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586422039040957459
+    m_lastTime: -8586417571322139614
     List:
     - name: HUD_AmmoBox
       guid: 5798a7836937344fa9413adb63464f76
@@ -132,6 +132,17 @@ MonoBehaviour:
       - ElementName: MX_Sting
         ObjectType: 7
       Path: Default Work Unit\MX\MX_Sting
+    - name: MX_StopCombat
+      guid: d386dff6c109fd42af7f9111373f8d43
+      id: 3683422181
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_StopCombat
+        ObjectType: 7
+      Path: Default Work Unit\MX\MX_StopCombat
     - name: MX_WindUp
       guid: f7228d77ec34874abaa7358c362d630d
       id: 1230257716
@@ -280,7 +291,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586422039041007321
+    m_lastTime: -8586417571322189477
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -436,6 +447,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 51.200024
       minDuration: 51.200024
+    - name: MX_CombatStop
+      guid: 6731c5b3aac4b34d905b1ba6f2abde5c
+      id: 2458422485
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MX
+        ObjectType: 4
+      - ElementName: MX_CombatStop
+        ObjectType: 3
+      Path: Default Work Unit\MX\MX_CombatStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: MX_Sting01
       guid: 6e7d77d9fd25f44e80d72e6b7fe414c7
       id: 609050649
@@ -622,6 +647,6 @@ MonoBehaviour:
   - /Rat Harvest_WwiseProject
   - /Rat Harvest_WwiseProject/Events
   - /Rat Harvest_WwiseProject/Events/Default Work Unit
-  - /Rat Harvest_WwiseProject/Events/Default Work Unit/SFX_Rats
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/MX
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

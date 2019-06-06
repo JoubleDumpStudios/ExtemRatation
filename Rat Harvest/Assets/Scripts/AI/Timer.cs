@@ -100,7 +100,11 @@ public class Timer : MonoBehaviour
 
         //Invoke("Name of the method you want to play", fstartRoundTime + YourTime), 
         //this will call you method in YourTime seconds after the start of the round.
+
+        Invoke("MX_CombatEnd", fstartRoundTime + 14);
     }
+
+
 
 
     void MX_WindUp()
@@ -116,6 +120,11 @@ public class Timer : MonoBehaviour
     void MX_CombatStart()
     {
         AkSoundEngine.PostEvent("MX_CombatLoop01", gameObject);
+    }
+
+    void MX_CombatEnd()
+    {
+        AkSoundEngine.PostEvent("MX_CombatStop", gameObject);
     }
 
 

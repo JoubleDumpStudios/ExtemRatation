@@ -354,6 +354,14 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="3683422181" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopCombat</ObjectPath>
+			<ShortName>MX_StopCombat</ShortName>
+			<Path>MX_StopCombat.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2458422485" Name="MX_CombatStop" ObjectPath="\Events\Default Work Unit\MX\MX_CombatStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="4162641848" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Deaths</ObjectPath>
 			<ShortName>Rat_Deaths</ShortName>

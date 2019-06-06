@@ -16,6 +16,7 @@
 				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1559394015"/>
 				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976464"/>
 				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976464"/>
+				<File Name="MX_StopCombat" Hash="3518958560" Timestamp="1559849757"/>
 				<File Name="MX_WindUp" Hash="2455779782" Timestamp="1558979517"/>
 				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
@@ -33,7 +34,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1901780354" Timestamp="1559410812"/>
+				<File Name="" Hash="2885620996" Timestamp="1559849757"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -53,6 +54,7 @@
 				<File Name="MX_CombatLoop01" Hash="1507564763" Timestamp="1559394015"/>
 				<File Name="MX_CombatLoop02" Hash="2209294913" Timestamp="1558976463"/>
 				<File Name="MX_Sting" Hash="2414971223" Timestamp="1558976463"/>
+				<File Name="MX_StopCombat" Hash="3518958560" Timestamp="1559849756"/>
 				<File Name="MX_WindUp" Hash="2455779782" Timestamp="1558979517"/>
 				<File Name="Player_Footsteps" Hash="2153151700" Timestamp="1558965443"/>
 				<File Name="Player_Jumps" Hash="1228474190" Timestamp="1558965443"/>
@@ -70,7 +72,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2397697628" Timestamp="1559410812"/>
+				<File Name="" Hash="1402540662" Timestamp="1559849756"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

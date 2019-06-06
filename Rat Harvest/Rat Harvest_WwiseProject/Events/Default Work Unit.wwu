@@ -213,6 +213,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="MX_CombatStop" ID="{B3C53167-C4AA-4DB3-905B-1BA6F2ABDE5C}">
+							<ChildrenList>
+								<Action Name="" ID="{F2A40A02-B8C1-4DB7-890B-C1AE5408B75D}" ShortID="342980179">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Combat_Loop01" ID="{36BE8E25-66CD-4E43-910E-175A6D8B870B}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI&amp;HUD" ID="{8C2A5194-CF13-483D-89CB-72C397045A9D}" ShortID="854381710">

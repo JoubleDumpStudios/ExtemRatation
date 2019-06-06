@@ -136,6 +136,13 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
+						<SoundBank Name="MX_StopCombat" ID="{F6DF86D3-09C1-42FD-AF7F-9111373F8D43}">
+							<ObjectInclusionList>
+								<ObjectRef Name="MX_CombatStop" ID="{B3C53167-C4AA-4DB3-905B-1BA6F2ABDE5C}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI&amp;HUD" ID="{A4B06F6F-BD6A-4D32-8287-4148FD2C903F}" ShortID="1033230895">

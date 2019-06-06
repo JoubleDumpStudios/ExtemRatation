@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
         static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
+        static const AkUniqueID MX_COMBATSTOP = 2458422485U;
         static const AkUniqueID MX_STING01 = 609050649U;
         static const AkUniqueID MX_WINDUP01 = 2107270325U;
         static const AkUniqueID PUMP = 1925777311U;
@@ -49,6 +50,7 @@ namespace AK
         static const AkUniqueID MX_COMBATLOOP01 = 3400939750U;
         static const AkUniqueID MX_COMBATLOOP02 = 3400939749U;
         static const AkUniqueID MX_STING = 3235245272U;
+        static const AkUniqueID MX_STOPCOMBAT = 3683422181U;
         static const AkUniqueID MX_WINDUP = 1230257716U;
         static const AkUniqueID PLAYER_FOOTSTEPS = 1730208058U;
         static const AkUniqueID PLAYER_JUMPS = 2335147900U;
