@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="312234509" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_LooseScreen</ObjectPath>
+			<ShortName>MX_LooseScreen</ShortName>
+			<Path>MX_LooseScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="312234509" Name="MX_LooseScreen" ObjectPath="\Events\Default Work Unit\MX\MX_LooseScreen" DurationType="OneShot" DurationMin="84.979362" DurationMax="84.979362"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="155487320" Language="SFX">
+					<ShortName>MX_LooseScreen.wav</ShortName>
+					<Path>SFX\MX_LooseScreen_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="441552802" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\UI_Switch</ObjectPath>
+			<ShortName>UI_Switch</ShortName>
+			<Path>UI_Switch.bnk</Path>
+			<IncludedEvents>
+				<Event Id="441552802" Name="UI_Switch" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\UI_Switch" DurationType="OneShot" DurationMin="0.166709" DurationMax="0.222530"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="656693509" Language="SFX">
+					<ShortName>WHOOSH_Air_Fast_Wind_Subtle_RR2_mono.wav</ShortName>
+					<Path>SFX\WHOOSH_Air_Fast_Wind_Subtle_RR2_mono_10C4C929.wem</Path>
+				</File>
+				<File Id="748809363" Language="SFX">
+					<ShortName>WHOOSH_Air_Fast_Wind_Subtle_RR1_mono.wav</ShortName>
+					<Path>SFX\WHOOSH_Air_Fast_Wind_Subtle_RR1_mono_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="694741453" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Wood</ObjectPath>
+			<ShortName>Impact_Wood</ShortName>
+			<Path>Impact_Wood.bnk</Path>
+			<IncludedEvents>
+				<Event Id="694741453" Name="Impact_Wood" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Wood" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.424546" DurationMax="0.857805"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="490732921" Language="SFX">
+					<ShortName>SFX_Impact_Wood02.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood02_10C4C929.wem</Path>
+				</File>
+				<File Id="547767945" Language="SFX">
+					<ShortName>SFX_Impact_Wood03.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood03_10C4C929.wem</Path>
+				</File>
+				<File Id="810890971" Language="SFX">
+					<ShortName>SFX_Impact_Wood01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Wood01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="765648692" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_AmmoBox</ObjectPath>
+			<ShortName>HUD_AmmoBox</ShortName>
+			<Path>HUD_AmmoBox.bnk</Path>
+			<IncludedEvents>
+				<Event Id="765648692" Name="HUD_AmmoBox" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\HUD_AmmoBox" DurationType="OneShot" DurationMin="0.801309" DurationMax="0.899439"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="948807453" Language="SFX">
+					<ShortName>SFX_HUD_AmmoBox.wav</ShortName>
+					<Path>SFX\SFX_HUD_AmmoBox_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1082451816" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Hit</ObjectPath>
+			<ShortName>Rat_Hit</ShortName>
+			<Path>Rat_Hit.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1082451816" Name="Rat_Hit" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Hit" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.435463" DurationMax="0.816030"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="671815718" Language="SFX">
+					<ShortName>SFX_Rats_Hit01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Hit01_10C4C929.wem</Path>
+				</File>
+				<File Id="757888080" Language="SFX">
+					<ShortName>SFX_Rats_Hit02.wav</ShortName>
+					<Path>SFX\SFX_Rats_Hit02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1166222504" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Explode</ObjectPath>
+			<ShortName>Rat_Explode</ShortName>
+			<Path>Rat_Explode.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1166222504" Name="Rat_Explode" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Explode" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.859283" DurationMax="1.082629"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="878420502" Language="SFX">
+					<ShortName>SFX_Rats_Explode01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Explode01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1194489829" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Reloading</ObjectPath>
+			<ShortName>Shotgun_Reloading</ShortName>
+			<Path>Shotgun_Reloading.bnk</Path>
+			<IncludedEvents>
+				<Event Id="456382354" Name="Reload" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Reload" DurationType="OneShot" DurationMin="0.576949" DurationMax="0.611256"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="53781168" Language="SFX">
+					<ShortName>SFX_Shotgun_Reload.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Reload_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1230257716" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_WindUp</ObjectPath>
+			<ShortName>MX_WindUp</ShortName>
+			<Path>MX_WindUp.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2107270325" Name="MX_Windup01" ObjectPath="\Events\Default Work Unit\MX\MX_Windup01" DurationType="OneShot" DurationMin="15.754172" DurationMax="15.754172"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="800445981" Language="SFX">
+					<ShortName>MX_Combat_WindUp02.wav</ShortName>
+					<Path>SFX\MX_Combat_WindUp02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1282282006" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Landing</ObjectPath>
+			<ShortName>Player_Landing</ShortName>
+			<Path>Player_Landing.bnk</Path>
+			<IncludedEvents>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\Foley_Player\Land" DurationType="OneShot" DurationMin="0.450136" DurationMax="0.567136"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="13580875" Language="SFX">
+					<ShortName>Foley_Player_Land01.wav</ShortName>
+					<Path>SFX\Foley_Player_Land01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1659816351" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Metal</ObjectPath>
+			<ShortName>Impact_Metal</ShortName>
+			<Path>Impact_Metal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1659816351" Name="Impact_Metal" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Metal" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.644356" DurationMax="0.788727"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="358432503" Language="SFX">
+					<ShortName>SFX_Impact_Metal01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Metal01_10C4C929.wem</Path>
+				</File>
+				<File Id="689436614" Language="SFX">
+					<ShortName>SFX_Impact_Metal02.wav</ShortName>
+					<Path>SFX\SFX_Impact_Metal02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1730208058" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Footsteps</ObjectPath>
+			<ShortName>Player_Footsteps</ShortName>
+			<Path>Player_Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Foley_Player\Footstep" DurationType="OneShot" DurationMin="0.342369" DurationMax="0.440555"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="11723387" Language="SFX">
+					<ShortName>Foley_Player_Foostep02.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep02_10C4C929.wem</Path>
+				</File>
+				<File Id="206385899" Language="SFX">
+					<ShortName>Foley_Player_Foostep01.wav</ShortName>
+					<Path>SFX\Foley_Player_Foostep01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1821446674" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_Harvest</ObjectPath>
+			<ShortName>HUD_Harvest</ShortName>
+			<Path>HUD_Harvest.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1821446674" Name="HUD_Harvest" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\HUD_Harvest" DurationType="OneShot" DurationMin="0.560766" DurationMax="0.666866"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="42743192" Language="SFX">
+					<ShortName>FOLEY_Gaffer_Tape_Remove_mono.wav</ShortName>
+					<Path>SFX\FOLEY_Gaffer_Tape_Remove_mono_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2192569790" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_StartTimer</ObjectPath>
+			<ShortName>Rat_StartTimer</ShortName>
+			<Path>Rat_StartTimer.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2192569790" Name="Rat_StartTimer" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_StartTimer" DurationType="OneShot" DurationMin="1.472766" DurationMax="1.472766"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="423142833" Language="SFX">
+					<ShortName>SFX_Rats_Start.wav</ShortName>
+					<Path>SFX\SFX_Rats_Start_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2249769530" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\UI_CLick</ObjectPath>
+			<ShortName>UI_CLick</ShortName>
+			<Path>UI_CLick.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\UI_Click" DurationType="OneShot" DurationMin="0.955348" DurationMax="1.269069"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="245155087" Language="SFX">
+					<ShortName>FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR1_stereo.wav</ShortName>
+					<Path>SFX\FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR1_stereo_10C4C929.wem</Path>
+				</File>
+				<File Id="914938205" Language="SFX">
+					<ShortName>FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR2_stereo.wav</ShortName>
+					<Path>SFX\FIREARM_Handgun_B_FS92_9mm_Fire_Short_Reverb_Tail_RR2_stereo_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2288755958" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Pumping</ObjectPath>
+			<ShortName>Shotgun_Pumping</ShortName>
+			<Path>Shotgun_Pumping.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1925777311" Name="Pump" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Pump" DurationType="OneShot" DurationMin="0.801886" DurationMax="0.926462"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="925049353" Language="SFX">
+					<ShortName>SFX_Shotgun_Pump.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Pump_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2335147900" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foley_Player\Player_Jumps</ObjectPath>
+			<ShortName>Player_Jumps</ShortName>
+			<Path>Player_Jumps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Foley_Player\Jump" DurationType="OneShot" DurationMin="0.410780" DurationMax="0.573703"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="223178980" Language="SFX">
+					<ShortName>Foley_Player_Jump02.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump02_10C4C929.wem</Path>
+				</File>
+				<File Id="557519647" Language="SFX">
+					<ShortName>Foley_Player_Jump01.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump01_10C4C929.wem</Path>
+				</File>
+				<File Id="575523147" Language="SFX">
+					<ShortName>Foley_Player_Jump03.wav</ShortName>
+					<Path>SFX\Foley_Player_Jump03_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2460493385" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_WinScreen</ObjectPath>
+			<ShortName>MX_WinScreen</ShortName>
+			<Path>MX_WinScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2460493385" Name="MX_WinScreen" ObjectPath="\Events\Default Work Unit\MX\MX_WinScreen" DurationType="OneShot" DurationMin="23.008253" DurationMax="23.008253"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="502551664" Language="SFX">
+					<ShortName>MX_WinScreen01.wav</ShortName>
+					<Path>SFX\MX_WinScreen01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2481286517" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopLooseScreen</ObjectPath>
+			<ShortName>MX_StopLooseScreen</ShortName>
+			<Path>MX_StopLooseScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2481286517" Name="MX_StopLooseScreen" ObjectPath="\Events\Default Work Unit\MX\MX_StopLooseScreen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2550439886" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_FoodBox</ObjectPath>
+			<ShortName>HUD_FoodBox</ShortName>
+			<Path>HUD_FoodBox.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2550439886" Name="HUD_FoodBox" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\HUD_FoodBox" DurationType="OneShot" DurationMin="0.471167" DurationMax="0.528867"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="720031731" Language="SFX">
+					<ShortName>SFX_HUD_FoodBox.wav</ShortName>
+					<Path>SFX\SFX_HUD_FoodBox_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2816976351" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Shotgun_Shooting</ObjectPath>
+			<ShortName>Shotgun_Shooting</ShortName>
+			<Path>Shotgun_Shooting.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3038207054" Name="Shoot" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Shoot" DurationType="OneShot" DurationMin="1.937909" DurationMax="2.063856"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="198662933" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot03.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot03_10C4C929.wem</Path>
+				</File>
+				<File Id="530368113" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot01.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot01_10C4C929.wem</Path>
+				</File>
+				<File Id="1062683667" Language="SFX">
+					<ShortName>SFX_Shotgun_Shot02.wav</ShortName>
+					<Path>SFX\SFX_Shotgun_Shot02_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3045234065" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Shotgun\Impact_Dirt</ObjectPath>
+			<ShortName>Impact_Dirt</ShortName>
+			<Path>Impact_Dirt.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3045234065" Name="Impact_Dirt" ObjectPath="\Events\Default Work Unit\SFX_Shotgun\Impact_Dirt" MaxAttenuation="15.000000" DurationType="OneShot" DurationMin="0.873254" DurationMax="1.068910"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="708833663" Language="SFX">
+					<ShortName>SFX_Impact_Dirt01.wav</ShortName>
+					<Path>SFX\SFX_Impact_Dirt01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3235245272" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_Sting</ObjectPath>
+			<ShortName>MX_Sting</ShortName>
+			<Path>MX_Sting.bnk</Path>
+			<IncludedEvents>
+				<Event Id="609050649" Name="MX_Sting01" ObjectPath="\Events\Default Work Unit\MX\MX_Sting01" DurationType="OneShot" DurationMin="4.000000" DurationMax="4.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="882272191" Language="SFX">
+					<ShortName>MX_Sting_Alert01.wav</ShortName>
+					<Path>SFX\MX_Sting_Alert01_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3240900869" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\ResumeAll</ObjectPath>
+			<ShortName>ResumeAll</ShortName>
+			<Path>ResumeAll.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3240900869" Name="ResumeAll" ObjectPath="\Events\Default Work Unit\ResumeAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3312933569" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopWinScreen</ObjectPath>
+			<ShortName>MX_StopWinScreen</ShortName>
+			<Path>MX_StopWinScreen.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3312933569" Name="MX_StopWinScreen" ObjectPath="\Events\Default Work Unit\MX\MX_StopWinScreen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3349921076" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_CountDown</ObjectPath>
+			<ShortName>HUD_CountDown</ShortName>
+			<Path>HUD_CountDown.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3349921076" Name="HUD_CountDown" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\HUD_CountDown" DurationType="OneShot" DurationMin="9.517960" DurationMax="9.517960"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="348250797" Language="SFX">
+					<ShortName>SFX_HUD_CountDown.wav</ShortName>
+					<Path>SFX\SFX_HUD_CountDown_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3400939750" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop01</ObjectPath>
+			<ShortName>MX_CombatLoop01</ShortName>
+			<Path>MX_CombatLoop01.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="860826220" Language="SFX">
+					<ShortName>MX_Combat_Loop03.wav</ShortName>
+					<Path>SFX\MX_Combat_Loop03_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3462007883" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_MainMenu</ObjectPath>
+			<ShortName>MX_MainMenu</ShortName>
+			<Path>MX_MainMenu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3462007883" Name="MX_MainMenu" ObjectPath="\Events\Default Work Unit\MX\MX_MainMenu" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="633040560" Language="SFX">
+					<ShortName>MX_MainMenu01.wav</ShortName>
+					<Path>SFX\MX_MainMenu01_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3640244166" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_Outro</ObjectPath>
+			<ShortName>MX_Outro</ShortName>
+			<Path>MX_Outro.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3640244166" Name="MX_Outro" ObjectPath="\Events\Default Work Unit\MX\MX_Outro" DurationType="OneShot" DurationMin="13.769864" DurationMax="13.769864"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="240594575" Language="SFX">
+					<ShortName>MX_Combat_Outro.wav</ShortName>
+					<Path>SFX\MX_Combat_Outro_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3683422181" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopCombat</ObjectPath>
+			<ShortName>MX_StopCombat</ShortName>
+			<Path>MX_StopCombat.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2458422485" Name="MX_CombatStop" ObjectPath="\Events\Default Work Unit\MX\MX_CombatStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3930152595" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_StopMainMenu</ObjectPath>
+			<ShortName>MX_StopMainMenu</ShortName>
+			<Path>MX_StopMainMenu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3930152595" Name="MX_StopMainMenu" ObjectPath="\Events\Default Work Unit\MX\MX_StopMainMenu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="4091047182" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\PauseAll</ObjectPath>
+			<ShortName>PauseAll</ShortName>
+			<Path>PauseAll.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4091047182" Name="PauseAll" ObjectPath="\Events\Default Work Unit\PauseAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="4162641848" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX_Rats\Rat_Deaths</ObjectPath>
+			<ShortName>Rat_Deaths</ShortName>
+			<Path>Rat_Deaths.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1268870121" Name="Rat_Death" ObjectPath="\Events\Default Work Unit\SFX_Rats\Rat_Death" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.641820" DurationMax="1.030196"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="739880799" Language="SFX">
+					<ShortName>SFX_Rats_Death01.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death01_10C4C929.wem</Path>
+				</File>
+				<File Id="845905714" Language="SFX">
+					<ShortName>SFX_Rats_Death02.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death02_10C4C929.wem</Path>
+				</File>
+				<File Id="1027654733" Language="SFX">
+					<ShortName>SFX_Rats_Death03.wav</ShortName>
+					<Path>SFX\SFX_Rats_Death03_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

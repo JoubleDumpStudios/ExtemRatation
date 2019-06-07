@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3349921076	HUD_CountDown			\Default Work Unit\UI&HUD\HUD_CountDown	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	348250797	SFX_HUD_CountDown	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\SFX\SFX_HUD_CountDown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\SFX_HUD_CountDown		1679032
+

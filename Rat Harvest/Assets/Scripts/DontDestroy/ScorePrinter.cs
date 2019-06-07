@@ -44,7 +44,7 @@ public class ScorePrinter : MonoBehaviour
         else 
         {
             if (maxScore > 0)
-                maxScoreText.text = "Max Score : " + maxScore;
+                maxScoreText.text = "High-score : " + maxScore;
             else maxScoreText.text = "";
         }
     }

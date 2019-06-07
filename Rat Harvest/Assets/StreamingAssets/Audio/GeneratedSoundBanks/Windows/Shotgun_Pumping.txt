@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1925777311	Pump			\Default Work Unit\SFX_Shotgun\Pump	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	925049353	SFX_Shotgun_Pump	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\SFX\SFX_Shotgun_Pump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Shotgun\SFX_Shotgun_Pump		149928
+

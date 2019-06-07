@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2550439886	HUD_FoodBox			\Default Work Unit\UI&HUD\HUD_FoodBox	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	720031731	SFX_HUD_FoodBox	C:\SPO\Gamelab\Gamelab 6\Rat Harvest\ExtemRatation\Rat Harvest\Rat Harvest_WwiseProject\.cache\Windows\SFX\SFX_HUD_FoodBox_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI&HUD\SFX_HUD_FoodBox		44092
+
