@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID HUD_AMMOBOX = 765648692U;
+        static const AkUniqueID HUD_COUNTDOWN = 3349921076U;
         static const AkUniqueID HUD_FOODBOX = 2550439886U;
         static const AkUniqueID HUD_HARVEST = 1821446674U;
         static const AkUniqueID IMPACT_DIRT = 3045234065U;
@@ -50,6 +51,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID HUD_AMMOBOX = 765648692U;
+        static const AkUniqueID HUD_COUNTDOWN = 3349921076U;
         static const AkUniqueID HUD_FOODBOX = 2550439886U;
         static const AkUniqueID HUD_HARVEST = 1821446674U;
         static const AkUniqueID IMPACT_DIRT = 3045234065U;

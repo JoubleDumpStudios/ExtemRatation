@@ -89,7 +89,7 @@ public class Timer : MonoBehaviour
     void PreRoundEvents()
     {
         
-        Invoke("MX_WindUp", 1.35f);
+        Invoke("MX_WindUp", 1.27f);
         //Invoke("Name of the method you want to play", YourTime)
         Invoke("Rat_Scream", 13);
     }
@@ -101,13 +101,19 @@ public class Timer : MonoBehaviour
         //Invoke("Name of the method you want to play", fstartRoundTime + YourTime), 
         //this will call you method in YourTime seconds after the start of the round.
 
-        Invoke("MX_CombatEnd", fstartRoundTime + 17);
+        Invoke("MX_CombatEnd", fstartRoundTime + 297);
 
-        Invoke("MX_Outro", fstartRoundTime + 17);
+        Invoke("HUD_ClockOut", fstartRoundTime + 291);
+
+        Invoke("MX_Outro", fstartRoundTime + 297);
+
+    
+
+
+
+
+
     }
-
-
-
 
     void MX_WindUp()
     {
@@ -132,6 +138,11 @@ public class Timer : MonoBehaviour
     void MX_Outro()
     {
         AkSoundEngine.PostEvent("MX_Outro", gameObject);
+    }
+
+    void HUD_ClockOut()
+    {
+        AkSoundEngine.PostEvent("HUD_CountDown", gameObject);
     }
 
 

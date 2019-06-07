@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/MainMenu.unity
     guid: 19e7753b1cedf0d48b8c9ce55e018d3e
   - enabled: 1
-    path: Assets/Scenes/Test/Test_LevelDesign/Test_LevelDesign_01.unity
+    path: Assets/Scenes/Game/GameScene.unity
     guid: 2d385632e1c564548a8ef49e2cfaa8eb
   - enabled: 1
     path: Assets/Scenes/Game/Credits.unity

@@ -358,6 +358,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="HUD_CountDown" ID="{1CDBAD02-D668-40D1-9BEA-1F8D65B6E62D}">
+							<ChildrenList>
+								<Action Name="" ID="{600852C7-B79B-4856-BCE8-2E8F85C11181}" ShortID="1006681019">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HUD_CountDown" ID="{E7127C94-59D7-4379-8C9E-E0CEC6770556}" WorkUnitID="{CC77C89F-D477-4B2B-9D28-59E8F5A86E42}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="PauseAll" ID="{42DF7BBE-BC4D-403E-91B6-8EF823A7149C}">

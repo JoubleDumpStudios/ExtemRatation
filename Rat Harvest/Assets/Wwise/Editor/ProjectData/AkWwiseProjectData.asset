@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1793e46ca69fdb42ab8b461509de6e1c
     GuidInternal: 
-    m_lastTime: -8586417459622024414
+    m_lastTime: -8586417408773104581
     List:
     - name: HUD_AmmoBox
       guid: 5798a7836937344fa9413adb63464f76
@@ -44,6 +44,17 @@ MonoBehaviour:
       - ElementName: HUD_AmmoBox
         ObjectType: 7
       Path: Default Work Unit\UI&HUD\HUD_AmmoBox
+    - name: HUD_CountDown
+      guid: b2316645937c8640bb4b0b07c70e2054
+      id: 3349921076
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_CountDown
+        ObjectType: 7
+      Path: Default Work Unit\UI&HUD\HUD_CountDown
     - name: HUD_FoodBox
       guid: 897798e51a6ae04d8cca3afe0d8f5b7d
       id: 2550439886
@@ -375,7 +386,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b4609ff119cd234494087f9db71a18c3
     GuidInternal: 
-    m_lastTime: -8586417431313972881
+    m_lastTime: -8586417394665057901
     List:
     - name: Footstep
       guid: 088d1070aa985f4aa96f0ebecf59799f
@@ -405,6 +416,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.899439
       minDuration: 0.801309
+    - name: HUD_CountDown
+      guid: 02addb1c68d6d1409bea1f8d65b6e62d
+      id: 3349921076
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI&HUD
+        ObjectType: 4
+      - ElementName: HUD_CountDown
+        ObjectType: 3
+      Path: Default Work Unit\UI&HUD\HUD_CountDown
+      maxAttenuation: 0
+      maxDuration: 9.51796
+      minDuration: 9.51796
     - name: HUD_FoodBox
       guid: 860e5aceb53ece44ad5ee9a2d53bd398
       id: 2550439886
@@ -840,5 +865,6 @@ MonoBehaviour:
   - /Rat Harvest_WwiseProject/Events
   - /Rat Harvest_WwiseProject/Events/Default Work Unit
   - /Rat Harvest_WwiseProject/Events/Default Work Unit/MX
+  - /Rat Harvest_WwiseProject/Events/Default Work Unit/UI&HUD
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

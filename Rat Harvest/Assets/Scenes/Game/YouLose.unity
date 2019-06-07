@@ -14903,7 +14903,7 @@ PrefabInstance:
     - target: {fileID: 4838619184757223237, guid: eaaf952a9efa5784a9c1360afc9e5c5c,
         type: 3}
       propertyPath: gameSceneName
-      value: Test_LevelDesign_01
+      value: GameScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaaf952a9efa5784a9c1360afc9e5c5c, type: 3}

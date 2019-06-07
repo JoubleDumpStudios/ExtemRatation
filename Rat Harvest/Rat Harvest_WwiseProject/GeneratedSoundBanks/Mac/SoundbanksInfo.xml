@@ -378,17 +378,31 @@
 				<Event Id="3312933569" Name="MX_StopWinScreen" ObjectPath="\Events\Default Work Unit\MX\MX_StopWinScreen" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="3349921076" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI&amp;HUD\HUD_CountDown</ObjectPath>
+			<ShortName>HUD_CountDown</ShortName>
+			<Path>HUD_CountDown.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3349921076" Name="HUD_CountDown" ObjectPath="\Events\Default Work Unit\UI&amp;HUD\HUD_CountDown" DurationType="OneShot" DurationMin="9.517960" DurationMax="9.517960"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="348250797" Language="SFX">
+					<ShortName>SFX_HUD_CountDown.wav</ShortName>
+					<Path>SFX\SFX_HUD_CountDown_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="3400939750" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\MX\MX_CombatLoop01</ObjectPath>
 			<ShortName>MX_CombatLoop01</ShortName>
 			<Path>MX_CombatLoop01.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="OneShot" DurationMin="109.254486" DurationMax="109.254486"/>
+				<Event Id="3400939750" Name="MX_CombatLoop01" ObjectPath="\Events\Default Work Unit\MX\MX_CombatLoop01" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="860826220" Language="SFX">
 					<ShortName>MX_Combat_Loop03.wav</ShortName>
-					<Path>SFX\MX_Combat_Loop03_10C4C929.wem</Path>
+					<Path>SFX\MX_Combat_Loop03_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

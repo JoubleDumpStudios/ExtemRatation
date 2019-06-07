@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffec7bf5bdce35c468f36be7613a7c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneName: Test_LevelDesign_01
+  gameSceneName: GameScene
   cursorTexture: {fileID: 2800000, guid: c0af8514347c35e4f823938874e68900, type: 3}
 --- !u!114 &4931223409881169860
 MonoBehaviour:

@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="D:\SPO\Gamelab 6_RatHarvest\Sound\AudacityProject_RatHarvest\Export"/>
 				<Property Name="Event Action List\{037C6720-60D7-451A-8224-360285950798}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{15EE6136-67A2-4E55-B4D1-87AD7340DD5E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1CDBAD02-D668-40D1-9BEA-1F8D65B6E62D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{272E7CED-DDDE-4E91-B52E-446441A56B11}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{306D1750-45B3-4162-948D-5E98BD699D85}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4188A983-96F9-4B9B-942E-46B9873D55BB}\x64_Expand States" Type="string" Value=""/>

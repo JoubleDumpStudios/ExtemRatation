@@ -224,6 +224,13 @@
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>
 						</SoundBank>
+						<SoundBank Name="HUD_CountDown" ID="{456631B2-7C93-4086-BB4B-0B07C70E2054}">
+							<ObjectInclusionList>
+								<ObjectRef Name="HUD_CountDown" ID="{1CDBAD02-D668-40D1-9BEA-1F8D65B6E62D}" WorkUnitID="{F19F60B4-CD19-4423-9408-7F9DB71A18C3}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
 					</ChildrenList>
 				</Folder>
 				<SoundBank Name="ResumeAll" ID="{B2D8E4A0-B365-430F-809C-2B90F1A26286}">

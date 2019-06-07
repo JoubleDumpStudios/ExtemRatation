@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour
 {
     public static SceneManager instance;
-    [SerializeField] private string gameSceneName = "Test_LevelDesign_01";
+    [SerializeField] private string gameSceneName = "GameScene";
     [SerializeField] private Texture2D cursorTexture;
 
     private void Awake()
